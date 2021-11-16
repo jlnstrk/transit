@@ -1,0 +1,792 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>HciConnection</title>
+</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
+  
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+            <div id="logo"></div>
+          </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
+
+        <div class="main-content" id="content" pageids="api-hci::de.jlnstrk.transit.api.hci.model.connection/HciConnection///PointingToDeclaration//2146427818">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">api-hci</a>/<a href="../index.html">de.jlnstrk.transit.api.hci.model.connection</a>/<a href="index.html">HciConnection</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Hci</span><wbr><span><span>Connection</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">class <a href="index.html">HciConnection</a>(cid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cksum: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, cksumDti: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, date: <a href="../../../interop/de.jlnstrk.transit.util/-local-date/index.html">LocalDate</a>, sDays: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-service-days/index.html">HciServiceDays</a>?, dur: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>, durS: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?, durR: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?, useableTime: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?, chg: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, dist: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, originType: <a href="-origin-type/index.html">HciConnection.OriginType</a>?, dep: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-stop/index.html">HciStop</a>, arr: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-stop/index.html">HciStop</a>, dTrnCmpSX: <a href="../../de.jlnstrk.transit.api.hci.model.composition/-hci-train-composition/index.html">HciTrainComposition</a>?, aTrnCmpSX: <a href="../../de.jlnstrk.transit.api.hci.model.composition/-hci-train-composition/index.html">HciTrainComposition</a>?, tcocXL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt;, hasAlt: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, hasImpRem: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, hasIndividualChangeTimes: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, eco: <a href="../../de.jlnstrk.transit.api.hci.model.eco/-hci-eco/index.html">HciEco</a>?, ecoCmpL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.eco/-hci-eco/index.html">HciEco</a>&gt;, ecoEntryUrl: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, freq: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-frequency/index.html">HciFrequency</a>?, freqRT: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-frequency/index.html">HciFrequency</a>?, reliability: <a href="-reliability/index.html">HciConnection.Reliability</a>?, badSecRefX: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, isNotRdbl: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, err: <a href="-error-type/index.html">HciConnection.ErrorType</a>?, conStatus: <a href="-status/index.html">HciConnection.Status</a>?, msgL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.message/-hci-message/index.html">HciMessage</a>&gt;, isAlt: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, isPref: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, recState: <a href="../../de.jlnstrk.transit.api.hci.model.recon/-hci-reconstruction/-state/index.html">HciReconstruction.State</a>?, recon: <a href="../../de.jlnstrk.transit.api.hci.model.recon/-hci-reconstruction/index.html">HciReconstruction</a>?, ctxRecon: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, resState: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-reservation-state/index.html">HciReservationState</a>?, resRecommendation: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-reservation-recommendation/index.html">HciReservationRecommendation</a>?, secL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model/-hci-section/index.html">HciSection</a>&gt;, sotCtxt: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-search-on-trip-context/index.html">HciSearchOnTripContext</a>?, sotRating: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, isSotCon: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, trfRes: <a href="../../de.jlnstrk.transit.api.hci.model.tariff/-hci-tariff-result/index.html">HciTariffResult</a>?, ovwTrfRefL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.tariff/-hci-tariff-reference/index.html">HciTariffReference</a>&gt;, conSubscr: <a href="-subscription-state/index.html">HciConnection.SubscriptionState</a>?, intvlSubscr: <a href="-subscription-state/index.html">HciConnection.SubscriptionState</a>?, parConL: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model/-hci-content/index.html">HciContent</a>&gt;, combinedMinDuration: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?, combinedCount: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, showARSLink: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, dbReisePlanStorageData: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-d-b-reiseplan-storage-data/index.html">HciDBReiseplanStorageData</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="-576802215%2FClasslikes%2F2146427818" anchor-label="ErrorType" id="-576802215%2FClasslikes%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-error-type/index.html"><span>Error</span><wbr><span><span>Type</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-576802215%2FClasslikes%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">enum <a href="-error-type/index.html">ErrorType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-error-type/index.html">HciConnection.ErrorType</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1484948647%2FClasslikes%2F2146427818" anchor-label="OriginType" id="1484948647%2FClasslikes%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-origin-type/index.html"><span>Origin</span><wbr><span><span>Type</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1484948647%2FClasslikes%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">enum <a href="-origin-type/index.html">OriginType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-origin-type/index.html">HciConnection.OriginType</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="328454145%2FClasslikes%2F2146427818" anchor-label="Reliability" id="328454145%2FClasslikes%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-reliability/index.html"><span><span>Reliability</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="328454145%2FClasslikes%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">data class <a href="-reliability/index.html">Reliability</a>(alternative: <a href="../../../api-hafas/de.jlnstrk.transit.api.hafas/-hafas-reliability-type/index.html">HafasReliabilityType</a>, original: <a href="../../../api-hafas/de.jlnstrk.transit.api.hafas/-hafas-reliability-type/index.html">HafasReliabilityType</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2008208245%2FClasslikes%2F2146427818" anchor-label="Status" id="2008208245%2FClasslikes%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-status/index.html"><span><span>Status</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2008208245%2FClasslikes%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">data class <a href="-status/index.html">Status</a>(convenient: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, daily: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, detour: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, direct: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, economic: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, hint: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, slowDirect: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, specialtrain: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, subOptimalDirect: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, ukNationalRouteingGuideFailure: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-540472185%2FClasslikes%2F2146427818" anchor-label="SubscriptionState" id="-540472185%2FClasslikes%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-subscription-state/index.html"><span>Subscription</span><wbr><span><span>State</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-540472185%2FClasslikes%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><div class="symbol monospace">enum <a href="-subscription-state/index.html">SubscriptionState</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-subscription-state/index.html">HciConnection.SubscriptionState</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-1246268505%2FProperties%2F2146427818" anchor-label="arr" id="-1246268505%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="arr.html">arr</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1246268505%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1246268505%2FProperties%2F2146427818" anchor-label="arr" id="-1246268505%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="arr.html">arr</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-stop/index.html">HciStop</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1246268505%2FProperties%2F2146427818" anchor-label="arr" id="-1246268505%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Stop data concerning the final arrival</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="724947020%2FProperties%2F2146427818" anchor-label="aTrnCmpSX" id="724947020%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="a-trn-cmp-s-x.html">aTrnCmpSX</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="724947020%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="724947020%2FProperties%2F2146427818" anchor-label="aTrnCmpSX" id="724947020%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="a-trn-cmp-s-x.html">aTrnCmpSX</a>: <a href="../../de.jlnstrk.transit.api.hci.model.composition/-hci-train-composition/index.html">HciTrainComposition</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="724947020%2FProperties%2F2146427818" anchor-label="aTrnCmpSX" id="724947020%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The train composition of the final vehicle on arrival</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1552492287%2FProperties%2F2146427818" anchor-label="badSecRefX" id="-1552492287%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="bad-sec-ref-x.html">badSecRefX</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1552492287%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1552492287%2FProperties%2F2146427818" anchor-label="badSecRefX" id="-1552492287%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="bad-sec-ref-x.html">badSecRefX</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1552492287%2FProperties%2F2146427818" anchor-label="badSecRefX" id="-1552492287%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The problematic section on this eonnection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1171802246%2FProperties%2F2146427818" anchor-label="chg" id="1171802246%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="chg.html">chg</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1171802246%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1171802246%2FProperties%2F2146427818" anchor-label="chg" id="1171802246%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="chg.html">chg</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1171802246%2FProperties%2F2146427818" anchor-label="chg" id="1171802246%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The number of changes with this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2040356842%2FProperties%2F2146427818" anchor-label="cid" id="2040356842%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="cid.html">cid</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2040356842%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="2040356842%2FProperties%2F2146427818" anchor-label="cid" id="2040356842%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="cid.html">cid</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2040356842%2FProperties%2F2146427818" anchor-label="cid" id="2040356842%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The id of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="160648357%2FProperties%2F2146427818" anchor-label="cksum" id="160648357%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="cksum.html">cksum</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="160648357%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="160648357%2FProperties%2F2146427818" anchor-label="cksum" id="160648357%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="cksum.html">cksum</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="160648357%2FProperties%2F2146427818" anchor-label="cksum" id="160648357%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The checksum of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1533613628%2FProperties%2F2146427818" anchor-label="cksumDti" id="1533613628%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="cksum-dti.html">cksumDti</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1533613628%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1533613628%2FProperties%2F2146427818" anchor-label="cksumDti" id="1533613628%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="cksum-dti.html">cksumDti</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-95091874%2FProperties%2F2146427818" anchor-label="combinedCount" id="-95091874%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="combined-count.html">combinedCount</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95091874%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-95091874%2FProperties%2F2146427818" anchor-label="combinedCount" id="-95091874%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="combined-count.html">combinedCount</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1438939577%2FProperties%2F2146427818" anchor-label="combinedMinDuration" id="-1438939577%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="combined-min-duration.html">combinedMinDuration</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1438939577%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1438939577%2FProperties%2F2146427818" anchor-label="combinedMinDuration" id="-1438939577%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="combined-min-duration.html">combinedMinDuration</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1495944468%2FProperties%2F2146427818" anchor-label="conStatus" id="1495944468%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="con-status.html">conStatus</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1495944468%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1495944468%2FProperties%2F2146427818" anchor-label="conStatus" id="1495944468%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="con-status.html">conStatus</a>: <a href="-status/index.html">HciConnection.Status</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1495944468%2FProperties%2F2146427818" anchor-label="conStatus" id="1495944468%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The status of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2000071388%2FProperties%2F2146427818" anchor-label="conSubscr" id="-2000071388%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="con-subscr.html">conSubscr</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2000071388%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-2000071388%2FProperties%2F2146427818" anchor-label="conSubscr" id="-2000071388%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="con-subscr.html">conSubscr</a>: <a href="-subscription-state/index.html">HciConnection.SubscriptionState</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2000071388%2FProperties%2F2146427818" anchor-label="conSubscr" id="-2000071388%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The subscription state of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1065735146%2FProperties%2F2146427818" anchor-label="ctxRecon" id="1065735146%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="ctx-recon.html">ctxRecon</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065735146%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1065735146%2FProperties%2F2146427818" anchor-label="ctxRecon" id="1065735146%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="ctx-recon.html">ctxRecon</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1065735146%2FProperties%2F2146427818" anchor-label="ctxRecon" id="1065735146%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reconstruction context of this connection (legacy)</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="895479300%2FProperties%2F2146427818" anchor-label="date" id="895479300%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="date.html">date</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="895479300%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="895479300%2FProperties%2F2146427818" anchor-label="date" id="895479300%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="date.html">date</a>: <a href="../../../interop/de.jlnstrk.transit.util/-local-date/index.html">LocalDate</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="895479300%2FProperties%2F2146427818" anchor-label="date" id="895479300%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The date of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="231427584%2FProperties%2F2146427818" anchor-label="dbReisePlanStorageData" id="231427584%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="db-reise-plan-storage-data.html">dbReisePlanStorageData</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="231427584%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="231427584%2FProperties%2F2146427818" anchor-label="dbReisePlanStorageData" id="231427584%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="db-reise-plan-storage-data.html">dbReisePlanStorageData</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-d-b-reiseplan-storage-data/index.html">HciDBReiseplanStorageData</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1688598087%2FProperties%2F2146427818" anchor-label="dep" id="-1688598087%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dep.html">dep</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1688598087%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1688598087%2FProperties%2F2146427818" anchor-label="dep" id="-1688598087%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="dep.html">dep</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-stop/index.html">HciStop</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1688598087%2FProperties%2F2146427818" anchor-label="dep" id="-1688598087%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Stop data concerning the initial departure</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1638729972%2FProperties%2F2146427818" anchor-label="dist" id="-1638729972%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dist.html">dist</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1638729972%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1638729972%2FProperties%2F2146427818" anchor-label="dist" id="-1638729972%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="dist.html">dist</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1638729972%2FProperties%2F2146427818" anchor-label="dist" id="-1638729972%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The distance covered by this connection in meters</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-493544279%2FProperties%2F2146427818" anchor-label="dTrnCmpSX" id="-493544279%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="d-trn-cmp-s-x.html">dTrnCmpSX</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493544279%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-493544279%2FProperties%2F2146427818" anchor-label="dTrnCmpSX" id="-493544279%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="d-trn-cmp-s-x.html">dTrnCmpSX</a>: <a href="../../de.jlnstrk.transit.api.hci.model.composition/-hci-train-composition/index.html">HciTrainComposition</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-493544279%2FProperties%2F2146427818" anchor-label="dTrnCmpSX" id="-493544279%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The train composition of the initially departing vehicle</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="874363911%2FProperties%2F2146427818" anchor-label="dur" id="874363911%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dur.html">dur</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="874363911%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="874363911%2FProperties%2F2146427818" anchor-label="dur" id="874363911%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="dur.html">dur</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="874363911%2FProperties%2F2146427818" anchor-label="dur" id="874363911%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The duration of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1878078625%2FProperties%2F2146427818" anchor-label="durR" id="1878078625%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dur-r.html">durR</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1878078625%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1878078625%2FProperties%2F2146427818" anchor-label="durR" id="1878078625%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="dur-r.html">durR</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1878078625%2FProperties%2F2146427818" anchor-label="durR" id="1878078625%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The realtime duration of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1909098432%2FProperties%2F2146427818" anchor-label="durS" id="1909098432%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dur-s.html">durS</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1909098432%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1909098432%2FProperties%2F2146427818" anchor-label="durS" id="1909098432%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="dur-s.html">durS</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1909098432%2FProperties%2F2146427818" anchor-label="durS" id="1909098432%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The scheduled duration of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="397384823%2FProperties%2F2146427818" anchor-label="eco" id="397384823%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="eco.html">eco</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="397384823%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="397384823%2FProperties%2F2146427818" anchor-label="eco" id="397384823%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="eco.html">eco</a>: <a href="../../de.jlnstrk.transit.api.hci.model.eco/-hci-eco/index.html">HciEco</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="397384823%2FProperties%2F2146427818" anchor-label="eco" id="397384823%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The eco footprint associated with using this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-32136623%2FProperties%2F2146427818" anchor-label="ecoCmpL" id="-32136623%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="eco-cmp-l.html">ecoCmpL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-32136623%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-32136623%2FProperties%2F2146427818" anchor-label="ecoCmpL" id="-32136623%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="eco-cmp-l.html">ecoCmpL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.eco/-hci-eco/index.html">HciEco</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1445168474%2FProperties%2F2146427818" anchor-label="ecoEntryUrl" id="1445168474%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="eco-entry-url.html">ecoEntryUrl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1445168474%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1445168474%2FProperties%2F2146427818" anchor-label="ecoEntryUrl" id="1445168474%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="eco-entry-url.html">ecoEntryUrl</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2029752611%2FProperties%2F2146427818" anchor-label="err" id="2029752611%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="err.html">err</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2029752611%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="2029752611%2FProperties%2F2146427818" anchor-label="err" id="2029752611%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="err.html">err</a>: <a href="-error-type/index.html">HciConnection.ErrorType</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2029752611%2FProperties%2F2146427818" anchor-label="err" id="2029752611%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The error that applies to this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1079058042%2FProperties%2F2146427818" anchor-label="freq" id="1079058042%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="freq.html">freq</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1079058042%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1079058042%2FProperties%2F2146427818" anchor-label="freq" id="1079058042%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="freq.html">freq</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-frequency/index.html">HciFrequency</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1079058042%2FProperties%2F2146427818" anchor-label="freq" id="1079058042%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The scheduled frequency of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2133067576%2FProperties%2F2146427818" anchor-label="freqRT" id="2133067576%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="freq-r-t.html">freqRT</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2133067576%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="2133067576%2FProperties%2F2146427818" anchor-label="freqRT" id="2133067576%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="freq-r-t.html">freqRT</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-frequency/index.html">HciFrequency</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2133067576%2FProperties%2F2146427818" anchor-label="freqRT" id="2133067576%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The realtime frequency of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-971938077%2FProperties%2F2146427818" anchor-label="hasAlt" id="-971938077%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="has-alt.html">hasAlt</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-971938077%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-971938077%2FProperties%2F2146427818" anchor-label="hasAlt" id="-971938077%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="has-alt.html">hasAlt</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-971938077%2FProperties%2F2146427818" anchor-label="hasAlt" id="-971938077%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Whether this connection has alternatives</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1272971072%2FProperties%2F2146427818" anchor-label="hasImpRem" id="1272971072%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="has-imp-rem.html">hasImpRem</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1272971072%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1272971072%2FProperties%2F2146427818" anchor-label="hasImpRem" id="1272971072%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="has-imp-rem.html">hasImpRem</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2060734511%2FProperties%2F2146427818" anchor-label="hasIndividualChangeTimes" id="2060734511%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="has-individual-change-times.html">hasIndividualChangeTimes</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2060734511%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="2060734511%2FProperties%2F2146427818" anchor-label="hasIndividualChangeTimes" id="2060734511%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="has-individual-change-times.html">hasIndividualChangeTimes</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1269265569%2FProperties%2F2146427818" anchor-label="intvlSubscr" id="1269265569%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="intvl-subscr.html">intvlSubscr</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1269265569%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1269265569%2FProperties%2F2146427818" anchor-label="intvlSubscr" id="1269265569%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="intvl-subscr.html">intvlSubscr</a>: <a href="-subscription-state/index.html">HciConnection.SubscriptionState</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1269265569%2FProperties%2F2146427818" anchor-label="intvlSubscr" id="1269265569%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The interval subscription state of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1482863849%2FProperties%2F2146427818" anchor-label="isAlt" id="1482863849%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-alt.html">isAlt</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1482863849%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1482863849%2FProperties%2F2146427818" anchor-label="isAlt" id="1482863849%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="is-alt.html">isAlt</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1482863849%2FProperties%2F2146427818" anchor-label="isAlt" id="1482863849%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Whether this connection is an alternative</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1006723939%2FProperties%2F2146427818" anchor-label="isNotRdbl" id="1006723939%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-not-rdbl.html">isNotRdbl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1006723939%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1006723939%2FProperties%2F2146427818" anchor-label="isNotRdbl" id="1006723939%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="is-not-rdbl.html">isNotRdbl</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1006723939%2FProperties%2F2146427818" anchor-label="isNotRdbl" id="1006723939%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Whether this connection is not rideable</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1374000411%2FProperties%2F2146427818" anchor-label="isPref" id="-1374000411%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-pref.html">isPref</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1374000411%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1374000411%2FProperties%2F2146427818" anchor-label="isPref" id="-1374000411%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="is-pref.html">isPref</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="165409630%2FProperties%2F2146427818" anchor-label="isSotCon" id="165409630%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-sot-con.html">isSotCon</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165409630%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="165409630%2FProperties%2F2146427818" anchor-label="isSotCon" id="165409630%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="is-sot-con.html">isSotCon</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="165409630%2FProperties%2F2146427818" anchor-label="isSotCon" id="165409630%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Whether this is a search on trip connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2138406041%2FProperties%2F2146427818" anchor-label="msgL" id="-2138406041%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="msg-l.html">msgL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2138406041%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-2138406041%2FProperties%2F2146427818" anchor-label="msgL" id="-2138406041%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="msg-l.html">msgL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.message/-hci-message/index.html">HciMessage</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2138406041%2FProperties%2F2146427818" anchor-label="msgL" id="-2138406041%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The messages associated with this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-674823502%2FProperties%2F2146427818" anchor-label="originType" id="-674823502%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="origin-type.html">originType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-674823502%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-674823502%2FProperties%2F2146427818" anchor-label="originType" id="-674823502%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="origin-type.html">originType</a>: <a href="-origin-type/index.html">HciConnection.OriginType</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-674823502%2FProperties%2F2146427818" anchor-label="originType" id="-674823502%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The type of origin of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1158731519%2FProperties%2F2146427818" anchor-label="ovwTrfRefL" id="-1158731519%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="ovw-trf-ref-l.html">ovwTrfRefL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1158731519%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1158731519%2FProperties%2F2146427818" anchor-label="ovwTrfRefL" id="-1158731519%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="ovw-trf-ref-l.html">ovwTrfRefL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model.tariff/-hci-tariff-reference/index.html">HciTariffReference</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1158731519%2FProperties%2F2146427818" anchor-label="ovwTrfRefL" id="-1158731519%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The overview tariff references for this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="526172285%2FProperties%2F2146427818" anchor-label="parConL" id="526172285%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="par-con-l.html">parConL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="526172285%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="526172285%2FProperties%2F2146427818" anchor-label="parConL" id="526172285%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="par-con-l.html">parConL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model/-hci-content/index.html">HciContent</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1196132199%2FProperties%2F2146427818" anchor-label="recon" id="-1196132199%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="recon.html">recon</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1196132199%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1196132199%2FProperties%2F2146427818" anchor-label="recon" id="-1196132199%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="recon.html">recon</a>: <a href="../../de.jlnstrk.transit.api.hci.model.recon/-hci-reconstruction/index.html">HciReconstruction</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1196132199%2FProperties%2F2146427818" anchor-label="recon" id="-1196132199%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reconstruction data of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2048387919%2FProperties%2F2146427818" anchor-label="recState" id="-2048387919%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="rec-state.html">recState</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2048387919%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-2048387919%2FProperties%2F2146427818" anchor-label="recState" id="-2048387919%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="rec-state.html">recState</a>: <a href="../../de.jlnstrk.transit.api.hci.model.recon/-hci-reconstruction/-state/index.html">HciReconstruction.State</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2048387919%2FProperties%2F2146427818" anchor-label="recState" id="-2048387919%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reconstruction state of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-552600338%2FProperties%2F2146427818" anchor-label="reliability" id="-552600338%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="reliability.html">reliability</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-552600338%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-552600338%2FProperties%2F2146427818" anchor-label="reliability" id="-552600338%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="reliability.html">reliability</a>: <a href="-reliability/index.html">HciConnection.Reliability</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-552600338%2FProperties%2F2146427818" anchor-label="reliability" id="-552600338%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reliability of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1772657329%2FProperties%2F2146427818" anchor-label="resRecommendation" id="-1772657329%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="res-recommendation.html">resRecommendation</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1772657329%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-1772657329%2FProperties%2F2146427818" anchor-label="resRecommendation" id="-1772657329%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="res-recommendation.html">resRecommendation</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-reservation-recommendation/index.html">HciReservationRecommendation</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1772657329%2FProperties%2F2146427818" anchor-label="resRecommendation" id="-1772657329%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reservation recommendation for this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-730556223%2FProperties%2F2146427818" anchor-label="resState" id="-730556223%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="res-state.html">resState</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-730556223%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-730556223%2FProperties%2F2146427818" anchor-label="resState" id="-730556223%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="res-state.html">resState</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-reservation-state/index.html">HciReservationState</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-730556223%2FProperties%2F2146427818" anchor-label="resState" id="-730556223%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The reservation state of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-891557890%2FProperties%2F2146427818" anchor-label="sDays" id="-891557890%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="s-days.html">sDays</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-891557890%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="-891557890%2FProperties%2F2146427818" anchor-label="sDays" id="-891557890%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="s-days.html">sDays</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-service-days/index.html">HciServiceDays</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-891557890%2FProperties%2F2146427818" anchor-label="sDays" id="-891557890%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The service days this connection runs on</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1740059703%2FProperties%2F2146427818" anchor-label="secL" id="1740059703%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="sec-l.html">secL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1740059703%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1740059703%2FProperties%2F2146427818" anchor-label="secL" id="1740059703%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="sec-l.html">secL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../de.jlnstrk.transit.api.hci.model/-hci-section/index.html">HciSection</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1740059703%2FProperties%2F2146427818" anchor-label="secL" id="1740059703%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The sections part of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="567560457%2FProperties%2F2146427818" anchor-label="showARSLink" id="567560457%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="show-a-r-s-link.html">showARSLink</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="567560457%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="567560457%2FProperties%2F2146427818" anchor-label="showARSLink" id="567560457%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="show-a-r-s-link.html">showARSLink</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="423007267%2FProperties%2F2146427818" anchor-label="sotCtxt" id="423007267%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="sot-ctxt.html">sotCtxt</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="423007267%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="423007267%2FProperties%2F2146427818" anchor-label="sotCtxt" id="423007267%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="sot-ctxt.html">sotCtxt</a>: <a href="../../de.jlnstrk.transit.api.hci.model/-hci-search-on-trip-context/index.html">HciSearchOnTripContext</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="423007267%2FProperties%2F2146427818" anchor-label="sotCtxt" id="423007267%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The search on trip context of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1259983603%2FProperties%2F2146427818" anchor-label="sotRating" id="1259983603%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="sot-rating.html">sotRating</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1259983603%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1259983603%2FProperties%2F2146427818" anchor-label="sotRating" id="1259983603%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="sot-rating.html">sotRating</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1259983603%2FProperties%2F2146427818" anchor-label="sotRating" id="1259983603%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The search on trip rating of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1418542555%2FProperties%2F2146427818" anchor-label="tcocXL" id="1418542555%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="tcoc-x-l.html">tcocXL</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1418542555%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="1418542555%2FProperties%2F2146427818" anchor-label="tcocXL" id="1418542555%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="tcoc-x-l.html">tcocXL</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1418542555%2FProperties%2F2146427818" anchor-label="tcocXL" id="1418542555%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The load status of this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="506743258%2FProperties%2F2146427818" anchor-label="trfRes" id="506743258%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="trf-res.html">trfRes</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="506743258%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="506743258%2FProperties%2F2146427818" anchor-label="trfRes" id="506743258%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="trf-res.html">trfRes</a>: <a href="../../de.jlnstrk.transit.api.hci.model.tariff/-hci-tariff-result/index.html">HciTariffResult</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="506743258%2FProperties%2F2146427818" anchor-label="trfRes" id="506743258%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The tariff result for this connection</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="32631258%2FProperties%2F2146427818" anchor-label="useableTime" id="32631258%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-hci:dokkaHtmlPartial/commonMain" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="useable-time.html">useableTime</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32631258%2FProperties%2F2146427818"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-hci:dokkaHtmlPartial/commonMain"><a data-name="32631258%2FProperties%2F2146427818" anchor-label="useableTime" id="32631258%2FProperties%2F2146427818" data-filterable-set=":api-hci:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="useable-time.html">useableTime</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+

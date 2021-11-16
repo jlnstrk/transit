@@ -1,0 +1,366 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>EfaJourney</title>
+</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
+  
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+            <div id="logo"></div>
+          </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
+
+        <div class="main-content" id="content" pageids="api-efa::de.jlnstrk.transit.api.efa.model/EfaJourney///PointingToDeclaration//1032316888">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">api-efa</a>/<a href="../index.html">de.jlnstrk.transit.api.efa.model</a>/<a href="index.html">EfaJourney</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Efa</span><wbr><span><span>Journey</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><div class="symbol monospace">data class <a href="index.html">EfaJourney</a>(stopID: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>, x: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>, y: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>, mapName: <a href="../-efa-coordinate-system/index.html">EfaCoordinateSystem</a>, area: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, platform: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, platformName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, stopName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, nameWO: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, gid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, pointGid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, pointType: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, countdown: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>, occupancy: <a href="-occupancy/index.html">EfaJourney.Occupancy</a>?, dateTime: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a>, realDateTime: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a>?, realtimeTripStatus: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a>&lt;<a href="-realtime-status/index.html">EfaJourney.RealtimeStatus</a>&gt;, servingLine: <a href="../-efa-serving-line/index.html">EfaServingLine</a>, operator: <a href="../-efa-operator/index.html">EfaOperator</a>?, prevStopSeq: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?, onwardStopSeq: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Describes the json structure encoding journeys from the XML_DM_REQUEST endpoint. Appears at <code>$.departureList[] and $.arrivalList[]</code></p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="1183691870%2FConstructors%2F1032316888" anchor-label="EfaJourney" id="1183691870%2FConstructors%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-efa-journey.html">EfaJourney</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1183691870%2FConstructors%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><div class="symbol monospace">fun <a href="-efa-journey.html">EfaJourney</a>(stopID: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>, x: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>, y: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>, mapName: <a href="../-efa-coordinate-system/index.html">EfaCoordinateSystem</a>, area: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, platform: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, platformName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, stopName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, nameWO: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, gid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, pointGid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, pointType: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, countdown: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a>, occupancy: <a href="-occupancy/index.html">EfaJourney.Occupancy</a>? = null, dateTime: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a>, realDateTime: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a>?, realtimeTripStatus: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a>&lt;<a href="-realtime-status/index.html">EfaJourney.RealtimeStatus</a>&gt; = emptySet(), servingLine: <a href="../-efa-serving-line/index.html">EfaServingLine</a>, operator: <a href="../-efa-operator/index.html">EfaOperator</a>?, prevStopSeq: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?, onwardStopSeq: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="525476986%2FClasslikes%2F1032316888" anchor-label="Occupancy" id="525476986%2FClasslikes%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-occupancy/index.html"><span><span>Occupancy</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="525476986%2FClasslikes%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><div class="symbol monospace">enum <a href="-occupancy/index.html">Occupancy</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-occupancy/index.html">EfaJourney.Occupancy</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Describes a vehicle's current occupancy status on a journey</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2027396258%2FClasslikes%2F1032316888" anchor-label="RealtimeStatus" id="-2027396258%2FClasslikes%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-realtime-status/index.html"><span>Realtime</span><wbr><span><span>Status</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027396258%2FClasslikes%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><div class="symbol monospace">enum <a href="-realtime-status/index.html">RealtimeStatus</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-realtime-status/index.html">EfaJourney.RealtimeStatus</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Describes the realtime information status of a journey</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="1862154201%2FProperties%2F1032316888" anchor-label="area" id="1862154201%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="area.html">area</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1862154201%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="1862154201%2FProperties%2F1032316888" anchor-label="area" id="1862154201%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="area.html">area</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1862154201%2FProperties%2F1032316888" anchor-label="area" id="1862154201%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">TODO: Purpose?</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="959019075%2FProperties%2F1032316888" anchor-label="countdown" id="959019075%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="countdown.html">countdown</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="959019075%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="959019075%2FProperties%2F1032316888" anchor-label="countdown" id="959019075%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="countdown.html">countdown</a>: <a href="../../../interop/de.jlnstrk.transit.util/-duration/index.html">Duration</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="959019075%2FProperties%2F1032316888" anchor-label="countdown" id="959019075%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Returns a countdown to this journey's departure/arrival relative to the request time</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1275258869%2FProperties%2F1032316888" anchor-label="dateTime" id="-1275258869%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="date-time.html">dateTime</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275258869%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-1275258869%2FProperties%2F1032316888" anchor-label="dateTime" id="-1275258869%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="date-time.html">dateTime</a>: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1275258869%2FProperties%2F1032316888" anchor-label="dateTime" id="-1275258869%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The scheduled date and time of the arrival/departure event</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-626642670%2FProperties%2F1032316888" anchor-label="gid" id="-626642670%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="gid.html">gid</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-626642670%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-626642670%2FProperties%2F1032316888" anchor-label="gid" id="-626642670%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="gid.html">gid</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-626642670%2FProperties%2F1032316888" anchor-label="gid" id="-626642670%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The global id of the stop where this journey is observed</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="352722669%2FProperties%2F1032316888" anchor-label="mapName" id="352722669%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="map-name.html">mapName</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="352722669%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="352722669%2FProperties%2F1032316888" anchor-label="mapName" id="352722669%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="map-name.html">mapName</a>: <a href="../-efa-coordinate-system/index.html">EfaCoordinateSystem</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="352722669%2FProperties%2F1032316888" anchor-label="mapName" id="352722669%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The coordinate system that was used to encode the coordinates</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-563806141%2FProperties%2F1032316888" anchor-label="nameWO" id="-563806141%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="name-w-o.html">nameWO</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-563806141%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-563806141%2FProperties%2F1032316888" anchor-label="nameWO" id="-563806141%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="name-w-o.html">nameWO</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-563806141%2FProperties%2F1032316888" anchor-label="nameWO" id="-563806141%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The name of the stop, but without a place</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1511044519%2FProperties%2F1032316888" anchor-label="occupancy" id="1511044519%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="occupancy.html">occupancy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1511044519%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="1511044519%2FProperties%2F1032316888" anchor-label="occupancy" id="1511044519%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="occupancy.html">occupancy</a>: <a href="-occupancy/index.html">EfaJourney.Occupancy</a>? = null<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1511044519%2FProperties%2F1032316888" anchor-label="occupancy" id="1511044519%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The occupancy information of the journey at this stop, if available</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-29199246%2FProperties%2F1032316888" anchor-label="onwardStopSeq" id="-29199246%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="onward-stop-seq.html">onwardStopSeq</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29199246%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-29199246%2FProperties%2F1032316888" anchor-label="onwardStopSeq" id="-29199246%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="onward-stop-seq.html">onwardStopSeq</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-29199246%2FProperties%2F1032316888" anchor-label="onwardStopSeq" id="-29199246%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The sequence of en-route stops that succeed the one observed</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-487838942%2FProperties%2F1032316888" anchor-label="operator" id="-487838942%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="operator.html">operator</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-487838942%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-487838942%2FProperties%2F1032316888" anchor-label="operator" id="-487838942%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="operator.html">operator</a>: <a href="../-efa-operator/index.html">EfaOperator</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-487838942%2FProperties%2F1032316888" anchor-label="operator" id="-487838942%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The operator of this journey</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1427635661%2FProperties%2F1032316888" anchor-label="platform" id="-1427635661%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="platform.html">platform</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1427635661%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-1427635661%2FProperties%2F1032316888" anchor-label="platform" id="-1427635661%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="platform.html">platform</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1427635661%2FProperties%2F1032316888" anchor-label="platform" id="-1427635661%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The code of the platform at which the vehicle stops</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-841666840%2FProperties%2F1032316888" anchor-label="platformName" id="-841666840%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="platform-name.html">platformName</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-841666840%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-841666840%2FProperties%2F1032316888" anchor-label="platformName" id="-841666840%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="platform-name.html">platformName</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-841666840%2FProperties%2F1032316888" anchor-label="platformName" id="-841666840%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Returns a human readable name of the platform at which the vehicle stops</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1944769396%2FProperties%2F1032316888" anchor-label="pointGid" id="1944769396%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="point-gid.html">pointGid</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1944769396%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="1944769396%2FProperties%2F1032316888" anchor-label="pointGid" id="1944769396%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="point-gid.html">pointGid</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1944769396%2FProperties%2F1032316888" anchor-label="pointGid" id="1944769396%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The global id of ???</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="584322986%2FProperties%2F1032316888" anchor-label="pointType" id="584322986%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="point-type.html">pointType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="584322986%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="584322986%2FProperties%2F1032316888" anchor-label="pointType" id="584322986%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="point-type.html">pointType</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="584322986%2FProperties%2F1032316888" anchor-label="pointType" id="584322986%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">TODO: Purpose?</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1953843318%2FProperties%2F1032316888" anchor-label="prevStopSeq" id="-1953843318%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="prev-stop-seq.html">prevStopSeq</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1953843318%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-1953843318%2FProperties%2F1032316888" anchor-label="prevStopSeq" id="-1953843318%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="prev-stop-seq.html">prevStopSeq</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-efa-stop/index.html">EfaStop</a>&gt;?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1953843318%2FProperties%2F1032316888" anchor-label="prevStopSeq" id="-1953843318%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The sequence of en-route stops that precede the one observed</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1475706253%2FProperties%2F1032316888" anchor-label="realDateTime" id="1475706253%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="real-date-time.html">realDateTime</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1475706253%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="1475706253%2FProperties%2F1032316888" anchor-label="realDateTime" id="1475706253%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="real-date-time.html">realDateTime</a>: <a href="../../../interop/de.jlnstrk.transit.util/-local-date-time/index.html">LocalDateTime</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1475706253%2FProperties%2F1032316888" anchor-label="realDateTime" id="1475706253%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The realtime date and time of the arrival/departure event, if available</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-841111036%2FProperties%2F1032316888" anchor-label="realtimeTripStatus" id="-841111036%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="realtime-trip-status.html">realtimeTripStatus</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-841111036%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-841111036%2FProperties%2F1032316888" anchor-label="realtimeTripStatus" id="-841111036%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="realtime-trip-status.html">realtimeTripStatus</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a>&lt;<a href="-realtime-status/index.html">EfaJourney.RealtimeStatus</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-841111036%2FProperties%2F1032316888" anchor-label="realtimeTripStatus" id="-841111036%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The status of the realtime information associated with this journey</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-879543948%2FProperties%2F1032316888" anchor-label="servingLine" id="-879543948%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="serving-line.html">servingLine</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-879543948%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-879543948%2FProperties%2F1032316888" anchor-label="servingLine" id="-879543948%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="serving-line.html">servingLine</a>: <a href="../-efa-serving-line/index.html">EfaServingLine</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-879543948%2FProperties%2F1032316888" anchor-label="servingLine" id="-879543948%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The line serving this journey</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-929610871%2FProperties%2F1032316888" anchor-label="stopID" id="-929610871%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="stop-i-d.html">stopID</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-929610871%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="-929610871%2FProperties%2F1032316888" anchor-label="stopID" id="-929610871%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="stop-i-d.html">stopID</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-929610871%2FProperties%2F1032316888" anchor-label="stopID" id="-929610871%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The id of the stop where this journey is observed</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1336785465%2FProperties%2F1032316888" anchor-label="stopName" id="1336785465%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="stop-name.html">stopName</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1336785465%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="1336785465%2FProperties%2F1032316888" anchor-label="stopName" id="1336785465%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="stop-name.html">stopName</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1336785465%2FProperties%2F1032316888" anchor-label="stopName" id="1336785465%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The name of the stop where this journey is observed</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="891724508%2FProperties%2F1032316888" anchor-label="x" id="891724508%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="x.html">x</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="891724508%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="891724508%2FProperties%2F1032316888" anchor-label="x" id="891724508%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="x.html">x</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="891724508%2FProperties%2F1032316888" anchor-label="x" id="891724508%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The x-coordinate of the stop position</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="922744315%2FProperties%2F1032316888" anchor-label="y" id="922744315%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a>
+                <div class="table-row" data-filterable-current=":api-efa:dokkaHtmlPartial/commonMain" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="y.html">y</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="922744315%2FProperties%2F1032316888"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api-efa:dokkaHtmlPartial/commonMain"><a data-name="922744315%2FProperties%2F1032316888" anchor-label="y" id="922744315%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace">val <a href="y.html">y</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="922744315%2FProperties%2F1032316888" anchor-label="y" id="922744315%2FProperties%2F1032316888" data-filterable-set=":api-efa:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The y-coordinate of the stop position</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+
