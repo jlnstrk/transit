@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.6.0-RC2"
+kotlin = "1.6.0"
 ktor = "1.6.3"
 kotest = "5.0.0.704-SNAPSHOT"
 dokka = "1.5.30"
