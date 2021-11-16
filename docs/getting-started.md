@@ -16,7 +16,7 @@ repositories {
 For snapshot builds, add the snapshots repository:
 ```
 repositories {
-    maven("https://oss.sonatype.org/content/repositories/snapshots")
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots")
 }
 ```
 

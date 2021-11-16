@@ -1,7 +1,8 @@
-[![Build](https://github.com/jlnstrk/transit/workflows/Assemble/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3Assemble)
-[![Tests](https://github.com/jlnstrk/transit/workflows/Tests/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3ATests)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE.md)
-[![Release](https://img.shields.io/github/release/jlnstrk/transit.svg)](https://github.com/jlnstrk/transit/releases/)
+[![build](https://github.com/jlnstrk/transit/workflows/Assemble/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3Assemble)
+[![tests](https://github.com/jlnstrk/transit/workflows/Tests/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3ATests)
+[![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE.md)
+[![latest snapshot](https://img.shields.io/nexus/snapshots/https/oss.sonatype.org/io.github.jlnstrk.transit/transit.svg?label=latest%20snapshot")](https://oss.sonatype.org/content/repositories/snapshots/io/github/jlnstrk/transit/)
+[![latest release](https://img.shields.io/maven-central/v/io.github.jlnstrk.transit/transit.svg?label=latest%20release")](https://search.maven.org/search?q=g:io.github.jlnstrk.transit)
 
 # transit _[WIP]_
 
