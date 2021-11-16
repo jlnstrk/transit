@@ -1,0 +1,735 @@
+{
+  "parameters": [
+    {
+      "name": "serverID",
+      "value": "EMS_"
+    },
+    {
+      "name": "requestID",
+      "value": "0"
+    },
+    {
+      "name": "sessionID",
+      "value": "0"
+    },
+    {
+      "name": "calcTime",
+      "value": "79.547"
+    },
+    {
+      "name": "serverTime",
+      "value": "2021-01-23T13:34:41"
+    }
+  ],
+  "request": {
+    "coords": {
+      "x": "11.56568",
+      "y": "48.13933",
+      "mapName": "WGS84[DD.ddddd]"
+    }
+  },
+  "pins": [
+    {
+      "desc": "Karlsplatz (Stachus)",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000001",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000001",
+      "distance": "7",
+      "stateless": "1000001",
+      "coords": "11.56540,48.13937",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:1"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Karlsplatz (Stachus)"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "2"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "2,1,4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/karlsplatz.pdf"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Lenbachplatz",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000016",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000016",
+      "distance": "268",
+      "stateless": "1000016",
+      "coords": "11.56833,48.14086",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:16"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Lenbachplatz"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "6"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "6,4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Hauptbahnhof",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000006",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000006",
+      "distance": "342",
+      "stateless": "1000006",
+      "coords": "11.56112,48.14031",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:6"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Hauptbahnhof"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "2"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "2,6,1,4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/hauptbahnhof.pdf"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Ottostraße",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000053",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000053",
+      "distance": "371",
+      "stateless": "1000053",
+      "coords": "11.56778,48.14233",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:53"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Ottostraße"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Hauptbahnhof Nord",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1007000",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1007000",
+      "distance": "402",
+      "stateless": "1007000",
+      "coords": "11.56079,48.14116",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:7000"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Hauptbahnhof Nord"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "6"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "6,4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/hauptbahnhof7000.pdf"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Elisenstraße",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000156",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000156",
+      "distance": "445",
+      "stateless": "1000156",
+      "coords": "11.56165,48.14245",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:156"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Elisenstraße"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "3"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": {
+        "info": {
+          "infoLinkText": "MetroBus 68 / StadtBus 100 - Umleitung wegen Bauarbeiten in der Luisenstraße (13.12. - 29.07.2021)",
+          "infoLinkURL": "http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=18723_MVV&seqID=1",
+          "infoText": {
+            "content": "Wegen Bauarbeiten werden die Buslinien 68 und 100 > Hauptbahnhof von Sonntag, 13. Dezember 2020 mit vsl. Donnerstag, 29. Juli 2021 zwischen den (H) Königsplatz und Hauptbahnhof Nord umgeleitet. Die (H) Elisenstraße kann nicht bedient werden.",
+            "subtitle": "MetroBus 68 / StadtBus 100 - Umleitung wegen Bauarbeiten in der Luisenstraße (13.12. - 29.07.2021)",
+            "subject": "",
+            "additionalText": "",
+            "htmlText": "",
+            "wmlText": "",
+            "smsText": "",
+            "speechText": ""
+          },
+          "paramList": [
+            {
+              "type": "addInfoParam",
+              "name": "infoType",
+              "value": "stopBlocking",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "infoID",
+              "value": "18723_MVV",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "seqID",
+              "value": "1",
+              "edit": "0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "desc": "Hauptbahnhof Süd",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1005000",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1005000",
+      "distance": "467",
+      "stateless": "1005000",
+      "coords": "11.55922,48.13928",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:5000"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Hauptbahnhof Süd"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/hauptbahnhof5000.pdf"
+        }
+      ],
+      "infos": {
+        "info": {
+          "infoLinkText": "MetroBus 68 / Expressbus X98 - Umleitung wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße (18.01. - 17.09.2021)",
+          "infoLinkURL": "http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=18755_MVV&seqID=1",
+          "infoText": {
+            "content": "Wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße werden die Buslinien 68 und X98 von Montag, 18. Januar mit vsl. Freitag, 17. September 2021 zwischen den (H) Hauptbahnhof Süd und Goetheplatz umgeleitet. Die (H) Hauptbahnhof Süd ist um ca. 100 Meter vor den Eingang zum Intercity-Hotel zurückverlegt, die (H) Holzkirchner Bahnhof und Georg-Hirth-Platz entfallen.",
+            "subtitle": "MetroBus 68 / Expressbus X98 - Umleitung wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße (18.01. - 17.09.2021)",
+            "subject": "",
+            "additionalText": "",
+            "htmlText": "",
+            "wmlText": "",
+            "smsText": "",
+            "speechText": ""
+          },
+          "paramList": [
+            {
+              "type": "addInfoParam",
+              "name": "infoType",
+              "value": "stopInfo",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "infoID",
+              "value": "18755_MVV",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "seqID",
+              "value": "1",
+              "edit": "0"
+            }
+          ],
+          "additionalLinks": [
+            {
+              "ID": "1",
+              "linkURL": "https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/14426/files/865/Bus-68-X98-Umleitung-wg-Fernw-rmebauarbeiten-in-der-Paul-Heyse-Str-1608278829000.pdf",
+              "linkText": "weitere Informationen",
+              "linkTextShort": "weitere Informationen",
+              "linkTarget": "_blank"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "desc": "Hauptbahnhof (Gl. 5-36)",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000100",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000100",
+      "distance": "530",
+      "stateless": "1000100",
+      "coords": "11.55894,48.14125",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:100"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Hauptbahnhof (Gl. 5-36)"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "2"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "2,6,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/hauptbahnhof100.pdf"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Sendlinger Tor",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000050",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000050",
+      "distance": "679",
+      "stateless": "1000050",
+      "coords": "11.56640,48.13330",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:50"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Sendlinger Tor"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "1"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "1,4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        },
+        {
+          "name": "STOP_SURROUNDING_MAP",
+          "value": "mvv/sendlingertor.pdf"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "St.-Jakobs-Platz",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000131",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000131",
+      "distance": "693",
+      "stateless": "1000131",
+      "coords": "11.57258,48.13534",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:131"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "St.-Jakobs-Platz"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "3"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Holzkirchner Bahnhof",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000090",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000090",
+      "distance": "712",
+      "stateless": "1000090",
+      "coords": "11.55593,48.13918",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:90"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Holzkirchner Bahnhof"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": {
+        "info": {
+          "infoLinkText": "MetroBus 68 / Expressbus X98 - Umleitung wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße (18.01. - 17.09.2021)",
+          "infoLinkURL": "http://EMS-Server.mvv-muenchen.de:8100/cm/XSLT_CM_SHOWADDINFO_REQUEST?infoID=18754_MVV&seqID=2",
+          "infoText": {
+            "content": "Wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße werden die Buslinien 68 und X98 von Montag, 18. Januar mit vsl. Freitag, 17. September 2021 zwischen den (H) Hauptbahnhof Süd und Goetheplatz umgeleitet. Die (H) Hauptbahnhof Süd ist um ca. 100 Meter vor den Eingang zum Intercity-Hotel zurückverlegt, die (H) Holzkirchner Bahnhof und Georg-Hirth-Platz entfallen. Die (H) Beethovenplatz ist in die Goethestraße, südlich der Einmündung Beethovenstraße, verlegt.",
+            "subtitle": "MetroBus 68 / Expressbus X98 - Umleitung wegen Fernwärmebauarbeiten in der Paul-Heyse-Straße (18.01. - 17.09.2021)",
+            "subject": "",
+            "additionalText": "",
+            "htmlText": "",
+            "wmlText": "",
+            "smsText": "",
+            "speechText": ""
+          },
+          "paramList": [
+            {
+              "type": "addInfoParam",
+              "name": "infoType",
+              "value": "stopBlocking",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "infoID",
+              "value": "18754_MVV",
+              "edit": "0"
+            },
+            {
+              "type": "system",
+              "name": "seqID",
+              "value": "2",
+              "edit": "0"
+            }
+          ],
+          "additionalLinks": [
+            {
+              "ID": "1",
+              "linkURL": "https://www.mvg.de/.rest/betriebsaenderungen/api/interruptions/14426/files/865/Bus-68-X98-Umleitung-wg-Fernw-rmebauarbeiten-in-der-Paul-Heyse-Str-1608278829000.pdf",
+              "linkText": "weitere Informationen",
+              "linkTextShort": "weitere Informationen",
+              "linkTarget": "_blank"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "desc": "Marienplatz (Theatinerstr.)",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000020",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000020",
+      "distance": "731",
+      "stateless": "1000020",
+      "coords": "11.57531,48.13949",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:20"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Marienplatz (Theatinerstr.)"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Karolinenplatz",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000052",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000052",
+      "distance": "735",
+      "stateless": "1000052",
+      "coords": "11.56962,48.14538",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:52"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Karolinenplatz"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Karlstraße",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000015",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000015",
+      "distance": "742",
+      "stateless": "1000015",
+      "coords": "11.55964,48.14478",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:15"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Karlstraße"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "4"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "4,3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    },
+    {
+      "desc": "Marienplatz (Rindermarkt)",
+      "addDesc": "",
+      "type": "STOP",
+      "id": "1000166",
+      "omc": "9162000",
+      "placeID": "1",
+      "locality": "München",
+      "layer": "SYS-STOP",
+      "gisID": "1000166",
+      "distance": "746",
+      "stateless": "1000166",
+      "coords": "11.57373,48.13556",
+      "attrs": [
+        {
+          "name": "STOP_GLOBAL_ID",
+          "value": "de:09162:166"
+        },
+        {
+          "name": "STOP_NAME_WITH_PLACE",
+          "value": "Marienplatz (Rindermarkt)"
+        },
+        {
+          "name": "STOP_MAJOR_MEANS",
+          "value": "3"
+        },
+        {
+          "name": "STOP_MEANS_LIST",
+          "value": "3,104"
+        },
+        {
+          "name": "STOP_TARIFF_ZONES:mvv",
+          "value": "1000"
+        }
+      ],
+      "infos": null
+    }
+  ]
+}

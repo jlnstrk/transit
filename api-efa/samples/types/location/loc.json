@@ -1,0 +1,16 @@
+{
+  "usage": "sf",
+  "type": "any",
+  "name": "Wiener Neustadt",
+  "stateless": "suburbID:43004001:1:Wiener Neustadt:1808448:5924212:MRCV",
+  "anyType": "loc",
+  "sort": "1",
+  "quality": "229",
+  "ref": {
+    "id": "-1",
+    "omc": "43004001",
+    "placeID": "1",
+    "place": "Wiener Neustadt",
+    "coords": "1808448.00000,5924212.00000"
+  }
+}

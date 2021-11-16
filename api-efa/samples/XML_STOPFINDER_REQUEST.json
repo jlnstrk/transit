@@ -1,0 +1,586 @@
+{
+  "parameters": [
+    {
+      "name": "serverID",
+      "value": "EMS_"
+    },
+    {
+      "name": "requestID",
+      "value": "0"
+    },
+    {
+      "name": "sessionID",
+      "value": "0"
+    },
+    {
+      "name": "calcTime",
+      "value": "334.150"
+    },
+    {
+      "name": "serverTime",
+      "value": "2021-01-14T07:00:27"
+    }
+  ],
+  "stopFinder": {
+    "message": [
+      {
+        "name": "code",
+        "value": "-8011"
+      },
+      {
+        "name": "error",
+        "value": ""
+      },
+      {
+        "name": "type",
+        "value": ""
+      },
+      {
+        "name": "module",
+        "value": "BROKER"
+      }
+    ],
+    "input": {
+      "input": "Max?"
+    },
+    "points": [
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Garching (b MÃ¼nchen), Max--Planck-Institut fÃ¼r Astrophysik",
+        "stateless": "poiID:3791:9184119:-1:Max--Planck-Institut fÃ¼r Astrophysik:Garching (b MÃ¼nchen):Max--Planck-Institut fÃ¼r Astrophysik:ANY:POI:4475708:812930:MVTT:MVV",
+        "anyType": "poi",
+        "sort": "4",
+        "quality": "60",
+        "best": "0",
+        "object": "Max--Planck-Institut fÃ¼r Astrophysik",
+        "ref": {
+          "id": "3791",
+          "gid": "",
+          "omc": "9184119",
+          "placeID": "-1",
+          "place": "Garching (b MÃ¼nchen)",
+          "coords": "4475708.00000,812930.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Garching (b MÃ¼nchen), Max-Planck-Institut fÃ¼r Quantenoptik",
+        "stateless": "poiID:3788:9184119:-1:Max-Planck-Institut fÃ¼r Quantenoptik:Garching (b MÃ¼nchen):Max-Planck-Institut fÃ¼r Quantenoptik:ANY:POI:4475373:813089:MVTT:MVV",
+        "anyType": "poi",
+        "sort": "4",
+        "quality": "58",
+        "best": "0",
+        "object": "Max-Planck-Institut fÃ¼r Quantenoptik",
+        "ref": {
+          "id": "3788",
+          "gid": "",
+          "omc": "9184119",
+          "placeID": "-1",
+          "place": "Garching (b MÃ¼nchen)",
+          "coords": "4475373.00000,813089.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Planegg, Max-Planck-Institute f. Biochemie und Neurobiologie",
+        "stateless": "poiID:3390:9184138:-1:Max-Planck-Institute f. Biochemie und Neurobiologie:Planegg:Max-Planck-Institute f. Biochemie und Neurobiologie:ANY:POI:4459901:830193:MVTT:MVV",
+        "anyType": "poi",
+        "sort": "4",
+        "quality": "52",
+        "best": "0",
+        "object": "Max-Planck-Institute f. Biochemie und Neurobiologie",
+        "ref": {
+          "id": "3390",
+          "gid": "",
+          "omc": "9184138",
+          "placeID": "-1",
+          "place": "Planegg",
+          "coords": "4459901.00000,830193.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Germering, Max-Born-Gymnasium (Germering)",
+        "stateless": "poiID:509:9179123:-1:Max-Born-Gymnasium (Germering):Germering:Max-Born-Gymnasium (Germering):ANY:POI:4453327:826918:MVTT:MVV",
+        "anyType": "poi",
+        "sort": "4",
+        "quality": "81",
+        "best": "0",
+        "object": "Max-Born-Gymnasium (Germering)",
+        "ref": {
+          "id": "509",
+          "gid": "",
+          "omc": "9179123",
+          "placeID": "-1",
+          "place": "Germering",
+          "coords": "4453327.00000,826918.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Dachau, Max-Planck-StraÃŸe",
+        "stateless": "1007073",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "115",
+        "best": "0",
+        "object": "Max-Planck-StraÃŸe",
+        "mainLoc": "Dachau",
+        "modes": "6",
+        "ref": {
+          "id": "1007073",
+          "gid": "de:09174:7073",
+          "omc": "9174115",
+          "placeID": "1",
+          "place": "Dachau",
+          "coords": "4461080.00000,811897.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Erding, Max-Planck-StraÃŸe",
+        "stateless": "1003337",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "115",
+        "best": "0",
+        "object": "Max-Planck-StraÃŸe",
+        "mainLoc": "Erding",
+        "modes": "6",
+        "ref": {
+          "id": "1003337",
+          "gid": "de:09177:3337",
+          "omc": "9177117",
+          "placeID": "1",
+          "place": "Erding",
+          "coords": "4492216.00000,810078.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Neuried (Kr MÃ¼nchen), Maxhofweg",
+        "stateless": "1002952",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "81",
+        "best": "0",
+        "object": "Maxhofweg",
+        "mainLoc": "Neuried (Kr MÃ¼nchen)",
+        "modes": "6",
+        "ref": {
+          "id": "1002952",
+          "gid": "de:09184:2952",
+          "omc": "9184132",
+          "placeID": "1",
+          "place": "Neuried (Kr MÃ¼nchen)",
+          "coords": "4460381.00000,831936.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Germering, Max-Born-Gymnasium",
+        "stateless": "1006493",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "83",
+        "best": "0",
+        "object": "Max-Born-Gymnasium",
+        "mainLoc": "Germering",
+        "modes": "6,10",
+        "ref": {
+          "id": "1006493",
+          "gid": "de:09179:6493",
+          "omc": "9179123",
+          "placeID": "1",
+          "place": "Germering",
+          "coords": "4453233.00000,826811.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Gernlinden, Max-Rappenglitz-Ring",
+        "stateless": "1006638",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "135",
+        "best": "0",
+        "object": "Max-Rappenglitz-Ring",
+        "mainLoc": "Maisach",
+        "modes": "6,10",
+        "ref": {
+          "id": "1006638",
+          "gid": "de:09179:6638",
+          "omc": "9179134",
+          "placeID": "9",
+          "place": "Gernlinden",
+          "coords": "4446804.00000,818085.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "GrÃ¼nwald (Kr MÃ¼nchen), Dr.-Max-StraÃŸe",
+        "stateless": "1002880",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "0",
+        "best": "0",
+        "object": "Dr.-Max-StraÃŸe",
+        "mainLoc": "GrÃ¼nwald (Kr MÃ¼nchen)",
+        "modes": "5",
+        "ref": {
+          "id": "1002880",
+          "gid": "de:09184:2880",
+          "omc": "9184122",
+          "placeID": "1",
+          "place": "GrÃ¼nwald (Kr MÃ¼nchen)",
+          "coords": "4465668.00000,835797.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Haar (b MÃ¼nchen), Max-Isserlin-StraÃŸe",
+        "stateless": "1002216",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "85",
+        "best": "0",
+        "object": "Max-Isserlin-StraÃŸe",
+        "mainLoc": "Haar (b MÃ¼nchen)",
+        "modes": "6",
+        "ref": {
+          "id": "1002216",
+          "gid": "de:09184:2216",
+          "omc": "9184123",
+          "placeID": "1",
+          "place": "Haar (b MÃ¼nchen)",
+          "coords": "4481025.00000,829475.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Hallbergmoos, MaximilianstraÃŸe",
+        "stateless": "1002623",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "78",
+        "best": "0",
+        "object": "MaximilianstraÃŸe",
+        "mainLoc": "Hallbergmoos",
+        "modes": "6",
+        "ref": {
+          "id": "1002623",
+          "gid": "de:09178:2623",
+          "omc": "9178130",
+          "placeID": "1",
+          "place": "Hallbergmoos",
+          "coords": "4481466.00000,805219.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Ismaning, Max-von-Eyth-StraÃŸe",
+        "stateless": "1002085",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "93",
+        "best": "0",
+        "object": "Max-von-Eyth-StraÃŸe",
+        "mainLoc": "Ismaning",
+        "modes": "6",
+        "ref": {
+          "id": "1002085",
+          "gid": "de:09184:2085",
+          "omc": "9184130",
+          "placeID": "1",
+          "place": "Ismaning",
+          "coords": "4476157.00000,815979.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Olching (Obb), Max-Reger-StraÃŸe",
+        "stateless": "1006226",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "85",
+        "best": "0",
+        "object": "Max-Reger-StraÃŸe",
+        "mainLoc": "Olching (Obb)",
+        "modes": "6,10",
+        "ref": {
+          "id": "1006226",
+          "gid": "de:09179:6226",
+          "omc": "9179142",
+          "placeID": "1",
+          "place": "Olching (Obb)",
+          "coords": "4451616.00000,818460.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Martinsried, Max-Planck-Institute",
+        "stateless": "1002558",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "131",
+        "best": "0",
+        "object": "Max-Planck-Institute",
+        "mainLoc": "Planegg",
+        "modes": "6",
+        "ref": {
+          "id": "1002558",
+          "gid": "de:09184:2558",
+          "omc": "9184138",
+          "placeID": "3",
+          "place": "Martinsried",
+          "coords": "4459799.00000,830086.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxhof (PÃ¶cking), Maxhof",
+        "stateless": "1005568",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "206",
+        "best": "0",
+        "object": "Maxhof",
+        "mainLoc": "PÃ¶cking",
+        "modes": "6",
+        "ref": {
+          "id": "1005568",
+          "gid": "de:09188:5568",
+          "omc": "9188137",
+          "placeID": "999",
+          "place": "Maxhof (PÃ¶cking)",
+          "coords": "4448518.00000,843525.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "WeÃŸling, Max-Doerner-Weg",
+        "stateless": "1005682",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "103",
+        "best": "0",
+        "object": "Max-Doerner-Weg",
+        "mainLoc": "WeÃŸling",
+        "modes": "6",
+        "ref": {
+          "id": "1005682",
+          "gid": "de:09188:5682",
+          "omc": "9188144",
+          "placeID": "1",
+          "place": "WeÃŸling",
+          "coords": "4443930.00000,833699.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Stockdorf, Max-Dingler-StraÃŸe",
+        "stateless": "1005646",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "96",
+        "best": "0",
+        "object": "Max-Dingler-StraÃŸe",
+        "mainLoc": "Gauting",
+        "modes": "6",
+        "ref": {
+          "id": "1005646",
+          "gid": "de:09188:5646",
+          "omc": "9188120",
+          "placeID": "10",
+          "place": "Stockdorf",
+          "coords": "4455448.00000,832475.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Penzberg, Maxkron",
+        "stateless": "1004986",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "130",
+        "best": "0",
+        "object": "Maxkron",
+        "mainLoc": "Penzberg",
+        "modes": "6",
+        "ref": {
+          "id": "1004986",
+          "gid": "de:09190:41455",
+          "omc": "9190141",
+          "placeID": "1",
+          "place": "Penzberg",
+          "coords": "4455300.00000,867996.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "SÃ¶cking (Kr STA), Max-Josefs-HÃ¶he",
+        "stateless": "1005698",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "75",
+        "best": "0",
+        "object": "Max-Josefs-HÃ¶he",
+        "mainLoc": "Starnberg",
+        "modes": "6",
+        "ref": {
+          "id": "1005698",
+          "gid": "de:09188:5698",
+          "omc": "9188139",
+          "placeID": "21",
+          "place": "SÃ¶cking (Kr STA)",
+          "coords": "4449892.00000,840766.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxau",
+        "stateless": "suburbID:9183118:56:Maxau:4515628:824875:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "600",
+        "best": "1",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9183118",
+          "placeID": "56",
+          "place": "Maxau",
+          "coords": "4515628.00000,824875.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxfeld",
+        "stateless": "suburbID:9564000:951:Maxfeld:::",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "428",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9564000",
+          "placeID": "951",
+          "place": "Maxfeld"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxhof (MÃ¼nchen)",
+        "stateless": "suburbID:9162000:950:Maxhof (MÃ¼nchen):4461104:832375:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "300",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9162000",
+          "placeID": "950",
+          "place": "Maxhof (MÃ¼nchen)",
+          "coords": "4461104.00000,832375.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxhof (PÃ¶cking)",
+        "stateless": "suburbID:9188137:999:Maxhof (PÃ¶cking):4448518:843525:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "200",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9188137",
+          "placeID": "999",
+          "place": "Maxhof (PÃ¶cking)",
+          "coords": "4448518.00000,843525.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxhofen (Kr RO)",
+        "stateless": "suburbID:9187122:17:Maxhofen (Kr RO):4493397:853369:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "214",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9187122",
+          "placeID": "17",
+          "place": "Maxhofen (Kr RO)",
+          "coords": "4493397.00000,853369.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxkron",
+        "stateless": "suburbID:9190141:7:Maxkron:4455239:867868:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "428",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9190141",
+          "placeID": "7",
+          "place": "Maxkron",
+          "coords": "4455239.00000,867868.00000"
+        }
+      },
+      {
+        "usage": "sf",
+        "type": "any",
+        "name": "Maxlrain",
+        "stateless": "suburbID:9187179:33:Maxlrain:4499394:853104:MVTT",
+        "anyType": "loc",
+        "sort": "1",
+        "quality": "375",
+        "best": "0",
+        "ref": {
+          "id": "-1",
+          "gid": "",
+          "omc": "9187179",
+          "placeID": "33",
+          "place": "Maxlrain",
+          "coords": "4499394.00000,853104.00000"
+        }
+      }
+    ]
+  }
+}

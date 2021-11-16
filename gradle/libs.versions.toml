@@ -1,0 +1,38 @@
+[versions]
+kotlin = "1.6.0-RC2"
+ktor = "1.6.3"
+kotest = "5.0.0.704-SNAPSHOT"
+dokka = "1.5.30"
+serializationJson = "1.3.1"
+serializationXml = "0.84.0-RC1"
+krypto = "2.2.0"
+klock = "2.4.6"
+buildkonfig = "0.11.0"
+
+[libraries]
+kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+serializationGradle = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+kotestGradle = { module = "io.kotest:kotest-framework-multiplatform-plugin-gradle", version = "5.0.0.5" }
+buildkonfigGradle = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "buildkonfig" }
+dokkaGradle = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+ktor-client-jvm = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
+ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+ktor-client-ios = { module = "io.ktor:ktor-client-ios", version.ref = "ktor" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-client-encoding = { module = "io.ktor:ktor-client-encoding", version.ref = "ktor" }
+kotest-framework-datatest = { module = "io.kotest:kotest-framework-datatest", version.ref = "kotest" }
+kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotest" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
+serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "serializationJson" }
+serialization-xml = { module = "io.github.pdvrieze.xmlutil:serialization", version.ref = "serializationXml" }
+korlibs-krypto = { module = "com.soywiz.korlibs.krypto:krypto", version.ref = "krypto" }
+korlibs-klock = { module = "com.soywiz.korlibs.klock:klock", version.ref = "klock" }
+
+[plugins]
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotest = { id = "io.kotest.multiplatform", version = "5.0.0.5" }
+buildkonfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildkonfig" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }

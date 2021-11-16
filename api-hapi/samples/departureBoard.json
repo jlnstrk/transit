@@ -1,0 +1,2099 @@
+{
+  "Departure": [
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16256|2|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26105",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "19:53:00",
+      "date": "2020-12-13",
+      "rtTime": "19:51:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|11|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16517",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "19:55:00",
+      "date": "2020-12-13",
+      "rtTime": "19:55:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16298|13|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26165",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "19:56:00",
+      "date": "2020-12-13",
+      "rtTime": "19:56:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|6|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17015",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "19:59:00",
+      "date": "2020-12-13",
+      "rtTime": "19:59:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|19840|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "300",
+          "displayNumber": "300",
+          "num": "50417",
+          "line": "300",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 9,
+          "routeIdxTo": 20,
+          "matchId": "300"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 9,
+            "routeIdxTo": 20,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "300",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:00:00",
+      "date": "2020-12-13",
+      "rtTime": "19:58:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Warschauer Str."
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16256|3|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26123",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:03:00",
+      "date": "2020-12-13",
+      "rtTime": "20:02:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|12|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16519",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:05:00",
+      "date": "2020-12-13",
+      "rtTime": "20:05:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16298|14|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26165",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:06:00",
+      "date": "2020-12-13",
+      "rtTime": "20:06:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|19858|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "300",
+          "displayNumber": "300",
+          "num": "50438",
+          "line": "300",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 10,
+          "routeIdxTo": 19,
+          "matchId": "300"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 10,
+            "routeIdxTo": 19,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "300",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "time": "20:08:00",
+      "date": "2020-12-13",
+      "reachable": true,
+      "direction": "Tiergarten, Philharmonie"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|7|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17017",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:09:00",
+      "date": "2020-12-13",
+      "rtTime": "20:09:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16256|4|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26130",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:13:00",
+      "date": "2020-12-13",
+      "rtTime": "20:15:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|13|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16520",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:15:00",
+      "date": "2020-12-13",
+      "rtTime": "20:15:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16298|15|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26165",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:16:00",
+      "date": "2020-12-13",
+      "rtTime": "20:16:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|19832|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "300",
+          "displayNumber": "300",
+          "num": "50407",
+          "line": "300",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 9,
+          "routeIdxTo": 20,
+          "matchId": "300"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 9,
+            "routeIdxTo": 20,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "300",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:16:00",
+      "date": "2020-12-13",
+      "rtTime": "20:16:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Warschauer Str."
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|8|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17019",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:19:00",
+      "date": "2020-12-13",
+      "rtTime": "20:19:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16256|5|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26114",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:23:00",
+      "date": "2020-12-13",
+      "rtTime": "20:23:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|14|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16522",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:25:00",
+      "date": "2020-12-13",
+      "rtTime": "20:25:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16298|16|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26165",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:26:00",
+      "date": "2020-12-13",
+      "rtTime": "20:26:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|9|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17021",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:29:00",
+      "date": "2020-12-13",
+      "rtTime": "20:29:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|19879|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "300",
+          "displayNumber": "300",
+          "num": "50500",
+          "line": "300",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 10,
+          "routeIdxTo": 19,
+          "matchId": "300"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 10,
+            "routeIdxTo": 19,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "300",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:32:00",
+      "date": "2020-12-13",
+      "rtTime": "20:32:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Tiergarten, Philharmonie"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16256|6|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26114",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:33:00",
+      "date": "2020-12-13",
+      "rtTime": "20:33:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|19831|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "300",
+          "displayNumber": "300",
+          "num": "50406",
+          "line": "300",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 9,
+          "routeIdxTo": 20,
+          "matchId": "300"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 9,
+            "routeIdxTo": 20,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "300",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:34:00",
+      "date": "2020-12-13",
+      "rtTime": "20:34:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Warschauer Str."
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|15|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16524",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:35:00",
+      "date": "2020-12-13",
+      "rtTime": "20:35:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16298|17|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26165",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:36:00",
+      "date": "2020-12-13",
+      "rtTime": "20:36:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|10|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17023",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "time": "20:39:00",
+      "date": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16265|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26117",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:43:00",
+      "date": "2020-12-13",
+      "rtTime": "20:43:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|36080|16|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "16526",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 4,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 4,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:45:00",
+      "date": "2020-12-13",
+      "rtTime": "20:45:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "U Hönow (Berlin)"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16296|0|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26163",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 12,
+          "routeIdxTo": 26,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 12,
+            "routeIdxTo": 26,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:46:00",
+      "date": "2020-12-13",
+      "rtTime": "20:46:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Zoologischer Garten"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|35965|11|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 0,
+              "g": 51,
+              "b": 153,
+              "hex": "#003399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "U5",
+          "displayNumber": "U5",
+          "num": "17025",
+          "line": "U5",
+          "catOut": "U",
+          "catIn": "U",
+          "catCode": "1",
+          "cls": "2",
+          "catOutS": "U",
+          "catOutL": "U",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVU---",
+          "routeIdxFrom": 20,
+          "routeIdxTo": 24,
+          "matchId": "U5"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "barrierefrei"
+          },
+          {
+            "value": "Fahrradmitnahme möglich",
+            "key": "FB",
+            "type": "A",
+            "priority": 350,
+            "routeIdxFrom": 20,
+            "routeIdxTo": 24,
+            "txtN": "Fahrradmitnahme möglich"
+          }
+        ]
+      },
+      "name": "U5",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "time": "20:49:00",
+      "date": "2020-12-13",
+      "reachable": true,
+      "direction": "S+U Berlin Hauptbahnhof"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|16265|1|86|13122020"
+      },
+      "JourneyStatus": "P",
+      "Product": [
+        {
+          "icon": {
+            "foregroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "hex": "#FFFFFF"
+            },
+            "backgroundColor": {
+              "r": 153,
+              "g": 51,
+              "b": 153,
+              "hex": "#993399"
+            },
+            "res": "prod_gen"
+          },
+          "name": "200",
+          "displayNumber": "200",
+          "num": "26117",
+          "line": "200",
+          "catOut": "Bus",
+          "catIn": "B",
+          "catCode": "3",
+          "cls": "8",
+          "catOutS": "B",
+          "catOutL": "Bus",
+          "operatorCode": "BVG",
+          "operator": "Berliner Verkehrsbetriebe",
+          "admin": "BVB---",
+          "routeIdxFrom": 15,
+          "routeIdxTo": 27,
+          "matchId": "200"
+        }
+      ],
+      "Notes": {
+        "Note": [
+          {
+            "value": "barrierefrei",
+            "key": "bf",
+            "type": "A",
+            "priority": 2,
+            "routeIdxFrom": 15,
+            "routeIdxTo": 27,
+            "txtN": "barrierefrei"
+          }
+        ]
+      },
+      "name": "200",
+      "type": "ST",
+      "stop": "U Rotes Rathaus (Berlin)",
+      "stopid": "A=1@O=U Rotes Rathaus (Berlin)@X=13407061@Y=52518461@U=86@L=900100045@",
+      "stopExtId": "900100045",
+      "prognosisType": "PROGNOSED",
+      "time": "20:53:00",
+      "date": "2020-12-13",
+      "rtTime": "20:53:00",
+      "rtDate": "2020-12-13",
+      "reachable": true,
+      "direction": "Michelangelostr. via Alexanderplatz"
+    }
+  ],
+  "TechnicalMessages": {
+    "TechnicalMessage": [
+      {
+        "value": "2020-12-13 19:55:03",
+        "key": "requestTime"
+      },
+      {
+        "value": "ttp=14951#15321 plancode0=vetpn planid=1607604313 planid0=1607604313 planid_adr=1592347662 plancode_adr=mbtls planid_poi=1607605963 plancode_poi=veuzh planid_ext=1516270147 plancode_ext=c07th srvv=5.45.VBB.4.7 tlibv=TRFVER: rel/vbb/2.16.2 2020-12-07 09:48:02 +0100 (Built-by: Gitlab-CI) VBB_TARIF jno=1",
+        "key": "backendInfo"
+      }
+    ]
+  },
+  "serverVersion": "2.10.1-SNAPSHOT",
+  "dialectVersion": "1.29",
+  "planRtTs": 1607885698000,
+  "requestId": "k2wgbpnkkm4nym4c"
+}

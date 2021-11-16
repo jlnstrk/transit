@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interop-trias-js">
+    <output-path>$PROJECT_DIR$/interop-trias/build/libs</output-path>
+    <root id="archive" name="interop-trias-js.jar">
+      <element id="module-output" name="transit.interop-trias.jsMain" />
+    </root>
+  </artifact>
+</component>

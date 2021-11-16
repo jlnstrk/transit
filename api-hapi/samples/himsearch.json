@@ -1,0 +1,2416 @@
+{
+  "Message": [
+    {
+      "id": "2120973-0",
+      "act": true,
+      "head": "Pflicht einer Mund-Nasen-Bedeckung in Bus, Bahn sowie Haltestellen- und Stationsbereichen",
+      "lead": "Laut Verordnung des Landes Hessen muss in Bus und Bahn sowie im Stationsbereich eine Mund-Nasen-Bedeckung getragen werden. Ausgenommen davon sind Kinder unter 6 Jahren und Personen, die aufgrund einer gesundheitlichen Beeinträchtigung oder Behinderung keine Mund-Nasen-Bedeckung tragen können.",
+      "text": "Laut Verordnung des Landes Hessen muss in allen öffentlichen Nahverkehrsmitteln, in den Haltestellen- und Stationsbereichen sowie an ober- und unterirdischen Bahnsteigen und in Bahnhofsgebäuden eine Mund-Nasen-Bedeckung (\"Alltagsmaske\") getragen werden. Ausgenommen davon sind Kinder unter 6 Jahren und Personen, die aufgrund einer gesundheitlichen Beeinträchtigung oder einer Behinderung keine Mund-Nasen-Bedeckung tragen können. <br /><br />Weitere Informationen in unserem Artikel",
+      "company": "RMVU",
+      "category": "1",
+      "priority": 2,
+      "products": 1022,
+      "sTime": "12:00:00",
+      "sDate": "2020-04-24",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-14",
+      "altStart": "27.04.2020 ",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RE30"
+        }
+      ],
+      "id": "2124360-0",
+      "act": true,
+      "head": "RE30, RB34, RB40, RB41, RB48, RB49, RE98, RE99: Umleitungen, Teilausfälle und Verspätungen",
+      "lead": "Es kommt zu Teilausfällen, Umleitungen und Verspätungen. Grund dafür sind Arbeiten an der Strecke zwischen \"Frankfurt Westbahnhof\" und \"Frankfurter Berg Bahnhof\". Die Änderungen sind noch nicht für alle Linien in der elektronischen Verbindungsauskunft enthalten.<br />(Stand 15.01.2021, 08:09 Uhr)",
+      "text": "Es kommt zu Ausfällen, Umleitungen und Verspätungen.<br /><ul><li>Die Züge der Linien RE30 fahren eine Umleitung ohne Zwischenhalt über Hanau. Dadurch kommt es zum Entfall der Halte \"Frankfurt Westbahnhof\" und \"Bad Vilbel Bahnhof\" sowie zu erheblichen Verspätungen. Zwei morgendliche Fahrten entfallen.</li><li>Die Züge der Linie RB34 beginnen und enden in \"Bad Vilbel Bahnhof\". Sie entfallen zwischen \"Bad Vilbel Bahnhof\" und \"Frankfurt Hauptbahnhof\". Zudem entfallen einzelne Züge zwischen Bad Vilbel und Glauburg-Stockheim.<br />Zwischen \"Bad Vilbel Bahnhof\" und \"Frankfurt Hauptbahnhof\" kann ersatzweise die Linie S6 genutzt werden.</li><li>Die Züge der Linien RB40 und RB41 fahren eine Umleitung über \"Hanau Hauptbahnhof\" (bis auf wenige Ausnahmen ohne Halt) und beginnen und enden (bis auf wenige Ausnahmen) in \"Frankfurt Südbahnhof\". Die Fahrt um 07:02 Uhr von Dillenburg nach Gießen entfällt.</li><li>Bei den Fahrten von und nach Frankfurt der Linie RB48 kommt es zu Ausfällen oder Änderungen.</li><li>Auf der Linie RB49 kann es zu einzelnen Teilausfällen kommen.</li><li>Die meisten Fahrten der Linien RE98 und RE99 beginnen und enden vorzeitig in \"Bad Vilbel Bahnhof\", manche fahren eine Umleitung über Hanau. Zwischen \"Bad Vilbel Bahnhof\" und \"Frankfurt Hauptbahnhof\" kann tagsüber ersatzweise die Linie S6 genutzt werden.</li></ul>Grund sind Arbeiten an der Strecke in Frankfurt-Eschersheim.<br /><br />(Stand 15.01.2021, 08:09 Uhr)",
+      "company": "RMVU",
+      "category": "1",
+      "priority": 3,
+      "products": 12,
+      "sTime": "00:10:00",
+      "sDate": "2020-12-30",
+      "eTime": "04:00:00",
+      "eDate": "2021-02-01",
+      "altStart": "",
+      "altEnd": "- vsl. 31.01.21"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S6"
+        }
+      ],
+      "id": "2124359-0",
+      "act": true,
+      "head": "S6: Teilausfälle, Ausfälle und Busse statt Bahnen auf Teilstrecke",
+      "lead": "Die Züge verkehren nur im 30-Minuten-Takt. Von 22:20 Uhr bis 04:40 Uhr entfallen die Züge zwischen \"Frankfurt Westbahnhof\" und \"Frankfurter Berg Bahnhof\". Ersatzweise fahren Busse. Der Grund für die Änderungen sind Gleisarbeiten in Frankfurt-Eschersheim.<br />(Stand 14.01.2021, 07:57 Uhr)",
+      "text": "Die Züge verkehren nur im 30-Minuten-Takt und es kommt zu Verspätungen. Von 22:20 Uhr bis 04:40 Uhr entfallen die Züge zwischen \"Frankfurt Westbahnhof\" und \"Frankfurter Berg Bahnhof\". Ersatzweise fahren Busse. <br />Auch mittags kommt es bei einem Zugpaar zu einem Teilausfall. Ersatzweise fahren dann Busse zwischen \"Frankfurt Westbahnhof\" und \"Frankfurter Berg\". <br />Zwischen \"Frankfurt Westbahnhof\" und \"Frankfurt Südbahnhof\" können die S-Bahnlinien S3, S4 und S5 genutzt werden.<br />Der Grund sind Reparaturarbeiten nach einer Gleisabsenkung in Frankfurt-Eschersheim.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten und können zudem dem beigefügten PDF-Dokument entnommen werden. Weitere Informationen auch im Artikel.<br /> <br />(Stand 14.01.2021, 07:57 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 9,
+      "products": 12,
+      "sTime": "00:10:00",
+      "sDate": "2020-12-30",
+      "eTime": "04:40:00",
+      "eDate": "2021-02-01",
+      "altStart": "",
+      "altEnd": "- vsl. 31.01.21"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB75"
+        }
+      ],
+      "id": "2124524-0",
+      "act": true,
+      "head": "RB75: Änderungen und Haltentfall vom 16.01. 23:00 Uhr bis 25.01. 03:00 Uhr",
+      "lead": "Die Züge verkehren zwischen \"Wiesbaden Hauptbahnhof\" und \"Darmstadt Hauptbahnhof\" sowie zwischen \"Darmstadt Hauptbahnhof\" und \"Aschaffenburg Hauptbahnhof\". Bei Fahrten über Darmstadt hinaus ist ein Umstieg in \"Darmstadt Hauptbahnhof\" notwendig. Zudem entfällt der Halt \"Darmstadt Nordbahnhof\".",
+      "text": "Die Züge verkehren zwischen \"Wiesbaden Hauptbahnhof\" und \"Darmstadt Hauptbahnhof\" sowie zwischen \"Darmstadt Hauptbahnhof\" und \"Aschaffenburg Hauptbahnhof\". Bei Fahrten über Darmstadt hinaus ist ein Umstieg in \"Darmstadt Hauptbahnhof\" notwendig. <br />Zudem entfällt der Halt \"Darmstadt Nordbahnhof\", er kann ersatzweise mit den Straßenbahnen der Linien 6, 7 und 8 erreicht werden.<br />Die Fahrten von und nach Aschaffenburg finden in \"Darmstadt Hauptbahnhof\" an Gleis 1 statt. Es kann zu Verzögerungen kommen.<br />Die Bahnen, die planmäßig nur zwischen Wiesbaden und Darmstadt verkehren, sind von den Änderungen nicht betroffen.<br />Grund für die Linienteilung und den Haltentfall sind Bauarbeiten.<br /><br />Die Änderungen sind noch nicht in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im beigefügten Baustellenfahrplan im PDF-Format",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 80,
+      "products": 4,
+      "sTime": "22:00:00",
+      "sDate": "2021-01-16",
+      "eTime": "03:00:00",
+      "eDate": "2021-01-25",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB56"
+        }
+      ],
+      "id": "2122046-0",
+      "act": true,
+      "head": "RB56, RB58, RE59, RE85, RB86: Änderungen und Verspätungen möglich bis vsl. 30.03.2021",
+      "lead": "Es kommt auf einigen Linien zu Änderungen und es kann zu Verspätungen kommen. Grund sind Bauarbeiten im Hanauer Hauptbahnhof. <br />(Stand 22.12.2020, 11:41 Uhr)",
+      "text": "Es kommt zwischen \"Hanau Hauptbahnhof\" und \"Kahl Bahnhof\" auf der Linie RB56 bei einzelnen Fahrten zu Teilausfällen oder geänderten Abfahrtszeiten. <br />Zwischen Hanau und Laufach beziehungsweise Laufach und \"Rüsselsheim Opelwerk\" kommt es auf der Linie RB58 zu früheren Abfahrtzeiten und Gleisänderungen.<br />Auf den Linien RE85 und RB86 kann es zu Verspätungen von bis zu 20 Minuten kommen.<br />Grund für die Änderungen sind Bauarbeiten im Hanauer Hauptbahnhof.<br /><br />(Stand 22.12.2020, 11:41 Uhr)<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten und können auch den beigefügten Baustellenfahrplänen im PDF-Format entnommen werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 88,
+      "products": 4,
+      "sTime": "04:00:00",
+      "sDate": "2020-08-17",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-30",
+      "altStart": "",
+      "altEnd": "- vsl. 30.03.2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB41"
+        }
+      ],
+      "id": "2124223-0",
+      "act": true,
+      "head": "RB41, RE98: Änderungen bei einer Fahrt am frühen Morgen vom 15.12. bis 22.01.",
+      "lead": "Die Fahrt eines Zuges der Linie RE98 ab \"Treysa Bahnhof\" nach Kassel beginnt bereits um 05:47 Uhr statt um 05:55 Uhr. Die entsprechende Zubringerfahrt der Linie RB41ab Gießen ist bis Zimmersrode verlängert, wo der RE98 auf Anschluss wartet. Grund sind Bauarbeiten in Treysa.",
+      "text": "Montags bis freitags, außer an Feiertagen, Heiligabend und Silvester, beginnt die Fahrt eines Zuges der Linie RE98 ab \"Treysa Bahnhof\" nach Kassel bereits um 05:47 Uhr statt um 05:55 Uhr. <br />Die Zubringerfahrt der Linie RB41 (04:48 Uhr ab \"Gießen Bahnhof\") ist bis \"Zimmersrode Bahnhof\" verlängert, wo der RE98 auf Anschluss wartet und um 06:05 Uhr planmäßig weiter nach \"Kassel Hauptbahnhof\" fährt.<br />Grund für die Änderungen sind Bahnsteigarbeiten in Treysa.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 89,
+      "products": 4,
+      "sTime": "04:40:00",
+      "sDate": "2020-12-15",
+      "eTime": "06:15:00",
+      "eDate": "2021-01-22",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S8"
+        }
+      ],
+      "id": "2124538-0",
+      "act": true,
+      "head": "S8: einzelne nächtliche Teilausfälle vom 18.01. bis 04.02.",
+      "lead": "Es kommt in den Nächten zu unterschiedlichen Teilausfällen auf der Linie S8. Ersatzweise kann die Linie S9 genutzt werden. Grund für die Teilausfälle sind Oberleitungsarbeiten.",
+      "text": "Es kommt in den Nächten zu unterschiedlichen Teilausfällen auf der Linie S8. <br />Ersatzweise kann die Linie S9 genutzt werden. <br />In einzelnen Nächten vom 18.01. bis 27.01. kommt es bei einzelnen Fahrten zu Teilausfällen zwischen \"Offenbach Ostbahnhof\" und \"Frankfurt Hauptbahnhof\". <br />In den Nächten vom 18.01. bis 04.02. kommt es zudem bei einzelnen Fahrten zu Teilausfällen zwischen \"Kelsterbach Bahnhof\" und \"Mainz-Bischofsheim Bahnhof\".<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Grund für die Teilausfälle sind Oberleitungsarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 89,
+      "products": 8,
+      "sTime": "22:28:00",
+      "sDate": "2021-01-18",
+      "eTime": "00:32:00",
+      "eDate": "2021-02-04",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RE14"
+        }
+      ],
+      "id": "2124248-0",
+      "act": true,
+      "head": "RE4, RE14: Umleitung und Halte entfallen vom 04.01. bis 19.02.",
+      "lead": "Einzelne Züge werden zwischen \"Mainz Hauptbahnhof\" und \"Frankfurt Hauptbahnhof\" umgeleitet und die Halte \"Hochheim Bahnhof\" und \"Frankfurt-Höchst Bahnhof\" entfallen. Zudem kommt es zu Änderungen bei Fahrtzeiten. Der Grund dafür sind Kabelarbeiten.",
+      "text": "Einzelne Züge werden zwischen \"Mainz Hauptbahnhof\" und \"Frankfurt Hauptbahnhof\" umgeleitet und die Halte \"Hochheim Bahnhof\" und \"Frankfurt-Höchst Bahnhof\" entfallen. Zudem kommt es zu Änderungen bei Fahrtzeiten. Der Grund dafür sind Kabelarbeiten. <br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "09:45:00",
+      "sDate": "2021-01-04",
+      "eTime": "15:20:00",
+      "eDate": "2021-02-19",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S8"
+        }
+      ],
+      "id": "2124332-0",
+      "act": true,
+      "head": "S8: Umleitung und Busse statt Bahnen auf Teilstrecke in den Nächten auf den 10.01. und 01.02.",
+      "lead": "Die Bahnen der Linie S8 fahren in den Nächten auf den 10.01. und auf den 01.02. eine Umleitung über \"Mainz-Kastel Bahnhof\". Zwischen \"Mainz-Bischofsheim Bahnhof\" und \"Wiesbaden Hauptbahnhof\" fahren ersatzweise Busse über Mainz. Grund sind Oberleitungsarbeiten.",
+      "text": "Die Bahnen der Linie S8 fahren in den Nächten auf den 10.01. und auf den 01.02. eine Umleitung über \"Mainz-Kastel Bahnhof\". Zwischen \"Mainz-Bischofsheim Bahnhof\" und \"Wiesbaden Hauptbahnhof\" fahren ersatzweise Busse über \"Mainz Hauptbahnhof\".<br />Die Busse bedienen folgende Haltestellen:<br />\"Mainz-Bischofsheim Bahnhof\", \"Mainz-Gustavsburg Am Alten Fährhaus\", \"Mainz Römisches Theater\", \"Mainz Hauptbahnhof\", \"Wiesbaden-Biebrich Bahnhof Wiesbaden Ost\", \"Wiesbaden Hauptbahnhof\" (Salzbachstraße, Halteposition 6).<br />Die Mitnahme von Fahrrädern ist in den Ersatzbussen nicht möglich.<br />Durch die Änderungen kann es zu längeren Fahrtdauern und weiteren Verspätungen kommen.<br />Außerdem entfällt bei einzelnen Fahrten gegen 2 Uhr der Halt \"Kelsterbach Bahnhof\".<br />Grund sind Oberleitungsarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 8,
+      "sTime": "00:50:00",
+      "sDate": "2021-01-10",
+      "eTime": "04:00:00",
+      "eDate": "2021-02-01",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S9"
+        }
+      ],
+      "id": "2124463-0",
+      "act": true,
+      "head": "S9: Halte entfallen bei einzelnen nächtlichen Fahrten vom 12.01. bis 22.01.",
+      "lead": "Auf einzelnen nächtlichen Fahrten entfallen die Halte \"Kelsterbach Bahnhof\", \"Frankfurt Flughafen-Regionalbahnhof\" und \"Frankfurt Gateway Gardens\". Der Grund dafür sind Kabelarbeiten im Bereich \"Frankfurt Flughafen-Regionalbahnhof\". Ersatzweise kann die S-Bahnlinie S8 genutzt werden.",
+      "text": "Auf einzelnen nächtlichen Fahrten entfallen die Halte \"Kelsterbach Bahnhof\", \"Frankfurt Flughafen-Regionalbahnhof\" und \"Frankfurt Gateway Gardens\". Der Grund dafür sind Kabelarbeiten im Bereich \"Frankfurt Flughafen-Regionalbahnhof\". Ersatzweise kann die S-Bahnlinie S8 genutzt werden.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 8,
+      "sTime": "22:39:00",
+      "sDate": "2021-01-12",
+      "eTime": "05:14:00",
+      "eDate": "2021-01-22",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S1"
+        }
+      ],
+      "id": "2124534-0",
+      "act": true,
+      "head": "S1, S2: Änderungen und Teilausfälle bei einzelnen nächtlichen Fahrten vom 18.01. bis 29.01.",
+      "lead": "Es kommt bei einzelnen nächtlichen Fahrten zu Teilausfällen auf unterschiedlichen Teilstrecken. Ersatzweise können andere S-Bahnen oder Ersatzbusse genutzt werden. Grund für die Änderungen sind Oberleitungsarbeiten.",
+      "text": "Es kommt bei einzelnen nächtlichen Fahrten zu Teilausfällen auf unterschiedlichen Teilstrecken. Ersatzweise können andere S-Bahnen oder Ersatzbusse genutzt werden.<br />Zu den meisten Teilausfällen kommt es zwischen \"Offenbach Ostbahnhof\" und \"Frankfurt Hauptbahnhof\". Einzelne Fahrten entfallen zudem zwischen \"Dietzenbach Bahnhof\" und \"Frankfurt Hauptbahnhof\".<br />Ersatzbusse fahren in einzelnen Nächten von \"Dietzenbach Bahnhof\" nach \"Offenbach Ostbahnhof\" und \"Niedernhausen Bahnhof\"; von \"Offenbach Ostbahnhof\" nach \"Niedernhausen Bahnhof\"; von \"Frankfurt-Höchst Bahnhof\" nach \"Wiesbaden Hauptbahnhof\" und von \"Offenbach Ostbahnhof\" nach \"Dietzenbach Bahnhof\".<br />Die Ersatzbusse halten nicht immer in unmittelbarer Nähe der Bahnhöfe.<br />Angaben zu allen Ersatzhaltestellen befinden sich im beigefügten Baustellenfahrplan und im Artikel. <br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Durch die Änderungen kommt es zu längeren Fahrtdauern.<br />Grund für die Änderungen sind Oberleitungsarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten und können dem beigefügten Baustellenfahrplan im PDF-Format entnommen werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 8,
+      "sTime": "23:30:00",
+      "sDate": "2021-01-18",
+      "eTime": "03:10:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB58"
+        }
+      ],
+      "id": "2124550-0",
+      "act": true,
+      "head": "RB58: Teilausfälle am Abend des 24.01.",
+      "lead": "Ab 21:57 Uhr enden beziehungsweise beginnen zwei Zugpaare vorzeitig am Halt \"Frankfurt Südbahnhof\". Der Abschnitt zwischen \"Frankfurt Südbahnhof\" und \"Rüsselsheim Opelwerk\" entfällt. Ersatzweise können Verbindungen mit S-Bahnen genutzt werden. Grund für die Teilausfälle sind Bauarbeiten.",
+      "text": "Ab 21:57 Uhr enden beziehungsweise beginnen zwei Zugpaare vorzeitig am Halt \"Frankfurt Südbahnhof\". Der Abschnitt zwischen \"Frankfurt Südbahnhof\" und \"Rüsselsheim Opelwerk\" entfällt für die Linie RB58. <br />Ersatzweise können auf diesem Abschnitt andere Verbindungen mit S-Bahnen oder Buslinien genutzt werden. <br />Durch die Änderungen und den Umstieg kann es zu längeren fahrtdauern kommen.<br />Grund für die Teilausfälle sind Bauarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im beigefügten baustellenfahrplan im PDF-Format.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "20:50:00",
+      "sDate": "2021-01-24",
+      "eTime": "00:23:00",
+      "eDate": "2021-01-25",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB61"
+        },
+        {
+          "name": "RB61"
+        },
+        {
+          "name": "RE85"
+        }
+      ],
+      "id": "2124292-0",
+      "act": true,
+      "head": "RB61: Halte entfallen auf einzelnen Fahrten vom 04.01. bis 29.01.",
+      "lead": "Auf einzelnen Fahrten entfallen die Halte \"Frankfurt Hauptbahnhof\", \"Frankfurt Süd\", \"Neu-Isenburg Bahnhof\" und \"Dreieich-Buchschlag Bahnhof\". Der Grund dafür sind Gleisarbeiten.",
+      "text": "Auf einzelnen Fahrten entfallen die Halte \"Frankfurt Hauptbahnhof\", \"Frankfurt Süd\", \"Neu-Isenburg Bahnhof\" und \"Dreieich-Buchschlag Bahnhof\". Der Grund dafür sind Gleisarbeiten. Ersatzweise können zwischen \"Frankfurt Hauptbahnhof\" und \"Dreieich-Buchschlag Bahnhof\" Die S-Bahn-Linie S3 und S4 genutzt werden.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 132,
+      "sTime": "08:00:00",
+      "sDate": "2021-01-04",
+      "eTime": "19:35:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB12"
+        }
+      ],
+      "id": "2124331-0",
+      "act": true,
+      "head": "RB12: nächtliche Teilausfälle vom 11.01. bis 19.02.2021",
+      "lead": "Es kommt in den Nächten ab 22:55 Uhr zum Entfall des Halts \"Frankfurt Hauptbahnhof\". Die Fahrten beginnen und enden dann am Halt \"Frankfurt-Höchst Bahnhof\". Ersatzweise kann zur Weiterfahrt die Linie S1 genutzt werden. Grund für die Änderungen sind Bauarbeiten.",
+      "text": "Es kommt in den Nächten ab 22:55 Uhr zum Entfall des Halts \"Frankfurt Hauptbahnhof\". Die Fahrten beginnen und enden dann am Halt \"Frankfurt-Höchst Bahnhof\". Ersatzweise kann zur Weiterfahrt die Linie S1 genutzt werden.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Grund für die Änderungen sind Bauarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten und können auch dem beigefügten baustellenfahrplan im PDF-Format entnommen werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "22:30:00",
+      "sDate": "2021-01-11",
+      "eTime": "01:30:00",
+      "eDate": "2021-02-19",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RE2"
+        }
+      ],
+      "id": "2124347-0",
+      "act": true,
+      "head": "RE2: Teilstrecke entfällt bei einer einzelnen Fahrt am 13.03.",
+      "lead": "Bei der Fahrt um 21:08 Uhr ab \"Frankfurt Hauptbahnhof\" mit Ankunft um 23:09 Uhr in \"Koblenz Hauptbahnhof\" entfallen einzelne Halte. Der Grund dafür sind Oberleitungsarbeiten.",
+      "text": "Bei der Fahrt um 21:08 Uhr ab \"Frankfurt Hauptbahnhof\" mit Ankunft um 23:09 Uhr in \"Koblenz Hauptbahnhof\" entfallen folgende Halte: <br /><ul><li>\"Frankfurt-Niederrad Bahnhof\"</li><li>\"Frankfurt Flughafen Regionalbahnhof\"</li><li>\"Rüsselsheim Bahnhof\"</li><li>\"Mainz-Bischofsheim Bahnhof\"</li><li>\"Mainz Römisches Theater\"</li></ul>Der Grund dafür sind Oberleitungsarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "21:08:00",
+      "sDate": "2021-03-13",
+      "eTime": "23:00:00",
+      "eDate": "2021-03-13",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB51"
+        }
+      ],
+      "id": "2124342-0",
+      "act": true,
+      "head": "RB51: Teilstrecke entfällt bei einer nächtlichen Fahrt",
+      "lead": "Bei der Fahrt um 00:42 Uhr ab \"Frankfurt Hauptbahnhof\" in Fahrtrichtung \"Wächtersbach Bahnhof\" entfallen die Halte \"Gelnhausen Bahnhof\", \"Haitz-Höchst Bahnhof\", \"Wirtheim Bahnhof\" und \"Wächtersbach Bahnhof\". Der Grund dafür sind Bauarbeiten im Kinzigtal. Ersatzweise fährt ein Bus.",
+      "text": "Bei der Fahrt um 00:42 Uhr ab \"Frankfurt Hauptbahnhof\" in Fahrtrichtung \"Wächtersbach Bahnhof\" entfallen die Halte \"Gelnhausen Bahnhof\", \"Haitz-Höchst Bahnhof\", \"Wirtheim Bahnhof\" und \"Wächtersbach Bahnhof\". Der Grund dafür sind Bauarbeiten im Kinzigtal. Ersatzweise fährt ein Bus, welcher die folgenden Haltestellen bedient: <br /><ul><li>\"Gelnhausen Busbahnhof\" (Steig 1)</li><li>\"Haitz-Höchst Bahnhof\"</li><li>\"Wirtheim Altes Forsthaus\"</li><li>\"Wächtersbach Busbahnhof\" (Steig 4)</li></ul>Die Mitnahme von Fahrrädern ist in dem Ersatzbus leider nicht möglich.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "22:42:00",
+      "sDate": "2021-02-24",
+      "eTime": "02:00:00",
+      "eDate": "2021-02-25",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S6"
+        }
+      ],
+      "id": "2124502-0",
+      "act": true,
+      "head": "S6: Teilstrecke entfällt auf jeweils zwei Fahrten vom 18.01. bis 29.01.",
+      "lead": "Auf den Fahrten um 17:08 Uhr und 17:38 Uhr ab \"Frankfurt Südbahnhof\" mit Ankunft um 18:06 Uhr und 18:36 Uhr in \"Friedberg Bahnhof\" entfallen Halte. Der Grund dafür sind Bauarbeiten in Friedberg.",
+      "text": "Auf den Fahrten um 17:08 Uhr und 17:38 Uhr ab \"Frankfurt Südbahnhof\" mit Ankunft um 18:06 Uhr und 18:36 Uhr in \"Friedberg Bahnhof\" entfallen folgende Halte:<br /><ul><li>\"Karben-Okarben Bahnhof\"</li><li>\"Wöllstadt-Nieder-Wöllstadt Bahnhof\"</li><li>\"Friedberg-Bruchenbrücken Bahnhof\"</li><li>\"Friedberg Bahnhof\"</li></ul>Der Grund dafür sind Bauarbeiten in Friedberg.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 8,
+      "sTime": "17:08:00",
+      "sDate": "2021-01-18",
+      "eTime": "18:36:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB12"
+        },
+        {
+          "name": "RB15"
+        }
+      ],
+      "id": "2124523-0",
+      "act": true,
+      "head": "RB15: Busse statt Bahnen auf Teilstrecke an den Wochenenden vom 22.01. bis 28.02.",
+      "lead": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse.",
+      "text": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse. Diese halten ausgenommen der Haltestellen \"Hasselborn Dorfgemeinschaftshaus\" und \"Hundstadt Ortsmitte\" an den Bushaltestellen der jeweiligen Bahnhöfe.<br />Zwischen Friedrichsdorf und Bad Homburg kann ersatzweise die S-Bahn-Linie S5 genutzt werden.<br /><br />In den Ersatzbussen ist leider keine Fahrradmitnahme möglich.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 4,
+      "sTime": "05:00:00",
+      "sDate": "2021-01-22",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-28",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S3"
+        }
+      ],
+      "id": "2124560-0",
+      "act": true,
+      "head": "S3, S4: Änderungen und Busse statt Bahnen auf Teilstrecke vom 29.01. bis 15.02.",
+      "lead": "Es kommt in unterschiedlichen Bauphasen zu unterschiedlichen Teilausfällen zwischen \"Darmstadt Hauptbahnhof\" und \"Arheilgen Bahnhof\" beziehungsweise \"Langen Bahnhof\". Ersatzweise verkehren Busse. Grund für die Änderungen sind Bauarbeiten.",
+      "text": "Es kommt in unterschiedlichen Bauphasen zu unterschiedlichen Teilausfällen.<br />Ab dem späten Abend des 29.01. kommt es zu Teilausfällen zwischen \"Darmstadt Hauptbahnhof\" und \"Darmstadt-Arheilgen Bahnhof\". Dabei verkehren die S-Bahnen zunächst noch im 60-Minuten-Takt und werden durch Ersatzbusse zwischen \"Darmstadt Hauptbahnhof\" (Halteposition 2) und \"Darmstadt-Arheilgen Bahnhof\" (West B3) verstärkt.<br />Ab dem 05.02. kommt es wegen weiterer Bauarbeiten zu Ausfällen der S-Bahnen zwischen \"Darmstadt Hauptbahnhof\" und \"Langen Bahnhof\". Ersatzweise fahren Busse, zwischen \"Darmstadt Hauptbahnhof\" und \"Langen Bahnhof\" können aber auch weiterhin die Regionalbahnen genutzt werden. <br />Die Busse bedienen folgende Haltestellen:<br />\"Darmstadt Hauptbahnhof\" (Halteposition 2), \"Darmstadt-Arheilgen Bahnhof\" (West B3), \"Darmstadt-Wixhausen Messeler-Park-Straße\", \"Erzhausen Bahnhof\", \"Egelsbach Bahnhof\" (Westseite) und \"Langen Bahnhof\".<br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Grund für die Änderungen sind Bauarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen und Wegeleitungen zu den Haltestellen der Ersatzbusse befinden sich im beigefügten PDF-Dokument",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 90,
+      "products": 8,
+      "sTime": "22:00:00",
+      "sDate": "2021-01-29",
+      "eTime": "02:33:00",
+      "eDate": "2021-02-15",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S1"
+        }
+      ],
+      "id": "2124398-0",
+      "act": true,
+      "head": "S1: Bus statt Bahn auf Teilstrecke bei einer nächtlichen Fahrt",
+      "lead": "Bei einer Fahrt pro Monat in der Nacht von Mittwoch auf Donnerstag in Fahrtrichtung \"Rödermark-Ober-Roden Bahnhof\" verkehrt um 01:47 Uhr ab \"Offenbach Ostbahnhof\" bis \"Ober-Roden Bahnhof\" ein Bus statt der S1. Grund dafür sind regelmäßige Instandhaltungsarbeiten der Deutschen Bahn.",
+      "text": "Bei einer Fahrt pro Monat in der Nacht von Mittwoch auf Donnerstag in Fahrtrichtung \"Rödermark-Ober-Roden Bahnhof\" verkehrt um 01:47 Uhr ab \"Offenbach Ostbahnhof\" bis \"Ober-Roden Bahnhof\" ein Bus statt der S1.<br />Die Änderungen gelten an folgenden Tagen:<br />14. Januar, 18. Februar, 18. März, 15. April, 06. Mai, 17. Juni, 15. Juli, 12. August, 16. September, 14. Oktober und 18. November.<br />Die Busse bedienen zwischen \"Offenbach Ostbahnhof\" und \"Rödermark-Ober-Roden\" die jeweiligen Bushaltestellen an den Bahnhöfen.<br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Grund dafür sind regelmäßige Instandhaltungsarbeiten der Deutschen Bahn.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 95,
+      "products": 8,
+      "sTime": "00:35:00",
+      "sDate": "2021-01-14",
+      "eTime": "02:00:00",
+      "eDate": "2021-11-18",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S2"
+        }
+      ],
+      "id": "2124399-0",
+      "act": true,
+      "head": "S2: Änderungen bei einzelnen nächtlichen Fahrten",
+      "lead": "Die Züge der Linie S2 entfallen jede Woche (außer an Feiertagen) in der Nacht von Sonntag auf Montag ab etwa 00:00 Uhr bis etwa 01:30 Uhr zwischen \"Frankfurt Mühlberg\" und \"Frankfurt Hauptbahnhof\". Zudem kommt es in den Nächten von Dienstag auf Mittwoch zu Verspätungen. Grund sind Wartungsarbeiten.",
+      "text": "Die Züge der Linie S2 entfallen jede Woche (außer an Feiertagen) in der Nacht von Sonntag auf Montag ab etwa 00:00 Uhr bis etwa 01:30 Uhr zwischen \"Frankfurt Mühlberg\" und \"Frankfurt Hauptbahnhof\". Auf der Teilstrecke von und nach Niedernhausen beginnen und enden die Fahrten am Halt \"Frankfurt Hauptbahnhof (hoch)\".<br />Zudem kommt es in den Nächten von Dienstag auf Mittwoch zu Verspätungen. <br />Grund für die Änderungen sind regelmäßige Instandhaltungsarbeiten der Deutschen Bahn.<br /><br />Die Änderungen sind in der elektronischen Verbindungsausksunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 95,
+      "products": 8,
+      "sTime": "23:30:00",
+      "sDate": "2021-01-03",
+      "eTime": "02:00:00",
+      "eDate": "2021-12-08",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S3"
+        }
+      ],
+      "id": "2124400-0",
+      "act": true,
+      "head": "S3, S4: Änderungen und Busse statt Bahnen auf Teilstrecken bei einzelnen nächtlichen Fahrten",
+      "lead": "Zweimal pro Monat kommt es bei einzelnen nächtlichen Fahrten zu unterschiedlichen Teilausfällen. Ersatzweise verkehren Busse statt Bahnen auf den Teilstrecken. Grund für die Änderungen sind regelmäßige Instandhaltungsarbeiten der Deutschen Bahn.",
+      "text": "Zweimal pro Monat kommt es bei einzelnen nächtlichen Fahrten zu unterschiedlichen Teilausfällen. <br />Ersatzweise verkehren dann Busse statt Bahnen auf den Teilstrecken.<br /><ul><li>In den Nächten von Montag auf Dienstag verkehren bei einzelnen Fahrten Busse statt Bahnen zwischen \"Darmstadt Hauptbahnhof\" und \"Frankfurt Südbahnhof\".<br />Die Busse bedienen die Haltestellen \"Darmstadt Hauptbahnhof\" (Halteposition 2), \"Arheilgen Bahnhof West\" (B3), \"Darmstadt-Wixhausen Messeler-Park-Straße\", \"Erzhausen Bahnhof\", \"Egelsbach Bahnhof\", \"Langen Bahnhof\", \"Langen Robert-Bosch-Straße Nord\", \"Dreieich Bahnhof\", \"Neu-Isenburg Bahnhof Westseite\", \"Frankfurt Stresemannallee/Mörfelder Landstraße\" und \"Frankfurt Südbahnhof/Mörfelder Landstraße\".</li><li>In den Nächten von Mittwoch auf Donnerstag entfällt jeweils eine Fahrt ab \"Frankfurt-Rödelheim Bahnhof\". Zur Weiterfahrt nach \"Bad Soden Bahnhof\" und \"Kronberg Bahnhof\" fahren Busse.<br />Die Busse bedienen die Haltestellen \"Rödelheim Bahnhof\", \"Eschborn Süd\", \"Eschborn Bahnhofstraße\", \"Niederhöchstadt Steinbacher Straße\", \"Kronberg Sodener Stock\", \"Kronberg Bahnhof\", \"Schwalbach Am Kronberger Hang\", \"Schwalbach Limes Bahnhof\", \"Sulzbach Bahnhof\" (Hauptstraße) und \"Bad Soden Bahnhof\".</li></ul>Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Grund für die Änderungen sind regelmäßige Instandhaltungsarbeiten der Deutschen Bahn.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 95,
+      "products": 8,
+      "sTime": "23:20:00",
+      "sDate": "2021-01-11",
+      "eTime": "03:00:00",
+      "eDate": "2021-11-18",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S4"
+        },
+        {
+          "name": "S5"
+        }
+      ],
+      "id": "2124402-0",
+      "act": true,
+      "head": "S5: Teilausfälle und Busse statt Bahnen auf Teilstrecken bei einzelnen nächtlichen Fahrten",
+      "lead": "In den Nächten von Sonntag auf Montag beginnen und enden einzelne Fahrten der Linie S5 am Halt \"Frankfurt Hauptbahnhof (hoch)\". Außerdem kommt ein einmal pro Monat in den Nächten von Mittwoch auf Donnerstag zu Teilausfällen in Fahrtrichtung Friedrichsdorf. Grund sind Instandhaltungsarbeiten.",
+      "text": "In den Nächten von Sonntag auf Montag beginnen und enden einzelne Fahrten der Linie S5 am Halt \"Frankfurt Hauptbahnhof (hoch)\" und der Abschnitt zwischen \"Frankfurt Hauptbahnhof\" und \"Frankfurt Südbahnhof\" entfällt. <br /><br />Außerdem kommt es einmal pro Monat in den Nächten von Mittwoch auf Donnerstag bei zwei Fahrten in Fahrtrichtung Friedrichsdorf zu Teilausfällen. Ersatzweise fahren dann Busse statt Bahnen um 01:25 Uhr ab \"Bad Homburg Bahnhof\" (Halteposition 2) und um 01:43 Uhr ab \"Rödelheim Bahnhof\". Die Busse bedienen die Haltestellen \"Rödelheim Bahnhof\", \"Weißkirchen/Steinbach Bahnhof\", \"Oberursel-Stierstadt Bahnhof\", \"Oberursel Bahnhof\" (Nassauer Straße), \"Bad Homburg ZOB\" (Halteposition 2), \"Seulberg Linde\" und \"Friedrichsdorf Bahnhof\".<br />In den Bussen ist die Fahrradmitnahme nicht möglich.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Grund für die Änderungen sind regelmäßige Instandhaltungsarbeiten.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 95,
+      "products": 8,
+      "sTime": "00:00:00",
+      "sDate": "2021-01-03",
+      "eTime": "02:35:00",
+      "eDate": "2021-12-05",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "S8"
+        }
+      ],
+      "id": "2124409-0",
+      "act": true,
+      "head": "S8, S9: Änderungen bei einzelnen nächtlichen Fahrten",
+      "lead": "Es kommt in den Nächten von Sonntag auf Montag zu Umleitungen über \"Frankfurt Südbahnhof\" und \"Offenbach Hauptbahnhof\" auf der Linie S8. Zudem kommt es einmal pro Monat auf der Linie S9 zu Teilausfällen zwischen \"Offenbach Ostbahnhof\" und \"Hanau Hauptbahnhof\", ersatzweise fahren Busse.",
+      "text": "Es kommt wöchentlich außer an Feiertagen in den Nächten von Sonntag auf Montag zu Umleitungen über \"Frankfurt Südbahnhof\" und \"Offenbach Hauptbahnhof\" auf der Linie S8. Die Bahnen fahren die Umleitung zwischen \"Frankfurt Hauptbahnhof (oben)\" und \"Offenbach Ostbahnhof\". Dabei entfallen die Halte zwischen \"Frankfurt Hauptbahnhof (tief)\" und \"Offenbach Marktplatz\".<br /><br />Zudem kommt es einmal pro Monat auf der Linie S9 zu Teilausfällen zwischen \"Offenbach Ostbahnhof\" und \"Hanau Hauptbahnhof\", ersatzweise fahren dann Busse.<br />Die Fahrradmitnahme ist in den Bussen nicht möglich.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 95,
+      "products": 8,
+      "sTime": "21:39:00",
+      "sDate": "2021-01-03",
+      "eTime": "04:00:00",
+      "eDate": "2021-12-06",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB67"
+        }
+      ],
+      "id": "2124474-0",
+      "act": true,
+      "head": "RB67, RB68: Änderungen auf Teilstrecke in der Nacht vom 29.01. auf 30.01.",
+      "lead": "Es kommt ab 23:09 Uhr zu einzelnen Teilausfällen zwischen \"Heidelberg Hauptbahnhof\" und \"Weinheim Hauptbahnhof\". Ersatzweise fahren Busse. Grund für die Änderungen sind Bauarbeiten.",
+      "text": "Es kommt ab 23:09 Uhr zu einzelnen Teilausfällen zwischen \"Heidelberg Hauptbahnhof\" und \"Weinheim Hauptbahnhof\". Ersatzweise fahren Busse.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Grund für die Änderungen sind Bauarbeiten.<br /><br />Weitere Informationen im beigefügten Baustellenfahrplan im PDF-Format.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 97,
+      "products": 4,
+      "sTime": "22:00:00",
+      "sDate": "2021-01-29",
+      "eTime": "02:03:00",
+      "eDate": "2021-01-30",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "RB94"
+        }
+      ],
+      "id": "2124185-0",
+      "act": true,
+      "head": "RB94: Änderungen bei einer morgendlichen Fahrt ab \"Marburg Hauptbahnhof\" um 07:43 Uhr",
+      "lead": "Montags bis freitags kommt es bei der Fahrt um 07:43 Uhr ab \"Marburg Hauptbahnhof\" zu späteren Abfahrtszeiten zwischen Cölbe und Biedenkopf. Grund für die Änderung sind Bauarbeiten an einer Brücke.",
+      "text": "Montags bis freitags kommt es bei der Fahrt um 07:43 Uhr ab \"Marburg Hauptbahnhof\" zu späteren Abfahrtszeiten zwischen Cölbe und Biedenkopf. Ab \"Biedenkopf Bahnhof\" verkehrt der Zug um 08:48 Uhr planmäßig weiter bis Bad Laasphe.<br />Grund für die Änderung sind Bauarbeiten an einer Brücke.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 98,
+      "products": 16383,
+      "sTime": "07:43:00",
+      "sDate": "2020-12-14",
+      "eTime": "08:50:00",
+      "eDate": "2021-06-11",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 1"
+        },
+        {
+          "name": "Bus 2"
+        },
+        {
+          "name": "Bus 4"
+        },
+        {
+          "name": "Bus 6"
+        },
+        {
+          "name": "Bus 8"
+        },
+        {
+          "name": "Bus 10"
+        },
+        {
+          "name": "Bus 12"
+        },
+        {
+          "name": "AST 9"
+        }
+      ],
+      "id": "2124473-0",
+      "act": true,
+      "head": "Hanau: Stadtbusse - Einschränkungen im Nachtverkehr",
+      "lead": "Es kommt ab etwa 22:15 Uhr zum Entfall der nächtlichen Fahrten aufgrund der Ausgangssperre.",
+      "text": "Es kommt ab etwa 22:15 Uhr zum Entfall der nächtlichen Fahrten aufgrund der Ausgangssperre.<br /><br />Letzte Abfahrten ab \"Hauptbahnhof\":<br />Linie 1 Friedhof Kesselstadt: Mo.-So. 21:45 Uhr<br />Linie 2 Lamboy: Mo.-So.: 22:04 Uhr<br />Linie 8 Waldsiedlung: Mo.-So. 22:06 Uhr<br /><br />Letzte Abfahrten ab \"Freiheitsplatz\":<br />Linie 1 Friedhof Kesselstadt: Mo.-So. 22:00 Uhr<br />Linie 1 Hauptbahnhof: Mo.-Fr. 22:25 Uhr, Sa.-So. 22:30 Uhr<br />Linie 2 Lamboy: Mo.-So. 22:15 Uhr<br />Linie 2 Hauptbahnhof: Mo.-So. 22:15 Uhr<br />Linie 4 Klein-Auheim: Mo.-Fr. 22:25 Uhr, Sa. 22:25 Uhr, So. 21:55 Uhr<br />Linie 6 Klein-Auheim: Mo.-Fr. 22:15 Uhr, Sa. 22:15 Uhr, So. 21:45 Uhr<br />Linie 9 Mittelbuchen: Mo.-So. 21:55 Uhr (AST)<br />Linie 10 Friedhof Kesselstadt: Mo.-So. 22:15 Uhr<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 99,
+      "products": 576,
+      "sTime": "21:45:00",
+      "sDate": "2021-01-08",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 57"
+        }
+      ],
+      "id": "2124366-0",
+      "act": true,
+      "head": "Hochtaunuskreis: Busse 50, 51, 57, 80 - Umleitungen, Teilausfälle und Verspätungen",
+      "lead": "Es kommt zu Umleitungen, Teilausfällen und Verspätungen. Grund dafür sind Straßensperrungen aus Sicherheitsgründen im Feldberggebiet.<br />(Stand 08.01.2021, 18:30 Uhr)",
+      "text": "Es kommt zu Umleitungen, Teilausfällen und Verspätungen. <br />Grund dafür sind Straßensperrungen aus Sicherheitsgründen im Feldberggebiet.<br /><br />Die Anfahrt der Haltestelle ?Arnoldshain Hegewiese? wird momentan nicht in der RMV-Auskunft dargestellt.<br /><br />Genauere Informationen und die angepassten Fahrpläne stellt der Verkehrsverband Hochtaunus zur Verfügung.",
+      "company": "RMVU",
+      "category": "1",
+      "priority": 99,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-12-30",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-18",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 50"
+        }
+      ],
+      "id": "2120045-0",
+      "act": true,
+      "head": "Frankfurt: Bus 50 - Änderungen bei Haltestellen",
+      "lead": "Es kommt zu Änderungen bei Haltestellen wegen Bauarbeiten.<br />(Stand 03.12.2020, 14:33 Uhr)",
+      "text": "Es kommt zu folgenden Änderungen bei Haltestellen wegen Bauarbeiten:<br /><ul><li>\"Konrad-Glatt-Straße\", \"Windthorststraße\", \"Friedhof Höchst\": entfallen in Fahrtrichtung \"Bockenheimer Warte\".</li><li>\"Friedhof Kurmainzer Straße\", \"Eltviller Straße\": Zusätzlich fährt die Linie 50 in Fahrtrichtung \"Bockenheimer Warte\" die gleichnamigen Haltestellen der Linie 55 an.\"</li><li>\"Sossenheim Bahnhof\": Die Haltestelle ist in Fahrtrichtung \"Bockenheimer Warte\" um etwa 150 Meter verlegt an die gleichnamige Haltestelle der Linie 55. In Fahrtrichtung Unterliederbach ist die Haltestelle um 40 Meter vorverlegt in den Sossenheimer Weg gegenüber Haus Nummer 190.</li><li>\"Am Kapellenberg\": Die Haltestelle ist in Fahrtrichtung \"Bockenheimer Warte\" um etwa 300 Meter vorverlegt in die Lindenscheidstraße gegenüber Haus Nummer 4.</li><li>\"Dunantring\": Die Linie 50 fährt in Fahrtrichtung \"Bockenheimer Warte\" zusätzlich die neu eingerichtete Ersatzhaltestelle \"Dunantring\" in der  Schaumburger Straße Höhe Haus Nummer 95-97 an. In Fahrtrichtung \"Unterliederbach West\" wird die Ersatzhaltestelle in der Kurmainzer Straße in Höhe Haus Nummer 165 bedient.</li></ul>(Stand 03.12.2020, 14:33 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-03-02",
+      "eTime": "23:59:00",
+      "eDate": "2022-04-30",
+      "altStart": "",
+      "altEnd": "- vsl. April 2022"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus n61"
+        },
+        {
+          "name": "Bus n65"
+        },
+        {
+          "name": "Bus 59"
+        },
+        {
+          "name": "Bus N11"
+        },
+        {
+          "name": "Bus 31"
+        },
+        {
+          "name": "Bus N7"
+        }
+      ],
+      "id": "2124064-0",
+      "act": true,
+      "head": "Frankfurt-Ostend: Busse N11 - Haltestelle \"Zobelstraße\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Friedhof Fechenheim\" um etwa 40 Meter vorverlegt in die Hanauer Landstraße in Höhe Haus Nummer 48. Grund sind Bauarbeiten im Haltestellenbereich.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Friedhof Fechenheim\" um etwa 40 Meter vorverlegt in die Hanauer Landstraße in Höhe Haus Nummer 48. Grund sind Bauarbeiten im Haltestellenbereich.<br />Im Störungsfall halten dort auch die Fahrzeuge des Schienenersatzverkehrs in Fahrtrichtung \"Schießhüttenstraße\".",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "02.03.2020, 10:00 Uhr -",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 59"
+        },
+        {
+          "name": "Bus 63"
+        }
+      ],
+      "id": "2123092-0",
+      "act": true,
+      "head": "Usingen: Busse 59, 62, 64 - Haltestelle \"Stadthalle\" vom 01.10. bis auf weiteres verlegt",
+      "lead": "Die Haltestelle ist um etwa 150 Meter in Fahrtrichtung Bahnhof verlegt. Grund ist eine Baumaßnahme.",
+      "text": "Die Haltestelle ist um etwa 150 Meter in Fahrtrichtung Bahnhof verlegt.<br />Grund ist eine Baumaßnahme.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-01",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 91"
+        }
+      ],
+      "id": "2123229-0",
+      "act": true,
+      "head": "Steinbach: Busse 91, 251, 252 - Änderungen bei Haltestellen",
+      "lead": "Die Haltestelle \"Berliner-/Frankfurter Straße\" ist verlegt in den Kreuzungsbereich \"Hessenring/Berliner Straße\". Die Haltestelle \"Berliner Straße/Hochhaus\" entfällt. Grund ist die Sperrung der Berliner Straße.",
+      "text": "Die Haltestelle \"Berliner-/Frankfurter Straße\" ist verlegt in den Kreuzungsbereich \"Hessenring/Berliner Straße\". Die Haltestelle \"Berliner Straße/Hochhaus\" entfällt.<br />Grund ist die Sperrung der Berliner Straße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-12",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 91"
+        }
+      ],
+      "id": "2123790-0",
+      "act": true,
+      "head": "Steinbach: Bus 91 - Haltestellen entfallen ab 16.11.",
+      "lead": "Es entfallen die Haltestellen \"Berliner-/Frankfurter Straße\" und \"Berliner Straße/Bahnstraße\". Eine Ersatzhaltestelle am Europakreisel wird bedient. Grund dafür ist eine Baumaßnahme.",
+      "text": "Es entfallen die Haltestellen \"Berliner-/Frankfurter Straße\" und \"Berliner Straße/Bahnstraße\". Eine Ersatzhaltestelle am Europakreisel wird bedient. Grund dafür ist eine Baumaßnahme.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-16",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus N12"
+        },
+        {
+          "name": "Bus N18"
+        }
+      ],
+      "id": "2124180-0",
+      "act": true,
+      "head": "Frankfurt: Bus N12 - Umleitung und Änderungen an Haltestellen",
+      "lead": "Die Busse fahren im Bereich des Universitätsklinikums eine Umleitung. Dabei kommt es zu Änderungen an Haltestellen. Grund für die Änderung sind Arbeiten an Versorgungsleitungen in der Deutschordenstraße.",
+      "text": "Die Busse fahren im Bereich des Universitätsklinikums eine Umleitung.<br />Dabei kommt es zu folgenden Änderungen:<br /><ul><li>In Fahrtrichtung \"Konstablerwache\":<br />\"Niederräder Landstraße\": gleichnamige Haltestelle in der Rennbahnstraße im Abzweig zur Niederräder Landstraße<br />\"Heinrich-Hoffmann-Straße/Blutspendedienst\": Haltestelle entfällt<br />\"Vogelweidstraße\": Haltestelle um etwa 250 Meter verlegt, in die Kennedyallee in Höhe Haus Nummer 101b<br />\"Stresemannallee/Gartenstraße\": Haltestelle um etwa 100 Meter verlegt, in die Stresemannallee in Höhe Haus Nummer 15</li><li>In Fahrtrichtung \"Rheinlandstraße\":<br />\"Niederräder Landstraße\": gleichnamige Haltestelle in der Rennbahnstraße zwischen der Einmündungen der Niederräder Landstraße und Bruchfeldstraße</li></ul>Grund für die Änderung sind Arbeiten an Versorgungsleitungen in der Deutschordenstraße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "01:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-15",
+      "altStart": "",
+      "altEnd": "- vsl. Anfang April 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 84"
+        }
+      ],
+      "id": "2119401-0",
+      "act": true,
+      "head": "Frankfurt-Niederrad: Bus 84 - Änderungen bei Haltestellen",
+      "lead": "Die Busse fahren in Fahrtrichtung \"Oberforsthaus\" eine Umleitung und es kommt zu Änderungen bei Haltestellen. Grund dafür sind Straßenbauarbeiten in der Hahnstraße.<br />(Stand 11.12.2020, 13:29 Uhr)",
+      "text": "Die Busse fahren in Fahrtrichtung \"Oberforsthaus\" eine Umleitung und es kommt zu Änderungen bei Haltestellen. Folgende Änderungen treten in Kraft:<ul><li>Haltestelle \"Haardtwaldplatz\" entfällt</li><li>Haltestelle \"Hahnstraße\" entfällt</li><li>Haltestelle \"Saonestraße\" entfällt</li><li>Haltestelle \"Lyoner Straße/Hahnstraße\" ist etwa 50 Meter verlegt in die Lyoner Sraße kurz vor der Einmündung der Hahnstraße</li></ul>Ersatzweise werden auf der Umleitungsstrecke folgende Haltestellen bedient:<ul><li>\"Bruchfeld-/Melibocusstraße\" in der Melibocusstraße in Höhe Haus Nummer 12</li><li>\"Jugenheimer Straße\" an der gleichnamigen Haltestelle der Linie 79 in Fahrtrichtung \"Niederrad Bahnhof\"</li><li>\"Niederrad Bahnhof\" an der gleichnamigen Haltetelle in Fahrtrichtung Niederräder Landstraße, jedoch nur für Ausstieg</li></ul>Grund dafür sind Straßenbauarbeiten in der Hahnstraße.<br /><br />(Stand 11.12.2020, 13:29 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "07:30:00",
+      "sDate": "2020-02-01",
+      "eTime": "05:30:00",
+      "eDate": "2021-06-13",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 58"
+        },
+        {
+          "name": "Bus 810"
+        }
+      ],
+      "id": "2115614-0",
+      "act": true,
+      "head": "Eschborn: Busse 58, 810 - Haltestelle \"Alfred-Herrhausen-Allee\" entfällt",
+      "lead": "Die Haltestelle entfällt in Fahrtrichtung \"Bahnhof\" wegen einer Baumaßnahme. Für die Linie 58 befindet sich eine Ersatzhaltestelle in der Ausfahrt Mergenthaler Straße direkt vor der Einfahrt zum Kreisel. Bei der Linie 810 kann ersatzweise die Haltestelle \"Kölner Straße\" genutzt werden.",
+      "text": "Die Haltestelle entfällt in Fahrtrichtung \"Bahnhof\" wegen einer Baumaßnahme. Für die Linie 58 befindet sich eine Ersatzhaltestelle in der Ausfahrt Mergenthaler Straße direkt vor der Einfahrt zum Kreisel. Bei der Linie 810 kann ersatzweise die Haltestelle \"Kölner Straße\" genutzt werden.<br />",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2019-07-01",
+      "eTime": "23:59:00",
+      "eDate": "2021-07-01",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "id": "2124172-0",
+      "act": true,
+      "head": "Frankfurt: Busse 67, 77, X77, n72 - Halt \"Elly-Beinhorn-Straße\" entfällt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle entfällt in Fahrtrichtung \"Flughafen Gebäude 543\". Alternativ kann die Haltestelle \"Gebäude 681\" in Fahrtrichtung \"Flughafen Gebäude 543\" genutzt werden. Grund für die Änderungen sind Straßenbauarbeiten im Zufahrtsbereich der Haltestelle.",
+      "text": "Die Haltestelle entfällt in Fahrtrichtung \"Flughafen Gebäude 543\". Alternativ kann die Haltestelle \"Gebäude 681\" in Fahrtrichtung \"Flughafen Gebäude 543\" genutzt werden. <br />Grund für die Änderungen sind Straßenbauarbeiten im Zufahrtsbereich der Haltestelle.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "03:00:00",
+      "eDate": "2021-03-19",
+      "altStart": "24.07.2020",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 372"
+        },
+        {
+          "name": "Bus 373"
+        }
+      ],
+      "id": "2123719-0",
+      "act": true,
+      "head": "Laubach-Gonterskirchen: Busse 372, 373 - Haltestelle \"Ortsmitte\" entfällt",
+      "lead": "Die Haltestelle entfällt. In Fahrtrichtung Laubach kann ersatzweise die Haltestelle \"Alte Schule\" genutzt werden, in der Gegenrichtung kann die gegenüberliegende Ersatzhaltestelle genutzt werden. Grund dafür ist die Sanierung der Ortsdurchfahrt.",
+      "text": "Die Haltestelle entfällt. In Fahrtrichtung Laubach kann ersatzweise die Haltestelle \"Alte Schule\" genutzt werden, in der Gegenrichtung kann die gegenüberliegende Ersatzhaltestelle genutzt werden. Grund dafür ist die Sanierung der Ortsdurchfahrt.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-11",
+      "eTime": "23:59:00",
+      "eDate": "2021-12-31",
+      "altStart": "",
+      "altEnd": "- vsl. Dezember 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 663"
+        }
+      ],
+      "id": "2123590-0",
+      "act": true,
+      "head": "Langen: Bus 663 - Baustellenfahrplan und Haltestellen entfallen",
+      "lead": "Die Busse verkehren nach einem Baustellenfahrplan. Die Haltestellen \"Langen Bahnhof Westseite\", \"Monzastraße\", \"Ampèrestraße\", \"Robert-Bosch-Straße Süd\" und \"Weserstraße\" entfallen. Grund dafür ist eine Baumaßnahme.",
+      "text": "Die Busse verkehren nach einem Baustellenfahrplan. Die Haltestellen \"Langen Bahnhof Westseite\", \"Monzastraße\", \"Ampèrestraße\", \"Robert-Bosch-Straße Süd\" und \"Weserstraße\" entfallen. <br />Grund dafür ist eine Baumaßnahme.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />(Stand 11.12.2020, 08:22 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "05:30:00",
+      "sDate": "2020-11-02",
+      "eTime": "01:00:00",
+      "eDate": "2021-06-13",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 16"
+        },
+        {
+          "name": "Bus 20"
+        },
+        {
+          "name": "Bus E"
+        }
+      ],
+      "id": "2123552-0",
+      "act": true,
+      "head": "Eppstein-Bremthal: Bus 20 - Haltestelle \"Friedhof\" verlegt ab 02.11.",
+      "lead": "Die Haltestelle ist in die Freiherr-von-Stein-Straße in Höhe der Häuser Nummern 1 und 2 verlegt. Grund dafür ist die Vollsperrung der Niederjosbacher Straße.",
+      "text": "Die Haltestelle ist in die Freiherr-von-Stein-Straße in Höhe der Häuser Nummern 1 und 2 verlegt. Grund dafür ist die Vollsperrung der Niederjosbacher Straße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-02",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-01",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 61"
+        },
+        {
+          "name": "Bus 65"
+        },
+        {
+          "name": "Bus 67"
+        }
+      ],
+      "id": "2123788-0",
+      "act": true,
+      "head": "Mörfelden-Walldorf-Mörfelden: Bus 65 - Änderungen bei Haltestellen",
+      "lead": "Es entfällt die Haltestelle \"Am Schwimmbad\" und die Haltestelle \"Zillering\" in Fahrtrichtung Groß-Gerau ist in die Cranachstraße nahe des Zillerings verlegt. Grund dafür sind Bauarbeiten.",
+      "text": "Es entfällt die Haltestelle \"Am Schwimmbad\" und die Haltestelle \"Zillering\" in Fahrtrichtung Groß-Gerau ist in die Cranachstraße nahe des Zillerings verlegt. Grund dafür sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-16",
+      "eTime": "23:59:00",
+      "eDate": "2021-05-01",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus n65"
+        },
+        {
+          "name": "Bus n72"
+        },
+        {
+          "name": "Bus 101"
+        },
+        {
+          "name": "Bus 103"
+        },
+        {
+          "name": "Bus 106"
+        },
+        {
+          "name": "Bus 108"
+        },
+        {
+          "name": "Bus 120"
+        },
+        {
+          "name": "Bus V06"
+        },
+        {
+          "name": "Bus V10"
+        },
+        {
+          "name": "Bus V20"
+        }
+      ],
+      "id": "2121294-0",
+      "act": true,
+      "head": "Offenbach-Zentrum: Busse - Änderungen an der Haltestelle \"Marktplatz/Berliner Straße\"",
+      "lead": "Die ursprüngliche Haltestelle in Fahrtrichtung \"Marktplatz\" ist gesperrt wegen Abrissarbeiten. Es kommt daher auf den Linien 101, 103, 106, 108, 120 zu unterschiedlichen Änderungen.",
+      "text": "Die ursprüngliche Haltestelle \"Marktplatz/Berliner Straße\" in Fahrtrichtung \"Marktplatz\" ist gesperrt wegen Abrissarbeiten. Es kommt daher auf den Linien 101, 103, 104, 105, 106, 108 und 120 zu unterschiedlichen Änderungen:<br /><ul><li>Die Linien 101 und 106 in Fahrtrichtung \"Marktplatz\", die Linie 103 in Fahrtrichtung \"Prüfling\" und die Linie 120 in Fahrtrichtung \"August-Bebel-Ring\" sowie die V-Linien halten 140 Meter weiter vorher vor der Kreuzung Großer Biergrund.</li><li>Die Linien 103 und 120 halten zusätzlich auf der Berliner Straße gegenüber vom Stadthaus. </li><li>Für die Linien 105 und die kurze Linie 104 in Fahrtrichtung \"Marktplatz\" entfällt die Haltestelle \"Marktplatz/Berliner Straße\".</li><li>Die Endhaltestelle \"Marktplatz/Berliner Straße\" für die Linie 108 in Fahrtrichtung \"Kaiserlei Westseite\" ist verlegt an den Bussteig 1 der Haltestelle \"Marktplatz\" vor dem Stadthaus.</li></ul>",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-05-22",
+      "eTime": "01:30:00",
+      "eDate": "2021-12-12",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 103"
+        }
+      ],
+      "id": "2122832-0",
+      "act": true,
+      "head": "Offenbach: Bus 103 - Änderungen bei Haltestellen",
+      "lead": "Der Bus fährt eine Umleitung und es kommt zu Änderungen bei den Haltestellen. Grund dafür sind Baumaßnahmen.",
+      "text": "Der Bus fährt eine Umleitung. Die Haltestelle \"Neuer Friedhof/Ulmenstraße\" ist in die Mühlheimer Straße verlegt. Die Ersatzhaltestelle in Fahrtrichtung \"Frankfurt Prüfling\" befindet sich in Höhe der Friedrich-Ebert-Schule. In Fahrtrichtung \"An den Eichen\" hält der Bus zu Beginn der Abbiegerspur in die Ulmenstraße.<br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-09-14",
+      "eTime": "23:59:00",
+      "eDate": "2021-05-01",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 90"
+        }
+      ],
+      "id": "2122618-0",
+      "act": true,
+      "head": "Steinau-Uerzell: Busse 90, 94, 95, 99 - Baustellenfahrplan ab 31.08.",
+      "lead": "Die Busse verkehren nach einem Baustellenfahrplan und es kommt zu Änderungen bei den Fahrtzeiten. Grund ist die Vollsperrung der Ulmbacher Straße in Uerzell.<br />(Stand 16.12.2020, 09:36 Uhr)",
+      "text": "Die Busse verkehren nach einem Baustellenfahrplan und es kommt zu Änderungen bei den Fahrtzeiten. Grund ist die Vollsperrung der Ulmbacher Straße in Uerzell.<br /><br />Die Änderungen können den beigefügten Baustellenfahrplänen in den PDF-Dokumenten entnommen werden.<br /><br />(Stand 16.12.2020, 09:36 Uhr)<br />",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-08-31",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M32"
+        }
+      ],
+      "id": "2124067-0",
+      "act": true,
+      "head": "Frankfurt: Bus M32 - Haltestelle \"Habsburger-/Wittelsbacherallee\" verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Westbahnhof\" um etwa 35 Meter vorverlegt, in die Habsburgerallee in Höhe Haus Nummer 29 und zudem in Fahrtrichtung \"Ostbahnhof\" um etwa 50 Meter vorverlegt, in die Habsburgerallee in Höhe Haus Nummer 56. Grund dafür ist der barrierefreie Ausbau der Haltestelle.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Westbahnhof\" um etwa 35 Meter vorverlegt, in die Habsburgerallee in Höhe Haus Nummer 29.<br />Die Haltestelle ist in Fahrtrichtung \"Ostbahnhof\" um etwa 50 Meter vorverlegt, in die Habsburgerallee in Höhe Haus Nummer 56. <br />Grund dafür ist der barrierefreie Ausbau der Haltestelle.<br /><br />(Stand 18.12.2020, 11:40 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-15",
+      "altStart": "02.12.2020, 04:00 Uhr ",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 52"
+        }
+      ],
+      "id": "2123467-0",
+      "act": true,
+      "head": "Frankfurt: Bus 52 - Haltestelle \"Lärchenstraße\" verlegt und Verspätungen möglich",
+      "lead": "Die Busse fahren eine Umleitung und die Haltestelle \"Lärchenstraße\" ist in Fahrtrichtung \"Jägerallee\" um etwa 50 Meter verlegt. Der Grund dafür sind Arbeiten an Versorgungsleitungen in der Lärchenstraße. Durch die Umleitung kann es zu Verspätungen kommen.<br />(Stand 21.12.2020, 13:18 Uhr)",
+      "text": "Die Busse fahren eine Umleitung und die Haltestelle \"Lärchenstraße\" ist in Fahrtrichtung \"Jägerallee\" um etwa 50 Meter verlegt. Der Grund dafür sind Arbeiten an Versorgungsleitungen in der Lärchenstraße. Durch die Umleitung kann es zu Verspätungen kommen.<br /><br />(Stand 21.12.2020, 13:18 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "07:30:00",
+      "sDate": "2020-10-26",
+      "eTime": "07:30:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "ALTGI-73"
+        }
+      ],
+      "id": "2123938-0",
+      "act": true,
+      "head": "Laubach-Wetterfeld: Busse 372, 373, GI-73 - Haltestelle \"Laubacher Straße\" verlegt",
+      "lead": "Die Haltestelle \"Laubacher Straße\" ist um etwa 100 Meter in Fahrtrichtung Münster verlegt. Grund dafür sind Bauarbeiten.",
+      "text": "Die Haltestelle \"Laubacher Straße\" ist um etwa 100 Meter in Fahrtrichtung Münster verlegt. <br />Grund dafür sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 576,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-30",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus MO1"
+        }
+      ],
+      "id": "2122826-0",
+      "act": true,
+      "head": "Ober-Ramstadt Rohrbach: Busse MO1, MO4, O - Umleitung und Haltestelle entfällt in eine Fahrtrichtung",
+      "lead": "Die Busse fahren eine Umleitung. Die Haltestelle \"Brunnenstraße\" entfällt in Fahrtrichtung Asbach/Webern, beziehungsweise Darmstadt. Fahrgäste der Linien MO4 und O können ersatzweise die Haltestelle auf der gegenüberliegenden Straßenseite nutzen. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren eine Umleitung. Die Haltestelle \"Brunnenstraße\" entfällt in Fahrtrichtung Asbach/Webern, beziehungsweise Darmstadt. Fahrgäste der Linien MO4 und O können ersatzweise die Haltestelle auf der gegenüberliegenden Straßenseite nutzen. Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-09-14",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-28",
+      "altStart": "",
+      "altEnd": "vsl. 28.02.21"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus X97"
+        }
+      ],
+      "id": "2124344-0",
+      "act": true,
+      "head": "Offenbach: Bus X97 - Haltestelle \"Kaiserlei Ostseite\" entfällt in Fahrtrichtung Bad Vilbel",
+      "lead": "Die Haltestelle entfällt in Fahrtrichtung Bad Vilbel. Ersatzweise kann die Haltestelle \"Kaiserlei Strahlenbergerstr/Omega\" genutzt werden.",
+      "text": "Die Haltestelle entfällt in Fahrtrichtung Bad Vilbel. Ersatzweise kann die Haltestelle \"Kaiserlei Strahlenbergerstr/Omega\" genutzt werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "14:24:00",
+      "sDate": "2020-12-28",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 471"
+        },
+        {
+          "name": "Bus 472"
+        }
+      ],
+      "id": "2123614-0",
+      "act": true,
+      "head": "Ehringshausen: Bus 471 - Haltestelle \"Altes Rathaus\" verlegt vom 04.11. bis 26.02.",
+      "lead": "Die Haltestelle entfällt wegen einer Baumaßnahme. Eine Ersatzhaltestelle für beide Fahrtrichtungen wird in etwa 100 Metern Entfernung bedient.<br />(Stand 30.12.2020, 08:13 Uhr)",
+      "text": "Die Haltestelle entfällt wegen einer Baumaßnahme. Eine Ersatzhaltestelle für beide Fahrtrichtungen wird in etwa 100 Metern Entfernung bedient.<br /><br />(Stand 30.12.2020, 08:13 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-04",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-26",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 100"
+        }
+      ],
+      "id": "2123178-0",
+      "act": true,
+      "head": "Lahn-Dill-Kreis: Busse 100, 101, 102, 103, 105, 106, 300, 301, 302 - Änderungen",
+      "lead": "Es kommt auf den Linien 300, 301 und 302 zu Änderungen wegen Bauarbeiten an der Brücke der K7 am Kreisverkehrsplatz in Eibelshausen, die Haltestelle \"Eschenburg-Eibelshausen Markt\" entfällt. Außerdem kommt es zu Zusatzfahrten auf den Linien 100, 101,102, 103, 105, 106 und 302.<br />(Stand 30.12.2020)",
+      "text": "Es kommt zu Änderungen bei Haltestellen und Fahrtzeiten. Grund dafür sind Bauarbeiten an der Brücke der K7 am Kreisverkehrsplatz in Eibelshausen.<br /><br />Die Busse 300, 301 und 302 fahren nach einem Baustellenfahrplan. Die Haltestelle \"Markt\" entfällt. Die alternative Umsteigehaltestelle ist die Haltestelle \"Ortsmitte\". Diese ist in Fahrtrichtung Dillenburg vor die ehemalige Gaststätte verlegt. Für die Linie 300 wird eine Ersatzhaltestelle in der Dammstraße eingerichtet. <br /><br />Auf den Linien 100, 101,102, 103, 105, 106 und 302 kommt es außerdem zu zusätzlichen Schulfahrten wegen der Entzerrung der Unterrichtszeiten an den Schulen.<br /><br />Weitere Informationen sowie die Fahrpläne im PDF-Format können der Seite der VLDW entnommen werden<br /><br />(Stand 30.12.2020, 08:50 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-05",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-01",
+      "altStart": "",
+      "altEnd": " - vsl. Frühjahr 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 46"
+        },
+        {
+          "name": "Bus 64"
+        }
+      ],
+      "id": "2108518-0",
+      "act": true,
+      "head": "Frankfurt-Westend: Busse 46, 64 - Haltestelle \"Platz der Einheit\" verlegt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle ist bei der Linie 46 in Fahrtrichtung \"Wasserweg\" und bei der Linie 64 in Fahrtrichtung \"Ginnheim\" etwa 50 Meter vorverlegt in die Osloer Straße kurz vor dem Gebäude Kap Europa.",
+      "text": "Die Haltestelle ist bei der Linie 46 in Fahrtrichtung \"Wasserweg\" und bei der Linie 64 in Fahrtrichtung \"Ginnheim\" etwa 50 Meter vorverlegt in die Osloer Straße kurz vor dem Gebäude Kap Europa.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "07:00:00",
+      "sDate": "2018-05-09",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "- vsl. März 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusFB-01"
+        }
+      ],
+      "id": "2123394-0",
+      "act": true,
+      "head": "Friedberg: Busse 362, 363, FB-01, FB-03, FB-10, FB-32, FB-33, FB-34, FB-72 - Änderungen",
+      "lead": "Die Busse fahren Umleitungen wegen Kanalarbeiten. An der Haltestelle \"Bahnhof\" ist für die Haltestellenpositionen 1 und 2 eine Ersatzhaltestelle eingerichtet. <br />(Stand 05.01.2021, 15:33 Uhr)",
+      "text": "Die Busse fahren Umleitungen wegen Kanalarbeiten. An der Haltestelle \"Bahnhof\" ist für die Haltestellenpositionen 1 und 2 eine Ersatzhaltestelle eingerichtet. <br /><br />(Stand 05.01.2021, 15:33 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-30",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusFB-12"
+        },
+        {
+          "name": "BusFB-15"
+        }
+      ],
+      "id": "2113573-0",
+      "act": true,
+      "head": "Bad Nauheim-Steinfurth: Busse FB-12, FB-15 - Haltestelle \"Rosendorfschule\" verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung Bad Nauheim verlegt in die Södeler Straße vor der Rosendorfschule. Grund dafür sind Bauarbeiten.<br />(Stand 05.01.2021, 15:43 Uhr)",
+      "text": "Die Haltestelle ist in Fahrtrichtung Bad Nauheim verlegt in die Södeler Straße vor der Rosendorfschule. Grund dafür sind Bauarbeiten.<br /><br />(Stand 05.01.2021, 15:43 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2019-03-11",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": " - vsl. Ende Juni 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus EW02"
+        }
+      ],
+      "id": "2124412-0",
+      "act": true,
+      "head": "Fulda-Kohlhaus: Busse 2,6 - Haltestellen entfallen",
+      "lead": "Die Busse fahren eine Umleitung. Die Haltestellen \"Ortesweg\" und \"Marienplatz\" entfallen. Alternativ kann die Haltestelle \"Isarstraße\" genutzt werden. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren eine Umleitung. Die Haltestellen \"Ortesweg\" und \"Marienplatz\" entfallen. Alternativ kann die Haltestelle \"Isarstraße\" genutzt werden. <br /><br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "13:00:00",
+      "sDate": "2021-01-05",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-27",
+      "altStart": "05.01.2021",
+      "altEnd": "vsl. 27.03."
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusOF-30"
+        },
+        {
+          "name": "ASTOF-38"
+        }
+      ],
+      "id": "2124416-0",
+      "act": true,
+      "head": "Heusenstamm-Rembrücken: Bus 30 - Haltestelle \"Obertshäuser Straße\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung Offenbach um etwa 50 Meter in Richtung der Straße Im Hohlen Baum verlegt. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Haltestelle ist in Fahrtrichtung Offenbach um etwa 50 Meter in Richtung der Straße Im Hohlen Baum verlegt. <br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-11",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "vsl. 30.06.2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 245"
+        },
+        {
+          "name": "Bus 247"
+        },
+        {
+          "name": "Bus 207"
+        },
+        {
+          "name": "Bus 207"
+        },
+        {
+          "name": "Bus 249"
+        }
+      ],
+      "id": "2122379-0",
+      "act": true,
+      "head": "Hohenstein-Breithardt: Busse 207, 245, 247, 249 - Haltestelle \"Gronauer Straße\" verlegt",
+      "lead": "Die Haltestelle ist in die Sonnenstraße verlegt. Grund sind Bauarbeiten in der Langgasse.<br />(Stand 07.01.2021, 17:30 Uhr)",
+      "text": "Die Haltestelle ist in die Sonnenstraße verlegt. Grund sind Bauarbeiten in der Langgasse.<br /><br />(Stand 07.01.2021, 17:30 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2020-08-10",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-13",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "id": "2124435-0",
+      "act": true,
+      "head": "RB15: Busse statt Bahnen auf Teilstrecke vom 08.01. bis 11.01. und 15.01. bis 18.01.",
+      "lead": "Zwischen \"Usingen Bahnhof\" und \"Grävenwiesbach Bahnhof\" beziehungsweise \"Brandoberndorf Bahnhof\" verkehren Busse statt Bahnen. Grund für die Änderungen sind Arbeiten an der Strecke.",
+      "text": "Zwischen \"Usingen Bahnhof\" und \"Grävenwiesbach Bahnhof\" beziehungsweise \"Brandoberndorf Bahnhof\" verkehren Busse statt Bahnen. <br />Die Busse bedienen folgende Haltestellen:<br />\"Usingen Bahnhof\", \"Wilhelmsdorf Friedhof\", \"Hundstadt Ortsmitte\", \"Grävenwiesbach Bahnhof\", \"Hasselborn Dorfgemeinschaftshaus\" und \"Brandoberndorf Bahnhof\".<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Grund für die Änderungen sind Arbeiten an der Strecke.<br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 0,
+      "sTime": "22:30:00",
+      "sDate": "2021-01-08",
+      "eTime": "01:45:00",
+      "eDate": "2021-01-18",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "id": "2124437-0",
+      "act": true,
+      "head": "RB15: Busse statt Bahnen auf Teilstrecke vom 08.01. bis 11.01. und 15.01. bis 18.01.",
+      "lead": "Zwischen \"Usingen Bahnhof\" und \"Grävenwiesbach Bahnhof\" beziehungsweise \"Brandoberndorf Bahnhof\" verkehren Busse statt Bahnen. Grund für die Änderungen sind Arbeiten an der Strecke.",
+      "text": "Zwischen \"Usingen Bahnhof\" und \"Grävenwiesbach Bahnhof\" beziehungsweise \"Brandoberndorf Bahnhof\" verkehren Busse statt Bahnen. <br />Die Busse bedienen folgende Haltestellen:<br />\"Usingen Bahnhof\", \"Wilhelmsdorf Friedhof\", \"Hundstadt Ortsmitte\", \"Grävenwiesbach Bahnhof\", \"Hasselborn Dorfgemeinschaftshaus\" und \"Brandoberndorf Bahnhof\".<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br />Die Fahrradmitnahme ist in den Ersatzbussen nicht möglich.<br />Grund für die Änderungen sind Arbeiten an der Strecke.<br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 0,
+      "sTime": "22:00:00",
+      "sDate": "2021-01-08",
+      "eTime": "01:45:00",
+      "eDate": "2021-01-18",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusMKK62"
+        }
+      ],
+      "id": "2121868-0",
+      "act": true,
+      "head": "Gelnhausen: Bus MKK62 - Haltestellen entfallen in eine Fahrtrichtung",
+      "lead": "Die Haltestellen \"Untermarkt\" und \"Obermarkt\" entfallen in Fahrtrichtung Gelnhausen-Roth. Ersatzweise kann die Haltestelle \"Berliner Straße\" genutzt werden. Grund ist die Sperrung der Braugasse.<br />(Stand 08.01.2021, 14:00 Uhr)",
+      "text": "Die Haltestellen \"Untermarkt\" und \"Obermarkt\" entfallen in Fahrtrichtung Gelnhausen-Roth. Ersatzweise kann die Haltestelle \"Berliner Straße\" genutzt werden. <br />Grund ist die Sperrung der Braugasse.<br /><br />(Stand 08.01.2021, 14:00 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-07-06",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-13",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 61"
+        },
+        {
+          "name": "Bus 65"
+        },
+        {
+          "name": "Bus 26"
+        }
+      ],
+      "id": "2124464-0",
+      "act": true,
+      "head": "Nauheim: Busse 26, 61 - Haltestelle \"Sportplatz\" in Fahrtrichtung Groß-Gerau verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung Groß-Gerau in die Weingartenstraße in Höhe Haus Nummer 66 verlegt. Der Grund dafür ist eine Baustelle.",
+      "text": "Die Haltestelle ist in Fahrtrichtung Groß-Gerau in die Weingartenstraße in Höhe Haus Nummer 66 verlegt. Der Grund dafür ist eine Baustelle.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-11",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 106"
+        }
+      ],
+      "id": "2124476-0",
+      "act": true,
+      "head": "Offenbach-Buchhügel: Bus 106 - Haltestelle \"Goerdelerstraße\" entfällt in eine Fahrtrichtung",
+      "lead": "Die Busse fahren eine Umleitung und die Haltestelle entfällt in Fahrtrichtung \"Wetterpark\". Alternativ kann die Haltestelle \"Theodor-Heuss-Schule\" genutzt werden. Grund für die Änderungen sind Straßenbauarbeiten.",
+      "text": "Die Busse fahren eine Umleitung und die Haltestelle entfällt in Fahrtrichtung \"Wetterpark\". Alternativ kann die Haltestelle \"Theodor-Heuss-Schule\" genutzt werden. <br />Grund für die Änderungen sind Straßenbauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-11",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-22",
+      "altStart": "",
+      "altEnd": "vsl. 22.01."
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M34"
+        }
+      ],
+      "id": "2124151-0",
+      "act": true,
+      "head": "Frankfurt-Rödelheim: Busse M34, M72 - Umleitung und Haltestelle \"Radilostraße\" verlegt",
+      "lead": "Die Busse fahren eine Umleitung im Bereich Rödelheim und die Haltestelle ist bei der Linie M34 in beide Fahrtrichtungen sowie bei der Linie M72 in Fahrtrichtung \"Nordwestzentrum\" um etwa 150 Meter verlegt, in die Burgfriedenstraße in Höhe Haus Nummer 7. Grund sind Bauarbeiten.",
+      "text": "Die Busse fahren eine Umleitung im Bereich Rödelheim und die Haltestelle ist bei der Linie M34 in beide Fahrtrichtungen sowie bei der Linie M72 in Fahrtrichtung \"Nordwestzentrum\" um etwa 150 Meter verlegt, in die Burgfriedenstraße in Höhe Haus Nummer 7. <br />Grund sind Bauarbeiten.<br /><br />Ausgenommen von dieser Änderung ist der 18.01., 07:00 Uhr bis 15:00 Uhr. Da die Maßnahme zu dieser Zeit ruht, befindet sich die Haltestelle an ihrem originalen Haltepunkt.<br /><br />(Stand 11.01.2021, 12:24 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "03:00:00",
+      "eDate": "2021-05-19",
+      "altStart": "04.11.2020, 08:00 Uhr",
+      "altEnd": "- vsl. Mai 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 120"
+        }
+      ],
+      "id": "2116606-0",
+      "act": true,
+      "head": "Landkreis Offenbach: Bus 120 - Umleitung und Änderungen bei Haltestellen",
+      "lead": "Die Busse fahren eine Umleitung und die Haltestellen \"Lämmerspiel Hausener Straße\", \"Obertshausen-Hausen Brückenstraße\", \"Obertshausen Haus Jona\" und \"Obertshausen Rathaus\" entfallen. Grund dafür sind Baumaßnahmen.<br />(Stand 11.01.2021, 11:20 Uhr)",
+      "text": "Die Busse fahren eine Umleitung und die Haltestellen \"Lämmerspiel Hausener Straße\", \"Obertshausen-Hausen Brückenstraße\", \"Obertshausen Haus Jona\" und \"Obertshausen Rathaus\" entfallen. Grund dafür sind Baumaßnahmen.<br /><br />Ersatzweise können die Ersatzhaltestelle \"Feuerwehr\" in der Obertshäuser Straße oder die Ersatzhaltestelle \"Liebknechtstraße\" in der Liebknechtstraße genutzt werden.<br /><br />(Stand 11.01.2021, 11:20 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2019-08-12",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 310"
+        }
+      ],
+      "id": "2124503-0",
+      "act": true,
+      "head": "Gießen: Bus 310 - Umleitung und Haltestelle \"Klingelbachweg\" entfällt in einer Fahrtrichtung",
+      "lead": "Die Busse fahren in Fahrtrichtung stadtauswärts eine Umleitung und die Haltestelle \"Klingelbachweg\" entfällt. Der Grund dafür ist eine Baumaßnahme. Ersatzweise bedienen die Busse die Haltestelle \"Sandkauter Weg\".",
+      "text": "Die Busse fahren in Fahrtrichtung stadtauswärts eine Umleitung und die Haltestelle \"Klingelbachweg\" entfällt. Der Grund dafür ist eine Baumaßnahme. Ersatzweise bedienen die Busse die Haltestelle \"Sandkauter Weg\".",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-14",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-11",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M34"
+        }
+      ],
+      "id": "2124468-0",
+      "act": true,
+      "head": "Frankfurt: Bus M34 - Umleitung und Haltestellen entfallen in eine Fahrtrichtung",
+      "lead": "Die Busse fahren in Fahrtrichtung \"Mönchhofstraße\" eine Umleitung. Dabei entfallen die Haltestellen \"Deutsche Bundesbank\" und \"Europaturm\" und die Haltestelle \"Platenstraße\" ist um etwa 300 Meter zurückverlegt. Grund für die Änderungen ist ein Fahrbahneinbruch im Bereich Dornbusch/Platenstraße.<br />",
+      "text": "Die Busse fahren in Fahrtrichtung \"Mönchhofstraße\" eine Umleitung. Dabei entfallen die Haltestellen \"Deutsche Bundesbank\" und \"Europaturm\". Zudem ist die Haltestelle \"Platenstraße\" um etwa 300 Meter zurückverlegt. Eine Ersatzhaltestelle wird bedient in der Raimundstraße in Höhe der Zufahrt zu Haus Nummer 151. <br />Grund für die Änderungen ist ein Fahrbahneinbruch im Bereich Dornbusch/Platenstraße.<br />(Stand 12.01.2021, 09:17 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "12:00:00",
+      "sDate": "2021-01-08",
+      "eTime": "12:00:00",
+      "eDate": "2021-01-22",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus SEV"
+        }
+      ],
+      "id": "2124528-0",
+      "act": true,
+      "head": "RB15: Busse statt Bahnen auf Teilstrecke an den Wochenenden vom 22.01. bis 28.02.",
+      "lead": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse.",
+      "text": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse. Diese halten ausgenommen der Haltestellen \"Hasselborn Dorfgemeinschaftshaus\" und \"Hundstadt Ortsmitte\" an den Bushaltestellen der jeweiligen Bahnhöfe.<br />Zwischen Friedrichsdorf und Bad Homburg kann ersatzweise die S-Bahn-Linie S5 genutzt werden.<br /><br />In den Ersatzbussen ist leider keine Fahrradmitnahme möglich.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 128,
+      "sTime": "05:00:00",
+      "sDate": "2021-01-22",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-28",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus SEV"
+        }
+      ],
+      "id": "2124526-0",
+      "act": true,
+      "head": "RB15: Busse statt Bahnen auf Teilstrecke an den Wochenenden vom 22.01. bis 28.02.",
+      "lead": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse.",
+      "text": "An den Wochenenden entfallen die Züge zwischen \"Friedrichsdorf Bahnhof\" und \"Brandoberndorf Bahnhof\", beziehungsweise \"Grävenwiesbach Bahnhof\". Der Grund dafür sind Bauarbeiten. Ersatzweise fahren Busse. Diese halten ausgenommen der Haltestellen \"Hasselborn Dorfgemeinschaftshaus\" und \"Hundstadt Ortsmitte\" an den Bushaltestellen der jeweiligen Bahnhöfe.<br />Zwischen Friedrichsdorf und Bad Homburg kann ersatzweise die S-Bahn-Linie S5 genutzt werden.<br /><br />In den Ersatzbussen ist leider keine Fahrradmitnahme möglich.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 128,
+      "sTime": "05:00:00",
+      "sDate": "2021-01-22",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-28",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M72"
+        },
+        {
+          "name": "Bus M73"
+        }
+      ],
+      "id": "2124535-0",
+      "act": true,
+      "head": "Frankfurt: Busse M72, M73 - Haltestelle \"Pflanzländer\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Nordwestzentrum\" um etwa 50 Meter zurückverlegt, in die Praunheimer Straße in Höhe Haus Nummer 168. Grund für die Änderungen ist der barrierefreie Ausbau der Haltestelle.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Nordwestzentrum\" um etwa 50 Meter zurückverlegt, in die Praunheimer Straße in Höhe Haus Nummer 168. <br />Grund für die Änderungen ist der barrierefreie Ausbau der Haltestelle.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "07:15:00",
+      "sDate": "2021-01-20",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 363"
+        }
+      ],
+      "id": "2124540-0",
+      "act": true,
+      "head": "Hungen: Busse 363, GI-60, GI-61 - Umleitung und Haltestellen entfallen vom 20.01. bis 21.01.",
+      "lead": "Die Busse fahren eine Umleitung und die Haltestellen \"Stadtmitte\" und \"Sportplatz\" entfallen. Alternativ kann die Haltestelle \"Bahnhof\" genutzt werden. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren eine Umleitung und die Haltestellen \"Stadtmitte\" und \"Sportplatz\" entfallen. Alternativ kann die Haltestelle \"Bahnhof\" genutzt werden. <br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-20",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-21",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusFB-52"
+        }
+      ],
+      "id": "2123110-0",
+      "act": true,
+      "head": "Landkreis Gießen / Wetteraukreis: Busse FB-52, GI-62 / ALT GI-63 - Änderungen bei Haltestellen",
+      "lead": "Die Linien fahren eine Umleitung und die Haltestellen \"Birkenstraße\" und \"Mittelstraße\" in Lich-Birklar entfallen. Durch die Umleitung kann es zu Verspätungen kommen. Zudem bedienen die Busse nun die Haltestelle \"Neue Licher Pforte\". Grund ist die Weiterführung der Bauarbeiten an der Ortsdurchfahrt.",
+      "text": "Die Linien fahren eine Umleitung und es kommt zu Änderungen bei Haltestellen: Die Haltestellen \"Lich-Birklar Birkenstraße\" und \"Lich-Birklar Mittelstraße\" entfallen. Durch die Umleitung kann es zu Verspätungen kommen. Zudem bedienen die Busse nun die Haltestelle \"Lich-Birklar Neue Licher Pforte\".<br />Grund ist die Weiterführung der Bauarbeiten an der Ortsdurchfahrt Lich-Bierklar.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-05",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "- vsl. Mitte 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 5"
+        },
+        {
+          "name": "Bus 8"
+        },
+        {
+          "name": "Bus E"
+        }
+      ],
+      "id": "2123097-0",
+      "act": true,
+      "head": "Wiesbaden: Bus 8 - Umleitung und zusätzliche Haltestellen vom 21.01. bis 23.01.",
+      "lead": "Die Busse fahren eine Umleitung. Alle Haltestellen, die auf der Umleitungsstrecke liegen, werden mitbedient. Grund für die Änderungen ist die Vollsperrung der Geisbergstraße.",
+      "text": "Die Busse fahren eine Umleitung. Alle Haltestellen, die auf der Umleitungsstrecke liegen, werden mitbedient.<br /><br />Beim Fahrtweg über die Schumannstraße betrifft dies die Haltestellen \"Abeggstraße\", \"Joh.-Sebastian-Bach-Str.\", \"Leberberg\" und \"Kureck\". Beim Fahrtweg über das Dambachtal und die Idsteiner Straße betrifft dies die Haltestellen \"Thomaestraße\", \"Robert-Schumann-Schule\", \"Neuberg\", \"Leberberg\" und \"Kureck\".<br /><br />Grund für die Änderungen ist die Vollsperrung der Geisbergstraße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "07:30:00",
+      "sDate": "2021-01-21",
+      "eTime": "20:00:00",
+      "eDate": "2021-01-23",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 187"
+        },
+        {
+          "name": "Bus 187"
+        }
+      ],
+      "id": "2124563-0",
+      "act": true,
+      "head": "Rüdesheim: Bus 187 - Umleitung und Änderungen bei Haltestellen in eine Fahrtrichtung",
+      "lead": "Die Busse fahren eine Umleitung und es kommt zu Änderungen bei Haltestellen in Fahrtrichtung Rüdesheim. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren eine Umleitung und es kommt zu folgenden Änderungen in Fahrtrichtung Rüdesheim:<br /><ul><li>Auf den Fahrten mit Abfahrt um 05:20 Uhr von \"Ludwig-Glaser-Straße\" und 06:14 Uhr von \"Assmannshausen Bahnhof\" wird die Haltestelle \"Winzerweg\" nicht bedient. Alternativ kann die Haltestelle \"Eibinger Kirche\" genutzt werden.</li><li>Die Haltestelle \"Friedhof\" entfällt. Alternativ kann die Haltestelle \"Hildegardisschule\" genutzt werden.</li><li>Die Haltestelle \"Rheinhalle Nord\" entfällt. Alternativ kann die Haltestelle \"Kirchstraße\" genutzt werden.</li><li>Die Haltestelle \"Im Rechacker\" entfällt.</li><li>Die Haltestelle \"Geisenheimer Straße\" entfällt.</li></ul>Grund für die Änderungen sind Baumaßnahmen. <br /><br />Die Änderungen können dem beigefügten Baustellenfahrplan im PDF-Dokument entnommen werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2021-01-18",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-12",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 203"
+        }
+      ],
+      "id": "2124576-0",
+      "act": true,
+      "head": "Heidenrod-Laufenselden / Reckenroth: Busse 203, 204, 275 - Umleitung und Änderungen am 19.01.",
+      "lead": "Die Busse fahren zwischen etwa 08:30 Uhr und 16:00 Uhr eine Umleitung und es kommt zu Änderungen bei Haltestellen. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren zwischen etwa 08:30 Uhr und 16:00 Uhr eine Umleitung und es kommt zu folgenden Änderungen: <br />Busse 203, 204:<br /><ul><li>Die Haltestellen \"Laufenselden Schmiedweg\" und \"Reckenroth Friedhof\" entfallen.</li></ul>Bus 275:<br /><ul><li>Die Haltestelle \"Laufenselden Schmiedweg\" entfällt</li></ul>Ersatzweise kann die Haltestelle \"Laufenselden Holzhäuser Weg\" genutzt werden.<br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "08:00:00",
+      "sDate": "2021-01-19",
+      "eTime": "16:15:00",
+      "eDate": "2021-01-19",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusGI-41"
+        },
+        {
+          "name": "BusGI-42"
+        },
+        {
+          "name": "BusGI-43"
+        }
+      ],
+      "id": "2113037-0",
+      "act": true,
+      "head": "Heuchelheim: Busse GI-41, GI-42, GI-44 - Haltestelle \"Abendstern\" verlegt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle ist in Fahrtrichtung Biebertal um etwa 200 Meter zurückverlegt in Richtung Gießen. Grund dafür ist eine Baumaßnahme.<br />(Stand 21.12.2020, 11:40 Uhr)",
+      "text": "Die Haltestelle ist in Fahrtrichtung Biebertal um etwa 200 Meter zurückverlegt. Grund dafür ist eine Baumaßnahme.<br /><br />(Stand 01.12.2020, 11:40 Uhr)<br />",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "14:00:00",
+      "sDate": "2019-02-15",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-22",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 551"
+        },
+        {
+          "name": "Bus n96"
+        }
+      ],
+      "id": "2118040-0",
+      "act": true,
+      "head": "Frankfurt-Bergen-Enkheim: Bus 551 - Umleitung und Änderungen bei Haltestellen",
+      "lead": "Die Busse fahren eine Umleitung in Fahrtrichtung Offenbach bzw. Gravenbruch und es kommt zu Änderungen bei Haltestellen. Durch die zu fahrende Umleitung kann es zu Fahrplanabweichungen und längeren Reisezeiten kommen. Grund dafür ist der Neubau eines Wohnhauses in der Straße Landgraben.",
+      "text": "Die Busse fahren eine Umleitung in Fahrtrichtung Offenbach bzw. Gravenbruch und es kommt zu Änderungen bei Haltestellen. Folgende Änderungen treten in Kraft:<ul><li>Haltestelle \"Nordring/Landgraben\" entfällt</li><li>Haltestelle \"Marktstraße/Landgraben\" um etwa 250 Meter verlegt, in den Neuen Weg in Höhe Haus Nummer 6</li><li>Haltestelle \"Nordring/Vilbeler Landstraße\" um etwa 250 Meter verlegt in die Vilbeler Landstraße gegenüber Haus Nummer 238</li></ul>Durch die zu fahrende Umleitung kann es zu Fahrplanabweichungen und längeren Reisezeiten kommen. Grund dafür ist der Neubau eines Wohnhauses in der Straße Landgraben.<br /><br />(Stand 15.01.2021, 15:00 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "08:00:00",
+      "sDate": "2019-10-21",
+      "eTime": "10:00:00",
+      "eDate": "2021-01-19",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 5"
+        }
+      ],
+      "id": "2123437-0",
+      "act": true,
+      "head": "Fulda: Bus 5 - Haltestellen entfallen in einer Fahrtrichtung",
+      "lead": "Die Haltestellen \"Kinderakademie\" und \"Weyherser Weg\" entfallen in Fahrtrichtung stadteinwärts wegen Bauarbeiten. Ersatzweise können die Haltestellen \"Gummiwerke\" und \"Osthessen-Center\" genutzt werden.",
+      "text": "Die Haltestellen \"Kinderakademie\" und \"Weyherser Weg\" entfallen in Fahrtrichtung stadteinwärts wegen Bauarbeiten. Ersatzweise können die Haltestellen \"Gummiwerke\" und \"Osthessen-Center\" genutzt werden.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-26",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 98"
+        }
+      ],
+      "id": "2123435-0",
+      "act": true,
+      "head": "Schlüchtern-Wallroth: Bus 98 - Haltestelle \"Kirche\" verlegt",
+      "lead": "Die Haltestelle ist verlegt in die Grundstraße. Der Grund dafür sind Kanalarbeiten.",
+      "text": "Die Haltestelle ist verlegt in die Grundstraße. Der Grund dafür sind Kanalarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-10-22",
+      "eTime": "23:59:00",
+      "eDate": "2021-06-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 73"
+        }
+      ],
+      "id": "2107924-0",
+      "act": true,
+      "head": "Kronberg: Bus 73 - Haltestelle \"Receptur\" entfällt",
+      "lead": "Die Haltestelle entfällt dauerhaft. Grund für die Änderung ist die Einrichtung einer Fußgängerzone in der Friedrich-Ebert-Straße.<br />(Stand 27.10.2020, 17:30 Uhr)",
+      "text": "Die Haltestelle entfällt dauerhaft. <br />Grund für die Änderung ist die Einrichtung einer Fußgängerzone in der Friedrich-Ebert-Straße.<br /><br />(Stand 27.10.2020, 17:30 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "13:00:00",
+      "sDate": "2018-03-29",
+      "eTime": "23:59:00",
+      "eDate": "2021-12-01",
+      "altStart": "",
+      "altEnd": "- dauerhaft"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 52"
+        }
+      ],
+      "id": "2119638-0",
+      "act": true,
+      "head": "Frankfurt-Gallusviertel: Bus 52 - Haltestelle \"Kleyerstraße\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist für die Busse in Fahrtrichtung \"Jägerallee\" und \"Friedrich-Ebert-Siedlung\" um etwa 100 Meter vorverlegt an die Parkbucht kurz nach der Einmündung der Ackermannstraße. Grund für die Änderung sind Bauarbeiten.",
+      "text": "Die Haltestelle ist für die Busse in Fahrtrichtung \"Jägerallee\" und \"Friedrich-Ebert-Siedlung\" um etwa 100 Meter vorverlegt an die Parkbucht kurz nach der Einmündung der Ackermannstraße. <br />Grund für die Änderung sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "08:00:00",
+      "sDate": "2020-02-03",
+      "eTime": "23:59:00",
+      "eDate": "2021-12-01",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 804"
+        },
+        {
+          "name": "Bus 806"
+        }
+      ],
+      "id": "2117856-0",
+      "act": true,
+      "head": "Kelkheim-Münster: Bus 804 - Haltestelle \"Eichendorff-Schule\" verlegt",
+      "lead": "Die Haltestelle entfällt. Eine Ersatzhaltestelle in der Lorsbacher Straße am Hinterausgang der Schule in Höhe der Schwimmbadparkplatzes wird bedient. Grund dafür sind Kanalbauarbeiten.",
+      "text": "Die Haltestelle entfällt. Eine Ersatzhaltestelle in der Lorsbacher Straße am Hinterausgang der Schule in Höhe der Schwimmbadparkplatzes wird bedient. Grund dafür sind Kanalbauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2019-10-14",
+      "eTime": "23:59:00",
+      "eDate": "2021-08-31",
+      "altStart": "",
+      "altEnd": "- vsl. Sommer 2021"
+    },
+    {
+      "id": "2121858-0",
+      "act": true,
+      "head": "Mainz-Kastel: Bus N7 - Umleitung und Haltestelle \"Anna-Birle-Straße\" entfällt",
+      "lead": "Die Haltestelle entfällt. Ersatzweise kann die Haltestelle \"Lorenz-Schott-Straße\" genutzt werden. Grund für die Änderungen ist der vierspurige Ausbau der Boelckestraße.",
+      "text": "Die Haltestelle entfällt. Ersatzweise kann die Haltestelle \"Lorenz-Schott-Straße\" genutzt werden. <br />Grund für die Änderungen ist der vierspurige Ausbau der Boelckestraße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-07-03",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 805"
+        },
+        {
+          "name": "AST 83"
+        },
+        {
+          "name": "AST 805"
+        }
+      ],
+      "id": "2123836-0",
+      "act": true,
+      "head": "Glashütten-Schloßborn: Bus 805 - Haltestelle \"Im Krautfeld\" entfällt vom 19.11. bis 26.02.",
+      "lead": "Der Bus fährt eine Umleitung und die Haltestelle entfällt. Der Grund dafür sind Baumaßnahmen.",
+      "text": "Der Bus fährt eine Umleitung und die Haltestelle entfällt. Der Grund dafür sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2020-11-19",
+      "eTime": "23:59:00",
+      "eDate": "2021-02-26",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusGI-22"
+        }
+      ],
+      "id": "2122019-0",
+      "act": true,
+      "head": "Gießen: Busse 1, 2, 3, 6, 7, 13, 801, 802, GI-22 - Haltestelle \"Berliner Platz\" entfällt ab 27.07.",
+      "lead": "Es kommt zu Änderungen bei Haltestellen auf Grund von Bauarbeiten.",
+      "text": "Die Haltestelle auf der Seite der Kongresshalle entfällt. <br />Die Linien 3 und 13 bedienen in den Fahrtrichtungen \"Schlangenzahl\"/\"Schwarzacker\"/\"Dialysezentrum\" als Ersatz die Haltestelle \"Stadttheater\". <br />Die Linien 1, 2, 7, 9, 801, 802 und GI-22 werden ab der Haltestelle \"Johanneskirche\" oder \"Marktplatz\" in Fahrtrichtung \"Ludwigsplatz\" über die Bussteige 1 und 2 der Haltestelle \"Behördenzentrum\" auf Seite des Rathauses geführt. <br />Die Linie 6 nutzt in beide Fahrtrichtungen die Haltestelle \"Behördenzentrum\" statt \"Berliner Platz\".<br />Grund sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-07-27",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-01",
+      "altStart": "",
+      "altEnd": "bis Frühling 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus X57"
+        },
+        {
+          "name": "Bus X64"
+        }
+      ],
+      "id": "2121497-0",
+      "act": true,
+      "head": "Frankfurt: Bus X57 - Umleitung und Haltestellen entfallen",
+      "lead": "Die Busse fahren eine Umleitung und es entfallen die Haltestellen \"Birsteiner Straße\" und \"Am Hessen-Center\". Grund sind Bauarbeiten.<br />(Stand 30.11.2020, 10:34 Uhr)",
+      "text": "Die Busse fahren eine Umleitung und es entfallen die Haltestellen \"Birsteiner Straße\" und \"Am Hessen-Center\". <br />Grund sind Bauarbeiten.<br /><br />(Stand 30.11.2020, 10:34 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "05:20:00",
+      "sDate": "2020-06-06",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-30",
+      "altStart": "",
+      "altEnd": "- vsl. April 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 107"
+        }
+      ],
+      "id": "2124028-0",
+      "act": true,
+      "head": "Offenbach: Bus 107 - Haltestelle \"Spessartring\" entfällt",
+      "lead": "Die Busse fahren eine Umleitung. Die Haltestelle entfällt. Ersatzweise können die Haltestellen \"Theodor-Heuss-Schule\" in der Rhönstraße und \"Waldstraße\" im Spessartring genutzt werden. Grund für die Änderungen sind Straßenbauarbeiten.",
+      "text": "Die Busse fahren eine Umleitung. Die Haltestelle entfällt. Ersatzweise können die Haltestellen \"Theodor-Heuss-Schule\" in der Rhönstraße und \"Waldstraße\" im Spessartring genutzt werden. <br />Grund für die Änderungen sind Straßenbauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-12-01",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-31",
+      "altStart": "01.12.2020",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 50"
+        },
+        {
+          "name": "Bus 53"
+        },
+        {
+          "name": "Bus 54"
+        },
+        {
+          "name": "Bus 59"
+        },
+        {
+          "name": "Bus M55"
+        },
+        {
+          "name": "Bus N11"
+        },
+        {
+          "name": "Bus 51"
+        },
+        {
+          "name": "Bus 68"
+        }
+      ],
+      "id": "2103754-0",
+      "act": true,
+      "head": "Frankfurt-Höchst: Busse 50, 51, 53, 54, M55, 59 - Haltestelle  verlegt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle \"Bolongaropalast\" ist um etwa 100 Meter vorverlegt und befindet sich in der Bolongarostraße in Höhe Haus Nummer 101. Grund dafür sind Bauarbeiten.<br />(Stand 02.12.2020, 07:56 Uhr)",
+      "text": "Die Haltestelle \"Bolongaropalast\" ist um etwa 100 Meter vorverlegt und befindet sich in der Bolongarostraße in Höhe Haus Nummer 101. Folgende Buslinien sind betroffen:<br /><ul><li>Linie 50: Fahrtrichtung \"Bockenheimer Warte\"</li><li>Linie 51: Fahrtrichtung \"Frauenhof-/Triftstraße\"</li><li>Linie 53: Bus endet an der verlegten Haltestelle</li><li>Linie 54: Kurzfahrten enden an der verlegten Haltestelle und Busse in Fahrtrichtung \"Griesheim Bahnhof\" bedienen verlegte Haltestelle</li><li>Linie M55: Fahrtrichtung \"Rödelheim Bahnhof\"</li><li>Linie 59: Kurzfahrten enden an der verlegten Haltestelle und Busse in Fahrtrichtung \"Erzbergstraße\" bedienen verlegte Haltestelle</li></ul>Grund dafür sind Bauarbeiten.<br /><br />(Stand 02.12.2020, 07:56 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-07-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus X17"
+        },
+        {
+          "name": "Bus X77"
+        }
+      ],
+      "id": "2124037-0",
+      "act": true,
+      "head": "Frankfurt-Flughafen: Busse X17, X77 - Haltestelle \"Thea-Rasche-Straße\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist auf der Linie X17 in Fahrtrichtung Hofheim und auf der Linie X77 in Fahrtrichtung §Flughafen Gebäude 543\" um etwa 80 Meter in die Amelia-Mary-Earhart-Straße in Höhe der Ausfahrt der Tiefgarage des Hotels Park Inn verlegt. Grund dafür sind Bauarbeiten.",
+      "text": "Die Haltestelle ist bei den Bussen der Linie 77 in Fahrtrichtung \"Flughafen Terminal 1\" sowie bei den Bussen der Linie X17 in Fahrtrichtung Hofheim um etwa 80 Meter in die Amelia-Mary-Earhart-Straße in Höhe der Ausfahrt der Tiefgarage des Hotels Park Inn verlegt. <br />Grund dafür sind Bauarbeiten.<br /><br />(Stand 02.12.2020, 08:12 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "03:00:00",
+      "eDate": "2021-08-31",
+      "altStart": "13.08.2018, 08:00 Uhr",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "BusFB-41"
+        }
+      ],
+      "id": "2122323-0",
+      "act": true,
+      "head": "Wetteraukreis: Busse FB-41, FB-45 - Änderungen und Ersatzlinien",
+      "lead": "Es kommt zu umfangreichen Änderungen, Umleitungen und der Einrichtung einer Ersatzlinie. <br />Grund für die Änderungen sind Bauarbeiten und eine Straßensperrung in Enzheim.<br />(Stand 02.12.2020, 13:14 Uhr)",
+      "text": "Es kommt zu Änderungen wegen einer Straßensperrung:<br /><ul><li>Die Haltestelle \"Enzheim\" entfällt. Eine Ersatzhaltestelle ist in der Mühlstraße eingerichtet.</li><li>Zudem entfällt die Haltestelle \"Glauberg Enzheimer Straße\". Auf der Linie FB-45 kann ersatzweise die Haltestelle \"Rohrbacher Weg\" genutzt werden.</li><li>Zwischen Enzheim und Lindheim ist ein Sonderverkehr durch die Linie FB-41E mit Kleinbussen und Anruflinientaxis eingerichtet.</li><li>Die Kleinbusse des Ersatzverkehrs fahren direkt zwischen Enzheim und der Grundschule Lindheim. Ein Umstieg ist nicht notwendig.</li><li>Weitere Fahrten zu den Schulen:<br />Der Ersatzverkehr FB-41E stellt eine Anschlussverknüpfung zu den Linien FB-41 und FB-45 sicher. <br />Zur 1. Unterrichtsstunde sind folgende Verbindungen möglich:</li><li>Zur Gesamtschule Konradsdorf:<br />Abfahrt Enzheim Ersatzhaltestelle um 6:57 Uhr,<br />Ankunft Lindheim \"Festplatz\" um 7:00 Uhr, <br />Umstieg in Linie FB-45,<br />Abfahrt Lindheim \"Festplatz\" um 7:04 Uhr</li><li>Zur Limesschule: <br />Abfahrt Enzheim Ersatzhaltestelle um 7:05 Uhr,<br />Ankunft Lindheim \"Festplatz\" um 7:08 Uhr,<br />Umstieg in Linie FB-41,<br />Abfahrt Lindheim \"Festplatz\" um 7:11 Uhr</li><li>Wolfgang-Ernst-Gymnasium, Schule Am Dohlberg, Berufliche Schule Büdingen:<br />Abfahrt Enzheim Ersatzhaltestelle um 7:17 Uhr, <br />Ankunft Lindheim \"Festplatz\" um 7:20 Uhr, <br />Umstieg in Linie FB-41, <br />Abfahrt Lindheim \"Festplatz\" um 7:24 Uhr</li></ul>(Stand 02.12.2020, 13:14 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "04:00:00",
+      "sDate": "2020-08-10",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-12",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 202"
+        }
+      ],
+      "id": "2122283-0",
+      "act": true,
+      "head": "Heidenrod-Nauroth: Busse 202, 205 - Haltestellen entfallen",
+      "lead": "Die Haltestellen \"Schönauer Straße\", \"Mitte\" und \"Kirche\" entfallen wegen einer Baumaßnahme.",
+      "text": "Die Haltestellen \"Schönauer Straße\", \"Mitte\" und \"Kirche\" entfallen wegen einer Baumaßnahme.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-08-03",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus N11"
+        },
+        {
+          "name": "Bus 42"
+        },
+        {
+          "name": "Bus 44"
+        },
+        {
+          "name": "Bus 551"
+        }
+      ],
+      "id": "2124070-0",
+      "act": true,
+      "head": "Frankfurt: Busse 44, 551, N11 - Haltestelle \"Bürgeler Straße\" in einer Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist auf der Linie 44 in Fahrtrichtung \"Friedhof Fechenheim\", auf der Linie 551 in Fahrtrichtung Offenbach/Gravenbruch und auf der Linie n62 in Fahrtrichtung \"Konstablerwache\" um etwa 50 Meter zurückverlegt in die Starkenburger Straße in Höhe Haus Nummer 50.",
+      "text": "Die Haltestelle ist auf der Linie 44 in Fahrtrichtung \"Friedhof Fechenheim\", auf der Linie 551 in Fahrtrichtung Offenbach/Gravenbruch und auf der Linie n62 in Fahrtrichtung \"Konstablerwache\" um etwa 50 Meter zurückverlegt in die Starkenburger Straße in Höhe Haus Nummer 50. <br /><br />Grund dafür sind Arbeiten im Haltestellenbereich.<br /><br />(Stand 04.12.2020, 14:46 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "07:30:00",
+      "eDate": "2021-03-31",
+      "altStart": "18.09.2020, 07:30 Uhr",
+      "altEnd": "- vsl. März 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 8"
+        },
+        {
+          "name": "Bus E"
+        }
+      ],
+      "id": "2122638-0",
+      "act": true,
+      "head": "Wiesbaden: Bus 8 - Haltestelle \"Tränkweg\" entfällt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle kann nicht bedient werden. Grund sind Bauarbeiten.",
+      "text": "Die Haltestelle kann nicht bedient werden. Ersatzweise können die Haltestelle \"Tränkweg\" in der Idsteiner Straße, die Haltestelle \"Eigenheim\" in der Honeggerstraße und die Haltestelle \"Händelstraße\" in Fahrtrichtung Innenstadt über Dambachtal genutzt werden.<br />Grund sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "09:00:00",
+      "sDate": "2020-08-31",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-31",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 102"
+        }
+      ],
+      "id": "2124128-0",
+      "act": true,
+      "head": "Offenbach: Busse 102, 104, 106 - Umleitung und Haltestelle \"Hauptbahnhof\" verlegt",
+      "lead": "Die Busse fahren eine Umleitung und die Haltestelle entfällt. Grund für die Änderungen sind Baumaßnahmen.",
+      "text": "Die Busse fahren eine Umleitung und die Haltestelle entfällt. Eine Ersatzhaltestelle für die Buslinie 102 in Fahrtrichtung \"Kaiserlei\", die Buslinie 104 in Fahrtrichtung \"Bieber\" und die Buslinie 106 in Fahrtrichtung \"Caritas\" ist in der Bismarckstraße auf Höhe der Hausnummern 129 bis 133 eingerichtet. Eine Ersatzhaltestelle für die Buslinie 102 in Fahrtrichtung \"Bieber\", die Buslinie 104 in Fahrtrichtung \"Kaiserlei\" und die Buslinie 106 in Fahrtrichtung \"Wetterpark\" ist in der Bismarckstraße gegenüber der Hausnummer 125 eingerichtet. <br />Grund für die Änderungen sind Baumaßnahmen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-12-09",
+      "eTime": "23:59:00",
+      "eDate": "2021-04-30",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus WE3"
+        }
+      ],
+      "id": "2124168-0",
+      "act": true,
+      "head": "Weiterstadt-Riedbahn: Bus WE3 - Änderungen an der Haltestelle \"Am Dornbusch\"",
+      "lead": "Die Haltestelle ist dauerhaft in die Gutenbergstraße verlegt und umbenannt in \"Am Dornbusch / Einkaufszentrum\".",
+      "text": "Die Haltestelle ist dauerhaft in die Gutenbergstraße verlegt und umbenannt in \"Am Dornbusch / Einkaufszentrum\". In Fahrtrichtung Darmstadt entfällt die Haltestelle.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-31",
+      "altStart": "",
+      "altEnd": "- dauerhaft"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 84"
+        },
+        {
+          "name": "Bus 78"
+        },
+        {
+          "name": "Bus N12"
+        },
+        {
+          "name": "Bus N18"
+        }
+      ],
+      "id": "2124162-0",
+      "act": true,
+      "head": "Frankfurt-Niederrad: Busse 78, N12 - Haltestelle \"Gerauer Straße\" verlegt in eine Fahrtrichtung",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Rheinlandstraße\" um etwa 40 Meter vorverlegt in die Adolf-Miersch-Straße in Höhe Haus Nummer 2. Grund dafür sind Bauarbeiten im Haltestellenbereich.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Rheinlandstraße\" um etwa 40 Meter vorverlegt in die Adolf-Miersch-Straße in Höhe Haus Nummer 2. <br />Grund dafür sind Bauarbeiten im Haltestellenbereich.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 704,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:30:00",
+      "eDate": "2021-04-30",
+      "altStart": "23.07.2018",
+      "altEnd": "- vsl. April 2021"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 28"
+        }
+      ],
+      "id": "2120957-0",
+      "act": true,
+      "head": "Mainz-Kastel: Busse 28, 33 - Umleitung und Änderungen",
+      "lead": "Die Busse fahren zwischen \"Castellumstraße\" und \"Mudra-Kaserne\" eine Umleitung. Die Haltestelle \"Otto-Suhr-Ring\" ist verlegt. Durch die Umleitung kommt es teilweise zu geänderten Abfahrtszeiten. Grund für die Änderungen ist der vierspurige Ausbau der Boelckestraße.",
+      "text": "Die Busse fahren zwischen \"Castellumstraße\" und \"Mudra-Kaserne\" eine Umleitung. <br />Die Haltestelle \"Otto-Suhr-Ring\" ist verlegt. Eine Ersatzhaltestelle wird auf der Boelckestraße in Höhe Haus Nummer 60 bedient. <br />Durch die Umleitung kommt es teilweise zu geänderten Abfahrtszeiten. <br />Grund für die Änderungen ist der vierspurige Ausbau der Boelckestraße.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "04:00:00",
+      "sDate": "2020-04-23",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-29",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus 101"
+        },
+        {
+          "name": "Bus 102"
+        },
+        {
+          "name": "Bus 103"
+        },
+        {
+          "name": "Bus 104"
+        },
+        {
+          "name": "Bus 105"
+        },
+        {
+          "name": "Bus 106"
+        },
+        {
+          "name": "Bus 108"
+        },
+        {
+          "name": "Bus 120"
+        }
+      ],
+      "id": "2124206-0",
+      "act": true,
+      "head": "Offenbach: Busse - Entfall nächtlicher Fahrten ab 13.12.",
+      "lead": "Die letzte Abfahrt der Offenbacher Stadtbuslinien am \"Marktplatz\" ist bis auf weiteres auf allen Linien um 23:19 Uhr.",
+      "text": "Die letzte Abfahrt der Offenbacher Stadtbuslinien am \"Marktplatz\" ist bis auf weiteres auf allen Linien um 23:19 Uhr. <br />Grund für die Einschränkungen ist die Pandemie-Situation.<br />Die Änderungen sind noch nicht in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "23:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-03-02",
+      "altStart": "",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus KU"
+        },
+        {
+          "name": "Bus WE1"
+        }
+      ],
+      "id": "2120247-0",
+      "act": true,
+      "head": "Darmstadt: Busse WE1, WE3, WE4 - Baustellenfahrpläne bis 31.01.2021",
+      "lead": "Die Busse fahren nach einem Baustellenfahrplan und es entfallen verschiedene Haltestellen. Grund dafür sind Brückenbaumaßnahmen.<br />(Stand 14.12.2020, 15:30 Uhr)",
+      "text": "Die Busse der Linien WE3 und WE4 fahren nach einem Baustellenfahrplan und die Haltestellen \"Evonik\", \"Mainzer Straße\", \"Windmühle\" und \"Pfnorstraße\" entfallen. Außerdem ist die Haltestelle \"Bunsenstraße\" in beide Fahrtrichtungen verlegt. <br />Die Busse der Linie WE1 sind nur bei Spätfahrten in Fahrtrichtung stadtauswärts betroffen. Es entfällt dann ebenfalls die Haltestelle \"Pfnorstraße\" und die Haltestelle \"Bunsenstraße\" ist verlegt. Aufgrund der Umleitung verschieben sich ab \"Bunsenstraße\" die Abfahrtszeiten um 7 Minuten nach hinten.<br />Grund dafür sind Brückenbaumaßnahmen.<br /><br />(Stand 14.12.2020, 15:30 Uhr)",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "04:00:00",
+      "sDate": "2020-03-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-01-31",
+      "altStart": "",
+      "altEnd": ""
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M43"
+        },
+        {
+          "name": "Bus N4"
+        }
+      ],
+      "id": "2124068-0",
+      "act": true,
+      "head": "Frankfurt-Seckbach: Bus M43 - Haltestelle \"Hufeland-Haus\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Bornheim Mitte\" um etwa 200 Meter vorverlegt in die Wilhelmshöher Straße in Höhe Haus Nummer 25. Grund für die Änderungen sind Arbeiten an Versorgungsleitungen.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Bornheim Mitte\" um etwa 200 Meter vorverlegt in die Wilhelmshöher Straße in Höhe Haus Nummer 25. Grund für die Änderungen sind Arbeiten an Versorgungsleitungen.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 64,
+      "sTime": "03:00:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-12-31",
+      "altStart": "01.10.2020, 07:30 Uhr",
+      "altEnd": "bis auf weiteres"
+    },
+    {
+      "affectedProduct": [
+        {
+          "name": "Bus M43"
+        }
+      ],
+      "id": "2124219-0",
+      "act": true,
+      "head": "Frankfurt-Bergen: Bus M43 - Haltestelle \"Heimatmuseum Bergen-Enkheim\" in eine Fahrtrichtung verlegt",
+      "lead": "Die Haltestelle ist in Fahrtrichtung \"Bergen Ost\" um etwa 50 Meter zurückverlegt. Die Ersatzhaltestelle befindet sich in der Marktstraße in Höhe von Haus Nummer 28. Grund für die Änderung sind Bauarbeiten.",
+      "text": "Die Haltestelle ist in Fahrtrichtung \"Bergen Ost\" um etwa 50 Meter zurückverlegt. Die Ersatzhaltestelle befindet sich in der Marktstraße in Höhe von Haus Nummer 28. <br />Grund für die Änderung sind Bauarbeiten.",
+      "company": "RMVU",
+      "category": "2",
+      "priority": 100,
+      "products": 192,
+      "sTime": "15:08:00",
+      "sDate": "2020-12-13",
+      "eTime": "23:59:00",
+      "eDate": "2021-12-12",
+      "altStart": "15.12.2015 ",
+      "altEnd": "bis auf weiteres"
+    }
+  ],
+  "serverVersion": "1.9",
+  "dialectVersion": "1.23",
+  "requestId": "1610930075815"
+}

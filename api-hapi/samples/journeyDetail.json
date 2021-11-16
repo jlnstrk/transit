@@ -1,0 +1,659 @@
+{
+  "Stops": {
+    "Stop": [
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06413000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Offenbach (Main)-Offenbach Ost Ostbahnhof",
+        "id": "A=1@O=Offenbach (Main)-Offenbach Ost Ostbahnhof@X=8784376@Y=50102439@U=80@L=3002601@",
+        "extId": "3002601",
+        "routeIdx": 0,
+        "lon": 8.784376,
+        "lat": 50.102439,
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "00:58:00",
+        "depDate": "2021-01-18",
+        "depTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06413000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Offenbach (Main)-Zentrum Hauptbahnhof",
+        "id": "A=1@O=Offenbach (Main)-Zentrum Hauptbahnhof@X=8758981@Y=50098888@U=80@L=3002501@",
+        "extId": "3002501",
+        "routeIdx": 1,
+        "lon": 8.758981,
+        "lat": 50.098888,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:06:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:01:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "4",
+        "depTrack": "4",
+        "rtArrTrack": "4",
+        "rtDepTrack": "4"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Frankfurt (Main) Südbahnhof",
+        "id": "A=1@O=Frankfurt (Main) Südbahnhof@X=8686438@Y=50099329@U=80@L=3000912@",
+        "extId": "3000912",
+        "routeIdx": 2,
+        "lon": 8.686438,
+        "lat": 50.099329,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:11:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:11:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "5",
+        "depTrack": "5",
+        "rtArrTrack": "5",
+        "rtDepTrack": "5"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Frankfurt (Main) Hauptbahnhof",
+        "id": "A=1@O=Frankfurt (Main) Hauptbahnhof@X=8662653@Y=50106808@U=80@L=3000010@",
+        "extId": "3000010",
+        "routeIdx": 3,
+        "lon": 8.662653,
+        "lat": 50.106808,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:20:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:15:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "7",
+        "depTrack": "7",
+        "rtArrTrack": "7",
+        "rtDepTrack": "7"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Frankfurt (Main) Niederrad Bahnhof",
+        "id": "A=1@O=Frankfurt (Main) Niederrad Bahnhof@X=8637087@Y=50080775@U=80@L=3001830@",
+        "extId": "3001830",
+        "routeIdx": 4,
+        "lon": 8.637087,
+        "lat": 50.080775,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:25:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:25:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "2",
+        "depTrack": "2",
+        "rtArrTrack": "2",
+        "rtDepTrack": "2"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Frankfurt (Main) Stadion",
+        "id": "A=1@O=Frankfurt (Main) Stadion@X=8632970@Y=50068082@U=80@L=3002899@",
+        "extId": "3002899",
+        "routeIdx": 5,
+        "lon": 8.63297,
+        "lat": 50.068082,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:28:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:27:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "5",
+        "depTrack": "5",
+        "rtArrTrack": "5",
+        "rtDepTrack": "5"
+      },
+      {
+        "name": "Frankfurt (Main) Gateway Gardens",
+        "id": "A=1@O=Frankfurt (Main) Gateway Gardens@X=8596762@Y=50056423@U=80@L=3011500@",
+        "extId": "3011500",
+        "routeIdx": 6,
+        "lon": 8.596735,
+        "lat": 50.056369,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:31:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:30:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1",
+        "depTrack": "1",
+        "rtArrTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Frankfurt (Main) Flughafen Regionalbahnhof",
+        "id": "A=1@O=Frankfurt (Main) Flughafen Regionalbahnhof@X=8571421@Y=50051201@U=80@L=3002930@",
+        "extId": "3002930",
+        "routeIdx": 7,
+        "lon": 8.571421,
+        "lat": 50.051201,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:34:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:33:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "Regio 3",
+        "depTrack": "Regio 3",
+        "rtDepTime": "01:35:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:34:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "Regio 3",
+        "rtDepTrack": "Regio 3"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06433007",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Kelsterbach Bahnhof",
+        "id": "A=1@O=Kelsterbach Bahnhof@X=8529091@Y=50063399@U=80@L=3002901@",
+        "extId": "3002901",
+        "routeIdx": 8,
+        "lon": 8.529091,
+        "lat": 50.063399,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:37:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:37:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "3",
+        "depTrack": "3",
+        "rtDepTime": "01:38:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:38:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "3",
+        "rtDepTrack": "3"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06433010",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Raunheim Bahnhof",
+        "id": "A=1@O=Raunheim Bahnhof@X=8454912@Y=50009850@U=80@L=3004910@",
+        "extId": "3004910",
+        "routeIdx": 9,
+        "lon": 8.454912,
+        "lat": 50.00985,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:42:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:42:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1",
+        "depTrack": "1",
+        "rtDepTime": "01:43:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:43:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06433012",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Rüsselsheim Bahnhof",
+        "id": "A=1@O=Rüsselsheim Bahnhof@X=8414137@Y=49992016@U=80@L=3004912@",
+        "extId": "3004912",
+        "routeIdx": 10,
+        "lon": 8.414137,
+        "lat": 49.992016,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:45:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:45:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1",
+        "depTrack": "1",
+        "rtDepTime": "01:46:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:46:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06433012",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Rüsselsheim Opelwerk Bahnhof",
+        "id": "A=1@O=Rüsselsheim Opelwerk Bahnhof@X=8400590@Y=49988204@U=80@L=3004913@",
+        "extId": "3004913",
+        "routeIdx": 11,
+        "lon": 8.40059,
+        "lat": 49.988204,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:47:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:47:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "27",
+        "depTrack": "27",
+        "rtDepTime": "01:48:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:48:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "27",
+        "rtDepTrack": "27"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "07339020",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Mainz-Bischofsheim Bahnhof",
+        "id": "A=1@O=Mainz-Bischofsheim Bahnhof@X=8358044@Y=49993427@U=80@L=3006999@",
+        "extId": "3006999",
+        "routeIdx": 12,
+        "lon": 8.358044,
+        "lat": 49.993427,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:50:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:50:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "4",
+        "depTrack": "4",
+        "rtDepTime": "01:51:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:51:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "4",
+        "rtDepTrack": "4"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06433005",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Ginsheim-Gustavsburg Mainz-Gustavsburg Bf",
+        "id": "A=1@O=Ginsheim-Gustavsburg Mainz-Gustavsburg Bf@X=8314519@Y=49994362@U=80@L=3006901@",
+        "extId": "3006901",
+        "routeIdx": 13,
+        "lon": 8.314519,
+        "lat": 49.994362,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:53:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:52:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1",
+        "depTrack": "1",
+        "rtDepTime": "01:54:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:53:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "07315000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Mainz Römisches Theater Bahnhof",
+        "id": "A=1@O=Mainz Römisches Theater Bahnhof@X=8278274@Y=49993355@U=80@L=3006902@",
+        "extId": "3006902",
+        "routeIdx": 14,
+        "lon": 8.278274,
+        "lat": 49.993355,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "01:56:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:56:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "2",
+        "depTrack": "2",
+        "rtDepTime": "01:57:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "01:57:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "2",
+        "rtDepTrack": "2"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "07315000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Mainz Hauptbahnhof",
+        "id": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+        "extId": "3006904",
+        "routeIdx": 15,
+        "lon": 8.258444,
+        "lat": 50.001436,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "02:01:00",
+        "depDate": "2021-01-18",
+        "arrTime": "01:59:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1a",
+        "depTrack": "1a",
+        "rtDepTime": "02:02:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "02:00:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "1a",
+        "rtDepTrack": "1a"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "07315000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Mainz Nordbahnhof",
+        "id": "A=1@O=Mainz Nordbahnhof@X=8245598@Y=50020008@U=80@L=3006905@",
+        "extId": "3006905",
+        "routeIdx": 16,
+        "lon": 8.245598,
+        "lat": 50.020008,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "02:05:00",
+        "depDate": "2021-01-18",
+        "arrTime": "02:05:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "1",
+        "depTrack": "1",
+        "rtDepTime": "02:06:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "02:06:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "1",
+        "rtDepTrack": "1"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06414000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Wiesbaden-Biebrich Bahnhof Wiesbaden Ost",
+        "id": "A=1@O=Wiesbaden-Biebrich Bahnhof Wiesbaden Ost@X=8256448@Y=50041717@U=80@L=3006906@",
+        "extId": "3006906",
+        "routeIdx": 17,
+        "lon": 8.256448,
+        "lat": 50.041717,
+        "arrPrognosisType": "PROGNOSED",
+        "depPrognosisType": "PROGNOSED",
+        "depTime": "02:09:00",
+        "depDate": "2021-01-18",
+        "arrTime": "02:09:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "2",
+        "depTrack": "2",
+        "rtDepTime": "02:10:00",
+        "rtDepDate": "2021-01-18",
+        "rtArrTime": "02:10:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "2",
+        "rtDepTrack": "2"
+      },
+      {
+        "Notes": {
+          "Note": [
+            {
+              "value": "06414000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "name": "Wiesbaden Hauptbahnhof",
+        "id": "A=1@O=Wiesbaden Hauptbahnhof@X=8244627@Y=50069476@U=80@L=3006907@",
+        "extId": "3006907",
+        "routeIdx": 18,
+        "lon": 8.244627,
+        "lat": 50.069476,
+        "arrPrognosisType": "PROGNOSED",
+        "arrTime": "02:14:00",
+        "arrDate": "2021-01-18",
+        "arrTrack": "3",
+        "rtArrTime": "02:15:00",
+        "rtArrDate": "2021-01-18",
+        "rtArrTrack": "3"
+      }
+    ]
+  },
+  "Names": {
+    "Name": [
+      {
+        "Product": {
+          "name": "      S8",
+          "num": "4976",
+          "line": "S8",
+          "catOut": "S       ",
+          "catIn": "SB3",
+          "catCode": "3",
+          "catOutS": "SB3",
+          "catOutL": "S-Bahn",
+          "operatorCode": "DBR",
+          "operator": "DB Regio AG S-Bahn Rhein-Main",
+          "admin": "800528"
+        },
+        "name": "      S8",
+        "number": "4976",
+        "category": "SB3",
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      }
+    ]
+  },
+  "Directions": {
+    "Direction": [
+      {
+        "value": "Wiesbaden Hauptbahnhof",
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      }
+    ]
+  },
+  "Notes": {
+    "Note": [
+      {
+        "value": "Pflicht zur Bedeckung von Mund und Nase",
+        "key": "PB",
+        "priority": 200,
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      },
+      {
+        "value": "Fahrzeuggebundene Einstiegshilfe vorhanden",
+        "key": "tc",
+        "priority": 560,
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      },
+      {
+        "value": "Klimaanlage",
+        "key": "sv",
+        "priority": 610,
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      },
+      {
+        "value": "97932",
+        "key": "FD",
+        "routeIdxFrom": 0,
+        "routeIdxTo": 18
+      }
+    ]
+  },
+  "Messages": {
+    "Message": [
+      {
+        "id": "2124409-0",
+        "act": true,
+        "pub": "",
+        "head": "S8, S9: Änderungen bei einzelnen nächtlichen Fahrten",
+        "lead": "Es kommt in den Nächten von Sonntag auf Montag zu Umleitungen über \"Frankfurt Südbahnhof\" und \"Offenbach Hauptbahnhof\" auf der Linie S8. Zudem kommt es einmal pro Monat auf der Linie S9 zu Teilausfällen zwischen \"Offenbach Ostbahnhof\" und \"Hanau Hauptbahnhof\", ersatzweise fahren Busse.",
+        "text": "Es kommt wöchentlich außer an Feiertagen in den Nächten von Sonntag auf Montag zu Umleitungen über \"Frankfurt Südbahnhof\" und \"Offenbach Hauptbahnhof\" auf der Linie S8. Die Bahnen fahren die Umleitung zwischen \"Frankfurt Hauptbahnhof (oben)\" und \"Offenbach Ostbahnhof\". Dabei entfallen die Halte zwischen \"Frankfurt Hauptbahnhof (tief)\" und \"Offenbach Marktplatz\".<br /><br />Zudem kommt es einmal pro Monat auf der Linie S9 zu Teilausfällen zwischen \"Offenbach Ostbahnhof\" und \"Hanau Hauptbahnhof\", ersatzweise fahren dann Busse.<br />Die Fahrradmitnahme ist in den Bussen nicht möglich.<br />Durch die Änderungen kann es zu längeren Fahrtdauern kommen.<br /><br />Die Änderungen sind in der elektronischen Verbindungsauskunft enthalten.<br /><br />Weitere Informationen im Artikel",
+        "tckr": "",
+        "priority": 95
+      },
+      {
+        "id": "2123070-0",
+        "act": true,
+        "pub": "",
+        "head": "Frankfurt: Treppen zum Hauptbahnhof und einzelne Zugänge der Bahnsteigunterführung gesperrt",
+        "lead": "Die Treppenabgänge Düsseldorfer Straße, Taunusstraße und Karlstraße zur B-Ebene sind geschlossen. Ersatzweise können die Abgänge Kaiserstraße und Poststraße sowie die Treppen in der Haupthalle genutzt werden.<br />Zudem ist in der Unterführung Gleis 1-24 der Durchgang nicht zu allen Gleisen möglich. <br />",
+        "text": "Die Treppenabgänge Düsseldorfer Straße, Taunusstraße und Karlstraße zur B-Ebene des Hauptbahnhofs sind wegen Baumaßnahmen geschlossen. Ersatzweise können die Treppenabgänge Kaiserstraße und Poststraße sowie die Treppen in der Haupthalle genutzt werden.<br />Zudem ist in der Personenunterführung Gleis 1-24 der Durchgang zur Zeit nicht zu allen Gleisen möglich. <br />Für einen sicheren Umstieg nutzen Sie bitte den Querbahnsteig.<br /><br />(Stand 26.11.2020, 16:10 Uhr) (Frankfurt (Main) Hauptbahnhof - Wiesbaden Hauptbahnhof)",
+        "tckr": "",
+        "priority": 100
+      },
+      {
+        "id": "2120973-0",
+        "act": true,
+        "pub": "",
+        "head": "Pflicht einer Mund-Nasen-Bedeckung in Bus, Bahn sowie Haltestellen- und Stationsbereichen",
+        "lead": "Laut Verordnung des Landes Hessen muss in Bus und Bahn sowie im Stationsbereich eine Mund-Nasen-Bedeckung getragen werden. Ausgenommen davon sind Kinder unter 6 Jahren und Personen, die aufgrund einer gesundheitlichen Beeinträchtigung oder Behinderung keine Mund-Nasen-Bedeckung tragen können.",
+        "text": "Laut Verordnung des Landes Hessen muss in allen öffentlichen Nahverkehrsmitteln, in den Haltestellen- und Stationsbereichen sowie an ober- und unterirdischen Bahnsteigen und in Bahnhofsgebäuden eine Mund-Nasen-Bedeckung (\"Alltagsmaske\") getragen werden. Ausgenommen davon sind Kinder unter 6 Jahren und Personen, die aufgrund einer gesundheitlichen Beeinträchtigung oder einer Behinderung keine Mund-Nasen-Bedeckung tragen können. <br /><br />Weitere Informationen in unserem Artikel",
+        "tckr": "",
+        "priority": 2
+      }
+    ]
+  },
+  "JourneyStatus": "P",
+  "ServiceDays": [
+    {
+      "sDaysR": "nicht täglich",
+      "sDaysI": "12. Apr bis 17. Mai 2021 Mo; 31. Mai bis 5. Jul 2021 Mo; auch 18. Jan, 8., 15., 22. Feb, 1., 15., 22., 29. Mär, 9., 16., 23., 30. Aug, 11., 18., 25. Okt 2021",
+      "sDaysB": "000000000000000000004081000008102040010204001020408102000810204081000000002040810000000000408100",
+      "routeIdxFrom": 0,
+      "routeIdxTo": 1
+    }
+  ],
+  "ref": "1|175537|0|80|18012021",
+  "serverVersion": "1.9",
+  "dialectVersion": "1.23",
+  "requestId": "1610930372158",
+  "reachable": true
+}

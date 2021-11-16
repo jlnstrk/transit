@@ -1,0 +1,19 @@
+{
+  "usage": "sf",
+  "type": "any",
+  "name": "Wien, Währinger Straße-Volksoper U",
+  "stateless": "60201510",
+  "anyType": "stop",
+  "sort": "2",
+  "quality": "326",
+  "object": "Währinger Straße-Volksoper U",
+  "posttown": "Wien",
+  "modes": "2,4,5,11",
+  "ref": {
+    "id": "60201510",
+    "omc": "49000001",
+    "placeID": "50",
+    "place": "Wien",
+    "coords": "1819999.00000,5855586.00000"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "usage": "sf",
+  "type": "any",
+  "name": "Wien, Rundweg",
+  "stateless": "streetID:7438::49000001",
+  "anyType": "street",
+  "sort": "8",
+  "quality": "234",
+  "object": "Rundweg",
+  "street": "Rundweg",
+  "ref": {
+    "id": "7438",
+    "omc": "49000001",
+    "placeID": "-1",
+    "place": "Wien",
+    "coords": "1826956.00000,5861381.00000"
+  }
+}

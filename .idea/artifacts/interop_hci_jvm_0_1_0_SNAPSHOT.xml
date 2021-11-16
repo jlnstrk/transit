@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interop-hci-jvm-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/interop-hci/build/libs</output-path>
+    <root id="archive" name="interop-hci-jvm-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.interop-hci.jvmMain" />
+    </root>
+  </artifact>
+</component>

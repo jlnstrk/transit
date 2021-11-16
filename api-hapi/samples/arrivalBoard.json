@@ -1,0 +1,413 @@
+{
+  "Arrival": [
+    {
+      "JourneyDetailRef": {
+        "ref": "1|208838|0|80|17012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "ICE 209 ",
+        "num": "209",
+        "line": "",
+        "catOut": "ICE     ",
+        "catIn": "ICE",
+        "catCode": "0",
+        "catOutS": "ICE",
+        "catOutL": "ICE",
+        "operatorCode": "DB_",
+        "operator": "DB Fernverkehr AG",
+        "admin": "80____"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "Komfort Check-in möglich (Infos unter bahn.de/kci)",
+            "key": "CK",
+            "type": "A",
+            "priority": 200,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 14
+          },
+          {
+            "value": "Pflicht zur Bedeckung von Mund und Nase",
+            "key": "PB",
+            "type": "A",
+            "priority": 200,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 14
+          }
+        ]
+      },
+      "name": "ICE 209 ",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "01:39:00",
+      "date": "2021-01-18",
+      "track": "3a/b",
+      "rtTime": "01:44:00",
+      "rtDate": "2021-01-18",
+      "rtTrack": "3a/b",
+      "reachable": true,
+      "origin": "Kiel Hbf",
+      "trainNumber": "209",
+      "trainCategory": "ICE"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|43335|0|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "Bus 93  ",
+        "num": "37117",
+        "line": "93",
+        "catOut": "Bus     ",
+        "catIn": "BB8",
+        "catCode": "6",
+        "catOutS": "BB8",
+        "catOutL": "Niederflurbus",
+        "operatorCode": "MVG",
+        "operator": "Mainzer Verkehrsgesellschaft mbH",
+        "admin": "MVGBUS"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "4471",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 11
+          }
+        ]
+      },
+      "name": "Bus 93  ",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "time": "01:43:00",
+      "date": "2021-01-18",
+      "track": "D",
+      "reachable": true,
+      "origin": "Mainz Hindemithstraße",
+      "trainNumber": "37117",
+      "trainCategory": "BB8"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|31169|1|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "Tram 50 ",
+        "num": "9710",
+        "line": "50",
+        "catOut": "Tram    ",
+        "catIn": "TNF",
+        "catCode": "5",
+        "catOutS": "TNF",
+        "catOutL": "Niederflurstraßenbahn",
+        "operatorCode": "MVG",
+        "operator": "Mainzer Verkehrsgesellschaft mbH",
+        "admin": "MVGTR_"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "355",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 13
+          }
+        ]
+      },
+      "name": "Tram 50 ",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "time": "01:55:00",
+      "date": "2021-01-18",
+      "track": "B",
+      "reachable": true,
+      "origin": "Mainz Bürgerhaus",
+      "trainNumber": "9710",
+      "trainCategory": "TNF"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|31239|1|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "Tram 50 ",
+        "num": "9532",
+        "line": "50",
+        "catOut": "Tram    ",
+        "catIn": "TNF",
+        "catCode": "5",
+        "catOutS": "TNF",
+        "catOutL": "Niederflurstraßenbahn",
+        "operatorCode": "MVG",
+        "operator": "Mainzer Verkehrsgesellschaft mbH",
+        "admin": "MVGTR_"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "353",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 17
+          }
+        ]
+      },
+      "name": "Tram 50 ",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "01:55:00",
+      "date": "2021-01-18",
+      "track": "A",
+      "rtTime": "01:55:00",
+      "rtDate": "2021-01-18",
+      "reachable": true,
+      "origin": "Mainz Römerquelle",
+      "trainNumber": "9532",
+      "trainCategory": "TNF"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|270221|0|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "Bus 93  ",
+        "num": "37138",
+        "line": "93",
+        "catOut": "Bus     ",
+        "catIn": "BB8",
+        "catCode": "6",
+        "catOutS": "BB8",
+        "catOutL": "Niederflurbus",
+        "operatorCode": "MVG",
+        "operator": "Mainzer Verkehrsgesellschaft mbH",
+        "admin": "MVGBUS"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "4474",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 19
+          }
+        ]
+      },
+      "name": "Bus 93  ",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "01:55:00",
+      "date": "2021-01-18",
+      "track": "M",
+      "rtTime": "01:56:00",
+      "rtDate": "2021-01-18",
+      "reachable": true,
+      "origin": "Mainz Frankenhöhe",
+      "trainNumber": "37138",
+      "trainCategory": "BB8"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|175537|0|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "      S8",
+        "num": "4976",
+        "line": "S8",
+        "catOut": "S       ",
+        "catIn": "SB3",
+        "catCode": "3",
+        "catOutS": "SB3",
+        "catOutL": "S-Bahn",
+        "operatorCode": "DBR",
+        "operator": "DB Regio AG S-Bahn Rhein-Main",
+        "admin": "800528"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "Pflicht zur Bedeckung von Mund und Nase",
+            "key": "PB",
+            "type": "A",
+            "priority": 200,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 15
+          },
+          {
+            "value": "Fahrzeuggebundene Einstiegshilfe vorhanden",
+            "key": "tc",
+            "type": "A",
+            "priority": 560,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 15
+          },
+          {
+            "value": "Klimaanlage",
+            "key": "sv",
+            "type": "A",
+            "priority": 610,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 15
+          },
+          {
+            "value": "97932",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 15
+          }
+        ]
+      },
+      "name": "      S8",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "01:59:00",
+      "date": "2021-01-18",
+      "track": "1a",
+      "rtTime": "02:00:00",
+      "rtDate": "2021-01-18",
+      "rtTrack": "1a",
+      "reachable": true,
+      "origin": "Offenbach (Main)-Offenbach Ost Ostbahnhof",
+      "trainNumber": "4976",
+      "trainCategory": "SB3"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|175398|1|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "      S8",
+        "num": "5162",
+        "line": "S8",
+        "catOut": "S       ",
+        "catIn": "SB3",
+        "catCode": "3",
+        "catOutS": "SB3",
+        "catOutL": "S-Bahn",
+        "operatorCode": "DBR",
+        "operator": "DB Regio AG S-Bahn Rhein-Main",
+        "admin": "800528"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "Pflicht zur Bedeckung von Mund und Nase",
+            "key": "PB",
+            "type": "A",
+            "priority": 200,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 3
+          },
+          {
+            "value": "Fahrzeuggebundene Einstiegshilfe vorhanden",
+            "key": "tc",
+            "type": "A",
+            "priority": 560,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 3
+          },
+          {
+            "value": "Klimaanlage",
+            "key": "sv",
+            "type": "A",
+            "priority": 610,
+            "routeIdxFrom": 0,
+            "routeIdxTo": 3
+          },
+          {
+            "value": "97935",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 0,
+            "routeIdxTo": 3
+          }
+        ]
+      },
+      "name": "      S8",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "02:01:00",
+      "date": "2021-01-18",
+      "track": "5a",
+      "rtTime": "02:01:00",
+      "rtDate": "2021-01-18",
+      "rtTrack": "5a",
+      "reachable": true,
+      "origin": "Wiesbaden Hauptbahnhof",
+      "trainNumber": "5162",
+      "trainCategory": "SB3"
+    },
+    {
+      "JourneyDetailRef": {
+        "ref": "1|258166|0|80|18012021"
+      },
+      "JourneyStatus": "P",
+      "Product": {
+        "name": "Bus51SEV",
+        "num": "49",
+        "line": "51SEV",
+        "catOut": "Bus     ",
+        "catIn": "BB8",
+        "catCode": "6",
+        "catOutS": "BB8",
+        "catOutL": "Niederflurbus",
+        "operatorCode": "MVG",
+        "operator": "Mainzer Verkehrsgesellschaft mbH",
+        "admin": "MVGBUS"
+      },
+      "Notes": {
+        "Note": [
+          {
+            "value": "4481",
+            "key": "FD",
+            "type": "I",
+            "routeIdxFrom": 10,
+            "routeIdxTo": 13
+          }
+        ]
+      },
+      "name": "Bus51SEV",
+      "stop": "Mainz Hauptbahnhof",
+      "stopid": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=3006904@",
+      "stopExtId": "3006904",
+      "prognosisType": "PROGNOSED",
+      "time": "02:23:00",
+      "date": "2021-01-18",
+      "track": "B",
+      "rtTime": "02:23:00",
+      "rtDate": "2021-01-18",
+      "reachable": true,
+      "origin": "Mainz Hauptbahnhof",
+      "trainNumber": "49",
+      "trainCategory": "BB8"
+    }
+  ],
+  "serverVersion": "1.9",
+  "dialectVersion": "1.23",
+  "requestId": "1610930244426"
+}

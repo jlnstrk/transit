@@ -1,0 +1,17 @@
+{
+  "usage": "sf",
+  "type": "any",
+  "name": "Wien, KGV Esparsette, Kol. Pottendorf, Gr. Bahnweg",
+  "stateless": "poiID:617:49000000:-1",
+  "anyType": "poi",
+  "sort": "4",
+  "quality": "227",
+  "object": "KGV Esparsette, Kol. Pottendorf, Gr. Bahnweg",
+  "ref": {
+    "id": "617",
+    "omc": "49000000",
+    "placeID": "-1",
+    "place": "Wien",
+    "coords": "1817610.00000,5865298.00000"
+  }
+}

@@ -1,0 +1,18 @@
+site_name: Transit
+site_url: https://jlnstrk.github.io/transit
+
+
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: purple
+
+nav:
+  - index.md
+  - getting-started.md
+  - 'Supported APIs':
+      - 'api/hci.md'
+      - 'api/hapi.md'
+      - 'api/efa.md'
+      - 'api/trias.md'

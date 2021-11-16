@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interop-hafas-js-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/interop-hafas/build/libs</output-path>
+    <root id="archive" name="interop-hafas-js-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.interop-hafas.jsMain" />
+    </root>
+  </artifact>
+</component>

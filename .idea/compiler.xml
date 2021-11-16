@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="transit.api-common-hafas.commonMain" target="1.8" />
+      <module name="transit.api-common-hafas.commonTest" target="1.8" />
+      <module name="transit.api-common-hafas.jvmMain" target="1.8" />
+      <module name="transit.api-common-hafas.jvmTest" target="1.8" />
+      <module name="transit.api-efa-xml.commonMain" target="1.8" />
+      <module name="transit.api-efa-xml.commonTest" target="1.8" />
+      <module name="transit.api-efa-xml.jvmMain" target="1.8" />
+      <module name="transit.api-efa-xml.jvmTest" target="1.8" />
+      <module name="transit.common.commonMain" target="1.8" />
+      <module name="transit.common.commonTest" target="1.8" />
+      <module name="transit.common.jvmMain" target="1.8" />
+      <module name="transit.common.jvmTest" target="1.8" />
+      <module name="transit.commonMain" target="1.8" />
+      <module name="transit.commonTest" target="1.8" />
+      <module name="transit.jvmMain" target="1.8" />
+      <module name="transit.jvmTest" target="1.8" />
+      <module name="transit.util.commonMain" target="1.8" />
+      <module name="transit.util.commonTest" target="1.8" />
+      <module name="transit.util.jvmMain" target="1.8" />
+      <module name="transit.util.jvmTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

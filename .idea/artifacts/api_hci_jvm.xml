@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="api-hci-jvm">
+    <output-path>$PROJECT_DIR$/api-hci/build/libs</output-path>
+    <root id="archive" name="api-hci-jvm.jar">
+      <element id="module-output" name="transit.api-hci.jvmMain" />
+    </root>
+  </artifact>
+</component>

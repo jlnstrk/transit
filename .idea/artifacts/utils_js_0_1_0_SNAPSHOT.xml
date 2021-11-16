@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="utils-js-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/utils/build/libs</output-path>
+    <root id="archive" name="utils-js-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.utils.jsMain" />
+    </root>
+  </artifact>
+</component>

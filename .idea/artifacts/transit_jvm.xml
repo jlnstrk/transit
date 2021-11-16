@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="transit-jvm">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="transit-jvm.jar">
+      <element id="module-output" name="transit.jvmMain" />
+    </root>
+  </artifact>
+</component>

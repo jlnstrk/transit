@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interop-efa-js">
+    <output-path>$PROJECT_DIR$/interop-efa/build/libs</output-path>
+    <root id="archive" name="interop-efa-js.jar">
+      <element id="module-output" name="transit.interop-efa.jsMain" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="interop-js">
+    <output-path>$PROJECT_DIR$/interop/build/libs</output-path>
+    <root id="archive" name="interop-js.jar">
+      <element id="module-output" name="transit.interop.jsMain" />
+    </root>
+  </artifact>
+</component>

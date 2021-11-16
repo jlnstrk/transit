@@ -1,0 +1,19 @@
+{
+  "usage": "sf",
+  "type": "any",
+  "name": "Wien, Ada-Christen-Gasse W",
+  "stateless": "streetID:19:W:49000001",
+  "anyType": "singlehouse",
+  "sort": "10",
+  "quality": "228",
+  "object": "Ada-Christen-Gasse",
+  "street": "Ada-Christen-Gasse",
+  "buildingNumber": "W",
+  "ref": {
+    "id": "19",
+    "omc": "49000001",
+    "placeID": "-1",
+    "place": "Wien",
+    "coords": "1823786.00000,5868232.00000"
+  }
+}

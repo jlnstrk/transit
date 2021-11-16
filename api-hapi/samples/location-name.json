@@ -1,0 +1,198 @@
+{
+  "stopLocationOrCoordLocation": [
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06435014",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Hanau Hauptbahnhof@X=8928419@Y=50121343@U=80@L=003004503@B=1@V=6.9,@p=1610653442@",
+        "extId": "003004503",
+        "name": "Hanau Hauptbahnhof",
+        "lon": 8.928419,
+        "lat": 50.121343,
+        "weight": 19847,
+        "products": 719
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "07315000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Mainz Hauptbahnhof@X=8258444@Y=50001436@U=80@L=003006904@B=1@V=6.9,@p=1610653442@",
+        "extId": "003006904",
+        "name": "Mainz Hauptbahnhof",
+        "lon": 8.258444,
+        "lat": 50.001436,
+        "weight": 25675,
+        "products": 239
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06412000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Frankfurt (Main) Hauptbahnhof@X=8662653@Y=50106808@U=80@L=003000010@B=1@V=6.9,@p=1610653442@",
+        "extId": "003000010",
+        "name": "Frankfurt (Main) Hauptbahnhof",
+        "lon": 8.662653,
+        "lat": 50.106808,
+        "weight": 29253,
+        "products": 767
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06531018",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Wettenberg-Krofdorf-Gleiberg Haupt-/Inselstraße@X=8635865@Y=50624425@U=80@L=003019264@B=1@V=6.9,@p=1610653442@",
+        "extId": "003019264",
+        "name": "Wettenberg-Krofdorf-Gleiberg Haupt-/Inselstraße",
+        "lon": 8.635865,
+        "lat": 50.624425,
+        "weight": 43,
+        "products": 192
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06533013",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Runkel-Wirbelau Haupt-/Birkenstraße@X=8222235@Y=50445629@U=80@L=003028526@B=1@V=6.9,@p=1610653442@",
+        "extId": "003028526",
+        "name": "Runkel-Wirbelau Haupt-/Birkenstraße",
+        "lon": 8.222235,
+        "lat": 50.445629,
+        "weight": 10,
+        "products": 192
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "09663000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Würzburg Hauptbahnhof@X=9935768@Y=49801786@U=80@L=003011177@B=1@V=6.9,@p=1610653442@",
+        "extId": "003011177",
+        "name": "Würzburg Hauptbahnhof",
+        "lon": 9.935768,
+        "lat": 49.801786,
+        "weight": 17143,
+        "products": 135
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06414000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Wiesbaden Hauptbahnhof@X=8244627@Y=50069476@U=80@L=003006907@B=1@V=6.9,@p=1610653442@",
+        "extId": "003006907",
+        "name": "Wiesbaden Hauptbahnhof",
+        "lon": 8.244627,
+        "lat": 50.069476,
+        "weight": 16609,
+        "products": 207
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "06411000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Darmstadt Hauptbahnhof@X=8631146@Y=49871938@U=80@L=003004734@B=1@V=6.9,@p=1610653442@",
+        "extId": "003004734",
+        "name": "Darmstadt Hauptbahnhof",
+        "lon": 8.631146,
+        "lat": 49.871938,
+        "weight": 16415,
+        "products": 239
+      }
+    },
+    {
+      "StopLocation": {
+        "id": "A=1@O=Aschaffenburg Hauptbahnhof@X=9143693@Y=49980554@U=80@L=009100881@B=1@V=6.9,@p=1610653442@",
+        "extId": "009100881",
+        "name": "Aschaffenburg Hauptbahnhof",
+        "lon": 9.143306,
+        "lat": 49.980635,
+        "weight": 15561,
+        "products": 199
+      }
+    },
+    {
+      "StopLocation": {
+        "LocationNotes": {
+          "LocationNote": [
+            {
+              "value": "07319000",
+              "key": "GK",
+              "type": "I"
+            }
+          ]
+        },
+        "id": "A=1@O=Worms Hauptbahnhof@X=8356624@Y=49634748@U=80@L=003011411@B=1@V=6.9,@p=1610653442@",
+        "extId": "003011411",
+        "name": "Worms Hauptbahnhof",
+        "lon": 8.35622,
+        "lat": 49.635584,
+        "weight": 6057,
+        "products": 143
+      }
+    }
+  ],
+  "serverVersion": "1.9",
+  "dialectVersion": "1.23",
+  "requestId": "1610930151759"
+}

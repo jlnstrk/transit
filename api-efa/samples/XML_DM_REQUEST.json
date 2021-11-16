@@ -1,0 +1,2568 @@
+{
+  "parameters": [
+    {
+      "name": "serverID",
+      "value": "WEB1_"
+    },
+    {
+      "name": "requestID",
+      "value": "0"
+    },
+    {
+      "name": "sessionID",
+      "value": "0"
+    },
+    {
+      "name": "calcTime",
+      "value": "129.578"
+    },
+    {
+      "name": "serverTime",
+      "value": "2021-01-14T17:22:53"
+    }
+  ],
+  "dm": {
+    "input": {
+      "input": "München, Giselastraße"
+    },
+    "points": {
+      "point": {
+        "usage": "dm",
+        "type": "any",
+        "name": "München, Giselastraße",
+        "stateless": "1000080",
+        "anyType": "stop",
+        "sort": "2",
+        "quality": "100000",
+        "best": "0",
+        "object": "Giselastraße",
+        "ref": {
+          "id": "1000080",
+          "gid": "de:09162:80",
+          "omc": "9162000",
+          "placeID": "1",
+          "place": "München",
+          "coords": "4469227.00000,824458.00000"
+        },
+        "infos": null,
+        "hasStaticInfo": "1"
+      }
+    },
+    "itdOdvAssignedStops": {
+      "stopID": "1000080",
+      "name": "Giselastraße",
+      "x": "4469227",
+      "y": "824458",
+      "mapName": "MVTT",
+      "value": "1000080:Giselastraße",
+      "place": "München",
+      "nameWithPlace": "Giselastraße",
+      "distanceTime": "0",
+      "isTransferStop": "0",
+      "hasStaticInfo": "1",
+      "vm": "100",
+      "gid": "de:09162:80"
+    }
+  },
+  "arr": {
+    "input": {
+      "input": ""
+    },
+    "points": null
+  },
+  "dateTime": {
+    "deparr": "dep",
+    "ttpFrom": "20201001",
+    "ttpTo": "20211130",
+    "year": "2021",
+    "month": "1",
+    "day": "14",
+    "hour": "17",
+    "minute": "22"
+  },
+  "dateRange": [
+    {
+      "day": "14",
+      "month": "01",
+      "year": "2021",
+      "weekday": "5"
+    },
+    {
+      "day": "15",
+      "month": "01",
+      "year": "2021",
+      "weekday": "6"
+    },
+    {
+      "day": "16",
+      "month": "01",
+      "year": "2021",
+      "weekday": "7"
+    },
+    {
+      "day": "17",
+      "month": "01",
+      "year": "2021",
+      "weekday": "1"
+    },
+    {
+      "day": "18",
+      "month": "01",
+      "year": "2021",
+      "weekday": "2"
+    },
+    {
+      "day": "19",
+      "month": "01",
+      "year": "2021",
+      "weekday": "3"
+    },
+    {
+      "day": "20",
+      "month": "01",
+      "year": "2021",
+      "weekday": "4"
+    },
+    {
+      "day": "21",
+      "month": "01",
+      "year": "2021",
+      "weekday": "5"
+    },
+    {
+      "day": "22",
+      "month": "01",
+      "year": "2021",
+      "weekday": "6"
+    },
+    {
+      "day": "23",
+      "month": "01",
+      "year": "2021",
+      "weekday": "7"
+    },
+    {
+      "day": "24",
+      "month": "01",
+      "year": "2021",
+      "weekday": "1"
+    },
+    {
+      "day": "25",
+      "month": "01",
+      "year": "2021",
+      "weekday": "2"
+    },
+    {
+      "day": "26",
+      "month": "01",
+      "year": "2021",
+      "weekday": "3"
+    },
+    {
+      "day": "27",
+      "month": "01",
+      "year": "2021",
+      "weekday": "4"
+    },
+    {
+      "day": "28",
+      "month": "01",
+      "year": "2021",
+      "weekday": "5"
+    }
+  ],
+  "option": {
+    "ptOption": {
+      "active": "1",
+      "maxChanges": "11",
+      "maxTime": "360",
+      "maxWait": "120",
+      "routeType": "LEASTTIME",
+      "changeSpeed": "normal",
+      "lineRestriction": "400",
+      "useProxFootSearch": "0",
+      "useProxFootSearchOrigin": "0",
+      "useProxFootSearchDestination": "0",
+      "bike": "0",
+      "plane": "0",
+      "noCrowded": "0",
+      "noSolidStairs": "0",
+      "noEscalators": "0",
+      "noElevators": "0",
+      "lowPlatformVhcl": "0",
+      "wheelchair": "0",
+      "needElevatedPlt": "0",
+      "assistance": "0",
+      "SOSAvail": "0",
+      "noLonelyTransfer": "0",
+      "illumTransfer": "0",
+      "overgroundTransfer": "0",
+      "noInsecurePlaces": "0",
+      "privateTransport": "0",
+      "excludedMeans": [
+        {
+          "means": "Zug",
+          "value": "0",
+          "selected": "0"
+        },
+        {
+          "means": "S-Bahn",
+          "value": "1",
+          "selected": "0"
+        },
+        {
+          "means": "U-Bahn",
+          "value": "2",
+          "selected": "0"
+        },
+        {
+          "means": "Stadtbahn",
+          "value": "3",
+          "selected": "0"
+        },
+        {
+          "means": "Straßen-/Trambahn",
+          "value": "4",
+          "selected": "0"
+        },
+        {
+          "means": "Stadtbus",
+          "value": "5",
+          "selected": "0"
+        },
+        {
+          "means": "Regionalbus",
+          "value": "6",
+          "selected": "0"
+        },
+        {
+          "means": "Schnellbus",
+          "value": "7",
+          "selected": "0"
+        },
+        {
+          "means": "Seil-/Zahnradbahn",
+          "value": "8",
+          "selected": "0"
+        },
+        {
+          "means": "Schiff",
+          "value": "9",
+          "selected": "0"
+        },
+        {
+          "means": "AST/Rufbus",
+          "value": "10",
+          "selected": "0"
+        },
+        {
+          "means": "Sonstige",
+          "value": "11",
+          "selected": "0"
+        },
+        {
+          "means": "Flugzeug",
+          "value": "12",
+          "selected": "0"
+        },
+        {
+          "means": "Zug (Nahverkehr)",
+          "value": "13",
+          "selected": "0"
+        },
+        {
+          "means": "Zug (Fernverkehr)",
+          "value": "14",
+          "selected": "0"
+        },
+        {
+          "means": "Zug Fernv m Zuschlag",
+          "value": "15",
+          "selected": "0"
+        },
+        {
+          "means": "Zug Fernv m spez Fpr",
+          "value": "16",
+          "selected": "0"
+        },
+        {
+          "means": "SEV Schienenersatzv",
+          "value": "17",
+          "selected": "0"
+        },
+        {
+          "means": "Zug Shuttle",
+          "value": "18",
+          "selected": "0"
+        },
+        {
+          "means": "Bürgerbus",
+          "value": "19",
+          "selected": "0"
+        }
+      ],
+      "activeImp": "-1",
+      "activeCom": "-1",
+      "activeSec": "-1"
+    }
+  },
+  "servingLines": {
+    "lines": [
+      {
+        "mode": {
+          "name": "U-Bahn U3",
+          "number": "U3",
+          "product": "U-Bahn",
+          "productId": "1",
+          "type": "2",
+          "code": "1",
+          "destination": "Fürstenried West",
+          "destID": "1001500",
+          "desc": "Moosach - OEZ - Scheidplatz - Münchner Freiheit - Odeonsplatz - Marienplatz - Sendlinger Tor - Fürstenried West",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "21",
+            "line": "21003",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:21003: :H:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "2:0"
+      },
+      {
+        "mode": {
+          "name": "U-Bahn U3",
+          "number": "U3",
+          "product": "U-Bahn",
+          "productId": "1",
+          "type": "2",
+          "code": "1",
+          "destination": "Moosach",
+          "destID": "1000300",
+          "desc": "Fürstenried West - Sendlinger Tor - Marienplatz - Odeonsplatz - Münchner Freiheit - Scheidplatz - OEZ - Moosach",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "21",
+            "line": "21003",
+            "supplement": " ",
+            "dir": "R",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:21003: :R:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "2:1"
+      },
+      {
+        "mode": {
+          "name": "U-Bahn U6",
+          "number": "U6",
+          "product": "U-Bahn",
+          "productId": "1",
+          "type": "2",
+          "code": "1",
+          "destination": "Harras",
+          "destID": "1001130",
+          "desc": "Garching-Forschungsz. - Fröttmaning - Münchner Freiheit - Odeonspl. - Marienplatz - Sendlinger Tor - Harras - Klinikum Großhadern",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "21",
+            "line": "21006",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:21006: :H:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "2:2"
+      },
+      {
+        "mode": {
+          "name": "U-Bahn U6",
+          "number": "U6",
+          "product": "U-Bahn",
+          "productId": "1",
+          "type": "2",
+          "code": "1",
+          "destination": "Münchner Freiheit",
+          "destID": "1000500",
+          "desc": "Klinikum Großhadern - Harras - Sendlinger Tor - Marienplatz - Odeonspl. - Münchner Freiheit - Fröttmaning - Garching-Forschungsz.",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "21",
+            "line": "21006",
+            "supplement": " ",
+            "dir": "R",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:21006: :R:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "2:3"
+      },
+      {
+        "mode": {
+          "name": "MetroBus 54",
+          "number": "54",
+          "product": "MetroBus",
+          "productId": "10",
+          "type": "5",
+          "code": "3",
+          "destination": "Lorettoplatz",
+          "destID": "1001404",
+          "desc": "Münchner Freiheit - Ostbahnhof - Giesing Bf. - Candidplatz - Harras - Lorettoplatz",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "24",
+            "line": "24054",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s21",
+            "network": "mvv",
+            "stateless": "mvv:24054: :H:s21",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20201213",
+            "vTo": "20211211",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:0"
+      },
+      {
+        "mode": {
+          "name": "MetroBus 54",
+          "number": "54",
+          "product": "MetroBus",
+          "productId": "10",
+          "type": "5",
+          "code": "3",
+          "destination": "Münchner Freiheit",
+          "destID": "1000500",
+          "desc": "Lorettoplatz - Harras - Candidplatz - Giesing Bf. - Ostbahnhof - Münchner Freiheit",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "24",
+            "line": "24054",
+            "supplement": " ",
+            "dir": "R",
+            "project": "s21",
+            "network": "mvv",
+            "stateless": "mvv:24054: :R:s21",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20201213",
+            "vTo": "20211211",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:1"
+      },
+      {
+        "mode": {
+          "name": "MetroBus 58",
+          "number": "58",
+          "product": "MetroBus",
+          "productId": "10",
+          "type": "5",
+          "code": "3",
+          "destination": "Hauptbahnhof Nord",
+          "destID": "1007000",
+          "desc": "Cityring Innen: Hbf Nord - Pinakotheken - Giselastr. - Ostbf - Silberhornstr. - Goethepl. - Hbf Nord",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "24",
+            "line": "24058",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s21",
+            "network": "mvv",
+            "stateless": "mvv:24058: :H:s21",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20201213",
+            "vTo": "20211211",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:2"
+      },
+      {
+        "mode": {
+          "name": "MetroBus 68",
+          "number": "68",
+          "product": "MetroBus",
+          "productId": "10",
+          "type": "5",
+          "code": "3",
+          "destination": "Hauptbahnhof Nord",
+          "destID": "1007000",
+          "desc": "Cityring Außen: Hauptbahnhof Nord - Goethepl. - Ostbf - Giselastr. - Hauptbahnhof Nord",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "24",
+            "line": "24068",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s21",
+            "network": "mvv",
+            "stateless": "mvv:24068: :H:s21",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20201213",
+            "vTo": "20211211",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:3"
+      },
+      {
+        "mode": {
+          "name": "StadtBus 154",
+          "number": "154",
+          "product": "StadtBus",
+          "productId": "3",
+          "type": "5",
+          "code": "3",
+          "destination": "Westerlandanger",
+          "destID": "1000727",
+          "desc": "Nordbad - Josephsplatz - Universität - Arabellapark - Johanneskirchen - Westerlandanger",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "23",
+            "line": "23154",
+            "supplement": " ",
+            "dir": "H",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:23154: :H:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:4"
+      },
+      {
+        "mode": {
+          "name": "StadtBus 154",
+          "number": "154",
+          "product": "StadtBus",
+          "productId": "3",
+          "type": "5",
+          "code": "3",
+          "destination": "Nordbad",
+          "destID": "1000034",
+          "desc": "Westerlandanger - Johanneskirchen - Arabellapark - Universität - Josephsplatz - Nordbad",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "23",
+            "line": "23154",
+            "supplement": " ",
+            "dir": "R",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:23154: :R:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:5"
+      },
+      {
+        "mode": {
+          "name": "NachtBus N43",
+          "number": "N43",
+          "product": "NachtBus",
+          "productId": "16",
+          "type": "5",
+          "code": "3",
+          "destination": "Ostbahnhof",
+          "destID": "1000005",
+          "desc": "Ostbahnhof - Giesing - Am Harras - Hirschgarten - Münchner Freiheit - Ostbahnhof    (Ringlinie)",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "23",
+            "line": "23043",
+            "supplement": "N",
+            "dir": "H",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:23043:N:H:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:6"
+      },
+      {
+        "mode": {
+          "name": "NachtBus N44",
+          "number": "N44",
+          "product": "NachtBus",
+          "productId": "16",
+          "type": "5",
+          "code": "3",
+          "destination": "Ostbahnhof",
+          "destID": "1000005",
+          "desc": "Ostbahnhof - Münchner Freiheit - Hirschgarten - Am Harras - Giesing - Ostbahnhof    (Ringlinie)",
+          "timetablePeriod": "Fahrplan (2021)",
+          "diva": {
+            "branch": "23",
+            "line": "23044",
+            "supplement": "N",
+            "dir": "H",
+            "project": "s20",
+            "network": "mvv",
+            "stateless": "mvv:23044:N:H:s20",
+            "operator": "MVG, 0800 344 22 66 00",
+            "opCode": "23",
+            "vF": "20191215",
+            "vTo": "20201212",
+            "isTTB": "1",
+            "isSTT": "1",
+            "attrs": []
+          }
+        },
+        "index": "5:7"
+      }
+    ]
+  },
+  "departureList": [
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "0",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "22"
+      },
+      "servingLine": {
+        "key": "2119",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "1",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "23"
+      },
+      "servingLine": {
+        "key": "173",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Olympiazentrum",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "2",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "24"
+      },
+      "servingLine": {
+        "key": "131",
+        "code": "3",
+        "number": "54",
+        "symbol": "54",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Lorettoplatz",
+        "directionFrom": "Münchner Freiheit",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24054",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001404",
+        "stateless": "mvv:24054: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "2",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "24"
+      },
+      "servingLine": {
+        "key": "698",
+        "code": "3",
+        "number": "68",
+        "symbol": "68",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Hauptbahnhof Nord",
+        "directionFrom": "Hauptbahnhof Süd",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24068",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1007000",
+        "stateless": "mvv:24068: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "4",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "26"
+      },
+      "servingLine": {
+        "key": "658",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Olympiazentrum",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000350",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "4",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "26"
+      },
+      "servingLine": {
+        "key": "732",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Westerlandanger",
+        "directionFrom": "Nordbad",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000727",
+        "stateless": "mvv:23154: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "5",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "27"
+      },
+      "servingLine": {
+        "key": "352",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "6",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "28"
+      },
+      "servingLine": {
+        "key": "2120",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "7",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "29"
+      },
+      "servingLine": {
+        "key": "312",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Nordbad",
+        "directionFrom": "Westerlandanger",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000034",
+        "stateless": "mvv:23154: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "7",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "29"
+      },
+      "servingLine": {
+        "key": "74",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Moosach",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "8",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "30"
+      },
+      "servingLine": {
+        "key": "556",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Moosach",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000300",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "9",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "31"
+      },
+      "servingLine": {
+        "key": "340",
+        "code": "3",
+        "number": "54",
+        "symbol": "54",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Münchner Freiheit",
+        "directionFrom": "Lorettoplatz",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24054",
+          "project": "s21",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000500",
+        "stateless": "mvv:24054: :R:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "9",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "31"
+      },
+      "servingLine": {
+        "key": "353",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "9",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "31"
+      },
+      "servingLine": {
+        "key": "230",
+        "code": "3",
+        "number": "58",
+        "symbol": "58",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Hauptbahnhof Nord",
+        "directionFrom": "Hauptbahnhof Nord",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24058",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1007000",
+        "stateless": "mvv:24058: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "10",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "32"
+      },
+      "servingLine": {
+        "key": "2121",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "11",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "33"
+      },
+      "servingLine": {
+        "key": "174",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Olympiazentrum",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "12",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "34"
+      },
+      "servingLine": {
+        "key": "699",
+        "code": "3",
+        "number": "68",
+        "symbol": "68",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Hauptbahnhof Nord",
+        "directionFrom": "Hauptbahnhof Süd",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24068",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1007000",
+        "stateless": "mvv:24068: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "12",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "34"
+      },
+      "servingLine": {
+        "key": "133",
+        "code": "3",
+        "number": "54",
+        "symbol": "54",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Lorettoplatz",
+        "directionFrom": "Münchner Freiheit",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24054",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001404",
+        "stateless": "mvv:24054: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "14",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "36"
+      },
+      "servingLine": {
+        "key": "733",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Westerlandanger",
+        "directionFrom": "Nordbad",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000727",
+        "stateless": "mvv:23154: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "14",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "36"
+      },
+      "servingLine": {
+        "key": "659",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Olympiazentrum",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000350",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "15",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "37"
+      },
+      "servingLine": {
+        "key": "356",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "16",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "38"
+      },
+      "servingLine": {
+        "key": "2122",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "17",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "39"
+      },
+      "servingLine": {
+        "key": "75",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Moosach",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "17",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "39"
+      },
+      "servingLine": {
+        "key": "314",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Nordbad",
+        "directionFrom": "Westerlandanger",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000034",
+        "stateless": "mvv:23154: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "18",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "40"
+      },
+      "servingLine": {
+        "key": "557",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Moosach",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000300",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "19",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "41"
+      },
+      "servingLine": {
+        "key": "357",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "19",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "41"
+      },
+      "servingLine": {
+        "key": "342",
+        "code": "3",
+        "number": "54",
+        "symbol": "54",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Münchner Freiheit",
+        "directionFrom": "Lorettoplatz",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24054",
+          "project": "s21",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000500",
+        "stateless": "mvv:24054: :R:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "19",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "41"
+      },
+      "servingLine": {
+        "key": "232",
+        "code": "3",
+        "number": "58",
+        "symbol": "58",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Hauptbahnhof Nord",
+        "directionFrom": "Hauptbahnhof Nord",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24058",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1007000",
+        "stateless": "mvv:24058: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "20",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "42"
+      },
+      "servingLine": {
+        "key": "2123",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "21",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "43"
+      },
+      "servingLine": {
+        "key": "175",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Olympiazentrum",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "22",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "44"
+      },
+      "servingLine": {
+        "key": "135",
+        "code": "3",
+        "number": "54",
+        "symbol": "54",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Lorettoplatz",
+        "directionFrom": "Münchner Freiheit",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24054",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001404",
+        "stateless": "mvv:24054: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "22",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "44"
+      },
+      "servingLine": {
+        "key": "700",
+        "code": "3",
+        "number": "68",
+        "symbol": "68",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Hauptbahnhof Nord",
+        "directionFrom": "Hauptbahnhof Süd",
+        "name": "MetroBus",
+        "liErgRiProj": {
+          "line": "24068",
+          "project": "s21",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1007000",
+        "stateless": "mvv:24068: :H:s21"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469241",
+      "y": "824467",
+      "mapName": "MVTT",
+      "area": "1",
+      "platform": "Thiem",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:1:1",
+      "countdown": "24",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "46"
+      },
+      "servingLine": {
+        "key": "735",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Westerlandanger",
+        "directionFrom": "Nordbad",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000727",
+        "stateless": "mvv:23154: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "24",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "46"
+      },
+      "servingLine": {
+        "key": "660",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Olympiazentrum",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000350",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "25",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "47"
+      },
+      "servingLine": {
+        "key": "359",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "26",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "48"
+      },
+      "servingLine": {
+        "key": "2124",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Garch.,Forschungsz.",
+        "directionFrom": "Klinikum Großhadern",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000460",
+        "stateless": "mvv:21006: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "27",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "49"
+      },
+      "servingLine": {
+        "key": "76",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Fürstenried West",
+        "directionFrom": "Moosach",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001500",
+        "stateless": "mvv:21003: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469216",
+      "y": "824449",
+      "mapName": "MVTT",
+      "area": "2",
+      "platform": "Georg",
+      "platformName": "",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:2:2",
+      "countdown": "27",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "49"
+      },
+      "servingLine": {
+        "key": "315",
+        "code": "3",
+        "number": "154",
+        "symbol": "154",
+        "motType": "5",
+        "realtime": "0",
+        "direction": "Nordbad",
+        "directionFrom": "Westerlandanger",
+        "name": "StadtBus",
+        "liErgRiProj": {
+          "line": "23154",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000034",
+        "stateless": "mvv:23154: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469169",
+      "y": "824508",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UM-Fr",
+      "platformName": "Gleis 1",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:51",
+      "countdown": "28",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "50"
+      },
+      "servingLine": {
+        "key": "558",
+        "code": "1",
+        "number": "U3",
+        "symbol": "U3",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Moosach",
+        "directionFrom": "Fürstenried West",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21003",
+          "project": "s20",
+          "direction": "R",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1000300",
+        "stateless": "mvv:21003: :R:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    },
+    {
+      "stopID": "1000080",
+      "x": "4469160",
+      "y": "824506",
+      "mapName": "MVTT",
+      "area": "51",
+      "platform": "UUniv",
+      "platformName": "Gleis 2",
+      "stopName": "Giselastraße",
+      "nameWO": "Giselastraße",
+      "gid": "de:09162:80",
+      "pointGid": "de:09162:80:51:52",
+      "countdown": "29",
+      "dateTime": {
+        "year": "2021",
+        "month": "1",
+        "day": "14",
+        "weekday": "5",
+        "hour": "17",
+        "minute": "51"
+      },
+      "servingLine": {
+        "key": "360",
+        "code": "1",
+        "number": "U6",
+        "symbol": "U6",
+        "motType": "2",
+        "realtime": "0",
+        "direction": "Klinikum Großhadern",
+        "directionFrom": "Garch.,Forschungsz.",
+        "name": "U-Bahn",
+        "liErgRiProj": {
+          "line": "21006",
+          "project": "s20",
+          "direction": "H",
+          "supplement": " ",
+          "network": "mvv"
+        },
+        "destID": "1001540",
+        "stateless": "mvv:21006: :H:s20"
+      },
+      "operator": {
+        "code": "23",
+        "name": "MVG, 0800 344 22 66 00",
+        "publicCode": ""
+      }
+    }
+  ]
+}
