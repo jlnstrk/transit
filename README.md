@@ -1,3 +1,4 @@
+[![Build](https://github.com/jlnstrk/transit/workflows/Assemble/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3Assemble)
 [![Tests](https://github.com/jlnstrk/transit/workflows/Tests/badge.svg)](https://github.com/jlnstrk/transit/actions?query=workflow%3ATests)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE.md)
 [![Release](https://img.shields.io/github/release/jlnstrk/transit.svg)](https://github.com/jlnstrk/transit/releases/)
