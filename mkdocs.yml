@@ -16,3 +16,4 @@ nav:
       - 'api/hapi.md'
       - 'api/efa.md'
       - 'api/trias.md'
+  - 'Reference': 'reference/index.html'

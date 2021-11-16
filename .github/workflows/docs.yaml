@@ -27,5 +27,8 @@ jobs:
       - name: Install mkdocs-material
         run: pip install mkdocs-material
 
+      - name: Build Dokka docs
+        run: ./gradlew dokkaHtmlMultiModule
+
       - name: Deploy mkdocs
         run: mkdocs gh-deploy --force

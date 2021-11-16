@@ -1,3 +1,5 @@
+import org.jetbrains.dokka.gradle.DokkaTaskPartial
+
 plugins {
     id("org.jetbrains.dokka")
     `maven-publish`
@@ -7,6 +9,15 @@ group = rootProject.properties["group"] as String
 version = rootProject.properties["version"] as String
 
 val isRelease get() = !version.toString().endsWith("SNAPSHOT")
+
+tasks.named<DokkaTaskPartial>("dokkaHtmlPartial")
+    .configure {
+        dokkaSourceSets {
+            configureEach {
+                reportUndocumented.set(true)
+            }
+        }
+    }
 
 publishing {
     repositories {

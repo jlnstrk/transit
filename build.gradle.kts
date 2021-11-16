@@ -1,5 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+plugins {
+    id("org.jetbrains.dokka")
+}
+
 allprojects {
     repositories {
         mavenCentral()
@@ -13,11 +17,15 @@ allprojects {
     }
 }
 
+tasks.dokkaHtmlMultiModule.configure {
+    outputDirectory.set(rootDir.resolve("docs/reference"))
+}
+
 val secretsFile = File(rootDir, "secrets.properties")
 if (secretsFile.exists()) {
     val secrets = java.util.Properties()
     secrets.load(secretsFile.inputStream())
-    for((key, value) in secrets) {
+    for ((key, value) in secrets) {
         extra[key.toString()] = value
     }
 }
