@@ -1,8 +1,8 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.Journey
-import de.jlnstrk.transit.util.model.Location
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.Journey
+import de.jlnstrk.transit.common.model.Location
 
 public interface JourneyDetailsService : Service {
     public val supportsStartIndex: Boolean get() = false
@@ -29,6 +29,6 @@ public interface JourneyDetailsService : Service {
     public enum class Error {
         INVALID_JOURNEY,
         INVALID_INDEX,
-        INVALID_LOCATION
+        INVALID_LOCATION,
     }
 }

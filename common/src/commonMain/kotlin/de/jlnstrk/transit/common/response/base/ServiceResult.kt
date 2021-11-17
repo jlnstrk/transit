@@ -2,6 +2,9 @@
 
 package de.jlnstrk.transit.common.response.base
 
+import de.jlnstrk.transit.common.model.Message
+import de.jlnstrk.transit.common.model.DataHeader
+
 public sealed class ServiceResult<in R, in E> {
 
     public data class Success<R> @PublishedApi internal constructor(
@@ -16,7 +19,9 @@ public sealed class ServiceResult<in R, in E> {
         val message: String?
     ) : ServiceResult<Any, E>()
 
-    public interface Data
+    public interface Data {
+        public val header: DataHeader
+    }
 
     public companion object {
 

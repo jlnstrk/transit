@@ -14,11 +14,11 @@ public inline fun <reified T : Enum<T>> String.deserializeAs(): T =
     Json.decodeFromJsonElement(serializer(), JsonPrimitive(this))
 
 @OptIn(InternalSerializationApi::class)
-public inline fun <T : Enum<T>> T.serializeT(type: KClass<T>): String =
+public fun <T : Enum<T>> T.serializeT(type: KClass<T>): String =
     Json.encodeToJsonElement(type.serializer(), this).jsonPrimitive.content
 
 @OptIn(InternalSerializationApi::class)
-public inline fun <T : Enum<T>> String.deserializeAsT(type: KClass<T>): T =
+public fun <T : Enum<T>> String.deserializeAsT(type: KClass<T>): T =
     Json.decodeFromJsonElement(type.serializer(), JsonPrimitive(this))
 
 internal interface EfaIntEnum  {

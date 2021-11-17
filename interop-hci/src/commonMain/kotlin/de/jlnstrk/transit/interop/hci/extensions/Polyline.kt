@@ -1,6 +1,8 @@
+@file:Suppress("DuplicatedCode")
+
 package de.jlnstrk.transit.interop.hci.extensions
 
-import de.jlnstrk.transit.util.model.Coordinates
+import de.jlnstrk.transit.common.model.Coordinates
 
 public fun String.decodeGpa(): List<Coordinates> {
     val path = ArrayList<Coordinates>(length / 2)

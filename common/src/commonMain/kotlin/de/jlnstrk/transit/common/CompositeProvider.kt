@@ -6,7 +6,7 @@ import kotlin.reflect.KClass
 @DslMarker
 internal annotation class CompositeDsl
 
-public class CompositeProvider(
+public class CompositeProvider private constructor(
     private val delegates: MutableMap<KClass<out Service>, Provider> = HashMap()
 ) : Provider() {
 
@@ -20,39 +20,40 @@ public class CompositeProvider(
         return delegates[serviceInterface]?.service(serviceInterface)
     }
 
-    public fun useAll(delegate: Provider): CompositeProvider {
-        for (serviceClass in delegate.services) {
-            use(serviceClass, delegate)
+    public fun useAll(from: Provider) {
+        for (serviceClass in from.services) {
+            use(serviceClass, from)
         }
-        return this
     }
 
     public fun <S : Service> use(
         service: KClass<S>,
-        delegate: Provider,
-    ): CompositeProvider {
-        if (!delegate.offers(service)) {
+        from: Provider,
+    ) {
+        if (!from.offers(service)) {
             throw IllegalArgumentException("Provided delegate does not offer ${service.simpleName}")
         }
-        delegates[service] = delegate
-        return this
+        delegates[service] = from
     }
 
     /** Use the services configured in [init] from [delegate] */
     public fun of(
         delegate: Provider,
         init: Delegate.() -> Unit
-    ): CompositeProvider {
+    ) {
         Delegate(delegate).init()
-        return this
     }
 
     public inner class Delegate internal constructor(private val delegate: Provider) {
 
         /** Configures [service] as implementation instance for [S] */
-        public fun <S : Service> use(service: KClass<S>): Delegate {
+        public fun <S : Service> use(service: KClass<S>) {
             this@CompositeProvider.use(service, delegate)
-            return this
         }
+    }
+
+    public companion object {
+        public operator fun invoke(init: CompositeProvider.() -> Unit): CompositeProvider =
+            CompositeProvider().apply(init)
     }
 }

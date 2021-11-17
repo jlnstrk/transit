@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.ProductClass
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.ProductClass
 
 public interface NetworkMapsService : Service {
     public val supportsFilterProducts: Boolean get() = false

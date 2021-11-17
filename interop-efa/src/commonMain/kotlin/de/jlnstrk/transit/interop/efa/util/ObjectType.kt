@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.efa.util
 
 import de.jlnstrk.transit.api.efa.model.EfaPoint
-import de.jlnstrk.transit.util.model.Location
+import de.jlnstrk.transit.common.model.Location
 
 internal fun Set<Location.Type>.denormalized(): Set<EfaPoint.ObjectType> {
     val result = mutableSetOf<EfaPoint.ObjectType>()

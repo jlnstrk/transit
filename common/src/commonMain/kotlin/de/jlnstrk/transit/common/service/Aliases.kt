@@ -1,10 +1,13 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.response.*
-import de.jlnstrk.transit.util.response.base.ServiceResult
+import de.jlnstrk.transit.common.response.*
+import de.jlnstrk.transit.common.response.base.ServiceResult
 
 public typealias JourneyDetailsResult = ServiceResult<JourneyDetailsData,
         JourneyDetailsService.Error>
+
+public typealias JourneyPositionsResult = ServiceResult<JourneyListData,
+        JourneyPositionsService.Error>
 
 public typealias TripSearchResult = ServiceResult<TripSearchData,
         TripSearchService.Error>
@@ -21,7 +24,7 @@ public typealias NearbyLocationsResult = ServiceResult<LocationListData,
 public typealias StationBoardResult = ServiceResult<StationBoardData,
         StationBoardService.Error>
 
-public typealias StatusInformationResult = ServiceResult<StatusInformationData,
+public typealias StatusInformationResult = ServiceResult<MessageListData,
         StatusInformationService.Error>
 
 public typealias NetworkMapsResult = ServiceResult<NetworkMapsData,

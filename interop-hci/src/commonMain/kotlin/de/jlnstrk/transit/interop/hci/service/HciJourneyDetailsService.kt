@@ -4,20 +4,22 @@ import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.journeydetails.HciJourneyDetailsRequest
 import de.jlnstrk.transit.api.hci.model.message.HciMessage
-import de.jlnstrk.transit.util.model.Journey
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.response.JourneyDetailsData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.JourneyDetailsResult
-import de.jlnstrk.transit.util.service.JourneyDetailsService
-import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Journey
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.response.JourneyDetailsData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.JourneyDetailsResult
+import de.jlnstrk.transit.common.service.JourneyDetailsService
 import de.jlnstrk.transit.interop.hci.HciInteropService
-import de.jlnstrk.transit.interop.hci.extensions.asHci
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
+import de.jlnstrk.transit.interop.hci.conversion.asHci
 
 internal class HciJourneyDetailsService(
     provider: HciProvider,
-    endpoint: HciConsumer
-) : HciInteropService(provider, endpoint), JourneyDetailsService {
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), JourneyDetailsService {
     override val supportsStartIndex: Boolean get() = true
     override val supportsStartLocation: Boolean get() = true
     override val supportsEndIndex: Boolean get() = true
@@ -38,42 +40,36 @@ internal class HciJourneyDetailsService(
         includePolyline: Boolean?,
         includeComposition: Boolean?
     ): JourneyDetailsResult {
-        val request = HciJourneyDetailsRequest(
-            jid = journey.literalId,
-            dIdx = startIndex,
-            dLoc = startLocation?.asHci(),
-            aIdx = endIndex,
-            aLoc = endLocation?.asHci(),
-            getPasslist = includePassedStops,
-            getPolyline = includePolyline,
-            getTrainComposition = includeComposition,
-            getSimpleTrainComposition = includeComposition,
+        val hciRequest = HciJourneyDetailsRequest {
+            jid = journey.id
+
+            dIdx = startIndex
+            dLoc = startLocation?.asHci()
+            aIdx = endIndex
+            aLoc = endLocation?.asHci()
+
+            getAnnotations = true
+            getPasslist = includePassedStops
+            getPolyline = includePolyline
+            getTrainComposition = includeComposition
+            getSimpleTrainComposition = includeComposition
             polySplitting = false
-        )
+        }
         try {
-            val hciResponse = endpoint.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
             return withCommon(hciResponse.common) {
-                val direction = Location.Station(name = hciResponse.journey.dirTxt)
-                val stops = hciResponse.journey.stopL.map { convertStop(it, hciResponse.journey.date!!) }
-                // polyline splitting is OFF
-                val polyline = hciResponse.journey.polyG?.polyXL
-                    ?.first()
-                    ?.let(::getOrConvertPolyline)
-                val messages = hciResponse.journey.msgL
-                    .mapNotNull(HciMessage::himX)
-                    .map(::getOrConvertMessage)
-                val attributes = hciResponse.journey.msgL
-                    .mapNotNull(HciMessage::remX)
-                    .map(::getOrConvertAttribute)
                 val response = JourneyDetailsData(
-                    direction = direction,
-                    line = getOrConvertLine(hciResponse.journey.prodX),
-                    stops = stops,
-                    polyline = polyline,
-                    messages = messages,
-                    attributes = attributes,
-                    isCancelled = hciResponse.journey.isCncl,
-                    isPartiallyCancelled = hciResponse.journey.isPartCncl
+                    header = DataHeader(
+                        calculationTime = null,
+                        // realtimeReference = hciResponse.planrtTS,
+                        globalMessages = hciResponse.globMsgL
+                            .mapNotNull(HciMessage::himX)
+                            .map(messages::get),
+                        globalAttributes = hciResponse.globMsgL
+                            .mapNotNull(HciMessage::remX)
+                            .map(attributes::get),
+                    ),
+                    journey = hciResponse.journey.asCommon(this, null),
                 )
                 ServiceResult.success(response)
             }
@@ -81,10 +77,12 @@ internal class HciJourneyDetailsService(
             println(e)
             return ServiceResult.failure(
                 e, when (e) {
+                    is HciException.Service -> when (e.serviceError) {
+                        else -> null
+                    }
                     else -> null
                 }, e.message
             )
         }
     }
-
 }

@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.common
 
-import de.jlnstrk.transit.util.model.Attribute
-import de.jlnstrk.transit.util.model.Line
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.Message
+import de.jlnstrk.transit.common.model.Attribute
+import de.jlnstrk.transit.common.model.Line
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.Message
 
 public interface Normalization {
 

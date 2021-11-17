@@ -32,7 +32,7 @@ publishing {
         maven {
             val snapshotRepositoryUrl: String by project
             val releaseRepositoryUrl: String by project
-            url = uri(if (isRelease) releaseRepositoryUrl else snapshotRepositoryUrl)
+            url = uri(if (false && isRelease) releaseRepositoryUrl else snapshotRepositoryUrl)
 
             val repositoryUsername: String? by project
             val repositoryPassword: String? by project

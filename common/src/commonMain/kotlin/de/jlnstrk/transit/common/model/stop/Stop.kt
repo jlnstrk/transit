@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.common.model.stop
 
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.Location
+import de.jlnstrk.transit.common.model.Location
 
 public sealed class Stop {
     public abstract val location: Location

@@ -1,11 +1,11 @@
 package de.jlnstrk.transit.common.service
 
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.Line
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.Line
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
 
 public interface StationBoardService : Service {
     public val supportedModes: Set<Mode> get() = emptySet()

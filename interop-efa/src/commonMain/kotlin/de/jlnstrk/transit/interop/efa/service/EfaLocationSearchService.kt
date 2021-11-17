@@ -4,16 +4,17 @@ import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.model.EfaPoint
 import de.jlnstrk.transit.api.efa.response.EfaPointVerification
 import de.jlnstrk.transit.api.efa.util.efaStopFinderRequest
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
+import de.jlnstrk.transit.common.response.LocationListData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.LocationSearchResult
+import de.jlnstrk.transit.common.service.LocationSearchService
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.interop.efa.util.denormalized
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.LocationListData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.LocationSearchResult
-import de.jlnstrk.transit.util.service.LocationSearchService
 
 internal class EfaLocationSearchService(
     provider: EfaProvider,
@@ -49,6 +50,7 @@ internal class EfaLocationSearchService(
                 return ServiceResult.noResult()
             }
             val result = LocationListData(
+                header = DataHeader(),
                 locations = points.map { it.normalize(provider) }
             )
             return ServiceResult.success(result)
@@ -58,5 +60,4 @@ internal class EfaLocationSearchService(
             return ServiceResult.failure(e, message = e.message)
         }
     }
-
 }

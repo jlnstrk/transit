@@ -4,18 +4,18 @@ import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.trip.EfaTripRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.util.efaTripRequest
+import de.jlnstrk.transit.common.model.*
+import de.jlnstrk.transit.common.response.TripSearchData
+import de.jlnstrk.transit.common.response.base.ScrollContext
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.TripSearchResult
+import de.jlnstrk.transit.common.service.TripSearchService
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.*
-import de.jlnstrk.transit.util.response.TripSearchData
-import de.jlnstrk.transit.util.response.base.ScrollContext
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.TripSearchResult
-import de.jlnstrk.transit.util.service.TripSearchService
 
 internal class EfaTripSearchService(
     provider: EfaProvider,
@@ -45,13 +45,13 @@ internal class EfaTripSearchService(
     override suspend fun tripSearch(
         origin: Location,
         destination: Location,
-        via: List<Via>?,
+        via: List<Via>,
         viaPeriod: Duration?,
         viaModes: Set<Via.Mode>?,
         dateTime: OffsetDateTime?,
         dateTimeIsArrival: Boolean?,
-        filterProducts: Set<ProductClass>?,
-        filterLines: Set<Line>?,
+        filterProducts: ProductSet?,
+        filterLines: LineSet?,
         includePolylines: Boolean?,
         includeStops: Boolean?,
         maxResults: Int?
@@ -107,17 +107,16 @@ internal class EfaTripSearchService(
 
         try {
             val efaResponse = client.xmlTripRequest2(efaRequest)
-            if (efaResponse.trips.isNullOrEmpty()) {
+            if (efaResponse.trips.isEmpty()) {
                 return ServiceResult.noResult()
             }
             val result = TripSearchData(
-                trips = efaResponse.trips!!.map { it.normalize(provider) }
+                header = DataHeader(),
+                trips = efaResponse.trips.map { it.normalize(provider) },
+                scrollContext = null,
             )
             return ServiceResult.success(result)
         } catch (e: Exception) {
-            throw e
-            e.printStackTrace()
-            e.cause?.printStackTrace()
             return ServiceResult.failure(e, message = e.message)
         }
     }
@@ -128,5 +127,4 @@ internal class EfaTripSearchService(
     ): TripSearchResult {
         return ServiceResult.failure()
     }
-
 }

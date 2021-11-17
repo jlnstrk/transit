@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.*
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.*
 
 public interface NearbyLocationsService : Service {
     public val supportsFilterTypes: Boolean get() = false

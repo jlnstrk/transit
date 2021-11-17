@@ -1,17 +1,10 @@
 package de.jlnstrk.transit.common.response
 
-import de.jlnstrk.transit.util.model.*
-import de.jlnstrk.transit.util.model.stop.Stop
-import de.jlnstrk.transit.util.response.base.ServiceResult
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Journey
+import de.jlnstrk.transit.common.response.base.ServiceResult
 
-public class JourneyDetailsData(
-    public val direction: Location,
-    public val line: Line,
-    public val stops: List<Stop>? = null,
-    public val polyline: Polyline? = null,
-    public val messages: List<Message>? = null,
-    public val attributes: List<Attribute>? = null,
-    public val composition: TrainComposition? = null,
-    public val isCancelled: Boolean = false,
-    public val isPartiallyCancelled: Boolean = false
+public data class JourneyDetailsData(
+    override val header: DataHeader,
+    public val journey: Journey,
 ) : ServiceResult.Data

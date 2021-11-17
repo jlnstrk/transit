@@ -1,49 +1,30 @@
 package de.jlnstrk.transit.interop.hci
 
+import de.jlnstrk.transit.api.hci.HciConfig
 import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciAuth
-import de.jlnstrk.transit.api.hci.HciClient
-import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.interop.Provider
-import de.jlnstrk.transit.util.ZoneOffset
-import de.jlnstrk.transit.util.service.*
+import de.jlnstrk.transit.common.Provider
+import de.jlnstrk.transit.common.service.*
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.service.*
+import de.jlnstrk.transit.util.LocalDateTime
+import de.jlnstrk.transit.util.ZoneOffset
 
-public abstract class HciProvider : de.jlnstrk.transit.interop.Provider.Implementation(), HafasClassMapping {
+public abstract class HciProvider : Provider.Implementation(), HafasClassMapping {
     override val timezone: ZoneOffset get() = ZoneOffset.local(LocalDateTime.now())
-
-    public abstract val baseUrl: String
-
-    public abstract val client: HciClient
-    public open val auth: HciAuth? get() = null
-    public abstract val ver: String
-    public open val ext: String? get() = null
-    public open val salt: String? get() = null
-    public open val localeOverride: String? get() = null
+    public abstract val config: HciConfig
 
     init {
-        val endpoint by lazy {
-            HciConsumer {
-                baseUrl = this@HciProvider.baseUrl
-                client = this@HciProvider.client
-                ver = this@HciProvider.ver
-                ext = this@HciProvider.ext
-                auth = this@HciProvider.auth
-                lang = this@HciProvider.localeOverride
-                salt = this@HciProvider.salt
-            }
-        }
-        registerService<LocationSearchService> { HciLocationSearchService(this, endpoint) }
-        registerService<NearbyLocationsService> { HciNearbyLocationsService(this, endpoint) }
-        registerService<StationBoardService> { HciStationBoardService(this, endpoint) }
-        registerService<JourneyDetailsService> { HciJourneyDetailsService(this, endpoint) }
-        registerService<TripSearchService> { HciTripSearchService(this, endpoint) }
-        if (true || ver >= "1.18") {
+        val consumer by lazy { HciConsumer(config) }
+        registerService<LocationSearchService> { HciLocationSearchService(this, consumer) }
+        registerService<NearbyLocationsService> { HciNearbyLocationsService(this, consumer) }
+        registerService<StationBoardService> { HciStationBoardService(this, consumer) }
+        registerService<JourneyDetailsService> { HciJourneyDetailsService(this, consumer) }
+        registerService<JourneyPositionsService> { HciJourneyPositionsService(this, consumer) }
+        registerService<TripSearchService> { HciTripSearchService(this, consumer) }
+        if (true || config.ver >= "1.18") {
             registerService<StatusInformationService> {
-                HciStatusInformationService(this, endpoint)
+                HciStatusInformationService(this, consumer)
             }
         }
     }
-
 }

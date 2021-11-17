@@ -1,10 +1,13 @@
 package de.jlnstrk.transit.common.response
 
-import de.jlnstrk.transit.util.model.Trip
-import de.jlnstrk.transit.util.response.base.ScrollContext
-import de.jlnstrk.transit.util.response.base.ServiceResult
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Trip
+import de.jlnstrk.transit.common.response.base.ScrollContext
+import de.jlnstrk.transit.common.response.base.ScrollableData
+import de.jlnstrk.transit.common.response.base.ServiceResult
 
-public class TripSearchData(
-    public var trips: List<Trip>,
-    public val scrollContext: ScrollContext<TripSearchData>? = null
-) : ServiceResult.Data
+public data class TripSearchData(
+    override val header: DataHeader,
+    public val trips: List<Trip>,
+    override val scrollContext: ScrollContext<TripSearchData>?
+) : ServiceResult.Data, ScrollableData<TripSearchData>

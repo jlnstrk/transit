@@ -1,23 +1,25 @@
 package de.jlnstrk.transit.interop.hapi.service
 
+import de.jlnstrk.transit.api.hapi.HapiClient
 import de.jlnstrk.transit.api.hapi.request.HapiArrivalBoardRequest
 import de.jlnstrk.transit.api.hapi.request.HapiDepartureBoardRequest
 import de.jlnstrk.transit.api.hapi.request.base.HapiFilterList
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.Line
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.StationBoardData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.StationBoardResult
-import de.jlnstrk.transit.util.service.StationBoardService
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Line
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
+import de.jlnstrk.transit.common.response.StationBoardData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.StationBoardResult
+import de.jlnstrk.transit.common.service.StationBoardService
 import de.jlnstrk.transit.interop.hapi.HapiProvider
 import de.jlnstrk.transit.interop.hapi.HapiService
+import de.jlnstrk.transit.util.Duration
+import de.jlnstrk.transit.util.OffsetDateTime
 
 internal class HapiStationBoardService(
     provider: HapiProvider,
-    endpoint: de.jlnstrk.transit.api.hapi.HapiClient
+    endpoint: HapiClient
 ) : HapiService(provider, endpoint), StationBoardService {
 
     override suspend fun stationBoard(
@@ -52,18 +54,22 @@ internal class HapiStationBoardService(
             is HapiDepartureBoardRequest -> {
                 val hapiResponse = endpoint.hapiRequest(hapiRequest)
                 val data = StationBoardData(
+                    header = DataHeader(),
                     dateTime = null,
                     isArrivalBoard = false,
-                    journeys = emptyList()
+                    journeys = emptyList(),
+                    scrollContext = null
                 )
                 return ServiceResult.success(data)
             }
             is HapiArrivalBoardRequest -> {
                 val hapiResponse = endpoint.hapiRequest(hapiRequest)
                 val data = StationBoardData(
+                    header = DataHeader(),
                     dateTime = null,
                     isArrivalBoard = true,
-                    journeys = emptyList()
+                    journeys = emptyList(),
+                    scrollContext = null,
                 )
                 return ServiceResult.success(data)
             }

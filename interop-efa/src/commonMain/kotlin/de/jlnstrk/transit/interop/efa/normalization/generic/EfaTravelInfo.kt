@@ -1,15 +1,16 @@
 package de.jlnstrk.transit.interop.efa.normalization.generic
 
 import de.jlnstrk.transit.api.efa.model.EfaTravelInfo
-import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.extensions.toLineSet
-import de.jlnstrk.transit.util.model.Message
+import de.jlnstrk.transit.common.extensions.toLineSet
+import de.jlnstrk.transit.common.model.LineSet
+import de.jlnstrk.transit.common.model.Message
 import de.jlnstrk.transit.interop.efa.EfaProvider
+import de.jlnstrk.transit.util.OffsetDateTime
 
 internal fun EfaTravelInfo.normalize(provider: EfaProvider): Message {
     return Message(
         head = infoLink.first().subtitle ?: infoLink.first().infoLinkText.orEmpty(),
-        subhead = infoLink.first().subtitle,
+        lead = infoLink.first().subtitle,
         body = infoLink.first().content.orEmpty(),
         priority = when (priority) {
             EfaTravelInfo.Priority.VERY_LOW -> Message.Priority.LOW
@@ -22,6 +23,6 @@ internal fun EfaTravelInfo.normalize(provider: EfaProvider): Message {
         published = OffsetDateTime.local(creationTime, provider.timezone),
         validFrom = OffsetDateTime.local(publicationDuration.itdDateTime_From, provider.timezone),
         validUntil = OffsetDateTime.local(publicationDuration.itdDateTime_To, provider.timezone),
-        lines = concernedLines?.map { it.normalize(provider) }?.toLineSet()
+        affectedLines = concernedLines?.map { it.normalize(provider) }?.toLineSet() ?: LineSet()
     )
 }

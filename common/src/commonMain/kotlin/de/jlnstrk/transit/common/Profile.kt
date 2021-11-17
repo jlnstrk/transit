@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common
 
-import de.jlnstrk.transit.util.model.ProductClass
+import de.jlnstrk.transit.common.model.ProductClass
 
 public interface Profile {
     public val filterConfig: Array<de.jlnstrk.transit.common.Profile.FilterEntry>

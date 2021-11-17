@@ -2,7 +2,7 @@ package de.jlnstrk.transit.common.model
 
 import de.jlnstrk.transit.util.LocalDate
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.base.Identifiable
+import de.jlnstrk.transit.common.model.base.Identifiable
 
 public data class NetworkMap(
     override val literalId: String,

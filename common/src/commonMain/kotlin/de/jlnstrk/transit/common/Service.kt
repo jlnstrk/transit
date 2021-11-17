@@ -6,7 +6,7 @@ public interface Service {
         public fun create(): S
     }
 
-    public abstract class Base<P : Provider.Implementation>(
+    public abstract class Implementation<P : Provider.Implementation>(
         protected val provider: P
     ) : Service
 }

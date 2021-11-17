@@ -1,8 +1,8 @@
 package de.jlnstrk.transit.common.model
 
 import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.model.base.Identifiable
-import de.jlnstrk.transit.util.model.stop.Stop
+import de.jlnstrk.transit.common.model.base.Identifiable
+import de.jlnstrk.transit.common.model.stop.Stop
 
 public data class Trip(
     public override val literalId: String?,

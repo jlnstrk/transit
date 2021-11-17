@@ -2,10 +2,10 @@ package de.jlnstrk.transit.common.util
 
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.Leg
-import de.jlnstrk.transit.util.model.Trip
-import de.jlnstrk.transit.util.model.stop.BaseArrival
-import de.jlnstrk.transit.util.model.stop.BaseDeparture
+import de.jlnstrk.transit.common.model.Leg
+import de.jlnstrk.transit.common.model.Trip
+import de.jlnstrk.transit.common.model.stop.BaseArrival
+import de.jlnstrk.transit.common.model.stop.BaseDeparture
 import de.jlnstrk.transit.util.until
 
 public inline val BaseArrival.isArrivalEarly: Boolean

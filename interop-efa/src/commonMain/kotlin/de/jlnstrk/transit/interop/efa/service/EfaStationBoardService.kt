@@ -4,19 +4,20 @@ import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.dm.EfaDmRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.util.efaDmRequest
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Line
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
+import de.jlnstrk.transit.common.response.StationBoardData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.StationBoardResult
+import de.jlnstrk.transit.common.service.StationBoardService
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.Line
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.StationBoardData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.StationBoardResult
-import de.jlnstrk.transit.util.service.StationBoardService
 
 internal class EfaStationBoardService(
     provider: EfaProvider,
@@ -72,12 +73,11 @@ internal class EfaStationBoardService(
         }
         try {
             val efaResponse = client.xmlDmRequest(efaRequest)
-            if (efaResponse.arrivalList.isNullOrEmpty()
-                && efaResponse.departureList.isNullOrEmpty()
-            ) {
+            if (efaResponse.arrivalList.isEmpty() && efaResponse.departureList.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            val result = StationBoardData(
+            val data = StationBoardData(
+                header = DataHeader(),
                 dateTime = OffsetDateTime.local(efaResponse.dateTime.dateTime, provider.timezone),
                 isArrivalBoard = efaResponse.dateTime.mode == EfaRequest.DateTimeMode.ARRIVAL,
                 journeys = when (efaResponse.dateTime.mode) {
@@ -85,10 +85,12 @@ internal class EfaStationBoardService(
                     EfaRequest.DateTimeMode.DEPARTURE,
                     EfaRequest.DateTimeMode.FIRST_SERVICE,
                     EfaRequest.DateTimeMode.LAST_SERVICE -> efaResponse.departureList
-                }!!.map { efaJourney ->
+                }.map { efaJourney ->
                     efaJourney.normalize(provider, efaResponse.dateTime.mode)
-                })
-            return ServiceResult.success(result)
+                },
+                scrollContext = null,
+            )
+            return ServiceResult.success(data)
         } catch (e: Exception) {
             e.printStackTrace()
             e.cause?.printStackTrace()

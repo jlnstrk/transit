@@ -37,8 +37,7 @@ public data class EfaLeg(
     public val hints: List<EfaHint> = emptyList(),
 
     /** The sequence of intermediate stops on this leg */
-    @SerialName("stopSeq")
-    public val stopSequence: List<EfaStop> = emptyList(),
+    public val stopSeq: List<EfaStop> = emptyList(),
 
     // TODO: Purpose?
     public val format: String?,

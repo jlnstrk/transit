@@ -10,7 +10,6 @@ public data class Via(
 
     public enum class Mode {
         REQUIRES_ALIGHTING,
-        REQUIRES_BOARDING
+        REQUIRES_BOARDING,
     }
-
 }

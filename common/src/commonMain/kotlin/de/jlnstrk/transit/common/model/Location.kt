@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.model.base.Identifiable
+import de.jlnstrk.transit.common.model.base.Identifiable
 
 public sealed interface Location : Identifiable {
     public val type: Type

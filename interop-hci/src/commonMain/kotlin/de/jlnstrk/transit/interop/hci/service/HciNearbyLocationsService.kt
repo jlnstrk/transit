@@ -6,21 +6,19 @@ import de.jlnstrk.transit.api.hci.method.locgeopos.HciLocGeoPosRequest
 import de.jlnstrk.transit.api.hci.model.geo.HciGeoRing
 import de.jlnstrk.transit.api.hci.request.filter.HciLocationFilter
 import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.util.model.Attribute
-import de.jlnstrk.transit.util.model.Coordinates
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.LocationListData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.NearbyLocationsService
-import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.common.model.*
+import de.jlnstrk.transit.common.response.LocationListData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.NearbyLocationsService
 import de.jlnstrk.transit.interop.hci.HciInteropService
-import de.jlnstrk.transit.interop.hci.extensions.asHci
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
+import de.jlnstrk.transit.interop.hci.conversion.asHci
 
 internal class HciNearbyLocationsService(
     provider: HciProvider,
-    endpoint: HciConsumer
-) : HciInteropService(provider, endpoint), NearbyLocationsService {
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), NearbyLocationsService {
     override val supportsFilterTypes: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true
     override val supportsFilterAttributes: Boolean get() = true
@@ -41,7 +39,7 @@ internal class HciNearbyLocationsService(
             listOf(
                 HciLocationFilter(
                     type = HciLocationFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INCLUSIVE,
+                    mode = HciRequestFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
@@ -58,12 +56,15 @@ internal class HciNearbyLocationsService(
             locFltrL = locationFilters.orEmpty()
         )
         try {
-            val serviceResponse = endpoint.serviceRequest(request) ?: return ServiceResult.noResult()
+            val serviceResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
             if (serviceResponse.locL.isEmpty()) {
                 return ServiceResult.noResult()
             }
             return withCommon(serviceResponse.common) {
-                val response = LocationListData(serviceResponse.locL.map(::convertLocation))
+                val response = LocationListData(
+                    header = DataHeader(),
+                    locations = serviceResponse.locL.map { it.asCommon(this) }
+                )
                 ServiceResult.success(response)
             }
         } catch (e: HciException) {

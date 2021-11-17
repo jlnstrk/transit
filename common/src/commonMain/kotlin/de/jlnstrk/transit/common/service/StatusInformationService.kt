@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.LineSet
-import de.jlnstrk.transit.util.model.Message
-import de.jlnstrk.transit.util.model.ProductClass
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.LineSet
+import de.jlnstrk.transit.common.model.Message
+import de.jlnstrk.transit.common.model.ProductClass
 
 public interface StatusInformationService : Service {
     public val supportsFilterPriorities: Boolean get() = false

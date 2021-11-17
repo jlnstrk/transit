@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hafas
 
-import de.jlnstrk.transit.util.model.ProductClass
+import de.jlnstrk.transit.common.model.ProductClass
 import de.jlnstrk.transit.interop.hafas.extensions.log2
 
 public interface HafasClassMapping {

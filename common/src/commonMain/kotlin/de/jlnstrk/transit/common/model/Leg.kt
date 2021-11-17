@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.model.stop.Stop
+import de.jlnstrk.transit.common.model.stop.Stop
 
 public sealed class Leg {
     public abstract val departure: Stop.Departure

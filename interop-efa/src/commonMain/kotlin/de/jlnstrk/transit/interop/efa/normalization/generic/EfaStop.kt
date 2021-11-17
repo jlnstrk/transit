@@ -6,8 +6,8 @@ import de.jlnstrk.transit.interop.efa.util.normalized
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.LocalDateTime
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.stop.Stop
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.stop.Stop
 
 internal fun EfaStop.normalizeAsDeparture(
     provider: EfaProvider,

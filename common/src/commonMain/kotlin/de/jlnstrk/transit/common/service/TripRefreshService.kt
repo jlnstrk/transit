@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.Trip
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.Trip
 
 public interface TripRefreshService : Service {
 

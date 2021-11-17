@@ -5,20 +5,22 @@ import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.himsearch.HciHimSearchRequest
 import de.jlnstrk.transit.api.hci.request.filter.HciHimFilter
 import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.util.model.LineSet
-import de.jlnstrk.transit.util.model.Message
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.StatusInformationData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.StatusInformationResult
-import de.jlnstrk.transit.util.service.StatusInformationService
-import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.LineSet
+import de.jlnstrk.transit.common.model.Message
+import de.jlnstrk.transit.common.model.ProductClass
+import de.jlnstrk.transit.common.response.MessageListData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.StatusInformationResult
+import de.jlnstrk.transit.common.service.StatusInformationService
 import de.jlnstrk.transit.interop.hci.HciInteropService
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
 
 internal class HciStatusInformationService(
     provider: HciProvider,
-    endpoint: HciConsumer
-) : HciInteropService(provider, endpoint), StatusInformationService {
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), StatusInformationService {
     override val supportsFilterPriorities: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true
     override val supportsFilterLines: Boolean get() = true
@@ -35,7 +37,7 @@ internal class HciStatusInformationService(
             himFilters.add(
                 HciHimFilter(
                     type = HciHimFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INCLUSIVE,
+                    mode = HciRequestFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
@@ -45,12 +47,16 @@ internal class HciStatusInformationService(
             himFltrL = himFilters
         }
         try {
-            val hciResponse = endpoint.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
+            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
             if (hciResponse.msgL.isEmpty()) {
                 return ServiceResult.noResult()
             }
             return withCommon(hciResponse.common) {
-                val response = StatusInformationData(hciResponse.msgL.map(::convertHim))
+                val response = MessageListData(
+                    header = DataHeader(),
+                    messages = hciResponse.msgL.map { it.asCommon(this) },
+                    scrollContext = null,
+                )
                 ServiceResult.success(response)
             }
         } catch (e: HciException) {
@@ -62,5 +68,4 @@ internal class HciStatusInformationService(
             )
         }
     }
-
 }

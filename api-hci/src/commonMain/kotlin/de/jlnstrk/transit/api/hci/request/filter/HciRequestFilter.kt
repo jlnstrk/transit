@@ -7,15 +7,8 @@ import kotlinx.serialization.Serializable
 @HciModel("1.39")
 @Serializable
 public enum class HciRequestFilterMode {
-    @SerialName("BIT")
-    BITMASK,
-
-    @SerialName("INC")
-    INCLUSIVE,
-
-    @SerialName("EXC")
-    EXCLUSIVE,
-
-    @SerialName("UNDEF")
-    UNDEFINED
+    BIT,
+    INC,
+    EXC,
+    UNDEF
 }

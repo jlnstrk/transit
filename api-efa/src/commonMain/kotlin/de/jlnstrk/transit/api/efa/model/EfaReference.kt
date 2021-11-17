@@ -92,13 +92,10 @@ public data class EfaReference(
 
     @Serializable
     public enum class Attribute {
-        @SerialName("AREA_NIVEAU_DIVA")
         AREA_NIVEAU_DIVA,
-
-        @SerialName("AREA_NIVEAU_GIS")
         AREA_NIVEAU_GIS,
 
         @SerialName("platformChange")
-        PLATFORM_CHANGE
+        PLATFORM_CHANGE,
     }
 }

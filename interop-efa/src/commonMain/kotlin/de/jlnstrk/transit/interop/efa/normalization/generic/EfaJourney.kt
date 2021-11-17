@@ -3,9 +3,9 @@ package de.jlnstrk.transit.interop.efa.normalization.generic
 import de.jlnstrk.transit.api.efa.model.EfaCoordinates
 import de.jlnstrk.transit.api.efa.model.EfaJourney
 import de.jlnstrk.transit.api.efa.request.EfaRequest
-import de.jlnstrk.transit.util.model.Journey
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.stop.Stop
+import de.jlnstrk.transit.common.model.Journey
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.stop.Stop
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
 
@@ -20,9 +20,7 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaRequest.DateTi
     val cancelled = false
     return Journey(
         // Not unique!
-        literalId = servingLine.stateless,
-        // (Hopefully) unique!
-        numericId = servingLine.key,
+        id = servingLine.stateless,
         line = servingLine.normalize(provider, operator),
         directionFrom = Location.Station(
             name = servingLine.directionFrom

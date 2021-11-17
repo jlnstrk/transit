@@ -1,8 +1,8 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
+import de.jlnstrk.transit.common.Service
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
 
 public interface LocationSearchService : Service {
     public val supportsFilterTypes: Boolean get() = false

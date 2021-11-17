@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.efa.normalization.generic
 
 import de.jlnstrk.transit.api.efa.model.*
-import de.jlnstrk.transit.util.model.*
+import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.interop.efa.EfaProvider
 
 internal fun EfaTrip.normalize(provider: EfaProvider): Trip {

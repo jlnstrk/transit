@@ -3,24 +3,26 @@ package de.jlnstrk.transit.interop.hci.service
 import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.locmatch.HciLocMatchRequest
-import de.jlnstrk.transit.api.hci.model.location.HciLocationInput
 import de.jlnstrk.transit.api.hci.model.location.HciLocation
 import de.jlnstrk.transit.api.hci.model.location.HciLocationField
+import de.jlnstrk.transit.api.hci.model.location.HciLocationInput
 import de.jlnstrk.transit.api.hci.request.filter.HciLocationFilter
 import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.LocationListData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.LocationSearchResult
-import de.jlnstrk.transit.util.service.LocationSearchService
-import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.ProductClass
+import de.jlnstrk.transit.common.response.LocationListData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.LocationSearchResult
+import de.jlnstrk.transit.common.service.LocationSearchService
 import de.jlnstrk.transit.interop.hci.HciInteropService
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
 
 internal class HciLocationSearchService(
     provider: HciProvider,
-    endpoint: HciConsumer
-) : HciInteropService(provider, endpoint), LocationSearchService {
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), LocationSearchService {
     override val supportsFilterTypes: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true
     override val supportsMaxResults: Boolean get() = true
@@ -35,7 +37,7 @@ internal class HciLocationSearchService(
             listOf(
                 HciLocationFilter(
                     type = HciLocationFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INCLUSIVE,
+                    mode = HciRequestFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
@@ -72,13 +74,15 @@ internal class HciLocationSearchService(
             locFltrL = locationFilters.orEmpty()
         )
         try {
-            val hciResponse = endpoint.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
+            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
             return withCommon(hciResponse.common) {
                 if (hciResponse.match.locL.isEmpty()) {
                     return ServiceResult.noResult()
                 }
-                val response =
-                    LocationListData(hciResponse.match.locL.map(::convertLocation))
+                val response = LocationListData(
+                    header = DataHeader(),
+                    locations = hciResponse.match.locL.map { it.asCommon(this) }
+                )
                 ServiceResult.success(response)
             }
         } catch (e: HciException) {

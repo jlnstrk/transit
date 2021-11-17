@@ -8,21 +8,23 @@ import de.jlnstrk.transit.api.hci.model.location.HciLocation
 import de.jlnstrk.transit.api.hci.request.filter.HciJourneyFilter
 import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
 import de.jlnstrk.transit.api.hci.response.HciServiceError
+import de.jlnstrk.transit.common.model.*
+import de.jlnstrk.transit.common.response.TripSearchData
+import de.jlnstrk.transit.common.response.base.ScrollContext
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.TripSearchResult
+import de.jlnstrk.transit.common.service.TripSearchService
+import de.jlnstrk.transit.interop.hci.HciInteropService
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
+import de.jlnstrk.transit.interop.hci.conversion.asHci
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import de.jlnstrk.transit.util.model.*
-import de.jlnstrk.transit.util.response.TripSearchData
-import de.jlnstrk.transit.util.response.base.ScrollContext
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.TripSearchResult
-import de.jlnstrk.transit.util.service.TripSearchService
-import de.jlnstrk.transit.interop.hci.HciProvider
-import de.jlnstrk.transit.interop.hci.HciInteropService
-import de.jlnstrk.transit.interop.hci.extensions.asHci
 
-internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
-    HciInteropService(provider, proxy),
-    TripSearchService {
+internal class HciTripSearchService(
+    provider: HciProvider,
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), TripSearchService {
     override val supportedOriginTypes: Set<Location.Type> = setOf(
         Location.Type.STATION,
         Location.Type.ADDRESS,
@@ -50,13 +52,13 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
     override suspend fun tripSearch(
         origin: Location,
         destination: Location,
-        via: List<Via>?,
+        via: List<Via>,
         viaPeriod: Duration?,
         viaModes: Set<Via.Mode>?,
         dateTime: OffsetDateTime?,
         dateTimeIsArrival: Boolean?,
-        filterProducts: Set<ProductClass>?,
-        filterLines: Set<Line>?,
+        filterProducts: ProductSet?,
+        filterLines: LineSet?,
         includePolylines: Boolean?,
         includeStops: Boolean?,
         maxResults: Int?
@@ -67,7 +69,7 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
             journeyFilters.add(
                 HciJourneyFilter(
                     type = HciJourneyFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INCLUSIVE,
+                    mode = HciRequestFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
@@ -98,8 +100,9 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
             jnyFltrL = journeyFilters.orEmpty()
         }
         try {
-            val hciResponse = endpoint.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
             val result = TripSearchData(
+                header = DataHeader(),
                 trips = convertTrips(hciResponse),
                 scrollContext = Context(
                     contextScrollBackward = hciResponse.outCtxScrB,
@@ -135,8 +138,9 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
             }
         )
         try {
-            val hciResponse = endpoint.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
             val response = TripSearchData(
+                header = DataHeader(),
                 trips = convertTrips(hciResponse),
                 scrollContext = scrollContext.copy(
                     contextScrollBackward = hciResponse.outCtxScrB,
@@ -165,7 +169,7 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
         hciResult: HciTripSearchResult
     ): List<Trip> {
         return withCommon(hciResult.common) {
-            hciResult.outConL.map(::convertConnection)
+            hciResult.outConL.map { it.asCommon(this) }
         }
     }
 
@@ -181,5 +185,4 @@ internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
         override val canScrollForward: Boolean
             get() = contextScrollForward != null
     }
-
 }

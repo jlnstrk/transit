@@ -3,9 +3,9 @@ package de.jlnstrk.transit.interop.efa.normalization.generic
 import de.jlnstrk.transit.api.efa.model.EfaCoordinates
 import de.jlnstrk.transit.api.efa.model.EfaPoint
 import de.jlnstrk.transit.api.efa.model.EfaReference
-import de.jlnstrk.transit.util.extensions.toProductSet
-import de.jlnstrk.transit.util.model.Coordinates
-import de.jlnstrk.transit.util.model.Location
+import de.jlnstrk.transit.common.extensions.toProductSet
+import de.jlnstrk.transit.common.model.Coordinates
+import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.denormalized
 import de.jlnstrk.transit.interop.efa.util.normalized

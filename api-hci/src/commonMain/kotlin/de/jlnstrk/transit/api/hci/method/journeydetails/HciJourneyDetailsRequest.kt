@@ -71,7 +71,7 @@ public class HciJourneyDetailsRequest(
     public var getTrainComposition: Boolean? = null,
 
     // TODO: What is the effect of this?
-    /** Whether returned polylines shall be splitted */
+    /** Whether returned polylines shall be split */
     public var polySplitting: Boolean? = null
 ) : HciServiceRequest<HciJourneyDetailsResult>() {
     override val method: HciServiceMethod get() = HciServiceMethod.JOURNEY_DETAILS

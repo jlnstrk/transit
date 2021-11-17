@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.model.base.RgbColor
+import de.jlnstrk.transit.common.model.base.RgbColor
 
 public data class Style(
     public val textColor: RgbColor?,

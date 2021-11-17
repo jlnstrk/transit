@@ -5,16 +5,13 @@ import de.jlnstrk.transit.api.efa.model.EfaCoordinateSystem
 import de.jlnstrk.transit.api.efa.model.EfaCoordinates
 import de.jlnstrk.transit.api.efa.model.EfaPin
 import de.jlnstrk.transit.api.efa.util.efaCoordRequest
+import de.jlnstrk.transit.common.model.*
+import de.jlnstrk.transit.common.response.LocationListData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.NearbyLocationsService
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
-import de.jlnstrk.transit.util.model.Attribute
-import de.jlnstrk.transit.util.model.Coordinates
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.ProductClass
-import de.jlnstrk.transit.util.response.LocationListData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.NearbyLocationsService
 
 internal class EfaNearbyLocationsService(
     provider: EfaProvider,
@@ -72,7 +69,8 @@ internal class EfaNearbyLocationsService(
                 return ServiceResult.noResult()
             }
             val result = LocationListData(
-                efaResponse.pins.map { it.normalize(provider) }
+                header = DataHeader(),
+                locations = efaResponse.pins.map { it.normalize(provider) }
             )
             return ServiceResult.success(result)
         } catch (e: Exception) {

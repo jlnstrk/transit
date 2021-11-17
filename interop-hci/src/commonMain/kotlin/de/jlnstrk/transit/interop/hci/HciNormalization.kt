@@ -6,12 +6,12 @@ import de.jlnstrk.transit.api.hci.model.HciProduct
 import de.jlnstrk.transit.api.hci.model.HciRemark
 import de.jlnstrk.transit.api.hci.model.HciCommon
 import de.jlnstrk.transit.common.Normalization
-import de.jlnstrk.transit.util.model.Attribute
-import de.jlnstrk.transit.util.model.Line
-import de.jlnstrk.transit.util.model.Location
-import de.jlnstrk.transit.util.model.Message
+import de.jlnstrk.transit.common.model.Attribute
+import de.jlnstrk.transit.common.model.Line
+import de.jlnstrk.transit.common.model.Location
+import de.jlnstrk.transit.common.model.Message
 
-public interface HciNormalization : de.jlnstrk.transit.common.Normalization {
+public interface HciNormalization : Normalization {
 
     public fun normalizeLocation(
         common: HciCommon,

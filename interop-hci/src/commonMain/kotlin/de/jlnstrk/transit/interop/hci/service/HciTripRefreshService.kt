@@ -4,18 +4,20 @@ import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.reconstruction.HciReconstructionRequest
 import de.jlnstrk.transit.api.hci.model.recon.HciReconstruction
-import de.jlnstrk.transit.util.model.Trip
-import de.jlnstrk.transit.util.response.TripRefreshData
-import de.jlnstrk.transit.util.response.base.ServiceResult
-import de.jlnstrk.transit.util.service.TripRefreshResult
-import de.jlnstrk.transit.util.service.TripRefreshService
-import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.common.model.DataHeader
+import de.jlnstrk.transit.common.model.Trip
+import de.jlnstrk.transit.common.response.TripRefreshData
+import de.jlnstrk.transit.common.response.base.ServiceResult
+import de.jlnstrk.transit.common.service.TripRefreshResult
+import de.jlnstrk.transit.common.service.TripRefreshService
 import de.jlnstrk.transit.interop.hci.HciInteropService
+import de.jlnstrk.transit.interop.hci.HciProvider
+import de.jlnstrk.transit.interop.hci.conversion.asCommon
 
 internal class HciTripRefreshService(
     provider: HciProvider,
-    endpoint: HciConsumer
-) : HciInteropService(provider, endpoint), TripRefreshService {
+    consumer: HciConsumer
+) : HciInteropService(provider, consumer), TripRefreshService {
 
     override suspend fun tripRefresh(
         context: Trip.RefreshContext,
@@ -33,12 +35,13 @@ internal class HciTripRefreshService(
             getIST = true
         )
         try {
-            val hciResult = endpoint.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
+            val hciResult = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
             val connection =
                 hciResult.outConL.firstOrNull() ?: return ServiceResult.noResult()
             return withCommon(hciResult.common) {
                 val result = TripRefreshData(
-                    trip = convertConnection(connection)
+                    header = DataHeader(),
+                    trip = connection.asCommon(this)
                 )
                 ServiceResult.success(result)
             }
@@ -55,5 +58,4 @@ internal class HciTripRefreshService(
     internal data class Context(
         val contextReconstruction: String
     ) : Trip.RefreshContext
-
 }

@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common.service
 
-import de.jlnstrk.transit.util.Service
+import de.jlnstrk.transit.common.Service
 
 public interface NetworkGeometryService : Service {
 

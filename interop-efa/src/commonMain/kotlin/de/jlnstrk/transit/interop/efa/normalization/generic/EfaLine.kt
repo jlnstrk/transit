@@ -4,7 +4,7 @@ import de.jlnstrk.transit.api.efa.model.EfaLine
 import de.jlnstrk.transit.api.efa.model.EfaMeansOfTransport
 import de.jlnstrk.transit.api.efa.model.EfaOperator
 import de.jlnstrk.transit.api.efa.model.EfaServingLine
-import de.jlnstrk.transit.util.model.Line
+import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.interop.efa.EfaProvider
 
 internal fun EfaLine.normalize(provider: EfaProvider): Line {
