@@ -1,9 +1,8 @@
 package de.jlnstrk.transit.api.hci.request
 
-import de.jlnstrk.transit.api.hci.config.HciAuth
-import de.jlnstrk.transit.api.hci.config.HciClient
+import de.jlnstrk.transit.api.hci.HciAuth
+import de.jlnstrk.transit.api.hci.HciClient
 import de.jlnstrk.transit.api.hci.serializer.HciRequestEnvelopeSerializer
-import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable

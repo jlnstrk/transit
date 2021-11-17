@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.stationboard.HciStationBoardRequest
 import de.jlnstrk.transit.api.hci.request.filter.HciJourneyFilter
@@ -22,7 +22,7 @@ import de.jlnstrk.transit.util.service.StationBoardService
 
 internal class HciStationBoardService(
     provider: HciProvider,
-    endpoint: HciEndpoint
+    endpoint: HciConsumer
 ) : HciInteropService(provider, endpoint), StationBoardService {
     override val supportedModes: Set<StationBoardService.Mode> = setOf(
         StationBoardService.Mode.ARRIVALS,

@@ -1,9 +1,12 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaEndpoint
-import de.jlnstrk.transit.api.efa.model.EfaTravelInfo
+import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.addinfo.EfaAddInfoResponse
+import de.jlnstrk.transit.api.efa.model.EfaTravelInfo
 import de.jlnstrk.transit.api.efa.util.efaAddInfoRequest
+import de.jlnstrk.transit.interop.efa.EfaProvider
+import de.jlnstrk.transit.interop.efa.EfaService
+import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.util.OffsetDateTime
 import de.jlnstrk.transit.util.model.LineSet
 import de.jlnstrk.transit.util.model.Message
@@ -12,13 +15,10 @@ import de.jlnstrk.transit.util.response.StatusInformationData
 import de.jlnstrk.transit.util.response.base.ServiceResult
 import de.jlnstrk.transit.util.service.StatusInformationResult
 import de.jlnstrk.transit.util.service.StatusInformationService
-import de.jlnstrk.transit.interop.efa.EfaProvider
-import de.jlnstrk.transit.interop.efa.EfaService
-import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 
 internal class EfaStatusInformationService(
     provider: EfaProvider,
-    client: EfaEndpoint
+    client: EfaClient
 ) : EfaService(provider, client), StatusInformationService {
     override val supportsFilterPriorities: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true
@@ -52,7 +52,7 @@ internal class EfaStatusInformationService(
                 }
             }
 
-            val efaResponse = endpoint.xmlAddInfoRequest(efaRequest)
+            val efaResponse = client.xmlAddInfoRequest(efaRequest)
             val response = StatusInformationData(
                 efaResponse.additionalInformation.travelInformations.first().travelInformation
                     .map { it.normalize(provider) }

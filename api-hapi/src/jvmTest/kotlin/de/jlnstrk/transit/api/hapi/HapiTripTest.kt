@@ -7,7 +7,7 @@ import de.jlnstrk.transit.api.hapi.request.HapiTripRequest
 import io.kotest.matchers.collections.shouldExist
 import io.kotest.matchers.collections.shouldHaveAtLeastSize
 
-internal class HapiTripTest : HapiShouldSpec(HapiTestProfile[HapiService.TRIP], { hapi, profile ->
+internal class HapiTripTest : HapiShouldSpec(HapiTestProfile[HapiEndpoint.TRIP], { hapi, profile ->
     givenAll<DataSet.FindTripById>(from = profile) { dataSet ->
         should("find trips from ${dataSet.originExtId} to ${dataSet.destExtId}") {
             val request = HapiTripRequest {

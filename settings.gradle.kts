@@ -16,16 +16,21 @@ dependencyResolutionManagement {
 
 rootProject.name = "transit"
 
-include(":api-hafas")
-include(":api-hci")
-include(":api-hapi")
-include(":api-efa")
-include(":api-trias")
-include(":interop")
-include(":interop-hafas")
-include(":interop-hci")
-include(":interop-hapi")
-include(":interop-efa")
-include(":interop-trias")
 include(":utils")
 include(":utils-testing")
+include(":common")
+
+include(":api-hafas")
+include(":interop-hafas")
+
+include(":api-hci")
+include(":interop-hci")
+
+include(":api-hapi")
+include(":interop-hapi")
+
+include(":api-efa")
+include(":interop-efa")
+
+include(":api-trias")
+include(":interop-trias")

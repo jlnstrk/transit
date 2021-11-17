@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.api.hci.model
 
-import de.jlnstrk.transit.api.hci.config.Hci
 import de.jlnstrk.transit.api.hci.request.HciRequestEnvelope
 import kotlinx.serialization.Serializable
 
@@ -31,7 +30,6 @@ public data class HciPolyline(
     /** The mapping of points to locations for this polyline */
     public val ppLocRefL: List<LocationReference> = emptyList(),
 
-    @Hci("1.44")
     public val lDrawStyleX: Int?
 ) {
 

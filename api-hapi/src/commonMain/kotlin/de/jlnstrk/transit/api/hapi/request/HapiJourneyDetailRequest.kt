@@ -2,13 +2,13 @@ package de.jlnstrk.transit.api.hapi.request
 
 import de.jlnstrk.transit.api.hafas.HafasPolylineEncoding
 import de.jlnstrk.transit.api.hafas.HafasRealtimeMode
-import de.jlnstrk.transit.api.hapi.HapiService
+import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.delegate.*
 import de.jlnstrk.transit.api.hapi.response.HapiJourneyDetail
 import de.jlnstrk.transit.util.LocalDate
 
 public class HapiJourneyDetailRequest : HapiRequest<HapiJourneyDetail>() {
-    override val service: HapiService get() = HapiService.JOURNEY_DETAIL
+    override val service: HapiEndpoint get() = HapiEndpoint.JOURNEY_DETAIL
 
     /** Specifies the internal journey id of the journey shall be retrieved */
     public var id: String? by HapiStringParam

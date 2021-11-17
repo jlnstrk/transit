@@ -2,7 +2,7 @@ package de.jlnstrk.transit.api.hapi.request
 
 import de.jlnstrk.transit.api.hafas.HafasPolylineEncoding
 import de.jlnstrk.transit.api.hafas.HafasRealtimeMode
-import de.jlnstrk.transit.api.hapi.HapiService
+import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.base.HapiFilterList
 import de.jlnstrk.transit.api.hapi.request.delegate.*
 import de.jlnstrk.transit.api.hapi.response.HapiTripList
@@ -11,7 +11,7 @@ import de.jlnstrk.transit.util.LocalDate
 import de.jlnstrk.transit.util.LocalTime
 
 public class HapiTripRequest : HapiRequest<HapiTripList>() {
-    override val service: HapiService get() = HapiService.TRIP
+    override val service: HapiEndpoint get() = HapiEndpoint.TRIP
 
     /** Specifies the station/stop ID of the origin for the trip.
      * Such ID can be retrieved from the location.name or location.nearbystops services */

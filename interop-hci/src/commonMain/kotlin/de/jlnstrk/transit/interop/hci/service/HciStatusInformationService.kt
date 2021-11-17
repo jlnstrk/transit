@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.himsearch.HciHimSearchRequest
 import de.jlnstrk.transit.api.hci.request.filter.HciHimFilter
@@ -17,7 +17,7 @@ import de.jlnstrk.transit.interop.hci.HciInteropService
 
 internal class HciStatusInformationService(
     provider: HciProvider,
-    endpoint: HciEndpoint
+    endpoint: HciConsumer
 ) : HciInteropService(provider, endpoint), StatusInformationService {
     override val supportsFilterPriorities: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true

@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.reconstruction.HciReconstructionRequest
 import de.jlnstrk.transit.api.hci.model.recon.HciReconstruction
@@ -14,7 +14,7 @@ import de.jlnstrk.transit.interop.hci.HciInteropService
 
 internal class HciTripRefreshService(
     provider: HciProvider,
-    endpoint: HciEndpoint
+    endpoint: HciConsumer
 ) : HciInteropService(provider, endpoint), TripRefreshService {
 
     override suspend fun tripRefresh(

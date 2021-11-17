@@ -4,9 +4,9 @@ import de.jlnstrk.transit.api.hci.BuildKonfig
 import de.jlnstrk.transit.api.hci.LineMatchTest
 import de.jlnstrk.transit.api.hci.LocMatchTest
 import de.jlnstrk.transit.api.hci.base.HciTestProfile
-import de.jlnstrk.transit.api.hci.config.HciAuth
-import de.jlnstrk.transit.api.hci.config.HciClient
-import de.jlnstrk.transit.api.hci.config.HciConfig
+import de.jlnstrk.transit.api.hci.HciAuth
+import de.jlnstrk.transit.api.hci.HciClient
+import de.jlnstrk.transit.api.hci.HciConfig
 
 val HVV = HciTestProfile("HVV") {
     config = HciConfig {

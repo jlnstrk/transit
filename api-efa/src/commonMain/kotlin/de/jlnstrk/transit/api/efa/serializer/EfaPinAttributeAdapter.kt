@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.api.efa.serializer
 
-import de.jlnstrk.transit.api.efa.EfaEndpoint
+import de.jlnstrk.transit.api.efa.EfaIconCodeResolver
 import de.jlnstrk.transit.api.efa.model.EfaMeansOfTransport
 import de.jlnstrk.transit.api.efa.model.EfaPin
 import kotlinx.serialization.KSerializer
@@ -9,7 +9,7 @@ import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
 internal class EfaPinAttributeAdapter(
-    private val altCodeResolver: EfaEndpoint.AltCodeResolver?
+    private val iconCodeResolver: EfaIconCodeResolver?
 ) : KSerializer<EfaPin.Attribute> {
     private val delegate = EfaPin.Attribute.Other.serializer()
     override val descriptor: SerialDescriptor = delegate.descriptor
@@ -26,19 +26,19 @@ internal class EfaPinAttributeAdapter(
             "STOP_GLOBAL_ID" -> EfaPin.Attribute.StopGlobalId(value)
             "STOP_NAME_WITH_PLACE" -> EfaPin.Attribute.StopNameWithPlace(value)
             "STOP_MAJOR_MEANS" -> {
-                if (altCodeResolver != null) {
-                    altCodeResolver.resolveAltCode(value.toInt())?.let { means ->
+                if (iconCodeResolver != null) {
+                    iconCodeResolver.resolveIconCode(value.toInt())?.let { means ->
                         EfaPin.Attribute.StopMajorMeans(means)
                     }
                 }
                 other
             }
             "STOP_MEANS_LIST" -> {
-                if (altCodeResolver != null) {
+                if (iconCodeResolver != null) {
                     val set = mutableSetOf<EfaMeansOfTransport>()
                     val altCodes = value.split(",")
                     for (code in altCodes) {
-                        altCodeResolver.resolveAltCode(code.toInt())?.let { means ->
+                        iconCodeResolver.resolveIconCode(code.toInt())?.let { means ->
                             set.add(means)
                         }
                     }

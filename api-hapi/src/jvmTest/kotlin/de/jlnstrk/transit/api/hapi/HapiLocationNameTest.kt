@@ -7,7 +7,7 @@ import de.jlnstrk.transit.api.hapi.model.location.HapiStopLocation
 import de.jlnstrk.transit.api.hapi.request.HapiLocationNameRequest
 import io.kotest.matchers.collections.shouldExist
 
-internal class HapiLocationNameTest : HapiShouldSpec(HapiTestProfile[HapiService.LOCATION_NAME], { hapi, profile ->
+internal class HapiLocationNameTest : HapiShouldSpec(HapiTestProfile[HapiEndpoint.LOCATION_NAME], { hapi, profile ->
     givenAll<DataSet.FindByName>(from = profile) { dataSet ->
         should("find ${dataSet.findExtId} for ${dataSet.input}") {
             val request = HapiLocationNameRequest {

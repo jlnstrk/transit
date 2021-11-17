@@ -6,7 +6,6 @@
 package de.jlnstrk.transit.api.hci.model
 
 import de.jlnstrk.transit.api.hafas.HafasPrognosisType
-import de.jlnstrk.transit.api.hci.config.Hci
 import de.jlnstrk.transit.api.hci.model.base.HciLocalTime
 import de.jlnstrk.transit.api.hci.model.message.HciMessage
 import de.jlnstrk.transit.api.hci.serializer.time.HciLocalTimeSerializer
@@ -60,59 +59,46 @@ public data class HciStop(
     public val dProgType: HafasPrognosisType?,
 
     /** The name of the scheduled arrival platform */
-    @Hci("1.16")
     public val aPlatfS: String?,
 
     /** The scheduled arrival platform */
-    @Hci("1.24")
     public val aPltfS: HciPlatform?,
 
     /** The name of the scheduled departure platform */
-    @Hci("1.16")
     public val dPlatfS: String?,
 
     /** The scheduled departure platform */
-    @Hci("1.24")
     public val dPltfS: HciPlatform?,
 
     /** The realtime arrival platform */
-    @Hci("1.16")
     public val aPlatfR: String?,
 
     /** The realtime arrival platform */
-    @Hci("1.24")
     public val aPltfR: HciPlatform?,
 
     public val aPlatfCh: Boolean?,
 
     /** The name of the realtime departure platform */
-    @Hci("1.16")
     public val dPlatfR: String?,
 
     /** The realtime departure platform */
-    @Hci("1.24")
     public val dPltfR: HciPlatform?,
 
     public val dPlatfCh: Boolean?,
 
     // TODO: Purpose?
-    @Hci("1.16")
     public val dInS: Boolean?,
 
     // TODO: Purpose?
-    @Hci("1.16")
     public val dInR: Boolean?,
 
-    @Hci("1.16")
     public val aOutS: Boolean?,
-    @Hci("1.16")
     public val aOutR: Boolean?,
 
     /** The text describing the departure direction */
     public val dDirTxt: String?,
     public val dDirFlg: String?,
 
-    @Hci("1.16")
     public val type: Type?,
     // TODO: Purpose?
     public val isImp: Boolean?,

@@ -7,7 +7,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(project(":interop"))
+                api(project(":common"))
                 api(project(":interop-hafas"))
                 api(project(":api-hci"))
             }

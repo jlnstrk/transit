@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.api.hci.model.gis
 
-import de.jlnstrk.transit.api.hci.config.Hci
 import de.jlnstrk.transit.api.hci.model.message.HciMessage
 import de.jlnstrk.transit.api.hci.model.HciPolylineGroup
 import de.jlnstrk.transit.api.hci.serializer.time.HciDurationSerializer
@@ -26,10 +25,8 @@ public data class HciGis(
 
     public val polyG: HciPolylineGroup?,
 
-    @Hci("1.18")
     public val getDescr: Boolean?,
 
-    @Hci("1.18")
     public val getPoly: Boolean?,
 
     public val ctx: String?,
@@ -45,14 +42,11 @@ public data class HciGis(
     public val dirGeo: Int?,
 
     // TODO: Purpose?
-    @Hci("1.44")
     public val sumLDrawStyleX: Int?,
 
     // TODO: Purpose?
-    @Hci("1.44")
     public val resLDrawStyleX: Int?,
 
-    @Hci("1.44")
     public val prodX: Int?,
 
     public val msgL: List<HciMessage> = emptyList()

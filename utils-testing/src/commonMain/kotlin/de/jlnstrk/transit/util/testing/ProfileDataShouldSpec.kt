@@ -45,7 +45,7 @@ public suspend inline fun <Profile : ServiceTestProfile<*, DataSet>, reified Dat
     require: Boolean = true,
     crossinline test: suspend TestContext.(DataSet) -> Unit
 ) {
-    val dataSet = from.testData[DataSet::class].orEmpty().firstOrNull() as? DataSet
+    val dataSet = from.testData[DataSet::class].orEmpty().firstOrNull()
     if (dataSet == null) {
         if (require) {
             throw IllegalStateException("No ${DataSet::class.simpleName} specified for ${from.name}")

@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.api.hci.model.geo
 
-import de.jlnstrk.transit.api.hci.config.HciAtMost
+import de.jlnstrk.transit.api.hci.HciCompat
 import kotlinx.serialization.Serializable
 
-@HciAtMost("1.24")
+@HciCompat(safeUntilAtLeast = "1.24")
 @Serializable
 public data class HciCoordSystem(
     /** The index of this coordinate system */

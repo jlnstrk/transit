@@ -10,12 +10,12 @@
       <module name="transit.api-efa-xml.commonTest" target="1.8" />
       <module name="transit.api-efa-xml.jvmMain" target="1.8" />
       <module name="transit.api-efa-xml.jvmTest" target="1.8" />
-      <module name="transit.common.commonMain" target="1.8" />
-      <module name="transit.common.commonTest" target="1.8" />
-      <module name="transit.common.jvmMain" target="1.8" />
-      <module name="transit.common.jvmTest" target="1.8" />
       <module name="transit.commonMain" target="1.8" />
       <module name="transit.commonTest" target="1.8" />
+      <module name="transit.interop.commonMain" target="1.8" />
+      <module name="transit.interop.commonTest" target="1.8" />
+      <module name="transit.interop.jvmMain" target="1.8" />
+      <module name="transit.interop.jvmTest" target="1.8" />
       <module name="transit.jvmMain" target="1.8" />
       <module name="transit.jvmTest" target="1.8" />
       <module name="transit.util.commonMain" target="1.8" />

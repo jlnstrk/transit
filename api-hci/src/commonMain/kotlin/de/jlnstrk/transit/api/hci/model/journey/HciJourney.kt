@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.api.hci.model.journey
 
-import de.jlnstrk.transit.api.hci.config.Hci
 import de.jlnstrk.transit.api.hci.model.*
 import de.jlnstrk.transit.api.hci.model.geo.HciCoord
 import de.jlnstrk.transit.api.hci.model.message.HciMessage
@@ -35,7 +34,6 @@ public data class HciJourney(
 
     public val subscr: String?,
 
-    @Hci("1.18")
     public val prodL: List<Product> = emptyList(),
 
     public val dirL: List<Direction> = emptyList(),
@@ -64,24 +62,19 @@ public data class HciJourney(
     public val chRatingSoll: Int?,
 
     // TODO: Purpose?
-    @Hci("1.44")
     public val sumLDrawStyleX: Int?,
 
     // TODO: Purpose?
-    @Hci("1.44")
     public val resLDrawStyleX: Int?,
 
-    @Hci("1.44")
     @Serializable(with = HciLocalDateSerializer::class)
     public val trainStartDate: LocalDate?,
 
     // TODO: Purpose?
-    @Hci("1.44")
     @Serializable(with = HciDurationSerializer::class)
     public val durS: Duration?,
 
     // TODO: Name?
-    @Hci("1.44")
     public val tcocXL: List<Int> = emptyList(),
 
     public val sDaysL: List<HciServiceDays> = emptyList(),

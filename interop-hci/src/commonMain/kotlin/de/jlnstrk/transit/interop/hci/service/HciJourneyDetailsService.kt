@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.journeydetails.HciJourneyDetailsRequest
 import de.jlnstrk.transit.api.hci.model.message.HciMessage
@@ -16,7 +16,7 @@ import de.jlnstrk.transit.interop.hci.extensions.asHci
 
 internal class HciJourneyDetailsService(
     provider: HciProvider,
-    endpoint: HciEndpoint
+    endpoint: HciConsumer
 ) : HciInteropService(provider, endpoint), JourneyDetailsService {
     override val supportsStartIndex: Boolean get() = true
     override val supportsStartLocation: Boolean get() = true

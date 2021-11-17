@@ -1,14 +1,14 @@
 package de.jlnstrk.transit.api.hapi.request
 
 import de.jlnstrk.transit.api.hafas.HafasPolylineEncoding
-import de.jlnstrk.transit.api.hapi.HapiService
+import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiBooleanParam
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiEnumParam
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiStringParam
 import de.jlnstrk.transit.api.hapi.response.HapiTripList
 
 public class HapiGisRouteRequest : HapiRequest<HapiTripList>() {
-    override val service: HapiService get() = HapiService.GIS_ROUTE
+    override val service: HapiEndpoint get() = HapiEndpoint.GIS_ROUTE
 
     /** Specifies the GIS route context */
     public var ctx: String? by HapiStringParam

@@ -1,9 +1,13 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaEndpoint
+import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.trip.EfaTripRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.util.efaTripRequest
+import de.jlnstrk.transit.interop.efa.EfaProvider
+import de.jlnstrk.transit.interop.efa.EfaService
+import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
+import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
 import de.jlnstrk.transit.util.model.*
@@ -12,14 +16,10 @@ import de.jlnstrk.transit.util.response.base.ScrollContext
 import de.jlnstrk.transit.util.response.base.ServiceResult
 import de.jlnstrk.transit.util.service.TripSearchResult
 import de.jlnstrk.transit.util.service.TripSearchService
-import de.jlnstrk.transit.interop.efa.EfaProvider
-import de.jlnstrk.transit.interop.efa.EfaService
-import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
-import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 
 internal class EfaTripSearchService(
     provider: EfaProvider,
-    client: EfaEndpoint
+    client: EfaClient
 ) : EfaService(provider, client), TripSearchService {
 
     override val supportedOriginTypes: Set<Location.Type> = setOf(
@@ -106,7 +106,7 @@ internal class EfaTripSearchService(
         }
 
         try {
-            val efaResponse = endpoint.xmlTripRequest2(efaRequest)
+            val efaResponse = client.xmlTripRequest2(efaRequest)
             if (efaResponse.trips.isNullOrEmpty()) {
                 return ServiceResult.noResult()
             }

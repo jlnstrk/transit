@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.api.hci.method.locmatch
 
-import de.jlnstrk.transit.api.hci.config.HciCompat
+import de.jlnstrk.transit.api.hci.HciCompat
 import de.jlnstrk.transit.api.hafas.HciModel
 import de.jlnstrk.transit.api.hci.method.HciServiceMethod
 import de.jlnstrk.transit.api.hci.model.location.HciLocationInput

@@ -1,16 +1,13 @@
 package de.jlnstrk.transit.api.hapi.request
 
-import de.jlnstrk.transit.api.hapi.HapiService
-import de.jlnstrk.transit.api.hapi.model.location.HapiLocationType
-import de.jlnstrk.transit.api.hapi.request.delegate.*
+import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiDoubleParam
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiIntParam
-import de.jlnstrk.transit.api.hapi.request.delegate.HapiQueryParam
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiStringParam
 import de.jlnstrk.transit.api.hapi.response.HapiLocationList
 
 public class HapiLocationNameRequest : HapiLocationRequest<HapiLocationList>() {
-    override val service: HapiService get() = HapiService.LOCATION_NAME
+    override val service: HapiEndpoint get() = HapiEndpoint.LOCATION_NAME
 
     /** Search for that token */
     public var input: String? by HapiStringParam

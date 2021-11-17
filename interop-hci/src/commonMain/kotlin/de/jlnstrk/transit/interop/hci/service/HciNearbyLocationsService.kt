@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.locgeopos.HciLocGeoPosRequest
 import de.jlnstrk.transit.api.hci.model.geo.HciGeoRing
@@ -19,7 +19,7 @@ import de.jlnstrk.transit.interop.hci.extensions.asHci
 
 internal class HciNearbyLocationsService(
     provider: HciProvider,
-    endpoint: HciEndpoint
+    endpoint: HciConsumer
 ) : HciInteropService(provider, endpoint), NearbyLocationsService {
     override val supportsFilterTypes: Boolean get() = true
     override val supportsFilterProducts: Boolean get() = true

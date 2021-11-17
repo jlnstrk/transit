@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciException
 import de.jlnstrk.transit.api.hci.method.tripsearch.HciTripSearchRequest
 import de.jlnstrk.transit.api.hci.method.tripsearch.HciTripSearchResult
@@ -20,7 +20,7 @@ import de.jlnstrk.transit.interop.hci.HciProvider
 import de.jlnstrk.transit.interop.hci.HciInteropService
 import de.jlnstrk.transit.interop.hci.extensions.asHci
 
-internal class HciTripSearchService(provider: HciProvider, proxy: HciEndpoint) :
+internal class HciTripSearchService(provider: HciProvider, proxy: HciConsumer) :
     HciInteropService(provider, proxy),
     TripSearchService {
     override val supportedOriginTypes: Set<Location.Type> = setOf(

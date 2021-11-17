@@ -1,9 +1,13 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaEndpoint
+import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.dm.EfaDmRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.util.efaDmRequest
+import de.jlnstrk.transit.interop.efa.EfaProvider
+import de.jlnstrk.transit.interop.efa.EfaService
+import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
+import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
 import de.jlnstrk.transit.util.model.Line
@@ -13,14 +17,10 @@ import de.jlnstrk.transit.util.response.StationBoardData
 import de.jlnstrk.transit.util.response.base.ServiceResult
 import de.jlnstrk.transit.util.service.StationBoardResult
 import de.jlnstrk.transit.util.service.StationBoardService
-import de.jlnstrk.transit.interop.efa.EfaProvider
-import de.jlnstrk.transit.interop.efa.EfaService
-import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
-import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
 
 internal class EfaStationBoardService(
     provider: EfaProvider,
-    client: EfaEndpoint
+    client: EfaClient
 ) : EfaService(provider, client), StationBoardService {
     override val supportedModes: Set<StationBoardService.Mode> = setOf(
         StationBoardService.Mode.ARRIVALS,
@@ -71,7 +71,7 @@ internal class EfaStationBoardService(
             includeCompleteStopSeq = true
         }
         try {
-            val efaResponse = endpoint.xmlDmRequest(efaRequest)
+            val efaResponse = client.xmlDmRequest(efaRequest)
             if (efaResponse.arrivalList.isNullOrEmpty()
                 && efaResponse.departureList.isNullOrEmpty()
             ) {

@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.interop.hapi.service
 
-import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.HapiArrivalBoardRequest
 import de.jlnstrk.transit.api.hapi.request.HapiDepartureBoardRequest
 import de.jlnstrk.transit.api.hapi.request.base.HapiFilterList
@@ -18,7 +17,7 @@ import de.jlnstrk.transit.interop.hapi.HapiService
 
 internal class HapiStationBoardService(
     provider: HapiProvider,
-    endpoint: HapiEndpoint
+    endpoint: de.jlnstrk.transit.api.hapi.HapiClient
 ) : HapiService(provider, endpoint), StationBoardService {
 
     override suspend fun stationBoard(

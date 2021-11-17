@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.api.hci.base
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
-import de.jlnstrk.transit.api.hci.config.HciConfig
+import de.jlnstrk.transit.api.hci.HciConsumer
+import de.jlnstrk.transit.api.hci.HciConfig
 import de.jlnstrk.transit.api.hci.profile.BVG
 import de.jlnstrk.transit.api.hci.profile.HVV
 import de.jlnstrk.transit.api.hci.profile.RMV
@@ -9,7 +9,7 @@ import de.jlnstrk.transit.api.hci.profile.SBM
 import de.jlnstrk.transit.util.testing.ServiceTestProfile
 import kotlin.reflect.KClass
 
-class HciTestProfile(override val name: String) : ServiceTestProfile<HciEndpoint, HciTestProfile.DataSet> {
+class HciTestProfile(override val name: String) : ServiceTestProfile<HciConsumer, HciTestProfile.DataSet> {
     lateinit var config: HciConfig
 
     override var testData = mutableMapOf<KClass<*>, MutableList<DataSet>>()
@@ -23,7 +23,7 @@ class HciTestProfile(override val name: String) : ServiceTestProfile<HciEndpoint
         }
     }
 
-    override fun makeTestEndpoint(): HciEndpoint = HciEndpoint(config).apply {
+    override fun makeTestEndpoint(): HciConsumer = HciConsumer(config).apply {
         httpClient = httpClient.config {
             install(HciLogging)
         }

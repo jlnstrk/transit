@@ -7,7 +7,7 @@ import de.jlnstrk.transit.api.hapi.model.location.HapiStopLocation
 import de.jlnstrk.transit.api.hapi.request.HapiLocationNearbyStopsRequest
 import io.kotest.matchers.collections.shouldExist
 
-internal class HapiLocationNearbyStopsTest : HapiShouldSpec(HapiTestProfile[HapiService.LOCATION_NEARBYSTOPS], { hapi, profile ->
+internal class HapiLocationNearbyStopsTest : HapiShouldSpec(HapiTestProfile[HapiEndpoint.LOCATION_NEARBYSTOPS], { hapi, profile ->
     givenAll<DataSet.FindNearby>(from = profile) { dataSet ->
         should("find ${dataSet.findExtId} near (${dataSet.originLat}, ${dataSet.originLong})") {
             val request = HapiLocationNearbyStopsRequest {

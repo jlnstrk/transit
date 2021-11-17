@@ -1,8 +1,7 @@
 package de.jlnstrk.transit.api.hci.model
 
 import de.jlnstrk.transit.api.hafas.HciModel
-import de.jlnstrk.transit.api.hci.config.HciCompat
-import de.jlnstrk.transit.api.hci.config.HciAtMost
+import de.jlnstrk.transit.api.hci.HciCompat
 import de.jlnstrk.transit.api.hci.model.composition.*
 import de.jlnstrk.transit.api.hci.model.geo.HciCoordSystem
 import de.jlnstrk.transit.api.hci.model.geo.HciLayer
@@ -18,7 +17,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciCommon(
     /** Coordinate systems referred to in the response */
-    @HciAtMost("1.24")
+    @HciCompat(safeUntilAtLeast = "1.24")
     public val crdSysL: List<HciCoordSystem> = emptyList(),
 
     /** Directions used in tne response */
@@ -37,7 +36,7 @@ public data class HciCommon(
     public val gTagL: List<String> = emptyList(),
 
     /** Graphs referred to in the response */
-    @HciCompat("1.42")
+    @HciCompat(safeFromAtLeast = "1.42")
     public val graphL: List<HciGraph> = emptyList(),
 
     /** HIM messages referred to in the response */
@@ -60,7 +59,7 @@ public data class HciCommon(
     public val icoL: List<HciIcon> = emptyList(),
 
     /** (Legacy-) Layers referred to in the response */
-    @HciAtMost("1.24")
+    @HciCompat(safeUntilAtLeast = "1.24")
     public val layerL: List<HciLayer> = emptyList(),
 
     /** Line drawable styles referred to in the response */

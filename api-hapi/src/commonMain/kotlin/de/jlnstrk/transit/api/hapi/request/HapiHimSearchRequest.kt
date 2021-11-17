@@ -2,7 +2,7 @@ package de.jlnstrk.transit.api.hapi.request
 
 import de.jlnstrk.transit.api.hafas.HafasHimSortOrder
 import de.jlnstrk.transit.api.hafas.HafasPolylineEncoding
-import de.jlnstrk.transit.api.hapi.HapiService
+import de.jlnstrk.transit.api.hapi.HapiEndpoint
 import de.jlnstrk.transit.api.hapi.request.delegate.*
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiBooleanParam
 import de.jlnstrk.transit.api.hapi.request.delegate.HapiLocalDateParam
@@ -15,7 +15,7 @@ import de.jlnstrk.transit.util.LocalTime
 import kotlin.jvm.JvmInline
 
 public class HapiHimSearchRequest : HapiRequest<HapiHimMessages>() {
-    override val service: HapiService get() = HapiService.HIM_SEARCH
+    override val service: HapiEndpoint get() = HapiEndpoint.HIM_SEARCH
 
     /** Sets the event period start date */
     public var dateB: LocalDate? by HapiLocalDateParam

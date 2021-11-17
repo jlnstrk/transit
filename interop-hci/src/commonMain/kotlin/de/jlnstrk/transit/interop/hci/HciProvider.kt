@@ -1,16 +1,16 @@
 package de.jlnstrk.transit.interop.hci
 
-import de.jlnstrk.transit.api.hci.HciEndpoint
-import de.jlnstrk.transit.api.hci.config.HciAuth
-import de.jlnstrk.transit.api.hci.config.HciClient
+import de.jlnstrk.transit.api.hci.HciConsumer
+import de.jlnstrk.transit.api.hci.HciAuth
+import de.jlnstrk.transit.api.hci.HciClient
 import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.util.Provider
+import de.jlnstrk.transit.interop.Provider
 import de.jlnstrk.transit.util.ZoneOffset
 import de.jlnstrk.transit.util.service.*
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.service.*
 
-public abstract class HciProvider : Provider.Implementation(), HafasClassMapping {
+public abstract class HciProvider : de.jlnstrk.transit.interop.Provider.Implementation(), HafasClassMapping {
     override val timezone: ZoneOffset get() = ZoneOffset.local(LocalDateTime.now())
 
     public abstract val baseUrl: String
@@ -24,7 +24,7 @@ public abstract class HciProvider : Provider.Implementation(), HafasClassMapping
 
     init {
         val endpoint by lazy {
-            HciEndpoint {
+            HciConsumer {
                 baseUrl = this@HciProvider.baseUrl
                 client = this@HciProvider.client
                 ver = this@HciProvider.ver

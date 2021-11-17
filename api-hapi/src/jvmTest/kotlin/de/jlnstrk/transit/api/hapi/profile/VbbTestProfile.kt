@@ -9,14 +9,14 @@ internal val VBB = HapiTestProfile("VBB") {
         accessId = BuildKonfig.VBB_AID!!
 
         enabledServices = setOf(
-            HapiService.LOCATION_NAME,
-            HapiService.LOCATION_NEARBYSTOPS,
-            HapiService.ARRIVAL_BOARD,
-            HapiService.DEPARTURE_BOARD,
-            HapiService.JOURNEY_DETAIL,
-            HapiService.TRIP,
-            HapiService.HIM_SEARCH,
-            HapiService.GIS_ROUTE
+            HapiEndpoint.LOCATION_NAME,
+            HapiEndpoint.LOCATION_NEARBYSTOPS,
+            HapiEndpoint.ARRIVAL_BOARD,
+            HapiEndpoint.DEPARTURE_BOARD,
+            HapiEndpoint.JOURNEY_DETAIL,
+            HapiEndpoint.TRIP,
+            HapiEndpoint.HIM_SEARCH,
+            HapiEndpoint.GIS_ROUTE
         )
     }
 
