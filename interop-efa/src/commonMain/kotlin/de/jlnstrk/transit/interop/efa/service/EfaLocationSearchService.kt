@@ -46,7 +46,7 @@ internal class EfaLocationSearchService(
         try {
             val efaResponse = client.xmlStopFinderRequest(request)
             val points = efaResponse.stopFinder.points
-            if (points.isNullOrEmpty()) {
+            if (points.isEmpty()) {
                 return ServiceResult.noResult()
             }
             val result = LocationListData(

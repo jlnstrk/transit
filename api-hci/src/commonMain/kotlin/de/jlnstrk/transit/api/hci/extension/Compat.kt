@@ -1,7 +1,7 @@
 import de.jlnstrk.transit.api.hci.HciCompat
 import de.jlnstrk.transit.api.hci.HciConfig
 
-internal inline fun HciCompat.isGreyzoneFor(config: HciConfig): Boolean {
+internal fun HciCompat.isGreyzoneFor(config: HciConfig): Boolean {
     if ((safeUntilAtLeast == "" || unsafeFromAtLeast == "")
         && (unsafeUntilAtLeast == "" || safeFromAtLeast == "")
     ) {
@@ -17,11 +17,11 @@ internal inline fun HciCompat.isGreyzoneFor(config: HciConfig): Boolean {
     throw IllegalStateException()
 }
 
-internal inline fun HciCompat.isSafeFor(config: HciConfig): Boolean {
+internal fun HciCompat.isSafeFor(config: HciConfig): Boolean {
     return (safeFromAtLeast != "" && safeFromAtLeast <= config.ver)
             || (safeUntilAtLeast != "" && unsafeUntilAtLeast >= config.ver)
 }
 
-internal inline fun HciCompat.isSafeOrGreyzoneFor(config: HciConfig): Boolean {
+internal fun HciCompat.isSafeOrGreyzoneFor(config: HciConfig): Boolean {
     return isSafeFor(config) || isGreyzoneFor(config)
 }

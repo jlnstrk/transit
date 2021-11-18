@@ -78,17 +78,19 @@ public interface EfaPointVerificationRequest {
 
         public class MapDelegate internal constructor(
             override val queryMap: EfaRequestMap,
-            usage: EfaPointVerification.Usage
+            usage: EfaPointVerification.Usage,
+            usageSerial: String = usage.serialize()
         ) : UsageOptions, EfaRequestMapDelegate {
-            override var nameDefaultText: String? by EfaStringParam.withKey("nameDefaultText_$usage")
-            override var nameInfo: String? by EfaStringParam.withKey("nameInfo_$usage")
-            override var typeInfo: String? by EfaStringParam.withKey("typeInfo_$usage")
-            override var resultSort: String? by EfaStringParam.withKey("resultSort_$usage")
-            override var omc: String? by EfaStringParam.withKey("anyOmc_$usage")
-            override var regionId: String? by EfaStringParam.withKey("regionID_$usage")
-            override var useHouseNumberList: Boolean? by EfaBooleanParam.withKey("useHouseNumberList_$usage")
-            override var deleteAssignedStops: Boolean? by EfaBooleanParam.withKey("deleteAssignedStops_$usage")
-            override var doNotSearchForStops: Boolean? by EfaBooleanParam.withKey("doNotSearchForStops_$usage")
+
+            override var nameDefaultText: String? by EfaStringParam.withKey("nameDefaultText_$usageSerial")
+            override var nameInfo: String? by EfaStringParam.withKey("nameInfo_$usageSerial")
+            override var typeInfo: String? by EfaStringParam.withKey("typeInfo_$usageSerial")
+            override var resultSort: String? by EfaStringParam.withKey("resultSort_$usageSerial")
+            override var omc: String? by EfaStringParam.withKey("anyOmc_$usageSerial")
+            override var regionId: String? by EfaStringParam.withKey("regionID_$usageSerial")
+            override var useHouseNumberList: Boolean? by EfaBooleanParam.withKey("useHouseNumberList_$usageSerial")
+            override var deleteAssignedStops: Boolean? by EfaBooleanParam.withKey("deleteAssignedStops_$usageSerial")
+            override var doNotSearchForStops: Boolean? by EfaBooleanParam.withKey("doNotSearchForStops_$usageSerial")
             override var objectFilter: Set<EfaPoint.ObjectType>? by EfaQueryParam(
                 serialize = { it.sumOf { 1 shl it.ordinal }.toString() },
                 deserialize = {
@@ -98,7 +100,7 @@ public interface EfaPointVerificationRequest {
                         .map { values[it.index] }
                         .toSet()
                 },
-                key = "anyObjFilter_$usage",
+                key = "anyObjFilter_$usageSerial",
             )
         }
     }

@@ -92,6 +92,7 @@ public class HciConsumer private constructor(
                         classDiscriminator = ""
                         explicitNulls = false
                         ignoreUnknownKeys = !strict
+                        coerceInputValues = true
                     })
                 }
                 install(HciFeature) {
