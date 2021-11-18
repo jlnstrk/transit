@@ -21,7 +21,7 @@ import kotlinx.serialization.json.JsonClassDiscriminator
 @JsonClassDiscriminator("anyType")
 public sealed class EfaPoint(
     /** The name of this point */
-    public val name: String,
+    public val name: String? = null,
 
     /** The point reference of this point */
     public val ref: EfaReference? = null,
@@ -52,28 +52,30 @@ public sealed class EfaPoint(
 
     /** Utility constructor to create an untyped [EfaPoint] for requests */
     protected constructor(
-        name: String,
-        type: EfaPointVerification.Type
-    ) : this(name) {
+        name: String?,
+        type: EfaPointVerification.Type,
+        ref: EfaReference?
+    ) : this(name, ref) {
         this.type = type
     }
 
     @Serializable
     public class Any : EfaPoint {
         public constructor(
-            name: String,
-            type: EfaPointVerification.Type
-        ) : super(name, type)
+            name: String? = null,
+            type: EfaPointVerification.Type,
+            ref: EfaReference? = null
+        ) : super(name, type, ref)
 
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
             infos: String? = null,
             hasStaticInfo: Boolean = false,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo)
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo)
     }
 
     @Serializable
@@ -81,14 +83,14 @@ public sealed class EfaPoint(
     public class Place : EfaPoint {
         /** Utility constructor to create a [Place] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
             infos: String? = null,
             hasStaticInfo: Boolean = false,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo)
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo)
     }
 
     @Serializable
@@ -105,8 +107,8 @@ public sealed class EfaPoint(
 
         /** Utility constructor to create a [Street] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
@@ -114,7 +116,7 @@ public sealed class EfaPoint(
             hasStaticInfo: Boolean = false,
             obj: String? = null,
             street: String? = null,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo) {
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo) {
             this.obj = obj
             this.street = street
         }
@@ -138,8 +140,8 @@ public sealed class EfaPoint(
 
         /** Utility constructor to create a [SingleHouse] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
@@ -148,7 +150,7 @@ public sealed class EfaPoint(
             obj: String? = null,
             street: String? = null,
             buildingNumber: String? = null,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo) {
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo) {
             this.obj = obj
             this.street = street
             this.buildingNumber = buildingNumber
@@ -174,8 +176,8 @@ public sealed class EfaPoint(
 
         /** Utility constructor to create a [Stop] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
@@ -184,7 +186,7 @@ public sealed class EfaPoint(
             obj: String? = null,
             postTown: String? = null,
             modes: Set<EfaMeansOfTransport>? = null
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo) {
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo) {
             this.obj = obj
             this.posttown = postTown
             this.modes = modes
@@ -201,15 +203,15 @@ public sealed class EfaPoint(
 
         /** Utility constructor to create a [Poi] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
             infos: String? = null,
             hasStaticInfo: Boolean = false,
             obj: String? = null
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo) {
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo) {
             this.obj = obj
         }
     }
@@ -219,14 +221,14 @@ public sealed class EfaPoint(
     public class PostCode : EfaPoint {
         /** Utility constructor to create a [PostCode] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
             infos: String? = null,
             hasStaticInfo: Boolean = false,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo)
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo)
     }
 
     @Serializable
@@ -234,14 +236,14 @@ public sealed class EfaPoint(
     public class Crossing : EfaPoint {
         /** Utility constructor to create a [Crossing] for requests */
         public constructor(
-            name: String,
-            reference: EfaReference? = null,
+            name: String? = null,
+            ref: EfaReference? = null,
             stateless: String? = null,
             sort: Int? = null,
             quality: Int? = null,
             infos: String? = null,
             hasStaticInfo: Boolean = false,
-        ) : super(name, reference, stateless, sort, quality, infos, hasStaticInfo)
+        ) : super(name, ref, stateless, sort, quality, infos, hasStaticInfo)
     }
 
     @Serializable

@@ -8,7 +8,9 @@ import de.jlnstrk.transit.util.LocalDateTime
 
 suspend fun main() {
 
-    val endpoint = EfaClient("https://efa.mvv-muenchen.de/mobile/")
+    val client = EfaClient {
+        baseUrl = "https://efa.mvv-muenchen.de/mobile/"
+    }
     val request = EfaPsRequest {
         origin(
             EfaPoint.Stop(
@@ -26,5 +28,5 @@ suspend fun main() {
         psParamOneWay = false
         psParamMaxTimeHours = 6.hours
     }
-    val response = endpoint.xmlPsRequest(request)
+    val response = client.xmlPsRequest(request)
 }

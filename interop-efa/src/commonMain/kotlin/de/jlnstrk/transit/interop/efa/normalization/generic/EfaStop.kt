@@ -108,7 +108,7 @@ internal fun EfaStop.normalizeAsLocation(provider: EfaProvider): Location {
         place = place,
         coordinates = ref.coords?.normalized(),
         literalId = ref.id.toString(),
-        numericId = ref.id,
+        numericId = ref.id ?: -1L,
         products = null,
         lines = null,
         weight = null,

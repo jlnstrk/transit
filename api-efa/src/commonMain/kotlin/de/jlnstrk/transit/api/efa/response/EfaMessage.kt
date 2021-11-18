@@ -25,14 +25,17 @@ public class EfaMessage(
         @SerialName("-303")
         NO_IT_CONNECTION,
 
-        @SerialName("-10015")
-        ITP,
+        @SerialName("-2000")
+        STOP_INVALID,
 
         @SerialName("-8010")
         UNKNOWN,
 
         @SerialName("-8011")
         UNKNOWN_2,
+
+        @SerialName("-10015")
+        ITP,
     }
 
     @Serializable

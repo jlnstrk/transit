@@ -43,4 +43,9 @@ public class EfaDmRequest(
         @SerialName("stopEvents")
         STOP_EVENTS,
     }
+
+    public companion object {
+        public operator fun invoke(init: EfaDmRequest.() -> Unit): EfaDmRequest =
+            EfaDmRequest().apply(init)
+    }
 }

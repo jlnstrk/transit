@@ -4,7 +4,9 @@ import de.jlnstrk.transit.api.efa.endpoint.stt.EfaSttRequest
 import de.jlnstrk.transit.api.efa.model.EfaPoint
 
 suspend fun main() {
-    val endpoint = EfaClient("https://efa.mvv-muenchen.de/bcl/")
+    val endpoint = EfaClient {
+        baseUrl = "https://efa.mvv-muenchen.de/bcl/"
+    }
     val request = EfaSttRequest {
         stt(
             EfaPoint.Stop(
@@ -15,4 +17,5 @@ suspend fun main() {
         modeDirect = true
     }
     val response = endpoint.xmlSttRequest(request)
+    response
 }

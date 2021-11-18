@@ -21,7 +21,7 @@ import kotlinx.serialization.UseSerializers
 @Serializable
 public data class EfaReference(
     /** The referred location's id */
-    public val id: Long,
+    public val id: Long? = null,
 
     // TODO: Purpose?
     public val area: String? = null,
