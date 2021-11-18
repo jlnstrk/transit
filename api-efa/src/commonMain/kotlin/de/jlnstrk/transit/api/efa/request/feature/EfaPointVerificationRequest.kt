@@ -57,7 +57,7 @@ public interface EfaPointVerificationRequest {
             }
             val usageSerial = usage.serialize()
             queryMap["name_$usageSerial"] = nameValue
-            queryMap["type_$usageSerial"] = type!!.serialize()
+            queryMap["type_$usageSerial"] = (type ?: EfaPointVerification.Type.ANY).serialize()
 
             UsageOptions.MapDelegate(queryMap, usage)
                 .options()
