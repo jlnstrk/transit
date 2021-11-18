@@ -43,14 +43,8 @@ public class EfaAddInfoRequest(
      * zweistellige Angabe des Tages, gefolgt von der zweistelligen Angabe des Monats und der
      * vierstelligen Angabe des Jahres, angegeben. Als Separator dient das Minuszeichen.
      */
-    public var filterValidIntervalStart: LocalDate? by EfaQueryParam(
-        serialize = { EFA_DATE_FORMAT_DASH_SEP.format(it) },
-        deserialize = { EFA_DATE_FORMAT_DASH_SEP.parseDate(it) }
-    )
-    public var filterValidIntervalEnd: LocalDate? by EfaQueryParam(
-        serialize = { EFA_DATE_FORMAT_DASH_SEP.format(it) },
-        deserialize = { EFA_DATE_FORMAT_DASH_SEP.parseDate(it) }
-    )
+    public var filterValidIntervalStart: LocalDate? by EfaDateParam(EFA_DATE_FORMAT_DASH_SEP)
+    public var filterValidIntervalEnd: LocalDate? by EfaDateParam(EFA_DATE_FORMAT_DASH_SEP)
 
     /**
      * Filtert nach Meldungen, die bestimmte Orte betreffen. Der Wert des Filters ist eine Liste von
@@ -62,17 +56,16 @@ public class EfaAddInfoRequest(
         deserialize = { it.split(":").toSet() }
     )
 
-    /*/**
+    /**
      * Filtert nach Meldungen, die einen bestimmten Ort betreffen. Der Ort wird durch die
      * Gemeindekennziffer und eine ID des Ortes bestimmt. Die beiden Werte werden durch einen
      * Doppelpunkt getrennt angegeben. Der Parameter kann mehrfach verwendet werden.
      */
-    var filterOmcPlaceId: Map<EfaStringMultiParam, EfaStringMultiParam>
-    fun omcPlaces(map: Map<EfaStringMultiParam, EfaStringMultiParam>) {
-        for ((omc, placeId) in map) {
-            queryMap["filterOMC_PlaceID"] = "$omc:$placeId"
-        }
-    }*/
+    @Suppress("PropertyName")
+    public var filterOMC_PlaceID: Set<Pair<String, String>> by EfaQueryMultiParam(
+        serialize = { (omc, placeId) -> "$omc:$placeId" },
+        deserialize = { it.split(':').let { Pair(it[0], it[1]) } },
+    )
 
     /**
      * Angabe eines Liniennummer-Intervalls. Es wird nach Meldungen gefiltert, die Linien betreffen,

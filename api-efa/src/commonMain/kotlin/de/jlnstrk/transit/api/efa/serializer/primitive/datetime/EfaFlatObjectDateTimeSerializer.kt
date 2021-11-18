@@ -9,7 +9,6 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-@Serializer(forClass = LocalDateTime::class)
 internal object EfaFlatObjectDateTimeSerializer : KSerializer<LocalDateTime> {
     override val descriptor: SerialDescriptor = Intermediate.serializer().descriptor
 

@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.api.efa.endpoint.trip
 
-import com.soywiz.klock.minutes
 import de.jlnstrk.transit.api.efa.model.EfaPoint
+import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequestMap
 import de.jlnstrk.transit.api.efa.request.EfaRequestMapDelegate
@@ -23,7 +23,7 @@ public class EfaTripRequest(
     public var calcNumberOfTrips: Int? by EfaIntParam
     public var calcOneDirection: Boolean? by EfaBooleanParam
     public var useRealtime: Boolean? by EfaBooleanParam
-    public var itdTripDateTimeDepArr: DateTimeMode? by EfaEnumParam()
+    public var itdTripDateTimeDepArr: EfaDateTimeMode? by EfaEnumParam()
 
     public var impairedOptionsActive: Boolean? by EfaQueryFlag
     public var lowPlatformVhcl: Boolean? by EfaQueryFlag
@@ -138,18 +138,9 @@ public class EfaTripRequest(
         public var trlTMOT: Set<Means> by EfaEnumMultiParam()
         public var trlTDepMOT: Set<Means> by EfaEnumMultiParam()
         public var trlTArrMOT: Set<Means> by EfaEnumMultiParam()
-        public var trlTMOTvalue: Duration? by EfaQueryParam(
-            serialize = { it.minutes.toLong().toString() },
-            deserialize = { it.toLong().minutes }
-        )
-        public var trlTDepMOTvalue: Duration? by EfaQueryParam(
-            serialize = { it.minutes.toLong().toString() },
-            deserialize = { it.toLong().minutes }
-        )
-        public var trlTArrMOTvalue: Duration? by EfaQueryParam(
-            serialize = { it.minutes.toLong().toString() },
-            deserialize = { it.toLong().minutes }
-        )
+        public var trlTMOTvalue: Duration? by EfaMinutesParam
+        public var trlTDepMOTvalue: Duration? by EfaMinutesParam
+        public var trlTArrMOTvalue: Duration? by EfaMinutesParam
 
         @Serializable
         public enum class Means {

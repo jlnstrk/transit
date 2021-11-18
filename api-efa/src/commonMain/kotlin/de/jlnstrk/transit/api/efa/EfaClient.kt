@@ -83,9 +83,10 @@ public class EfaClient private constructor(
     }
 
     public companion object {
-        public operator fun invoke(baseUrl: String, init: EfaConfig.() -> Unit = {}): EfaClient {
-            val config = EfaConfig().apply(init)
-
+        public operator fun invoke(
+            config: EfaConfig,
+            strict: Boolean = false,
+        ): EfaClient {
             val coordinatesSerializer = EfaCoordinatesStringSerializer(config.coordinateSystem)
             val httpClient = HttpClient {
                 install(JsonFeature) {
@@ -94,7 +95,7 @@ public class EfaClient private constructor(
                         classDiscriminator = ""
                         coerceInputValues = true
                         explicitNulls = false
-                        ignoreUnknownKeys = true
+                        ignoreUnknownKeys = !strict
                         serializersModule = SerializersModule {
                             contextual(coordinatesSerializer)
                             contextual(EfaPinAttributeAdapter(config.iconCodeResolver))
@@ -125,7 +126,10 @@ public class EfaClient private constructor(
                     println(url.buildString())
                 }
             }
-            return EfaClient(baseUrl, httpClient)
+            return EfaClient(config.baseUrl, httpClient)
         }
+
+        public operator fun invoke(strict: Boolean = false, init: EfaConfig.() -> Unit): EfaClient =
+            invoke(EfaConfig().apply(init), strict)
     }
 }

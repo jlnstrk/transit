@@ -2,14 +2,14 @@ package de.jlnstrk.transit.interop.efa.normalization.generic
 
 import de.jlnstrk.transit.api.efa.model.EfaCoordinates
 import de.jlnstrk.transit.api.efa.model.EfaJourney
-import de.jlnstrk.transit.api.efa.request.EfaRequest
+import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.common.model.Journey
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.stop.Stop
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
 
-internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaRequest.DateTimeMode): Journey {
+internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaDateTimeMode): Journey {
     val stopLocation = Location.Station(
         name = stopName,
         coordinates = EfaCoordinates(x, y, mapName).normalized(),
@@ -30,7 +30,7 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaRequest.DateTi
             name = servingLine.direction
         ),
         stop = when (mode) {
-            EfaRequest.DateTimeMode.ARRIVAL -> Stop.Arrival(
+            EfaDateTimeMode.ARRIVAL -> Stop.Arrival(
                 location = stopLocation,
                 arrivalScheduled = zonedDateTime,
                 arrivalRealtime = zonedRealtimeDateTime,
@@ -39,9 +39,9 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaRequest.DateTi
                 index = null,
                 arrivalRealtimePlatform = null
             )
-            EfaRequest.DateTimeMode.DEPARTURE,
-            EfaRequest.DateTimeMode.FIRST_SERVICE,
-            EfaRequest.DateTimeMode.LAST_SERVICE -> Stop.Departure(
+            EfaDateTimeMode.DEPARTURE,
+            EfaDateTimeMode.FIRST_SERVICE,
+            EfaDateTimeMode.LAST_SERVICE -> Stop.Departure(
                 location = stopLocation,
                 departureScheduled = zonedDateTime,
                 departureRealtime = zonedRealtimeDateTime,

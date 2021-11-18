@@ -13,20 +13,18 @@ internal object EfaNestedObjectDateTimeSerializer : KSerializer<LocalDateTime> {
 
     @Serializable
     class Intermediate(
-        @SerialName("itdDate")
-        val date: EfaFlatObjectDateTimeSerializer.Intermediate,
-        @SerialName("itdTime")
-        val time: EfaFlatObjectDateTimeSerializer.Intermediate
+        val itdDate: EfaFlatObjectDateTimeSerializer.Intermediate,
+        val itdTime: EfaFlatObjectDateTimeSerializer.Intermediate
     )
 
     override fun serialize(encoder: Encoder, value: LocalDateTime) {
         val intermediate = Intermediate(
-            date = EfaFlatObjectDateTimeSerializer.Intermediate(
+            itdDate = EfaFlatObjectDateTimeSerializer.Intermediate(
                 year = value.yearInt,
                 month = value.month0,
                 day = value.dayOfMonth
             ),
-            time = EfaFlatObjectDateTimeSerializer.Intermediate(
+            itdTime = EfaFlatObjectDateTimeSerializer.Intermediate(
                 hour = value.hours,
                 minute = value.minutes,
                 second = value.seconds
@@ -38,12 +36,12 @@ internal object EfaNestedObjectDateTimeSerializer : KSerializer<LocalDateTime> {
     override fun deserialize(decoder: Decoder): LocalDateTime {
         val intermediate = Intermediate.serializer().deserialize(decoder)
         return LocalDateTime(
-            intermediate.date.year,
-            intermediate.date.month,
-            intermediate.date.day,
-            intermediate.time.hour,
-            intermediate.time.minute,
-            intermediate.time.second
+            intermediate.itdDate.year,
+            intermediate.itdDate.month,
+            intermediate.itdDate.day,
+            intermediate.itdTime.hour,
+            intermediate.itdTime.minute,
+            intermediate.itdTime.second
         )
     }
 }

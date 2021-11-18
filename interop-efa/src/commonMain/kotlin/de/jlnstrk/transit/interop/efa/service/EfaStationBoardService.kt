@@ -2,7 +2,7 @@ package de.jlnstrk.transit.interop.efa.service
 
 import de.jlnstrk.transit.api.efa.EfaClient
 import de.jlnstrk.transit.api.efa.endpoint.dm.EfaDmRequest
-import de.jlnstrk.transit.api.efa.request.EfaRequest
+import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.api.efa.util.efaDmRequest
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Line
@@ -57,8 +57,8 @@ internal class EfaStationBoardService(
                 itdTime = dateTimeAtServer.time
             }
             itdDateTimeDepArr = when (mode) {
-                StationBoardService.Mode.ARRIVALS -> EfaRequest.DateTimeMode.ARRIVAL
-                StationBoardService.Mode.DEPARTURES -> EfaRequest.DateTimeMode.DEPARTURE
+                StationBoardService.Mode.ARRIVALS -> EfaDateTimeMode.ARRIVAL
+                StationBoardService.Mode.DEPARTURES -> EfaDateTimeMode.DEPARTURE
             }
             if (filterProducts != null) {
                 includedMeans = provider.denormalizeEfaMeans(filterProducts)
@@ -79,12 +79,12 @@ internal class EfaStationBoardService(
             val data = StationBoardData(
                 header = DataHeader(),
                 dateTime = OffsetDateTime.local(efaResponse.dateTime.dateTime, provider.timezone),
-                isArrivalBoard = efaResponse.dateTime.mode == EfaRequest.DateTimeMode.ARRIVAL,
+                isArrivalBoard = efaResponse.dateTime.mode == EfaDateTimeMode.ARRIVAL,
                 journeys = when (efaResponse.dateTime.mode) {
-                    EfaRequest.DateTimeMode.ARRIVAL -> efaResponse.arrivalList
-                    EfaRequest.DateTimeMode.DEPARTURE,
-                    EfaRequest.DateTimeMode.FIRST_SERVICE,
-                    EfaRequest.DateTimeMode.LAST_SERVICE -> efaResponse.departureList
+                    EfaDateTimeMode.ARRIVAL -> efaResponse.arrivalList
+                    EfaDateTimeMode.DEPARTURE,
+                    EfaDateTimeMode.FIRST_SERVICE,
+                    EfaDateTimeMode.LAST_SERVICE -> efaResponse.departureList
                 }.map { efaJourney ->
                     efaJourney.normalize(provider, efaResponse.dateTime.mode)
                 },

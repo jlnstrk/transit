@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.api.efa.serializer
 
-import de.jlnstrk.transit.api.efa.request.EfaRequest
+import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.api.efa.response.EfaTimeHeader
 import de.jlnstrk.transit.api.efa.serializer.primitive.datetime.EfaStringDateTimeSerializer
 import de.jlnstrk.transit.util.LocalDate
@@ -16,7 +16,7 @@ internal object EfaTimeHeaderSerializer : KSerializer<EfaTimeHeader> {
 
     @Serializable
     class Intermediate(
-        val deparr: EfaRequest.DateTimeMode,
+        val deparr: EfaDateTimeMode,
         @Serializable(with = EfaStringDateTimeSerializer.Date::class)
         val ttpFrom: LocalDate,
         @Serializable(with = EfaStringDateTimeSerializer.Date::class)

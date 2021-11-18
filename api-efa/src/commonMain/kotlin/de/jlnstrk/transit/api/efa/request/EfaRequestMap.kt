@@ -18,7 +18,6 @@ public class EfaRequestMap : MutableMap<String, String> {
 
     override val entries: MutableSet<MutableMap.MutableEntry<String, String>>
         get() = backing.entries.map { (key, valueSet) ->
-            // valueSet.map { value ->
             object : MutableMap.MutableEntry<String, String> {
                 override val key: String = key
                 override val value: String = valueSet.joinToString(separator = "&$key=")
@@ -27,7 +26,6 @@ public class EfaRequestMap : MutableMap<String, String> {
                     return newValue
                 }
             }
-            // }
         }.toMutableSet()
 
     override val keys: MutableSet<String> get() = backing.keys

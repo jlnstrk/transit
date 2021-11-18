@@ -32,17 +32,17 @@ public class EfaMessage(
         UNKNOWN,
 
         @SerialName("-8011")
-        UNKNOWN_2
+        UNKNOWN_2,
     }
 
     @Serializable
     public enum class Type {
         @SerialName("warning")
-        WARNING
+        WARNING,
     }
 
     @Serializable
     public enum class Module {
-        BROKER
+        BROKER,
     }
 }

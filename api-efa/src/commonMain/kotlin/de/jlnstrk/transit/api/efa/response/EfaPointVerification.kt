@@ -25,7 +25,7 @@ public class EfaPointVerification(
     @Serializable(with = EfaOptionalListSerializer::class)
     public val points: List<EfaPoint> = emptyList(),
     @Serializable(with = EfaOptionalListSerializer::class)
-    public val itdOdvAssignedStops: List<AssignedStop> = emptyList()
+    public val itdOdvAssignedStops: List<AssignedStop> = emptyList(),
 ) {
 
     @Serializable

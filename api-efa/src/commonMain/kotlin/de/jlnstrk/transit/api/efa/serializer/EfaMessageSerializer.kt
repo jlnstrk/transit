@@ -8,7 +8,10 @@ import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
-import kotlinx.serialization.json.*
+import kotlinx.serialization.json.JsonClassDiscriminator
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.JsonTransformingSerializer
+import kotlinx.serialization.json.jsonObject
 
 internal object EfaMessageSerializer : KSerializer<EfaMessage> {
     private val listSerializer = ListSerializer(Attribute.serializer())
@@ -19,19 +22,19 @@ internal object EfaMessageSerializer : KSerializer<EfaMessage> {
     internal sealed class Attribute {
         @Serializable
         @SerialName("code")
-        class Code(val value: EfaMessage.Code? = null) : Attribute()
+        data class Code(val value: EfaMessage.Code? = null) : Attribute()
 
         @Serializable
         @SerialName("error")
-        class Error(val value: String? = null) : Attribute()
+        data class Error(val value: String? = null) : Attribute()
 
         @Serializable
         @SerialName("type")
-        class Type(val value: EfaMessage.Type? = null) : Attribute()
+        data class Type(val value: EfaMessage.Type? = null) : Attribute()
 
         @Serializable
         @SerialName("module")
-        class Module(val value: EfaMessage.Module) : Attribute()
+        data class Module(val value: EfaMessage.Module) : Attribute()
     }
 
     override fun serialize(encoder: Encoder, value: EfaMessage) {

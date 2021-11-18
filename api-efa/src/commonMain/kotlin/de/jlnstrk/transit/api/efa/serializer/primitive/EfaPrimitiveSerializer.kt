@@ -28,7 +28,7 @@ internal abstract class EfaPrimitiveSerializer<T>(
     }
 
     internal object ForString :
-        EfaPrimitiveSerializer<kotlin.String>(String.serializer()) {
+        EfaPrimitiveSerializer<String>(String.serializer()) {
         private const val EMPTY_STATELESS = ":: : :"
 
         override fun deserialize(decoder: Decoder): String? {

@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.api.hci.base
 
-import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.HciConfig
+import de.jlnstrk.transit.api.hci.HciConsumer
 import de.jlnstrk.transit.api.hci.profile.BVG
 import de.jlnstrk.transit.api.hci.profile.HVV
 import de.jlnstrk.transit.api.hci.profile.RMV
@@ -23,9 +23,11 @@ class HciTestProfile(override val name: String) : ServiceTestProfile<HciConsumer
         }
     }
 
-    override fun makeTestEndpoint(): HciConsumer = HciConsumer(config).apply {
-        httpClient = httpClient.config {
-            install(HciLogging)
+    override fun makeTestEndpoint(): HciConsumer {
+        return HciConsumer(config, strict = true).apply {
+            httpClient = httpClient.config {
+                install(HciLogging)
+            }
         }
     }
 

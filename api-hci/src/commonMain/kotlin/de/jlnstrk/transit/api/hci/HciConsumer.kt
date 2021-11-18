@@ -85,12 +85,13 @@ public class HciConsumer private constructor(
     }
 
     public companion object {
-        public operator fun invoke(config: HciConfig): HciConsumer {
+        public operator fun invoke(config: HciConfig, strict: Boolean = false): HciConsumer {
             val httpClient = HttpClient {
                 install(JsonFeature) {
                     serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
                         classDiscriminator = ""
                         explicitNulls = false
+                        ignoreUnknownKeys = !strict
                     })
                 }
                 install(HciFeature) {
@@ -111,6 +112,7 @@ public class HciConsumer private constructor(
             return HciConsumer(httpClient, config.baseUrl + "mgate.exe", baseRequest)
         }
 
-        public operator fun invoke(init: HciConfig.() -> Unit): HciConsumer = HciConfig(init).let(::invoke)
+        public operator fun invoke(strict: Boolean = false, init: HciConfig.() -> Unit): HciConsumer =
+            invoke(HciConfig(init), strict)
     }
 }

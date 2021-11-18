@@ -23,5 +23,4 @@ internal open class EfaQueryParam<T>(
             thisRef.queryMap.remove(key ?: property.name)
         }
     }
-
 }

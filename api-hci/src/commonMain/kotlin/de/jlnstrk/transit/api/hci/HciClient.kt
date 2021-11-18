@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.api.hci
 
-import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -19,15 +18,6 @@ public data class HciClient(
 
     @Serializable
     public enum class Type {
-        @SerialName("IPA")
-        IPAD,
-
-        @SerialName("IPH")
-        IPHONE,
-
-        WEB,
-
-        @SerialName("AND")
-        ANDROID
+        IPA, IPH, WEB, AND
     }
 }

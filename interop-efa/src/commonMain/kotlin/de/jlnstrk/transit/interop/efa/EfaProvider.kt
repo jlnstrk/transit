@@ -13,7 +13,8 @@ public abstract class EfaProvider : Provider.Implementation(), EfaNormalization 
 
     init {
         val client: EfaClient by lazy {
-            EfaClient(baseUrl) {
+            EfaClient {
+                baseUrl = this@EfaProvider.baseUrl
                 iconCodeResolver = EfaIconCodeResolver(::resolveAltCode)
             }
         }

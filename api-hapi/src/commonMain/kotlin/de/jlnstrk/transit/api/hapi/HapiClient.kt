@@ -24,12 +24,13 @@ public class HapiClient private constructor(
     }
 
     public companion object {
-        public operator fun invoke(config: HapiConfig): HapiClient {
+        public operator fun invoke(config: HapiConfig, strict: Boolean = false): HapiClient {
             val httpClient = HttpClient {
                 install(JsonFeature) {
                     serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
                         coerceInputValues = true
                         explicitNulls = false
+                        ignoreUnknownKeys = !strict
                     })
                 }
                 install(DefaultRequest) {
@@ -53,6 +54,7 @@ public class HapiClient private constructor(
             return HapiClient(httpClient, config.baseUrl)
         }
 
-        public operator fun invoke(init: HapiConfig.() -> Unit): HapiClient = HapiConfig(init).let(::invoke)
+        public operator fun invoke(strict: Boolean = false, init: HapiConfig.() -> Unit): HapiClient =
+            invoke(HapiConfig(init), strict)
     }
 }

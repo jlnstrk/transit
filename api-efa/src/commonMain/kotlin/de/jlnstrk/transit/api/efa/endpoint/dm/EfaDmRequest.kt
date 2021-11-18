@@ -1,6 +1,7 @@
 package de.jlnstrk.transit.api.efa.endpoint.dm
 
 import de.jlnstrk.transit.api.efa.model.EfaPoint
+import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.api.efa.request.EfaRequest
 import de.jlnstrk.transit.api.efa.request.EfaRequestMap
 import de.jlnstrk.transit.api.efa.request.delegate.EfaBooleanParam
@@ -31,7 +32,7 @@ public class EfaDmRequest(
         key = "mode",
     )
     public var depType: DepartureType? by EfaEnumParam()
-    public var itdDateTimeDepArr: DateTimeMode? by EfaEnumParam()
+    public var itdDateTimeDepArr: EfaDateTimeMode? by EfaEnumParam()
 
     public fun dm(point: EfaPoint, options: EfaPointVerificationRequest.UsageOptions.() -> Unit = {}) {
         addPoint(EfaPointVerification.Usage.DEPARTURE_MONITOR, point, options)

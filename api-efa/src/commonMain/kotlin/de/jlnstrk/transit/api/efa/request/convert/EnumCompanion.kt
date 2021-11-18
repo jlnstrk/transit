@@ -7,18 +7,18 @@ import kotlinx.serialization.json.jsonPrimitive
 import kotlinx.serialization.serializer
 import kotlin.reflect.KClass
 
-public inline fun <reified T : Enum<T>> T.serialize(): String =
+public inline fun <reified E : Enum<E>> E.serialize(): String =
     Json.encodeToJsonElement(serializer(), this).jsonPrimitive.content
 
-public inline fun <reified T : Enum<T>> String.deserializeAs(): T =
+public inline fun <reified E : Enum<E>> String.deserializeAs(): E =
     Json.decodeFromJsonElement(serializer(), JsonPrimitive(this))
 
 @OptIn(InternalSerializationApi::class)
-public fun <T : Enum<T>> T.serializeT(type: KClass<T>): String =
+public fun <E : Enum<E>> E.serializeT(type: KClass<E>): String =
     Json.encodeToJsonElement(type.serializer(), this).jsonPrimitive.content
 
 @OptIn(InternalSerializationApi::class)
-public fun <T : Enum<T>> String.deserializeAsT(type: KClass<T>): T =
+public fun <E : Enum<E>> String.deserializeAsT(type: KClass<E>): E =
     Json.decodeFromJsonElement(type.serializer(), JsonPrimitive(this))
 
 internal interface EfaIntEnum  {

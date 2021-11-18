@@ -1,11 +1,9 @@
 package de.jlnstrk.transit.api.efa.request.feature
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
 import de.jlnstrk.transit.api.efa.request.EfaRequestMap
 import de.jlnstrk.transit.api.efa.request.EfaRequestMapDelegate
 import de.jlnstrk.transit.api.efa.request.delegate.EfaBooleanParam
-import de.jlnstrk.transit.api.efa.request.delegate.EfaQueryParam
+import de.jlnstrk.transit.api.efa.request.delegate.EfaDateParam
 import de.jlnstrk.transit.api.efa.request.delegate.EfaStringMultiParam
 import de.jlnstrk.transit.api.efa.request.delegate.EfaStringParam
 import de.jlnstrk.transit.api.efa.util.EFA_DATE_FORMAT_NO_SEP
@@ -23,9 +21,6 @@ public interface EfaLineVerificationRequest {
         override var line: Set<String> by EfaStringMultiParam
         override var isShowTrainsExplicit: Boolean? by EfaBooleanParam
         override var lineVer: String? by EfaStringParam
-        override var dateDay: LocalDate? by EfaQueryParam(
-            serialize = { EFA_DATE_FORMAT_NO_SEP.format(it) },
-            deserialize = { EFA_DATE_FORMAT_NO_SEP.parseDate(it) },
-        )
+        override var dateDay: LocalDate? by EfaDateParam(EFA_DATE_FORMAT_NO_SEP)
     }
 }

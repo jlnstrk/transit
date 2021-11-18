@@ -34,6 +34,6 @@ public abstract class EfaResponse {
         SESSION_ID,
 
         @SerialName("requestID")
-        REQUEST_ID
+        REQUEST_ID,
     }
 }

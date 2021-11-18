@@ -16,7 +16,7 @@ internal class HapiTestProfile(override val name: String) : ServiceTestProfile<H
     interface DataSet
 
     override fun makeTestEndpoint(): HapiClient {
-        return HapiClient(config).apply {
+        return HapiClient(config, strict = true).apply {
             httpClient = httpClient.config {
                 install(HapiLogging)
             }
