@@ -46,15 +46,14 @@ public interface EfaPointVerificationRequest {
         ) {
             var type = point.type
             val nameValue: String = when {
-                point.ref != null
-                        && point.ref.id != -1L -> point.ref.id.toString()
+                point.ref?.id != null -> point.ref.id.toString()
                 point.stateless != null -> point.stateless
                 point.name == null && point.ref?.coords != null -> {
                     type = EfaPointVerification.Type.COORD
                     val (x, y, system) = point.ref.coords
                     "$x:$y:${system.serialize()}"
                 }
-                else -> point.name!!
+                else -> point.name.orEmpty()
             }
             val usageSerial = usage.serialize()
             queryMap["name_$usageSerial"] = nameValue
