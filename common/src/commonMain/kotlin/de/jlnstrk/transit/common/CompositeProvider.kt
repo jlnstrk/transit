@@ -3,9 +3,6 @@ package de.jlnstrk.transit.common
 import de.jlnstrk.transit.util.ZoneOffset
 import kotlin.reflect.KClass
 
-@DslMarker
-internal annotation class CompositeDsl
-
 public class CompositeProvider private constructor(
     private val delegates: MutableMap<KClass<out Service>, Provider> = HashMap()
 ) : Provider() {

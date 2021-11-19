@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="client-efa-js-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/client/client-efa/build/libs</output-path>
+    <root id="archive" name="client-efa-js-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.client.client-efa.jsMain" />
+    </root>
+  </artifact>
+</component>

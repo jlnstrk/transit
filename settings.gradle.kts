@@ -16,21 +16,23 @@ dependencyResolutionManagement {
 
 rootProject.name = "transit"
 
-include(":utils")
-include(":utils-testing")
+include(":utils:utils-core")
+include(":utils:utils-testing")
 include(":common")
 
-include(":api-hafas")
-include(":interop-hafas")
+include(":client:client-hafas")
+include(":client:client-hci")
+include(":client:client-hapi")
+include(":client:client-efa")
+include(":client:client-trias")
 
-include(":api-hci")
-include(":interop-hci")
+include(":interop:interop-hafas")
+include(":interop:interop-hci")
+include(":interop:interop-hapi")
+include(":interop:interop-efa")
+include(":interop:interop-trias")
 
-include(":api-hapi")
-include(":interop-hapi")
-
-include(":api-efa")
-include(":interop-efa")
-
-include(":api-trias")
-include(":interop-trias")
+include(":sample:sample-shared")
+include(":sample:sample-android")
+include(":sample:sample-ios")
+include(":sample:sample-js")

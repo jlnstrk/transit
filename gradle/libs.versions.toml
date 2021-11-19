@@ -6,7 +6,7 @@ dokka = "1.5.30"
 serializationJson = "1.3.1"
 serializationXml = "0.84.0-RC1"
 krypto = "2.2.0"
-klock = "2.4.6"
+klock = "2.4.8"
 buildkonfig = "0.11.0"
 
 [libraries]
@@ -15,6 +15,7 @@ serializationGradle = { module = "org.jetbrains.kotlin:kotlin-serialization", ve
 kotestGradle = { module = "io.kotest:kotest-framework-multiplatform-plugin-gradle", version = "5.0.0.5" }
 buildkonfigGradle = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "buildkonfig" }
 dokkaGradle = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 ktor-client-jvm = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
 ktor-client-ios = { module = "io.ktor:ktor-client-ios", version.ref = "ktor" }

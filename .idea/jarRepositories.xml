@@ -54,7 +54,7 @@
     <remote-repository>
       <option name="id" value="MavenLocal" />
       <option name="name" value="MavenLocal" />
-      <option name="url" value="file:$USER_HOME$/.m2/repository/" />
+      <option name="url" value="file:$MAVEN_REPOSITORY$/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven4" />
@@ -70,6 +70,21 @@
       <option name="id" value="maven4" />
       <option name="name" value="maven4" />
       <option name="url" value="https://jcenter.bintray.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://androidx.dev/snapshots/builds/7929951/artifacts/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://androidx.dev/snapshots/builds/7929951/artifacts/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven" />
     </remote-repository>
   </component>
 </project>

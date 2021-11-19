@@ -6,6 +6,7 @@ repositories {
     gradlePluginPortal()
     mavenCentral()
     maven("https://oss.sonatype.org/content/repositories/snapshots")
+    google()
 }
 
 dependencies {
@@ -14,4 +15,5 @@ dependencies {
     implementation(libs.serializationGradle)
     implementation(libs.kotestGradle)
     implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
+    implementation("com.android.tools.build:gradle:7.0.0")
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="client-trias-jvm-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/client/client-trias/build/libs</output-path>
+    <root id="archive" name="client-trias-jvm-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.client.client-trias.jvmMain" />
+    </root>
+  </artifact>
+</component>

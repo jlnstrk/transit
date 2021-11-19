@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../../../layout/compose-model-1637279721079.xml" value="0.9" />
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_individual_walk_24dp.xml" value="0.5083333333333333" />
         <entry key="app/src/main/res/drawable/ic_leak_add_24dp.xml" value="0.12135416666666667" />
@@ -104,6 +105,8 @@
         <entry key="app/src/main/res/menu/menu_content_trips_detail.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/menu/menu_location_search.xml" value="0.48802083333333335" />
         <entry key="app/src/main/res/xml/settings_stops.xml" value="0.23229166666666667" />
+        <entry key="sample/sample-android/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.48055555555555557" />
+        <entry key="sample/sample-android/src/main/res/layout/activity_main.xml" value="0.16614583333333333" />
       </map>
     </option>
   </component>

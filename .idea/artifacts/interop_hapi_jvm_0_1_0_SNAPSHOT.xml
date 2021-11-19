@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="interop-hapi-jvm-0.1.0-SNAPSHOT">
-    <output-path>$PROJECT_DIR$/interop-hapi/build/libs</output-path>
+    <output-path>$PROJECT_DIR$/interop/interop-hapi/build/libs</output-path>
     <root id="archive" name="interop-hapi-jvm-0.1.0-SNAPSHOT.jar">
-      <element id="module-output" name="transit.interop-hapi.jvmMain" />
+      <element id="module-output" name="transit.interop.interop-hapi.jvmMain" />
     </root>
   </artifact>
 </component>

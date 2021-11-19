@@ -6,7 +6,6 @@ import de.jlnstrk.transit.common.response.TripSearchData
 import de.jlnstrk.transit.common.response.base.ScrollContext
 import de.jlnstrk.transit.util.Duration
 import de.jlnstrk.transit.util.OffsetDateTime
-import kotlin.jvm.JvmOverloads
 
 public interface TripSearchService : Service {
     public val supportedOriginTypes: Set<Location.Type>

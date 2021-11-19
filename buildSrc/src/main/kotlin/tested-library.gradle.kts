@@ -22,7 +22,7 @@ kotlin {
     sourceSets {
         val commonTest by getting {
             dependencies {
-                api(project(":utils-testing"))
+                api(project(":utils:utils-testing"))
             }
         }
     }

@@ -10,14 +10,62 @@
       <module name="transit.api-efa-xml.commonTest" target="1.8" />
       <module name="transit.api-efa-xml.jvmMain" target="1.8" />
       <module name="transit.api-efa-xml.jvmTest" target="1.8" />
+      <module name="transit.api-efa.commonMain" target="1.8" />
+      <module name="transit.api-efa.commonTest" target="1.8" />
+      <module name="transit.api-efa.jvmMain" target="1.8" />
+      <module name="transit.api-efa.jvmTest" target="1.8" />
+      <module name="transit.api-hafas.commonMain" target="1.8" />
+      <module name="transit.api-hafas.commonTest" target="1.8" />
+      <module name="transit.api-hafas.jvmMain" target="1.8" />
+      <module name="transit.api-hafas.jvmTest" target="1.8" />
+      <module name="transit.api-hapi.commonMain" target="1.8" />
+      <module name="transit.api-hapi.commonTest" target="1.8" />
+      <module name="transit.api-hapi.jvmMain" target="1.8" />
+      <module name="transit.api-hapi.jvmTest" target="1.8" />
+      <module name="transit.api-hci.commonMain" target="1.8" />
+      <module name="transit.api-hci.commonTest" target="1.8" />
+      <module name="transit.api-hci.jvmMain" target="1.8" />
+      <module name="transit.api-hci.jvmTest" target="1.8" />
+      <module name="transit.api-trias.commonMain" target="1.8" />
+      <module name="transit.api-trias.commonTest" target="1.8" />
+      <module name="transit.api-trias.jvmMain" target="1.8" />
+      <module name="transit.api-trias.jvmTest" target="1.8" />
       <module name="transit.commonMain" target="1.8" />
       <module name="transit.commonTest" target="1.8" />
+      <module name="transit.interop-efa.commonMain" target="1.8" />
+      <module name="transit.interop-efa.commonTest" target="1.8" />
+      <module name="transit.interop-efa.jvmMain" target="1.8" />
+      <module name="transit.interop-efa.jvmTest" target="1.8" />
+      <module name="transit.interop-hafas.commonMain" target="1.8" />
+      <module name="transit.interop-hafas.commonTest" target="1.8" />
+      <module name="transit.interop-hafas.jvmMain" target="1.8" />
+      <module name="transit.interop-hafas.jvmTest" target="1.8" />
+      <module name="transit.interop-hapi.commonMain" target="1.8" />
+      <module name="transit.interop-hapi.commonTest" target="1.8" />
+      <module name="transit.interop-hapi.jvmMain" target="1.8" />
+      <module name="transit.interop-hapi.jvmTest" target="1.8" />
+      <module name="transit.interop-hci.commonMain" target="1.8" />
+      <module name="transit.interop-hci.commonTest" target="1.8" />
+      <module name="transit.interop-hci.jvmMain" target="1.8" />
+      <module name="transit.interop-hci.jvmTest" target="1.8" />
+      <module name="transit.interop-trias.commonMain" target="1.8" />
+      <module name="transit.interop-trias.commonTest" target="1.8" />
+      <module name="transit.interop-trias.jvmMain" target="1.8" />
+      <module name="transit.interop-trias.jvmTest" target="1.8" />
       <module name="transit.interop.commonMain" target="1.8" />
       <module name="transit.interop.commonTest" target="1.8" />
       <module name="transit.interop.jvmMain" target="1.8" />
       <module name="transit.interop.jvmTest" target="1.8" />
       <module name="transit.jvmMain" target="1.8" />
       <module name="transit.jvmTest" target="1.8" />
+      <module name="transit.sample.commonMain" target="1.8" />
+      <module name="transit.sample.commonTest" target="1.8" />
+      <module name="transit.sample.jvmMain" target="1.8" />
+      <module name="transit.sample.jvmTest" target="1.8" />
+      <module name="transit.sample.shared.commonMain" target="1.8" />
+      <module name="transit.sample.shared.commonTest" target="1.8" />
+      <module name="transit.sample.shared.jvmMain" target="1.8" />
+      <module name="transit.sample.shared.jvmTest" target="1.8" />
       <module name="transit.util.commonMain" target="1.8" />
       <module name="transit.util.commonTest" target="1.8" />
       <module name="transit.util.jvmMain" target="1.8" />

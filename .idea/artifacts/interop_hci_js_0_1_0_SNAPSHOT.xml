@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="interop-hci-js-0.1.0-SNAPSHOT">
-    <output-path>$PROJECT_DIR$/interop-hci/build/libs</output-path>
+    <output-path>$PROJECT_DIR$/interop/interop-hci/build/libs</output-path>
     <root id="archive" name="interop-hci-js-0.1.0-SNAPSHOT.jar">
-      <element id="module-output" name="transit.interop-hci.jsMain" />
+      <element id="module-output" name="transit.interop.interop-hci.jsMain" />
     </root>
   </artifact>
 </component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jsApp-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/sample/jsApp/build/libs</output-path>
+    <root id="archive" name="jsApp-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.sample.jsApp.main" />
+    </root>
+  </artifact>
+</component>
