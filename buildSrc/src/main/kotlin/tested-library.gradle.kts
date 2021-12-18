@@ -1,6 +1,8 @@
+import gradle.kotlin.dsl.accessors._ff1e04f882187441ad8eef90c6cec170.kotlin
+import gradle.kotlin.dsl.accessors._ff1e04f882187441ad8eef90c6cec170.sourceSets
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
-import org.gradle.kotlin.dsl.the
+import org.gradle.kotlin.dsl.*
 
 plugins {
     kotlin("multiplatform") apply false

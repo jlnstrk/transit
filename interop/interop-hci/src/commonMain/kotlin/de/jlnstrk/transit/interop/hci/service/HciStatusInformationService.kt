@@ -1,10 +1,10 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.himsearch.HciHimSearchRequest
-import de.jlnstrk.transit.api.hci.request.filter.HciHimFilter
-import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.himsearch.HciHimSearchRequest
+import de.jlnstrk.transit.client.hci.request.filter.HciHimFilter
+import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.LineSet
 import de.jlnstrk.transit.common.model.Message

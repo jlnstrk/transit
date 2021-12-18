@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.hci
 
-import de.jlnstrk.transit.api.hci.HciConfig
-import de.jlnstrk.transit.api.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciConfig
+import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.common.Provider
 import de.jlnstrk.transit.common.service.*
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping

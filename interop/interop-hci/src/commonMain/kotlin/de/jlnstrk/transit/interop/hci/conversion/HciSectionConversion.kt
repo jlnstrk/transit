@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.HciSection
+import de.jlnstrk.transit.client.hci.model.HciSection
 import de.jlnstrk.transit.common.model.Leg
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 import de.jlnstrk.transit.util.LocalDate

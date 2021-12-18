@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.reconstruction.HciReconstructionRequest
-import de.jlnstrk.transit.api.hci.model.recon.HciReconstruction
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.reconstruction.HciReconstructionRequest
+import de.jlnstrk.transit.client.hci.model.recon.HciReconstruction
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Trip
 import de.jlnstrk.transit.common.response.TripRefreshData

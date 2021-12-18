@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.journey.HciJourney
-import de.jlnstrk.transit.api.hci.model.message.HciMessage
+import de.jlnstrk.transit.client.hci.model.journey.HciJourney
+import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.common.model.Journey
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext

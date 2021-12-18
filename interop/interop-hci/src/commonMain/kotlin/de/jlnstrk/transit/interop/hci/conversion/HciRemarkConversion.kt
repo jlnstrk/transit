@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.HciRemark
+import de.jlnstrk.transit.client.hci.model.HciRemark
 import de.jlnstrk.transit.common.model.Attribute
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 

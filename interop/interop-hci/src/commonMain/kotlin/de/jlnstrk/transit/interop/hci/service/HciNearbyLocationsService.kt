@@ -1,11 +1,11 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.locgeopos.HciLocGeoPosRequest
-import de.jlnstrk.transit.api.hci.model.geo.HciGeoRing
-import de.jlnstrk.transit.api.hci.request.filter.HciLocationFilter
-import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.locgeopos.HciLocGeoPosRequest
+import de.jlnstrk.transit.client.hci.model.geo.HciGeoRing
+import de.jlnstrk.transit.client.hci.request.filter.HciLocationFilter
+import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.LocationListData
 import de.jlnstrk.transit.common.response.base.ServiceResult

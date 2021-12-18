@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
 import com.soywiz.klock.DateTime
-import de.jlnstrk.transit.api.hci.model.him.HciHimMessage
+import de.jlnstrk.transit.client.hci.model.him.HciHimMessage
 import de.jlnstrk.transit.common.extensions.toLineSet
 import de.jlnstrk.transit.common.extensions.toProductSet
 import de.jlnstrk.transit.common.model.Message

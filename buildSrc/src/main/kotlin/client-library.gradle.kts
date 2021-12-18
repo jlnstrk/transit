@@ -1,3 +1,8 @@
+import gradle.kotlin.dsl.accessors._fdfb5ffc67e3c13de6041b97417ec24f.kotlin
+import gradle.kotlin.dsl.accessors._fdfb5ffc67e3c13de6041b97417ec24f.sourceSets
+import org.gradle.kotlin.dsl.getting
+import org.gradle.kotlin.dsl.the
+
 plugins {
     id("multiplatform-library")
     id("serialization-library")

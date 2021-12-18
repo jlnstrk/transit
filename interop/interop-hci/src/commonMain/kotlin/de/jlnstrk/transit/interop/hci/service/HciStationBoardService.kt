@@ -1,11 +1,11 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.stationboard.HciStationBoardRequest
-import de.jlnstrk.transit.api.hci.request.filter.HciJourneyFilter
-import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.api.hci.response.HciServiceError
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.stationboard.HciStationBoardRequest
+import de.jlnstrk.transit.client.hci.request.filter.HciJourneyFilter
+import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.response.HciServiceError
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.common.model.Location

@@ -1,13 +1,13 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.locmatch.HciLocMatchRequest
-import de.jlnstrk.transit.api.hci.model.location.HciLocation
-import de.jlnstrk.transit.api.hci.model.location.HciLocationField
-import de.jlnstrk.transit.api.hci.model.location.HciLocationInput
-import de.jlnstrk.transit.api.hci.request.filter.HciLocationFilter
-import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.locmatch.HciLocMatchRequest
+import de.jlnstrk.transit.client.hci.model.location.HciLocation
+import de.jlnstrk.transit.client.hci.model.location.HciLocationField
+import de.jlnstrk.transit.client.hci.model.location.HciLocationInput
+import de.jlnstrk.transit.client.hci.request.filter.HciLocationFilter
+import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.ProductClass

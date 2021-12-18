@@ -1,12 +1,12 @@
 package de.jlnstrk.transit.interop.hci.service
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.HciException
-import de.jlnstrk.transit.api.hci.method.journeygeopos.HciJourneyGeoPosRequest
-import de.jlnstrk.transit.api.hci.model.geo.HciGeoRectangle
-import de.jlnstrk.transit.api.hci.model.geo.HciGeoRing
-import de.jlnstrk.transit.api.hci.request.filter.HciJourneyFilter
-import de.jlnstrk.transit.api.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.HciException
+import de.jlnstrk.transit.client.hci.method.journeygeopos.HciJourneyGeoPosRequest
+import de.jlnstrk.transit.client.hci.model.geo.HciGeoRectangle
+import de.jlnstrk.transit.client.hci.model.geo.HciGeoRing
+import de.jlnstrk.transit.client.hci.request.filter.HciJourneyFilter
+import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
 import de.jlnstrk.transit.common.model.Area
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.LineSet

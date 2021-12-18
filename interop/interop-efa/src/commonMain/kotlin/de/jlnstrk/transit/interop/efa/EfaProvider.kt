@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.efa
 
-import de.jlnstrk.transit.api.efa.EfaClient
-import de.jlnstrk.transit.api.efa.EfaIconCodeResolver
+import de.jlnstrk.transit.client.efa.EfaClient
+import de.jlnstrk.transit.client.efa.EfaIconCodeResolver
 import de.jlnstrk.transit.common.Provider
 import de.jlnstrk.transit.common.service.*
 import de.jlnstrk.transit.interop.efa.normalization.EfaNormalization

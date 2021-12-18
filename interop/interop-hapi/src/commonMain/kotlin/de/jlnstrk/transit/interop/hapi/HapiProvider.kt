@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hapi
 
-import de.jlnstrk.transit.api.hapi.HapiClient
+import de.jlnstrk.transit.client.hapi.HapiClient
 import de.jlnstrk.transit.common.Provider
 import de.jlnstrk.transit.common.service.StationBoardService
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping

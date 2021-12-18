@@ -3,7 +3,7 @@ package de.jlnstrk.transit.interop.hci.conversion
 import com.soywiz.klock.DateTime
 import com.soywiz.klock.days
 import com.soywiz.klock.plus
-import de.jlnstrk.transit.api.hci.model.HciStop
+import de.jlnstrk.transit.client.hci.model.HciStop
 import de.jlnstrk.transit.common.model.stop.Stop
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 import de.jlnstrk.transit.util.LocalDate

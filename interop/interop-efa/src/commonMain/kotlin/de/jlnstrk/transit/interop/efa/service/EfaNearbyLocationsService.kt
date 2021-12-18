@@ -1,10 +1,10 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaClient
-import de.jlnstrk.transit.api.efa.model.EfaCoordinateSystem
-import de.jlnstrk.transit.api.efa.model.EfaCoordinates
-import de.jlnstrk.transit.api.efa.model.EfaPin
-import de.jlnstrk.transit.api.efa.util.efaCoordRequest
+import de.jlnstrk.transit.client.efa.EfaClient
+import de.jlnstrk.transit.client.efa.model.EfaCoordinateSystem
+import de.jlnstrk.transit.client.efa.model.EfaCoordinates
+import de.jlnstrk.transit.client.efa.model.EfaPin
+import de.jlnstrk.transit.client.efa.util.efaCoordRequest
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.LocationListData
 import de.jlnstrk.transit.common.response.base.ServiceResult

@@ -3,6 +3,7 @@ import com.codingfeline.buildkonfig.compiler.FieldSpec.Type.STRING
 plugins {
     `client-library`
     alias(libs.plugins.buildkonfig)
+    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
 }
 
 buildscript {
@@ -12,7 +13,7 @@ buildscript {
 }
 
 project.buildkonfig {
-    packageName = "de.jlnstrk.transit.api.hci"
+    packageName = "de.jlnstrk.transit.client.hci"
 
     defaultConfigs {
         buildConfigNullableField(STRING, "BVG_AID", rootProject.extra.getOrNull("hci.bvg.aid"))
@@ -35,6 +36,17 @@ kotlin {
                 implementation(libs.ktor.client.encoding)
                 implementation(libs.korlibs.krypto)
             }
+            kotlin.srcDir("build/generated/ksp/commonMain/kotlin")
         }
     }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.dsl.KotlinCompile<*>>().all {
+    if (name != "kspKotlinMetadata") {
+        dependsOn("kspKotlinMetadata")
+    }
+}
+
+dependencies {
+    add("kspMetadata", project(":client:client-hci:model-sync"))
 }

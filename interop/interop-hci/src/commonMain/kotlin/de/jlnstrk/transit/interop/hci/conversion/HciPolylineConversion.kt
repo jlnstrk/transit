@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.HciPolyline
+import de.jlnstrk.transit.client.hci.model.HciPolyline
 import de.jlnstrk.transit.common.model.Coordinates
 import de.jlnstrk.transit.common.model.Polyline
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext

@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaClient
-import de.jlnstrk.transit.api.efa.model.EfaPoint
-import de.jlnstrk.transit.api.efa.response.EfaPointVerification
-import de.jlnstrk.transit.api.efa.util.efaStopFinderRequest
+import de.jlnstrk.transit.client.efa.EfaClient
+import de.jlnstrk.transit.client.efa.model.EfaPoint
+import de.jlnstrk.transit.client.efa.response.EfaPointVerification
+import de.jlnstrk.transit.client.efa.util.efaStopFinderRequest
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.ProductClass

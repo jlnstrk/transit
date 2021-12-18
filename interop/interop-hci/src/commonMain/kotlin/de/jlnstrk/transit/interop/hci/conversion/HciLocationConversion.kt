@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.location.HciLocation
+import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.common.extensions.toLineSet
 import de.jlnstrk.transit.common.extensions.toProductSet
 import de.jlnstrk.transit.common.model.Location

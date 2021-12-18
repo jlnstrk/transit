@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.efa.normalization
 
-import de.jlnstrk.transit.api.efa.model.EfaPin
-import de.jlnstrk.transit.api.efa.model.EfaPoint
+import de.jlnstrk.transit.client.efa.model.EfaPin
+import de.jlnstrk.transit.client.efa.model.EfaPoint
 import de.jlnstrk.transit.common.Normalization
 import de.jlnstrk.transit.common.model.Location
 

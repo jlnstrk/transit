@@ -22,6 +22,7 @@ include(":common")
 
 include(":client:client-hafas")
 include(":client:client-hci")
+include(":client:client-hci:model-sync")
 include(":client:client-hapi")
 include(":client:client-efa")
 include(":client:client-trias")

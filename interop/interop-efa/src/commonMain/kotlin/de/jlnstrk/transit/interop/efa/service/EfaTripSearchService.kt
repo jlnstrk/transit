@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.interop.efa.service
 
-import de.jlnstrk.transit.api.efa.EfaClient
-import de.jlnstrk.transit.api.efa.endpoint.trip.EfaTripRequest
-import de.jlnstrk.transit.api.efa.request.EfaDateTimeMode
-import de.jlnstrk.transit.api.efa.util.efaTripRequest
+import de.jlnstrk.transit.client.efa.EfaClient
+import de.jlnstrk.transit.client.efa.endpoint.trip.EfaTripRequest
+import de.jlnstrk.transit.client.efa.request.EfaDateTimeMode
+import de.jlnstrk.transit.client.efa.util.efaTripRequest
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.TripSearchData
 import de.jlnstrk.transit.common.response.base.ScrollContext

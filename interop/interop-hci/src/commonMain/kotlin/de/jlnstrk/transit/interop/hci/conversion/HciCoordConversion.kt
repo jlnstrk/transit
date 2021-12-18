@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.api.hci.model.geo.HciCoord
+import de.jlnstrk.transit.client.hci.model.geo.HciCoord
 import de.jlnstrk.transit.common.model.Coordinates
 
 public fun HciCoord.asCommon(): Coordinates {

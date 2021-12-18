@@ -1,10 +1,10 @@
 package de.jlnstrk.transit.interop.hci
 
-import de.jlnstrk.transit.api.hci.model.message.HciMessage
-import de.jlnstrk.transit.api.hci.model.location.HciLocation
-import de.jlnstrk.transit.api.hci.model.HciProduct
-import de.jlnstrk.transit.api.hci.model.HciRemark
-import de.jlnstrk.transit.api.hci.model.HciCommon
+import de.jlnstrk.transit.client.hci.model.message.HciMessage
+import de.jlnstrk.transit.client.hci.model.location.HciLocation
+import de.jlnstrk.transit.client.hci.model.HciProduct
+import de.jlnstrk.transit.client.hci.model.HciRemark
+import de.jlnstrk.transit.client.hci.model.HciCommon
 import de.jlnstrk.transit.common.Normalization
 import de.jlnstrk.transit.common.model.Attribute
 import de.jlnstrk.transit.common.model.Line

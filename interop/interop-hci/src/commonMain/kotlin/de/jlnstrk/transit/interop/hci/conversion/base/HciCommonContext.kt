@@ -1,8 +1,8 @@
 package de.jlnstrk.transit.interop.hci.conversion.base
 
-import de.jlnstrk.transit.api.hci.model.*
-import de.jlnstrk.transit.api.hci.model.him.HciHimMessage
-import de.jlnstrk.transit.api.hci.model.location.HciLocation
+import de.jlnstrk.transit.client.hci.model.*
+import de.jlnstrk.transit.client.hci.model.him.HciHimMessage
+import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.common.ReferenceTimezone
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.HciProvider

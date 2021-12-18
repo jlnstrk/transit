@@ -15,7 +15,7 @@ buildscript {
 }
 
 project.buildkonfig {
-    packageName = "de.jlnstrk.transit.api.hapi"
+    packageName = "de.jlnstrk.transit.client.hapi"
 
     defaultConfigs {
         buildConfigNullableField(STRING, "RMV_AID", rootProject.extra.getOrNull("hapi.rmv.aid"))

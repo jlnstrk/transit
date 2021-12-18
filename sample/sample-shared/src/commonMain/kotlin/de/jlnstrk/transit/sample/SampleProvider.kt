@@ -2,9 +2,9 @@ package de.jlnstrk.transit.sample
 
 import com.soywiz.klock.TimezoneOffset
 import com.soywiz.klock.hours
-import de.jlnstrk.transit.api.hci.HciAuth
-import de.jlnstrk.transit.api.hci.HciClient
-import de.jlnstrk.transit.api.hci.HciConfig
+import de.jlnstrk.transit.client.hci.HciAuth
+import de.jlnstrk.transit.client.hci.HciClient
+import de.jlnstrk.transit.client.hci.HciConfig
 import de.jlnstrk.transit.common.model.Means
 import de.jlnstrk.transit.common.model.ProductClass
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping

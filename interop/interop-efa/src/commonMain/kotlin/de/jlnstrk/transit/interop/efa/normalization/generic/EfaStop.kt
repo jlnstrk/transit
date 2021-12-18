@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.efa.normalization.generic
 
-import de.jlnstrk.transit.api.efa.model.EfaStop
+import de.jlnstrk.transit.client.efa.model.EfaStop
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
 import de.jlnstrk.transit.util.Duration

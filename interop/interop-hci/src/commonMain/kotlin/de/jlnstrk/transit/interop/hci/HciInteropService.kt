@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.hci
 
-import de.jlnstrk.transit.api.hci.HciConsumer
-import de.jlnstrk.transit.api.hci.model.HciCommon
+import de.jlnstrk.transit.client.hci.HciConsumer
+import de.jlnstrk.transit.client.hci.model.HciCommon
 import de.jlnstrk.transit.common.Service
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 

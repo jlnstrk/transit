@@ -1,3 +1,8 @@
+import gradle.kotlin.dsl.accessors._9351ce44d2e663d657fa275c88d9c509.publishing
+import org.gradle.kotlin.dsl.`maven-publish`
+import org.gradle.kotlin.dsl.named
+import org.gradle.kotlin.dsl.registering
+import org.gradle.kotlin.dsl.withType
 import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.dokka.gradle.DokkaTaskPartial
 

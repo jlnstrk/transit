@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.interop.efa.normalization.generic
 
-import de.jlnstrk.transit.api.efa.model.EfaLine
-import de.jlnstrk.transit.api.efa.model.EfaMeansOfTransport
-import de.jlnstrk.transit.api.efa.model.EfaOperator
-import de.jlnstrk.transit.api.efa.model.EfaServingLine
+import de.jlnstrk.transit.client.efa.model.EfaLine
+import de.jlnstrk.transit.client.efa.model.EfaMeansOfTransport
+import de.jlnstrk.transit.client.efa.model.EfaOperator
+import de.jlnstrk.transit.client.efa.model.EfaServingLine
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.interop.efa.EfaProvider
 

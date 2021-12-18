@@ -1,0 +1,21 @@
+package de.jlnstrk.transit.client.hci.model.recon
+
+import de.jlnstrk.transit.client.hafas.HciModel
+import de.jlnstrk.transit.client.hci.HciLocalTime
+import de.jlnstrk.transit.client.hci.model.location.HciLocation
+import kotlinx.serialization.Serializable
+
+@HciModel("1.39")
+@Serializable
+public data class HciReconstructionSectionData(
+    public val depLoc: HciLocation,
+    public val arrLoc: HciLocation,
+    public val dTimeS: HciLocalTime?,
+    public val dTimeR: HciLocalTime?,
+    public val aTimeS: HciLocalTime?,
+    public val aTimeR: HciLocalTime?,
+    public val trainCategory: String?,
+    public val trainName: String?,
+    public val trainNumber: String?,
+    public val type: HciReconstructionSectionType?,
+)

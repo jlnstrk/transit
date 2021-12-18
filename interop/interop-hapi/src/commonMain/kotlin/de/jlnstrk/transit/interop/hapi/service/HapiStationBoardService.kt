@@ -1,9 +1,9 @@
 package de.jlnstrk.transit.interop.hapi.service
 
-import de.jlnstrk.transit.api.hapi.HapiClient
-import de.jlnstrk.transit.api.hapi.request.HapiArrivalBoardRequest
-import de.jlnstrk.transit.api.hapi.request.HapiDepartureBoardRequest
-import de.jlnstrk.transit.api.hapi.request.base.HapiFilterList
+import de.jlnstrk.transit.client.hapi.HapiClient
+import de.jlnstrk.transit.client.hapi.request.HapiArrivalBoardRequest
+import de.jlnstrk.transit.client.hapi.request.HapiDepartureBoardRequest
+import de.jlnstrk.transit.client.hapi.request.base.HapiFilterList
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.common.model.Location
