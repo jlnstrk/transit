@@ -2,7 +2,8 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.reconstruction.HciReconstructionRequest
+import de.jlnstrk.transit.client.hci.method.reconstruction.HciReconstructionServiceRequest
+import de.jlnstrk.transit.client.hci.method.reconstruction.HciReconstructionServiceResult
 import de.jlnstrk.transit.client.hci.model.recon.HciReconstruction
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Trip
@@ -28,17 +29,18 @@ internal class HciTripRefreshService(
         if (context !is Context) {
             throw IllegalArgumentException()
         }
-        val hciRequest = HciReconstructionRequest(
+        val hciRequest = HciReconstructionServiceRequest(
             outReconL = listOf(HciReconstruction(ctx = context.contextReconstruction)),
             getPasslist = includePassedStops,
             getPolyline = includePolylines,
             getIST = true
         )
         try {
-            val hciResult = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
+            val hciResult =
+                consumer.serviceRequest<HciReconstructionServiceResult>(hciRequest) ?: return ServiceResult.noResult()
             val connection =
                 hciResult.outConL.firstOrNull() ?: return ServiceResult.noResult()
-            return withCommon(hciResult.common) {
+            return withCommon(hciResult.common!!) {
                 val result = TripRefreshData(
                     header = DataHeader(),
                     trip = connection.asCommon(this)

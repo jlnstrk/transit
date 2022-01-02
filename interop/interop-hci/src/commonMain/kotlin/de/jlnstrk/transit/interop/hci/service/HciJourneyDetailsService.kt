@@ -2,7 +2,8 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.journeydetails.HciJourneyDetailsRequest
+import de.jlnstrk.transit.client.hci.method.journeydetails.HciJourneyDetailsServiceRequest
+import de.jlnstrk.transit.client.hci.method.journeydetails.HciJourneyDetailsServiceResult
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Journey
@@ -40,7 +41,7 @@ internal class HciJourneyDetailsService(
         includePolyline: Boolean?,
         includeComposition: Boolean?
     ): JourneyDetailsResult {
-        val hciRequest = HciJourneyDetailsRequest {
+        val hciRequest = HciJourneyDetailsServiceRequest {
             jid = journey.id
 
             dIdx = startIndex
@@ -56,8 +57,8 @@ internal class HciJourneyDetailsService(
             polySplitting = false
         }
         try {
-            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
-            return withCommon(hciResponse.common) {
+            val hciResponse = consumer.serviceRequest<HciJourneyDetailsServiceResult>(hciRequest) ?: return ServiceResult.noResult()
+            return withCommon(hciResponse.common ?: return ServiceResult.noResult()) {
                 val response = JourneyDetailsData(
                     header = DataHeader(
                         calculationTime = null,
@@ -69,7 +70,7 @@ internal class HciJourneyDetailsService(
                             .mapNotNull(HciMessage::remX)
                             .map(attributes::get),
                     ),
-                    journey = hciResponse.journey.asCommon(this, null),
+                    journey = hciResponse.journey!!.asCommon(this, null),
                 )
                 ServiceResult.success(response)
             }

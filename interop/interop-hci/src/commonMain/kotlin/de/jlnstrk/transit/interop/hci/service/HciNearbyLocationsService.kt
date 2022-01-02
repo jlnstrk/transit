@@ -2,10 +2,12 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.locgeopos.HciLocGeoPosRequest
+import de.jlnstrk.transit.client.hci.method.locgeopos.HciLocGeoPosServiceRequest
+import de.jlnstrk.transit.client.hci.method.locgeopos.HciLocGeoPosServiceResult
 import de.jlnstrk.transit.client.hci.model.geo.HciGeoRing
-import de.jlnstrk.transit.client.hci.request.filter.HciLocationFilter
-import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.model.location.HciLocationFilter
+import de.jlnstrk.transit.client.hci.model.location.HciLocationFilterMode
+import de.jlnstrk.transit.client.hci.model.location.HciLocationFilterType
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.LocationListData
 import de.jlnstrk.transit.common.response.base.ServiceResult
@@ -38,16 +40,16 @@ internal class HciNearbyLocationsService(
         val locationFilters = filterProducts?.let {
             listOf(
                 HciLocationFilter(
-                    type = HciLocationFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INC,
+                    type = HciLocationFilterType.PROD,
+                    mode = HciLocationFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
         }
-        val request = HciLocGeoPosRequest(
+        val request = HciLocGeoPosServiceRequest(
             ring = HciGeoRing(
                 cCrd = coordinates.asHci(),
-                minDist = minDistance,
+                minDist = minDistance ?: 0,
                 maxDist = maxDistance ?: -1
             ),
             getStops = filterTypes?.contains(Location.Type.STATION) ?: true,
@@ -56,11 +58,12 @@ internal class HciNearbyLocationsService(
             locFltrL = locationFilters.orEmpty()
         )
         try {
-            val serviceResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
+            val serviceResponse =
+                consumer.serviceRequest<HciLocGeoPosServiceResult>(request) ?: return ServiceResult.noResult()
             if (serviceResponse.locL.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            return withCommon(serviceResponse.common) {
+            return withCommon(serviceResponse.common!!) {
                 val response = LocationListData(
                     header = DataHeader(),
                     locations = serviceResponse.locL.map { it.asCommon(this) }

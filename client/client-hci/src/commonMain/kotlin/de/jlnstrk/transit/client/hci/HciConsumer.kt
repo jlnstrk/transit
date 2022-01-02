@@ -1,14 +1,7 @@
 package de.jlnstrk.transit.client.hci
 
-import de.jlnstrk.transit.client.hafas.HafasPolylineEncoding
-import de.jlnstrk.transit.client.hafas.HafasRealtimeMode
-import de.jlnstrk.transit.client.hci.request.HciRequest
-import de.jlnstrk.transit.client.hci.request.HciRequestEnvelope
-import de.jlnstrk.transit.client.hci.request.HciServiceRequest
-import de.jlnstrk.transit.client.hci.response.HciError
-import de.jlnstrk.transit.client.hci.response.HciResponse
-import de.jlnstrk.transit.client.hci.response.HciServiceError
-import de.jlnstrk.transit.client.hci.response.HciServiceResult
+import de.jlnstrk.transit.client.hci.model.*
+import de.jlnstrk.transit.client.hci.util.method
 import io.ktor.client.*
 import io.ktor.client.features.*
 import io.ktor.client.features.compression.*
@@ -25,46 +18,49 @@ public class HciConsumer private constructor(
     private val baseRequest: HciRequest,
 ) {
 
-    public suspend fun openRequest(request: HciRequest): HciResponse {
+    public suspend fun openRequest(request: HciRequest): HciResult {
         return httpClient.post(url) {
             body = request
         }
     }
 
-    public suspend inline fun <reified Req : HciServiceRequest<*>> openServiceRequest(
+    public suspend inline fun <reified Req : HciServiceRequest> openServiceRequest(
         request: Req
-    ): HciResponse {
+    ): HciResult {
         return httpClient.post(url) {
             body = buildRequestBody(request)
         }
     }
 
-    public suspend inline fun <reified Req : HciServiceRequest<Res>, reified Res : HciServiceResult> serviceRequest(
-        request: Req
+    public suspend inline fun <reified Res : HciServiceResult> serviceRequest(
+        request: HciServiceRequest
     ): Res? {
-        return httpClient.post<HciResponse>(url) {
+        return httpClient.post<HciResult>(url) {
             body = buildRequestBody(request)
         }.let(::unwrapResult)
     }
 
     @PublishedApi
-    internal fun buildRequestBody(serviceRequest: HciServiceRequest<*>): HciRequest {
-        val frame = HciRequestEnvelope(
-            serviceRequest,
-            cfg = HciRequestEnvelope.Configuration(
-                polyEnc = HafasPolylineEncoding.GOOGLE,
-                rtMode = HafasRealtimeMode.REALTIME
-            )
+    internal fun buildRequestBody(serviceRequest: HciServiceRequest): HciRequest {
+        val frame = HciServiceRequestFrame(
+            cfg = HciRequestConfig(
+                polyEnc = HciPolylineEncoding.GPA,
+                rtMode = HciRTMode.REALTIME,
+                obfusMode = HciObfuscationMode.SERVER_DEFAULT,
+                system = HciSystemType.H,
+            ),
+            meth = serviceRequest.method,
+            req = serviceRequest
         )
         return baseRequest.copy(svcReqL = listOf(frame))
     }
 
     @PublishedApi
-    internal inline fun <reified R : HciServiceResult> unwrapResult(body: HciResponse): R? {
-        val error = body.err ?: body.cInfo?.code
-        if (error != null && error != HciError.OK) {
-            val statusMessage = body.errTxt ?: body.cInfo?.message
-            if (error == HciError.CLIENTVERSION) {
+    internal inline fun <reified R : HciServiceResult> unwrapResult(body: HciResult): R? {
+        val error = body.err
+        if (error != HciCoreError.OK) {
+            val statusMessage = body.errTxt ?: body.cInfo?.msg
+            if (error == HciCoreError.CLIENTVERSION) {
                 println("HCI: Wrong client version! Service requires ${body.ver}")
             }
             throw HciException.General(error, statusMessage)
@@ -80,7 +76,7 @@ public class HciConsumer private constructor(
         val result = frame.res ?: return null
         return result as? R ?: throw HciException.Other(
             message = "Wrong result for request! " +
-                    "Expected ${R::class.simpleName} but got ${frame.res::class.simpleName}"
+                    "Expected ${R::class.simpleName} but got ${result::class.simpleName}"
         )
     }
 
@@ -108,8 +104,20 @@ public class HciConsumer private constructor(
                 }
             }
 
-            val baseRequest =
-                HciRequest(config.client, config.auth, config.ext, config.ver, config.lang ?: "en", emptyList())
+            val baseRequest = HciRequest(
+                auth = config.auth,
+                client = config.client,
+                ext = config.ext,
+                id = null,
+                lang = config.lang ?: "en",
+                usr = null,
+                ver = config.ver,
+                svcReqL = emptyList(),
+                formatted = false,
+                graphIdx = 0,
+                subGraphIdx = 0,
+                viewIdx = 0,
+            )
             return HciConsumer(httpClient, config.baseUrl + "mgate.exe", baseRequest)
         }
 

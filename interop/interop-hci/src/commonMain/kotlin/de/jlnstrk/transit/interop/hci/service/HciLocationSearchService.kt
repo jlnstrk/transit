@@ -2,12 +2,9 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.locmatch.HciLocMatchRequest
-import de.jlnstrk.transit.client.hci.model.location.HciLocation
-import de.jlnstrk.transit.client.hci.model.location.HciLocationField
-import de.jlnstrk.transit.client.hci.model.location.HciLocationInput
-import de.jlnstrk.transit.client.hci.request.filter.HciLocationFilter
-import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.method.locmatch.HciLocMatchServiceRequest
+import de.jlnstrk.transit.client.hci.method.locmatch.HciLocMatchServiceResult
+import de.jlnstrk.transit.client.hci.model.location.*
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.ProductClass
@@ -18,6 +15,22 @@ import de.jlnstrk.transit.common.service.LocationSearchService
 import de.jlnstrk.transit.interop.hci.HciInteropService
 import de.jlnstrk.transit.interop.hci.HciProvider
 import de.jlnstrk.transit.interop.hci.conversion.asCommon
+
+internal fun Set<Location.Type>.toHciLocationType(): HciLocationType = when {
+    Location.Type.STATION in this
+            && Location.Type.ADDRESS in this
+            && Location.Type.POI in this -> HciLocationType.SAP
+    Location.Type.STATION in this
+            && Location.Type.ADDRESS in this -> HciLocationType.SA
+    Location.Type.STATION in this
+            && Location.Type.POI in this -> HciLocationType.SP
+    Location.Type.ADDRESS in this
+            && Location.Type.POI in this -> HciLocationType.AP
+    Location.Type.STATION in this -> HciLocationType.S
+    Location.Type.ADDRESS in this -> HciLocationType.A
+    Location.Type.POI in this -> HciLocationType.P
+    else -> HciLocationType.ALL
+}
 
 internal class HciLocationSearchService(
     provider: HciProvider,
@@ -36,46 +49,28 @@ internal class HciLocationSearchService(
         val locationFilters = filterProducts?.let {
             listOf(
                 HciLocationFilter(
-                    type = HciLocationFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INC,
+                    type = HciLocationFilterType.PROD,
+                    mode = HciLocationFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
         }
-        val hciRequest = HciLocMatchRequest(
+        val hciRequest = HciLocMatchServiceRequest(
             input = HciLocationInput(
                 loc = HciLocation(
                     name = "$query?",
-                    type = filterTypes?.let {
-                        when (it.size) {
-                            1 -> when (it.first()) {
-                                Location.Type.STATION -> HciLocation.Type.STATION
-                                Location.Type.ADDRESS,
-                                Location.Type.PLACE -> HciLocation.Type.ADDRESS
-                                Location.Type.POI -> HciLocation.Type.POI
-                                Location.Type.POINT -> HciLocation.Type.COORD
-                            }
-                            2 -> when {
-                                it.contains(Location.Type.STATION)
-                                        && it.contains(Location.Type.ADDRESS) -> HciLocation.Type.STATION_ADDRESS
-                                it.contains(Location.Type.STATION)
-                                        && it.contains(Location.Type.POI) -> HciLocation.Type.STATION_POI
-                                it.contains(Location.Type.ADDRESS)
-                                        && it.contains(Location.Type.POI) -> HciLocation.Type.ADDRESS_POI
-                                else -> null
-                            }
-                            else -> null
-                        }
-                    }
+                    type = filterTypes.orEmpty().toHciLocationType()
                 ),
                 field = HciLocationField.S,
-                maxLoc = maxResults
+                maxLoc = maxResults ?: -1
             ),
-            locFltrL = locationFilters.orEmpty()
+            getProducts = true
+            // TODO: locFltrL = locationFilters.orEmpty()
         )
         try {
-            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
-            return withCommon(hciResponse.common) {
+            val hciResponse =
+                consumer.serviceRequest<HciLocMatchServiceResult>(hciRequest) ?: return ServiceResult.noResult()
+            return withCommon(hciResponse.common!!) {
                 if (hciResponse.match.locL.isEmpty()) {
                     return ServiceResult.noResult()
                 }

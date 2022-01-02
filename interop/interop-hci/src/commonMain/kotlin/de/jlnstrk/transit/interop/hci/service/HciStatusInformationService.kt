@@ -2,9 +2,11 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.himsearch.HciHimSearchRequest
-import de.jlnstrk.transit.client.hci.request.filter.HciHimFilter
-import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
+import de.jlnstrk.transit.client.hci.method.himsearch.HciHimSearchServiceRequest
+import de.jlnstrk.transit.client.hci.method.himsearch.HciHimSearchServiceResult
+import de.jlnstrk.transit.client.hci.model.him.HciHimFilter
+import de.jlnstrk.transit.client.hci.model.him.HciHimFilterMode
+import de.jlnstrk.transit.client.hci.model.him.HciHimFilterType
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.LineSet
 import de.jlnstrk.transit.common.model.Message
@@ -36,22 +38,23 @@ internal class HciStatusInformationService(
         filterProducts?.let {
             himFilters.add(
                 HciHimFilter(
-                    type = HciHimFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INC,
+                    type = HciHimFilterType.PROD,
+                    mode = HciHimFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
         }
-        val hciRequest = HciHimSearchRequest {
+        val hciRequest = HciHimSearchServiceRequest {
             maxNum = maxResults
             himFltrL = himFilters
         }
         try {
-            val hciResponse = consumer.serviceRequest(hciRequest) ?: return ServiceResult.noResult()
+            val hciResponse =
+                consumer.serviceRequest<HciHimSearchServiceResult>(hciRequest) ?: return ServiceResult.noResult()
             if (hciResponse.msgL.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            return withCommon(hciResponse.common) {
+            return withCommon(hciResponse.common!!) {
                 val response = MessageListData(
                     header = DataHeader(),
                     messages = hciResponse.msgL.map { it.asCommon(this) },

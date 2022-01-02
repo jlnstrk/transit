@@ -5,13 +5,14 @@ import de.jlnstrk.transit.common.model.Trip
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 
 internal fun HciConnection.asCommon(context: HciCommonContext): Trip {
+    val reconstructionContext = recon?.ctx ?: ctxRecon
     return Trip(
-        literalId = ctxRecon,
-        numericId = ctxRecon.hashCode().toLong(),
-        departure = dep.departureAsCommon(context, date),
-        arrival = arr.arrivalAsCommon(context, date),
-        legs = secL.mapNotNull { it.asCommon(context, date) },
-        isRideable = isNotRdbl != true,
+        literalId = reconstructionContext,
+        numericId = reconstructionContext.hashCode().toLong(),
+        departure = dep!!.departureAsCommon(context, date!!),
+        arrival = arr!!.arrivalAsCommon(context, date!!),
+        legs = secL.mapNotNull { it.asCommon(context, date!!) },
+        isRideable = !isNotRdbl,
         frequency = freq?.asCommon(context),
     )
 }

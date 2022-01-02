@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="model-jvm-0.1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/client/client-hci/model/build/libs</output-path>
+    <root id="archive" name="model-jvm-0.1.0-SNAPSHOT.jar">
+      <element id="module-output" name="transit.client.client-hci.model.jvmMain" />
+    </root>
+  </artifact>
+</component>

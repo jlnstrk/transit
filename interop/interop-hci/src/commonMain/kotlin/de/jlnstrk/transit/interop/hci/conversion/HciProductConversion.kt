@@ -7,7 +7,7 @@ import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 
 internal fun HciProduct.asCommon(context: HciCommonContext): Line {
     return Line(
-        product = cls?.let(context::singleFromClass) ?: Means.OTHER,
+        product = cls.let(context::singleFromClass),
         label = prodCtx?.line ?: name,
         id = prodCtx?.lineId ?: pid,
         name = name,

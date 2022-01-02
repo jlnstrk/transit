@@ -3,7 +3,6 @@ import com.codingfeline.buildkonfig.compiler.FieldSpec.Type.STRING
 plugins {
     `client-library`
     alias(libs.plugins.buildkonfig)
-    id("com.google.devtools.ksp") version "1.6.0-1.0.1"
 }
 
 buildscript {
@@ -31,22 +30,12 @@ kotlin {
             dependencies {
                 api(project(":utils:utils-core"))
                 api(project(":client:client-hafas"))
+                api(project(":client:client-hci:model"))
                 implementation(libs.serialization.json)
                 implementation(libs.ktor.client.serialization)
                 implementation(libs.ktor.client.encoding)
                 implementation(libs.korlibs.krypto)
             }
-            kotlin.srcDir("build/generated/ksp/commonMain/kotlin")
         }
     }
-}
-
-tasks.withType<org.jetbrains.kotlin.gradle.dsl.KotlinCompile<*>>().all {
-    if (name != "kspKotlinMetadata") {
-        dependsOn("kspKotlinMetadata")
-    }
-}
-
-dependencies {
-    add("kspMetadata", project(":client:client-hci:model-sync"))
 }

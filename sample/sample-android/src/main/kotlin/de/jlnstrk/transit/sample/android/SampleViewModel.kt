@@ -11,6 +11,8 @@ import de.jlnstrk.transit.sample.SampleProvider
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
+val REFERENCE_COORDINATES = Coordinates(latitude = 52.521992, longitude = 13.413244)
+
 class SampleViewModel : ViewModel() {
     private val provider = SampleProvider
 

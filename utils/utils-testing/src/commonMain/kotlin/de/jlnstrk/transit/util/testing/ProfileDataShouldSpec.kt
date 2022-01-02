@@ -19,15 +19,15 @@ public abstract class ProfileDataShouldSpec<Endpoint : Any, Profile : ServiceTes
     }) {
 }
 
-public suspend inline fun <reified DataSet : Any> ShouldSpecContainerScope.givenAll(
+public suspend inline fun <reified TestData : Any> ShouldSpecContainerScope.givenAll(
     from: ServiceTestProfile<*, *>,
     require: Boolean = true,
-    crossinline test: suspend TestContext.(DataSet) -> Unit
+    crossinline test: suspend TestContext.(TestData) -> Unit
 ) {
-    val dataSets = from.testData[DataSet::class].orEmpty() as List<DataSet>
+    val dataSets = from.testData[TestData::class].orEmpty() as List<TestData>
     if (dataSets.isEmpty()) {
         if (require) {
-            throw IllegalStateException("No ${DataSet::class.simpleName} specified for ${from.name}")
+            throw IllegalStateException("No ${TestData::class.simpleName} specified for ${from.name}")
         } else {
             println("${this::class.simpleName} did not run for ${from.name}")
         }
@@ -40,20 +40,20 @@ public suspend inline fun <reified DataSet : Any> ShouldSpecContainerScope.given
     }
 }
 
-public suspend inline fun <Profile : ServiceTestProfile<*, DataSet>, reified DataSet : Any> ShouldSpecContainerScope.givenOne(
+public suspend inline fun <Profile : ServiceTestProfile<*, TestData>, reified TestData : Any> ShouldSpecContainerScope.givenOne(
     from: Profile,
     require: Boolean = true,
-    crossinline test: suspend TestContext.(DataSet) -> Unit
+    crossinline test: suspend TestContext.(TestData) -> Unit
 ) {
-    val dataSet = from.testData[DataSet::class].orEmpty().firstOrNull()
+    val dataSet = from.testData[TestData::class].orEmpty().firstOrNull()
     if (dataSet == null) {
         if (require) {
-            throw IllegalStateException("No ${DataSet::class.simpleName} specified for ${from.name}")
+            throw IllegalStateException("No ${TestData::class.simpleName} specified for ${from.name}")
         } else {
             println("${this::class.simpleName} did not run for ${from.name}")
         }
     } else {
-        context("Given dataSet $dataSet") {
+        context("Given test data $dataSet") {
             test(dataSet)
         }
     }

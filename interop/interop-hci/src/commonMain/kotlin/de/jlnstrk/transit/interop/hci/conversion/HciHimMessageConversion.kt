@@ -15,11 +15,11 @@ internal fun HciHimMessage.asCommon(context: HciCommonContext): Message {
         isHtmlLead = false,
         body = text,
         isHtmlBody = false,
-        validFrom = DateTime(sDate, sTime)
+        validFrom = DateTime(sDate!!, sTime!!.time)
             .toOffsetUnadjusted(context.timezone),
-        validUntil = DateTime(eDate, eTime)
+        validUntil = DateTime(eDate!!, eTime!!.time)
             .toOffsetUnadjusted(context.timezone),
-        modified = DateTime(lModDate, lModTime)
+        modified = DateTime(lModDate!!, lModTime!!.time)
             .toOffsetUnadjusted(context.timezone),
         priority = when {
             prio > 66 -> Message.Priority.HIGH

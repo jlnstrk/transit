@@ -5,10 +5,10 @@ plugins {
 
 repositories {
     google()
-    maven("https://androidx.dev/snapshots/builds/7929951/artifacts/repository")
+    maven("https://androidx.dev/snapshots/builds/8003490/artifacts/repository")
 }
 
-val composeVersion = "1.1.0-SNAPSHOT"
+val composeVersion = "1.2.0-SNAPSHOT"
 
 android {
     sourceSets.getByName("main").java.srcDir("src/main/kotlin")

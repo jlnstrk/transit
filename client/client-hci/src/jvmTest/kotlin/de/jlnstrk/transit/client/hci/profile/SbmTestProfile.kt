@@ -6,35 +6,43 @@ import de.jlnstrk.transit.client.hci.BuildKonfig
 import de.jlnstrk.transit.client.hci.LineMatchTest
 import de.jlnstrk.transit.client.hci.LocMatchTest
 import de.jlnstrk.transit.client.hci.base.HciTestProfile
-import de.jlnstrk.transit.client.hci.HciAuth
-import de.jlnstrk.transit.client.hci.HciClient
 import de.jlnstrk.transit.client.hci.HciConfig
+import de.jlnstrk.transit.client.hci.model.HciAuth
+import de.jlnstrk.transit.client.hci.model.HciAuthType
+import de.jlnstrk.transit.client.hci.model.HciExtension
+import de.jlnstrk.transit.client.hci.model.HciVersion
+import de.jlnstrk.transit.client.hci.model.client.HciClient
+import de.jlnstrk.transit.client.hci.model.client.HciClientId
+import de.jlnstrk.transit.client.hci.model.client.HciClientType
 
 val SBM = HciTestProfile("SBM") {
     config = HciConfig {
         baseUrl = "https://s-bahn-muenchen.hafas.de/bin/540/"
-        ver = "1.34"
-        ext = "DB.R15.12.a"
+        ver = HciVersion._1_34
+        ext = HciExtension.DB_R_15_12_A
         timezone = TimezoneOffset(2.hours)
         client = HciClient(
-            type = HciClient.Type.IPH,
-            id = "DB-REGIO-MVV",
+            type = HciClientType.IPH,
+            id = HciClientId.DB_REGIO_MVV,
             name = "MuenchenNavigator",
-            v = "5010100"
+            v = 5010100
         )
-        auth = HciAuth.AccessId(aid = BuildKonfig.SBM_AID!!)
+        auth = HciAuth(
+            type = HciAuthType.AID,
+            aid = BuildKonfig.SBM_AID!!
+        )
         salt = BuildKonfig.SBM_SALT!!
     }
 
     testData(
-        LineMatchTest.DataSet(
+        LineMatchTest.TestData(
             // Match S2, S20
             findSelfInput = "S 2",
             // Match S lines
             findOthersOnlyInput = "S"
         ),
 
-        LocMatchTest.DataSet.StationIdMatch(matchExtId = 624826, findNameContains = "Lehel"),
-        LocMatchTest.DataSet.StationNameMatch(matchName = "Mittersendling", findExtId = 8004154)
+        LocMatchTest.TestData.StationIdMatch(matchExtId = "624826", findNameContains = "Lehel"),
+        LocMatchTest.TestData.StationNameMatch(matchName = "Mittersendling", findExtId = "8004154")
     )
 }

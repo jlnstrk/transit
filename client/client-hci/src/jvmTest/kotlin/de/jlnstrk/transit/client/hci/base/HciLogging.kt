@@ -43,17 +43,21 @@ internal class HciLogging internal constructor(
     }
 
     companion object Feature : HttpClientFeature<Config, HciLogging> {
-        val DATE_FORMAT = DateFormat("yyyy-MM-dd-HH:mm:ss:SSS")
-        val ID_KEY = AttributeKey<RequestLog>("request_id")
+        private val DATE_FORMAT = DateFormat("yyyy-MM-dd-HH:mm:ss:SSS")
+        private val ID_KEY = AttributeKey<RequestLog>("request_id")
         val DEFAULT_FACTORY: FileFactory = { method ->
             File("$method-${DATE_FORMAT.format(LocalDateTime.now())}.json")
         }
-        val WriteResponse = PipelinePhase("WriteResponse")
+        private val WriteResponse = PipelinePhase("WriteResponse")
         override val key: AttributeKey<HciLogging> = AttributeKey("Hci")
 
         override fun prepare(block: Config.() -> Unit): HciLogging {
             val config = Config().apply(block)
             return HciLogging(config.fileFactory ?: DEFAULT_FACTORY)
+        }
+
+        private val json = Json {
+            prettyPrint = true
         }
 
         override fun install(feature: HciLogging, scope: HttpClient) {
@@ -70,30 +74,29 @@ internal class HciLogging internal constructor(
             scope.responsePipeline.insertPhaseBefore(HttpResponsePipeline.Transform, WriteResponse)
             scope.responsePipeline.intercept(WriteResponse) { (info, body) ->
                 val log = context.attributes[ID_KEY]
-                val body = (body as ByteReadChannel).readUTF8Line().orEmpty()
-                log.responseBody = Json.parseToJsonElement(body)
+                val bodyText = (body as ByteReadChannel).readUTF8Line().orEmpty()
+                log.responseBody = Json.parseToJsonElement(bodyText)
 
                 val method = log.requestBody
-                    ?.useAs<JsonObject>()
+                    .safeCast<JsonObject>()
                     ?.get("svcReqL")
-                    ?.useAs<JsonArray>()
+                    ?.safeCast<JsonArray>()
                     ?.get(0)
-                    ?.useAs<JsonObject>()
+                    ?.safeCast<JsonObject>()
                     ?.get("meth")
                     ?.jsonPrimitive
                     ?.content ?: "<Unknown method>"
 
-                val copy = ByteReadChannel(body)
+                val copy = ByteReadChannel(bodyText)
                 try {
                     proceedWith(HttpResponseContainer(info, copy))
+                    feature.fileFactory.invoke(method).appendText(json.encodeToString(log))
                 } catch (e: Throwable) {
                     log.error = RequestLog.RequestError(
                         e.message ?: "<No message>",
                         stackTrace = e.stackTrace.map { it.toString() }
                     )
-                    feature.fileFactory.invoke(method).appendText(Json {
-                        prettyPrint = true
-                    }.encodeToString(log))
+                    feature.fileFactory.invoke(method).appendText(json.encodeToString(log))
                     throw e
                 }
             }
@@ -101,4 +104,4 @@ internal class HciLogging internal constructor(
     }
 }
 
-inline fun <reified T : JsonElement> JsonElement.useAs(): T? = this as? T
+inline fun <reified T : JsonElement> JsonElement.safeCast(): T? = this as? T

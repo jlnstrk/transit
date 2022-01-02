@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.client.hci
 
-import de.jlnstrk.transit.client.hci.response.HciError
-import de.jlnstrk.transit.client.hci.response.HciServiceError
+import de.jlnstrk.transit.client.hci.model.HciCoreError
+import de.jlnstrk.transit.client.hci.model.HciServiceError
 
 public sealed class HciException(
     message: String?,
@@ -10,7 +10,7 @@ public sealed class HciException(
 ) : RuntimeException(message, cause) {
 
     public class General(
-        public val error: HciError,
+        public val error: HciCoreError,
         message: String? = null,
         displayMessage: String? = null,
         cause: Throwable? = null,

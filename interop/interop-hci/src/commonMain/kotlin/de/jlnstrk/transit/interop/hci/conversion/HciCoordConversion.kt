@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import de.jlnstrk.transit.client.hci.model.geo.HciCoord
+import de.jlnstrk.transit.client.hci.model.HciCoord
 import de.jlnstrk.transit.common.model.Coordinates
 
 public fun HciCoord.asCommon(): Coordinates {
@@ -12,7 +12,7 @@ public fun HciCoord.asCommon(): Coordinates {
 
 public fun Coordinates.asHci(): HciCoord {
     return HciCoord(
-        x = (longitude * 1E6).toLong(),
-        y = (latitude * 1E6).toLong()
+        x = (longitude * 1E6).toInt(),
+        y = (latitude * 1E6).toInt()
     )
 }

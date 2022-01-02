@@ -2,12 +2,15 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.tripsearch.HciTripSearchRequest
-import de.jlnstrk.transit.client.hci.method.tripsearch.HciTripSearchResult
+import de.jlnstrk.transit.client.hci.method.tripsearch.HciTripSearchServiceRequest
+import de.jlnstrk.transit.client.hci.method.tripsearch.HciTripSearchServiceResult
+import de.jlnstrk.transit.client.hci.model.HciServiceError
+import de.jlnstrk.transit.client.hci.model.HciViaLocation
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilter
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilterMode
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilterType
 import de.jlnstrk.transit.client.hci.model.location.HciLocation
-import de.jlnstrk.transit.client.hci.request.filter.HciJourneyFilter
-import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.client.hci.response.HciServiceError
+import de.jlnstrk.transit.client.hci.util.HciLocalTime
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.TripSearchData
 import de.jlnstrk.transit.common.response.base.ScrollContext
@@ -68,29 +71,29 @@ internal class HciTripSearchService(
         filterProducts?.let {
             journeyFilters.add(
                 HciJourneyFilter(
-                    type = HciJourneyFilter.Type.PROD,
-                    mode = HciRequestFilterMode.INC,
+                    type = HciJourneyFilterType.PROD,
+                    mode = HciJourneyFilterMode.INC,
                     value = provider.setToBitmask(it).toString()
                 )
             )
         }
         val departureLocations = listOf(origin.asHci())
         val arrivalLocations = listOf(destination.asHci())
-        val viaLocations = via?.map {
-            HciTripSearchRequest.Via(
+        val viaLocations = via.map {
+            HciViaLocation(
                 loc = it.location.asHci(),
-                min = it.period
+                min = it.period?.minutes?.toInt() ?: 0
             )
         }
         println(dateTime)
         println(providerDateTime)
         println(provider.timezone)
-        val request = HciTripSearchRequest {
+        val request = HciTripSearchServiceRequest {
             depLocL = departureLocations
             arrLocL = arrivalLocations
             viaLocL = viaLocations.orEmpty()
             outDate = providerDateTime?.date
-            outTime = providerDateTime?.time
+            outTime = providerDateTime?.time?.let { HciLocalTime(it, 0) }
             getPolyline = includePolylines
             getPasslist = includeStops
             getPT = true
@@ -100,7 +103,8 @@ internal class HciTripSearchService(
             jnyFltrL = journeyFilters.orEmpty()
         }
         try {
-            val hciResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResponse =
+                consumer.serviceRequest<HciTripSearchServiceResult>(request) ?: return ServiceResult.noResult()
             val result = TripSearchData(
                 header = DataHeader(),
                 trips = convertTrips(hciResponse),
@@ -128,7 +132,7 @@ internal class HciTripSearchService(
         scrollBackward: Boolean
     ): TripSearchResult {
         if (scrollContext !is Context) return ServiceResult.failure()
-        val request = HciTripSearchRequest(
+        val request = HciTripSearchServiceRequest(
             depLocL = scrollContext.departureLocations,
             arrLocL = scrollContext.arrivalLocations,
             viaLocL = scrollContext.viaLocations.orEmpty(),
@@ -138,7 +142,8 @@ internal class HciTripSearchService(
             }
         )
         try {
-            val hciResponse = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResponse =
+                consumer.serviceRequest<HciTripSearchServiceResult>(request) ?: return ServiceResult.noResult()
             val response = TripSearchData(
                 header = DataHeader(),
                 trips = convertTrips(hciResponse),
@@ -166,9 +171,9 @@ internal class HciTripSearchService(
     }
 
     private suspend fun convertTrips(
-        hciResult: HciTripSearchResult
+        hciResult: HciTripSearchServiceResult
     ): List<Trip> {
-        return withCommon(hciResult.common) {
+        return withCommon(hciResult.common!!) {
             hciResult.outConL.map { it.asCommon(this) }
         }
     }
@@ -178,7 +183,7 @@ internal class HciTripSearchService(
         val contextScrollForward: String?,
         val departureLocations: List<HciLocation>,
         val arrivalLocations: List<HciLocation>,
-        val viaLocations: List<HciTripSearchRequest.Via>?
+        val viaLocations: List<HciViaLocation>?
     ) : ScrollContext<TripSearchData> {
         override val canScrollBackward: Boolean
             get() = contextScrollBackward != null

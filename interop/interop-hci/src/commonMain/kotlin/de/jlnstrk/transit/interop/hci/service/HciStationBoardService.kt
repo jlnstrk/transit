@@ -2,10 +2,14 @@ package de.jlnstrk.transit.interop.hci.service
 
 import de.jlnstrk.transit.client.hci.HciConsumer
 import de.jlnstrk.transit.client.hci.HciException
-import de.jlnstrk.transit.client.hci.method.stationboard.HciStationBoardRequest
-import de.jlnstrk.transit.client.hci.request.filter.HciJourneyFilter
-import de.jlnstrk.transit.client.hci.request.filter.HciRequestFilterMode
-import de.jlnstrk.transit.client.hci.response.HciServiceError
+import de.jlnstrk.transit.client.hci.method.stationboard.HciStationBoardServiceRequest
+import de.jlnstrk.transit.client.hci.method.stationboard.HciStationBoardServiceResult
+import de.jlnstrk.transit.client.hci.model.HciServiceError
+import de.jlnstrk.transit.client.hci.model.HciStationBoardType
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilter
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilterMode
+import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilterType
+import de.jlnstrk.transit.client.hci.util.HciLocalTime
 import de.jlnstrk.transit.common.model.DataHeader
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.common.model.Location
@@ -53,22 +57,22 @@ internal class HciStationBoardService(
         maxResults: Int?
     ): StationBoardResult {
         val inProviderZone = dateTime?.toOffset(provider.timezone)?.local
-        val request = HciStationBoardRequest {
+        val request = HciStationBoardServiceRequest {
             stbLoc = location.asHci()
             type = when (mode) {
-                StationBoardService.Mode.ARRIVALS -> HciStationBoardRequest.Type.ARR
-                StationBoardService.Mode.DEPARTURES -> HciStationBoardRequest.Type.DEP
+                StationBoardService.Mode.ARRIVALS -> HciStationBoardType.ARR
+                StationBoardService.Mode.DEPARTURES -> HciStationBoardType.DEP
             }
             date = inProviderZone?.date
-            time = inProviderZone?.time
+            time = inProviderZone?.time?.let { HciLocalTime(it, 0) }
             maxJny = maxResults
 
             val journeyFilters = mutableListOf<HciJourneyFilter>()
             filterProducts?.let {
                 journeyFilters.add(
                     HciJourneyFilter(
-                        type = HciJourneyFilter.Type.PROD,
-                        mode = HciRequestFilterMode.INC,
+                        type = HciJourneyFilterType.PROD,
+                        mode = HciJourneyFilterMode.INC,
                         value = provider.setToBitmask(it).toString()
                     )
                 )
@@ -76,20 +80,22 @@ internal class HciStationBoardService(
             jnyFltrL = journeyFilters
         }
         try {
-            val hciResult = consumer.serviceRequest(request) ?: return ServiceResult.noResult()
+            val hciResult =
+                consumer.serviceRequest<HciStationBoardServiceResult>(request) ?: return ServiceResult.noResult()
             if (hciResult.jnyL.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            return withCommon(hciResult.common) {
+            return withCommon(hciResult.common!!) {
                 val serviceResponse = StationBoardData(
                     header = DataHeader(),
-                    dateTime = LocalDateTime(hciResult.sD, hciResult.sT)
-                        .toOffsetUnadjusted(provider.timezone),
+                    dateTime = null,
+                    /*dateTime = LocalDateTime(hciResult.sD, hciResult.sT)
+                        .toOffsetUnadjusted(provider.timezone),*/
                     isArrivalBoard = when (hciResult.type) {
-                        HciStationBoardRequest.Type.ARR,
-                        HciStationBoardRequest.Type.ARR_EQUIVS,
-                        HciStationBoardRequest.Type.ARR_MAST,
-                        HciStationBoardRequest.Type.ARR_STATION -> true
+                        HciStationBoardType.ARR,
+                        HciStationBoardType.ARR_EQUIVS,
+                        HciStationBoardType.ARR_MAST,
+                        HciStationBoardType.ARR_STATION -> true
                         else -> false
                     },
                     journeys = hciResult.jnyL.map { it.asCommon(this, null) },
@@ -103,8 +109,9 @@ internal class HciStationBoardService(
                 e, when (e) {
                     is HciException.Service -> when (e.serviceError) {
                         HciServiceError.LOCATION,
-                        HciServiceError.NO_STATIONS_NEARBY -> StationBoardService.Error.INVALID_LOCATION
-                        HciServiceError.DATE_OUT_OF_RANGE -> StationBoardService.Error.INVALID_DATETIME
+                            /*HciServiceError.NO_STATIONS_NEARBY*/
+                        -> StationBoardService.Error.INVALID_LOCATION
+                        //HciServiceError.DATE_OUT_OF_RANGE -> StationBoardService.Error.INVALID_DATETIME
                         else -> null
                     }
                     else -> null
