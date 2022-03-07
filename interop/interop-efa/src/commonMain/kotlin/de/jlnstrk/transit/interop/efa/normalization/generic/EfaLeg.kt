@@ -14,7 +14,7 @@ internal fun EfaLeg.normalize(provider: EfaProvider): Leg? {
     val arrival = points.last().normalizeAsArrival(provider, isRealtime)
     return when (mode.type) {
         EfaMode.InterchangeType.Footway -> Leg.Individual(
-            departure, arrival, Leg.Individual.Type.WALK, Gis(0, timeMinute, emptyList())
+            departure, arrival, Leg.Individual.Type.WALK, GisRoute(0, timeMinute, emptyList())
         )
         EfaMode.InterchangeType.Transfer -> Leg.Transfer(
             departure, arrival
@@ -25,8 +25,9 @@ internal fun EfaLeg.normalize(provider: EfaProvider): Leg? {
             departure, arrival, journey = Journey(
                 stop = departure,
                 directionTo = Location.Station(
-                    name = mode.destination,
-                    numericId = mode.destID!!
+                    name = mode.destination.orEmpty(),
+                    id = mode.destID.toString(),
+                    coordinates = Coordinates(Double.NaN, Double.NaN)
                 ),
                 stops = stopSeq.map { it.normalizeAsIntermediate(provider) },
                 polyline = path.ifEmpty { null }

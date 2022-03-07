@@ -5,8 +5,7 @@ import de.jlnstrk.transit.common.model.base.Identifiable
 import de.jlnstrk.transit.common.model.stop.Stop
 
 public data class Trip(
-    public override val literalId: String?,
-    public override val numericId: Long,
+    public override val id: String,
     public val departure: Stop.Departure,
     public val arrival: Stop.Arrival,
     public val legs: List<Leg>,

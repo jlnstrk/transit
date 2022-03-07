@@ -1,77 +1,86 @@
 package de.jlnstrk.transit.common.model
 
 import de.jlnstrk.transit.common.model.base.Identifiable
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-public sealed interface Location : Identifiable {
-    public val type: Type
-    public var name: String?
-    public var place: String?
-    public var coordinates: Coordinates?
-    override val literalId: String?
-    override val numericId: Long
+@Serializable
+public sealed class Location {
+    public abstract val id: String?
+    public abstract val name: String?
+    public abstract val place: String?
+    public abstract val coordinates: Coordinates?
 
+    @Serializable
+    @SerialName("REFERENCE")
+    public data class Reference(
+        public override val id: String? = null,
+        public override val name: String? = null,
+        public override val place: String? = null,
+    ) : Location() {
+        override val coordinates: Coordinates? get() = null
+    }
+
+    @Serializable
+    @SerialName("PLACE")
     public data class Place(
-        override var name: String? = null,
-        override var place: String? = null,
-        override var coordinates: Coordinates? = null,
-        override var literalId: String? = null,
-        override var numericId: Long = -1L
-    ) : Location {
-        override val type: Type get() = Type.PLACE
-    }
+        override val id: String,
+        override val name: String,
+        override val place: String? = null,
+        override val coordinates: Coordinates,
+    ) : Location(), Identifiable
 
+    @Serializable
+    @SerialName("POINT")
     public data class Point(
-        override var coordinates: Coordinates? = null
-    ) : Location {
-        override val type: Type get() = Type.POINT
-        override var name: String? = null
-        override var place: String? = null
-        override val literalId: String? get() = null
-        override val numericId: Long get() = -1L
+        override val coordinates: Coordinates
+    ) : Location(), Identifiable {
+        override val name: String? get() = null
+        override val place: String? get() = null
+        override val id: String get() = "${coordinates.latitude}:${coordinates.longitude}"
     }
 
+    @Serializable
+    @SerialName("ADDRESS")
     public data class Address(
-        override var name: String? = null,
-        override var place: String? = null,
-        override var coordinates: Coordinates? = null,
-        override var literalId: String? = null,
-        override var numericId: Long = -1L,
-        var street: String? = null,
-        var buildingNumber: String? = null
-    ) : Location {
-        override val type: Type get() = Type.ADDRESS
-    }
+        override val id: String,
+        override val name: String,
+        override val place: String? = null,
+        override val coordinates: Coordinates,
+        public val street: String? = null,
+        public val buildingNumber: String? = null
+    ) : Location(), Identifiable
 
+    @Serializable
+    @SerialName("POI")
     public data class Poi(
-        override var name: String? = null,
-        override var place: String? = null,
-        override var coordinates: Coordinates? = null,
-        override val literalId: String? = null,
-        override val numericId: Long = -1L,
-        var subject: String? = null
-    ) : Location {
-        override val type: Type get() = Type.POI
-    }
+        override val id: String,
+        override val name: String,
+        override val place: String? = null,
+        override val coordinates: Coordinates,
+        public val subject: String? = null
+    ) : Location(), Identifiable
 
+    @SerialName("STATION")
     public data class Station(
-        override var name: String? = null,
-        override var place: String? = null,
-        override var coordinates: Coordinates? = null,
-        override val literalId: String? = null,
-        override val numericId: Long = -1L,
-        var products: ProductSet? = null,
-        var lines: LineSet? = null,
-        var weight: Int? = null,
-        var isSubStation: Boolean = false
-    ) : Location, Comparable<Station> {
-        override val type: Type get() = Type.STATION
+        override val id: String,
+        override val name: String,
+        override val place: String? = null,
+        override val coordinates: Coordinates,
+        public val products: ProductSet? = null,
+        public val lines: LineSet? = null,
+        public val weight: Int? = null,
+        public val isSubStation: Boolean = false
+    ) : Location(), Identifiable, Comparable<Station> {
 
         override fun compareTo(other: Station): Int {
             return other.weight?.let { weight?.compareTo(it) } ?: 0
         }
     }
 
+    @Serializable
     public enum class Type {
+        REFERENCE,
         STATION,
         ADDRESS,
         POI,

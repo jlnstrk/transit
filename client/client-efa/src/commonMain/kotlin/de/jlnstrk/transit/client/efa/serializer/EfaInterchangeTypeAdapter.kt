@@ -17,7 +17,6 @@ internal object EfaInterchangeTypeAdapter : KSerializer<EfaMode.InterchangeType>
             EfaMode.InterchangeType.Footway -> "99"
             EfaMode.InterchangeType.Transfer -> "105"
             is EfaMode.InterchangeType.Icon -> value.type.toString()
-            else -> throw IllegalArgumentException()
         }
         encoder.encodeString(code)
     }

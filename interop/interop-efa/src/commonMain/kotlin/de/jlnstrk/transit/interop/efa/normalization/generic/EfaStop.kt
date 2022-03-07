@@ -1,6 +1,7 @@
 package de.jlnstrk.transit.interop.efa.normalization.generic
 
 import de.jlnstrk.transit.client.efa.model.EfaStop
+import de.jlnstrk.transit.common.model.Coordinates
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
 import de.jlnstrk.transit.util.Duration
@@ -104,11 +105,10 @@ internal fun EfaStop.normalizeAsIntermediate(provider: EfaProvider): Stop {
 
 internal fun EfaStop.normalizeAsLocation(provider: EfaProvider): Location {
     return Location.Station(
-        name = name,
+        name = name.orEmpty(),
         place = place,
-        coordinates = ref.coords?.normalized(),
-        literalId = ref.id.toString(),
-        numericId = ref.id ?: -1L,
+        coordinates = ref.coords?.normalized() ?: Coordinates(Double.NaN, Double.NaN),
+        id = ref.id.toString(),
         products = null,
         lines = null,
         weight = null,

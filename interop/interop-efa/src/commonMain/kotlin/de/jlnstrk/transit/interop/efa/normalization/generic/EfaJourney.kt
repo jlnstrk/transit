@@ -3,6 +3,7 @@ package de.jlnstrk.transit.interop.efa.normalization.generic
 import de.jlnstrk.transit.client.efa.model.EfaCoordinates
 import de.jlnstrk.transit.client.efa.model.EfaJourney
 import de.jlnstrk.transit.client.efa.request.EfaDateTimeMode
+import de.jlnstrk.transit.common.model.Coordinates
 import de.jlnstrk.transit.common.model.Journey
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.stop.Stop
@@ -13,7 +14,7 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaDateTimeMode):
     val stopLocation = Location.Station(
         name = stopName,
         coordinates = EfaCoordinates(x, y, mapName).normalized(),
-        numericId = stopID
+        id = stopID.toString()
     )
     val zonedDateTime = dateTime.toOffsetUnadjusted(provider.timezone)
     val zonedRealtimeDateTime = realDateTime?.toOffsetUnadjusted(provider.timezone)
@@ -23,11 +24,14 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaDateTimeMode):
         id = servingLine.stateless,
         line = servingLine.normalize(provider, operator),
         directionFrom = Location.Station(
-            name = servingLine.directionFrom
+            name = servingLine.directionFrom,
+            id = "",
+            coordinates = Coordinates(Double.NaN, Double.NaN)
         ),
         directionTo = Location.Station(
-            numericId = servingLine.destID,
-            name = servingLine.direction
+            id = servingLine.destID.toString(),
+            name = servingLine.direction,
+            coordinates = Coordinates(Double.NaN, Double.NaN)
         ),
         stop = when (mode) {
             EfaDateTimeMode.ARRIVAL -> Stop.Arrival(

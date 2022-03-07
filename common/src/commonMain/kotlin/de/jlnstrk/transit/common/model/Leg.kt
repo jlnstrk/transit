@@ -23,7 +23,7 @@ public sealed class Leg {
         override val departure: Stop.Departure,
         override val arrival: Stop.Arrival,
         val type: Type,
-        val gis: Gis
+        val gis: GisRoute
     ) : Leg() {
 
         public enum class Type {

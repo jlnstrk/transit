@@ -1,6 +1,7 @@
 package de.jlnstrk.transit.common.model
 
 import de.jlnstrk.transit.util.LazySortedSet
+import kotlinx.serialization.Serializer
 
 public class ProductSet(vararg elements: ProductClass) :
     LazySortedSet<ProductClass>(ProductSet, *elements) {

@@ -1,14 +1,14 @@
 package de.jlnstrk.transit.common.model
 
 public data class Line(
-    public var label: String,
-    public var product: ProductClass = Means.OTHER,
-    public var id: String? = null,
-    public var name: String? = null,
-    public var shortName: String? = null,
-    public var number: String? = null,
-    public var operator: String? = null,
-    public var admin: String? = null
+    public val label: String,
+    public val product: ProductClass = Means.OTHER,
+    public val id: String? = null,
+    public val name: String? = null,
+    public val shortName: String? = null,
+    public val number: String? = null,
+    public val operator: String? = null,
+    public val admin: String? = null
 ) : Comparable<Line> {
 
     override fun compareTo(other: Line): Int {

@@ -5,8 +5,7 @@ import de.jlnstrk.transit.util.OffsetDateTime
 import de.jlnstrk.transit.common.model.base.Identifiable
 
 public data class NetworkMap(
-    override val literalId: String,
-    override val numericId: Long,
+    override val id: String,
     public val title: String,
     public val place: String? = null,
     public val fileUrl: String? = null,

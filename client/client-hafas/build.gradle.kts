@@ -1,5 +1,6 @@
 plugins {
     `client-library`
+    `published-library`
 }
 
 kotlin {

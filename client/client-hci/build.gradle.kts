@@ -30,7 +30,7 @@ kotlin {
             dependencies {
                 api(project(":utils:utils-core"))
                 api(project(":client:client-hafas"))
-                api(project(":client:client-hci:model"))
+                api(project(":client:client-hci:client-hci-model"))
                 implementation(libs.serialization.json)
                 implementation(libs.ktor.client.serialization)
                 implementation(libs.ktor.client.encoding)

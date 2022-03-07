@@ -38,8 +38,8 @@ include(":sample:sample-android")
 include(":sample:sample-ios")
 include(":sample:sample-js")
 
-include(":client:client-hci:codegen")
-include(":client:client-hci:compat")
-include(":client:client-hci:util")
-include("client:client-hci:model")
-findProject(":client:client-hci:model")?.name = "model"
+include(":client:client-hci:client-hci-codegen")
+include(":client:client-hci:client-hci-compat")
+include(":client:client-hci:client-hci-util")
+include("client:client-hci:client-hci-model")
+// include("client:client-hapi:client-hapi-model")

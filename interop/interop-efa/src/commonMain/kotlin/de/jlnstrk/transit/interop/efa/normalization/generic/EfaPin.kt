@@ -10,8 +10,6 @@ internal fun EfaPin.normalize(provider: EfaProvider): Location {
     val name = desc
     val place = locality
     val coordinates = coords.normalized()
-    val literalId = stateless.toString()
-    val numericId = stateless
     return when (type) {
         EfaPin.Type.STOP -> {
             val majorMeans = attrs
@@ -28,14 +26,27 @@ internal fun EfaPin.normalize(provider: EfaProvider): Location {
                 .firstOrNull()
                 ?.globalId
             Location.Station(
-                name, place, coordinates, literalId, numericId,
+                name = name,
+                place = place,
+                coordinates = coordinates,
+                id = stateless.toString(),
                 products = (meansList ?: majorMeans)
                     ?.let(provider::normalizeEfaMeans)
                     ?.toProductSet()
             )
         }
-        EfaPin.Type.STREET -> Location.Address(name, place, coordinates, literalId, numericId)
-        EfaPin.Type.POI_POINT -> Location.Poi(name, place, coordinates, literalId, numericId)
+        EfaPin.Type.STREET -> Location.Address(
+            name = name,
+            place = place,
+            coordinates = coordinates,
+            id = stateless.toString()
+        )
+        EfaPin.Type.POI_POINT -> Location.Poi(
+            name = name,
+            place = place,
+            coordinates = coordinates,
+            id = stateless.toString()
+        )
         else -> throw UnsupportedOperationException()
     }.also { provider.normalizeLocation(this, it) }
 }

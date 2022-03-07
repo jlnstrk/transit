@@ -10,6 +10,7 @@ internal fun HciJourneyFreq.asCommon(context: HciCommonContext): Frequency {
     return Frequency(
         minWaitTime = minC.minutes, // minC,
         maxWaitTime = maxC.minutes, // maxC,
-        numAlternatives = numC
+       //  = numC
+        until = null
     )
 }

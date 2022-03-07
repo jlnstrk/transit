@@ -7,8 +7,7 @@ import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 internal fun HciConnection.asCommon(context: HciCommonContext): Trip {
     val reconstructionContext = recon?.ctx ?: ctxRecon
     return Trip(
-        literalId = reconstructionContext,
-        numericId = reconstructionContext.hashCode().toLong(),
+        id = reconstructionContext.orEmpty(),
         departure = dep!!.departureAsCommon(context, date!!),
         arrival = arr!!.arrivalAsCommon(context, date!!),
         legs = secL.mapNotNull { it.asCommon(context, date!!) },
