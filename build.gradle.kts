@@ -5,6 +5,9 @@ plugins {
     id("org.jetbrains.dokka")
 }
 
+group = "de.jlnstrk"
+version = "0.1.0-SNAPSHOT"
+
 allprojects {
     repositories {
         mavenCentral()
