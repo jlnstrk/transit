@@ -1,0 +1,3 @@
+[submodule "hci-versions"]
+	path = hci-versions
+	url = https://github.com/jlnstrk/transit-hci-versions.git

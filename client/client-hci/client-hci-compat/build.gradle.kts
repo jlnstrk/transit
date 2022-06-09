@@ -17,6 +17,7 @@ ksp {
     val hciUtilPackage = "$hciPackage.util"
     val hciSerializerPackage = "$hciPackage.serializer"
 
+    arg("hciSrcDir", project.rootProject.projectDir.path + "/hci-versions/1.45")
     arg("outPackageName", hciPackage)
 
     arg("dateType", "$sharedUtilPackage.LocalDate")

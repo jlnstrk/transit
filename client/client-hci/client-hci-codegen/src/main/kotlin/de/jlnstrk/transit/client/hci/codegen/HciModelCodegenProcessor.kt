@@ -13,7 +13,10 @@ import de.jlnstrk.transit.client.hci.codegen.generate.buildRequestTypeToMethodMa
 import de.jlnstrk.transit.client.hci.codegen.generate.buildServiceRequestFrameSerializer
 import de.jlnstrk.transit.client.hci.codegen.generate.buildServiceResultFrameSerializer
 import de.jlnstrk.transit.client.hci.codegen.transform.*
+import java.nio.file.FileSystem
+import java.nio.file.FileSystems
 import java.nio.file.Paths
+import kotlin.io.path.listDirectoryEntries
 
 class HciModelCodegenProcessor(
     private val codeGenerator: CodeGenerator
@@ -21,9 +24,8 @@ class HciModelCodegenProcessor(
 
     @OptIn(KotlinPoetKspPreview::class)
     override fun process(resolver: Resolver): List<KSAnnotated> {
-        val srcDir = "/Users/julianostarek/Desktop/hciver/1.45"
-
-        val (hciVersion, importSource) = Paths.get(srcDir).buildImportSourceRepresentation()
+        val srcDir = Paths.get(CONFIG["hciSrcDir"])
+        val (hciVersion, importSource) = srcDir.buildImportSourceRepresentation()
         val compatSource = resolver.buildCompatPinningsRepresentation()
 
         val mergedSource = importSource.toMutableList()
