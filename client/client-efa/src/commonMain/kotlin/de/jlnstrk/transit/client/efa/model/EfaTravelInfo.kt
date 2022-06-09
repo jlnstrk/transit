@@ -169,21 +169,4 @@ public data class EfaTravelInfo(
             public val linkTarget: String?
         )
     }
-
-    public data class Line(
-        public val selected: String? = null,
-        public val number: String? = null,
-        public val name: String? = null,
-        public val supplement: String? = null,
-        public val direction: String? = null,
-        public val directionName: String? = null,
-        public val partialNet: String? = null,
-        public val motType: EfaMeansOfTransport? = null,
-        public val motCode: Int = -1,
-        public val productId: String? = null,
-        public val operator: String? = null,
-        public val admin: String? = null,
-        public val stateless: String? = null,
-        public val directionFrom: String? = null,
-    )
 }

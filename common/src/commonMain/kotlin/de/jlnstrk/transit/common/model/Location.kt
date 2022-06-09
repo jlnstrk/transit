@@ -34,10 +34,10 @@ public sealed class Location {
     @SerialName("POINT")
     public data class Point(
         override val coordinates: Coordinates
-    ) : Location(), Identifiable {
+    ) : Location() {
         override val name: String? get() = null
         override val place: String? get() = null
-        override val id: String get() = "${coordinates.latitude}:${coordinates.longitude}"
+        override val id: String? get() = null
     }
 
     @Serializable

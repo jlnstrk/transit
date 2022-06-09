@@ -1,5 +1,6 @@
 package de.jlnstrk.transit.common
 
+import de.jlnstrk.transit.common.normalize.Normalization
 import kotlin.reflect.KClass
 
 public abstract class Provider : ReferenceTimezone {

@@ -1,5 +1,3 @@
-import gradle.kotlin.dsl.accessors._fdfb5ffc67e3c13de6041b97417ec24f.kotlin
-import gradle.kotlin.dsl.accessors._fdfb5ffc67e3c13de6041b97417ec24f.sourceSets
 import org.gradle.kotlin.dsl.getting
 import org.gradle.kotlin.dsl.the
 
@@ -21,6 +19,12 @@ kotlin {
             }
         }
 
+        val commonMain by getting {
+            dependencies {
+                implementation(libs.ktor.client.contentNegotiation)
+                implementation(libs.ktor.client.logging)
+            }
+        }
         val jvmTest by getting {
             dependencies {
                 implementation(libs.ktor.client.jvm)

@@ -2,13 +2,13 @@ package de.jlnstrk.transit.client.hci
 
 import com.soywiz.krypto.md5
 import io.ktor.client.*
-import io.ktor.client.features.*
+import io.ktor.client.plugins.*
 import io.ktor.client.request.*
 import io.ktor.http.content.*
 import io.ktor.util.*
 import io.ktor.utils.io.core.*
 
-public class HciFeature internal constructor(
+public class HciPlugin internal constructor(
     private val salt: String?
 ) {
 
@@ -19,20 +19,20 @@ public class HciFeature internal constructor(
     }
 
     public companion object Feature :
-        HttpClientFeature<Config, HciFeature> {
-        override val key: AttributeKey<HciFeature> = AttributeKey("Hci")
+        HttpClientPlugin<Config, HciPlugin> {
+        override val key: AttributeKey<HciPlugin> = AttributeKey("Hci")
 
-        override fun prepare(block: Config.() -> Unit): HciFeature {
+        override fun prepare(block: Config.() -> Unit): HciPlugin {
             val config = Config().apply(block)
-            return HciFeature(config.micMacSalt)
+            return HciPlugin(config.micMacSalt)
         }
 
-        override fun install(feature: HciFeature, scope: HttpClient) {
+        override fun install(plugin: HciPlugin, scope: HttpClient) {
             scope.sendPipeline.intercept(HttpSendPipeline.State) { payload ->
-                if (feature.salt != null) {
+                if (plugin.salt != null) {
                     val body = (context.body as TextContent).bytes()
                     val mic = body.md5().hex
-                    val mac = (mic.toByteArray() + feature.salt.toByteArray()).md5().hex
+                    val mac = (mic.toByteArray() + plugin.salt.toByteArray()).md5().hex
                     context.parameter("mic", mic)
                     context.parameter("mac", mac)
                 }

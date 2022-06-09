@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SampleShared
+import Transit
 import UIKit
 
 class SampleViewModel: ObservableObject {

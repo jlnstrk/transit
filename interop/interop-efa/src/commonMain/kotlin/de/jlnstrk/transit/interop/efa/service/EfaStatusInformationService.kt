@@ -54,12 +54,14 @@ internal class EfaStatusInformationService(
             }
 
             val efaResponse = client.xmlAddInfoRequest(efaRequest)
-            val response = MessageListData(
-                header = DataHeader(),
-                messages = efaResponse.additionalInformation.travelInformations.first().travelInformation
-                    .map { it.normalize(provider) },
-                scrollContext = null,
-            )
+            val response = with(provider) {
+                MessageListData(
+                    header = DataHeader(),
+                    messages = efaResponse.additionalInformation.travelInformations.first().travelInformation
+                        .map { it.normalize(provider) },
+                    scrollContext = null,
+                )
+            }
             return ServiceResult.success(response)
         } catch (e: Exception) {
             return ServiceResult.failure(e, message = e.message)

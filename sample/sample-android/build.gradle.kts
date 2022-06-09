@@ -5,14 +5,13 @@ plugins {
 
 repositories {
     google()
-    maven("https://androidx.dev/snapshots/builds/8003490/artifacts/repository")
 }
 
-val composeVersion = "1.2.0-SNAPSHOT"
+val composeVersion = "1.2.0-beta03"
 
 android {
     sourceSets.getByName("main").java.srcDir("src/main/kotlin")
-    compileSdk = 31
+    compileSdk = 32
     buildToolsVersion = "31.0.0"
 
     defaultConfig {
@@ -39,7 +38,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.4.0")
+    implementation("androidx.appcompat:appcompat:1.4.2")
     implementation("androidx.activity:activity-compose:1.4.0")
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling:$composeVersion")

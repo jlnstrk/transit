@@ -6,7 +6,6 @@
 
 package de.jlnstrk.transit.client.efa.model
 
-import de.jlnstrk.transit.client.efa.serializer.generic.EfaUnwrapSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaPrimitiveSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaStringBooleanSerializer
 import kotlinx.serialization.Serializable
@@ -33,8 +32,7 @@ public data class EfaLine(
     public val directionName: String?,
 
     /** Returns an alternate readable name of the direction of this line */
-    @Serializable(with = EfaUnwrapSerializer.String::class)
-    public val directionText: String?,
+    public val directionText: EfaDirectionText?,
 
     // TODO: Purpose?
     public val partialNet: String?,
@@ -54,4 +52,9 @@ public data class EfaLine(
 
     /** The operator of this line */
     public val itdOperator: EfaOperator?
+)
+
+@Serializable
+public data class EfaDirectionText(
+    public val text: String
 )

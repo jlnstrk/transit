@@ -46,7 +46,7 @@ internal class EfaStationBoardService(
         maxResults: Int?
     ): StationBoardResult {
         val dateTimeAtServer = dateTime?.toOffset(provider.timezone)?.local
-        val point = location.denormalize(provider)
+        val point = with(provider) { location.denormalize(provider) }
         val efaRequest = efaDmRequest {
             dm(point) {
                 // TODO: Options?
@@ -76,20 +76,22 @@ internal class EfaStationBoardService(
             if (efaResponse.arrivalList.isEmpty() && efaResponse.departureList.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            val data = StationBoardData(
-                header = DataHeader(),
-                dateTime = OffsetDateTime.local(efaResponse.dateTime.dateTime, provider.timezone),
-                isArrivalBoard = efaResponse.dateTime.mode == EfaDateTimeMode.ARRIVAL,
-                journeys = when (efaResponse.dateTime.mode) {
-                    EfaDateTimeMode.ARRIVAL -> efaResponse.arrivalList
-                    EfaDateTimeMode.DEPARTURE,
-                    EfaDateTimeMode.FIRST_SERVICE,
-                    EfaDateTimeMode.LAST_SERVICE -> efaResponse.departureList
-                }.map { efaJourney ->
-                    efaJourney.normalize(provider, efaResponse.dateTime.mode)
-                },
-                scrollContext = null,
-            )
+            val data = with(provider) {
+                StationBoardData(
+                    header = DataHeader(),
+                    dateTime = OffsetDateTime.local(efaResponse.dateTime.dateTime, provider.timezone),
+                    isArrivalBoard = efaResponse.dateTime.mode == EfaDateTimeMode.ARRIVAL,
+                    journeys = when (efaResponse.dateTime.mode) {
+                        EfaDateTimeMode.ARRIVAL -> efaResponse.arrivalList
+                        EfaDateTimeMode.DEPARTURE,
+                        EfaDateTimeMode.FIRST_SERVICE,
+                        EfaDateTimeMode.LAST_SERVICE -> efaResponse.departureList
+                    }.map { efaJourney ->
+                        efaJourney.normalize(provider, efaResponse.dateTime.mode)
+                    },
+                    scrollContext = null,
+                )
+            }
             return ServiceResult.success(data)
         } catch (e: Exception) {
             e.printStackTrace()

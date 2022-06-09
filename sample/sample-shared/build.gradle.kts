@@ -25,11 +25,12 @@ kotlin {
     ios {
         binaries {
             framework {
-                baseName = "SampleShared"
+                baseName = "Transit"
             }
         }
     }
     js(IR).browser()
+
     sourceSets {
         val commonMain by getting {
             dependencies {

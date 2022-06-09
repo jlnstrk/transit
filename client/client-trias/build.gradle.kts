@@ -7,7 +7,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":utils:utils-core"))
-                implementation(libs.serialization.xml)
+                implementation(libs.kotlinx.serialization.xml)
             }
         }
     }

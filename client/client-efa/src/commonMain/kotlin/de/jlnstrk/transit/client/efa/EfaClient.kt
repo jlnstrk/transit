@@ -17,66 +17,77 @@ import de.jlnstrk.transit.client.efa.endpoint.trip.EfaTripResponse
 import de.jlnstrk.transit.client.efa.model.EfaPoint
 import de.jlnstrk.transit.client.efa.request.convert.serialize
 import de.jlnstrk.transit.client.efa.serializer.EfaCoordinatesStringSerializer
-import de.jlnstrk.transit.client.efa.serializer.EfaPinAttributeAdapter
+import de.jlnstrk.transit.client.efa.serializer.EfaPinAttributeSerializer
 import io.ktor.client.*
-import io.ktor.client.features.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
+import io.ktor.client.call.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.client.plugins.logging.*
 import io.ktor.client.request.*
 import io.ktor.http.*
+import io.ktor.serialization.kotlinx.json.*
+import kotlinx.serialization.json.Json
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.contextual
 import kotlinx.serialization.modules.polymorphic
 import kotlinx.serialization.modules.subclass
 
 public class EfaClient private constructor(
-    private val endpoint: String,
-    internal var httpClient: HttpClient
+    internal var httpClient: HttpClient,
+    @PublishedApi internal var config: EfaConfig
 ) {
 
     public suspend fun xmlStopFinderRequest(
         request: EfaStopFinderRequest
-    ): EfaStopFinderResponse = httpClient.get("${endpoint}XML_STOPFINDER_REQUEST") {
+    ): EfaStopFinderResponse = httpClient.get("XML_STOPFINDER_REQUEST") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlCoordRequest(
         request: EfaCoordRequest
-    ): EfaCoordResponse = httpClient.get("${endpoint}XML_COORD_REQUEST") {
+    ): EfaCoordResponse = httpClient.get("XML_COORD_REQUEST") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlDmRequest(
         request: EfaDmRequest
-    ): EfaDmResponse = httpClient.get("${endpoint}XML_DM_REQUEST") {
+    ): EfaDmResponse = httpClient.get("XML_DM_REQUEST") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlTripRequest2(
         request: EfaTripRequest
-    ): EfaTripResponse = httpClient.get("${endpoint}XML_TRIP_REQUEST2") {
+    ): EfaTripResponse = httpClient.get("XML_TRIP_REQUEST2") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlAddInfoRequest(
         request: EfaAddInfoRequest
-    ): EfaAddInfoResponse = httpClient.get("${endpoint}XML_ADDINFO_REQUEST") {
+    ): EfaAddInfoResponse = httpClient.get("XML_ADDINFO_REQUEST") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlPsRequest(
         request: EfaPsRequest
-    ): EfaPsResponse = httpClient.get("${endpoint}XML_PS_REQUEST2") {
+    ): EfaPsResponse = httpClient.get("XML_PS_REQUEST2") {
         addQueryMap(request)
-    }
+    }.body()
 
     public suspend fun xmlSttRequest(
         request: EfaSttRequest
-    ): EfaSttResponse = httpClient.get("${endpoint}XML_STT_REQUEST") {
+    ): EfaSttResponse = httpClient.get("XML_STT_REQUEST") {
         addQueryMap(request)
-    }
+    }.body()
 
     private fun HttpRequestBuilder.addQueryMap(map: Map<String, String>) {
+        val rawSystemName = config.coordinateSystem.serialize()
+        parameter("outputFormat", "json")
+        parameter("stateless", "1")
+        parameter("coordOutputFormat", rawSystemName)
+        parameter("coordOutputFormatTail", "5")
+        parameter("mapName", rawSystemName)
+
+        config.language?.let { parameter("language", it) }
         for ((key, value) in map) {
             parameter(key, value)
         }
@@ -89,16 +100,15 @@ public class EfaClient private constructor(
         ): EfaClient {
             val coordinatesSerializer = EfaCoordinatesStringSerializer(config.coordinateSystem)
             val httpClient = HttpClient {
-                install(JsonFeature) {
-                    acceptContentTypes = acceptContentTypes + ContentType.parse("text/html")
-                    serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
+                install(ContentNegotiation) {
+                    val json = Json {
                         classDiscriminator = ""
                         coerceInputValues = true
                         explicitNulls = false
                         ignoreUnknownKeys = !strict
                         serializersModule = SerializersModule {
                             contextual(coordinatesSerializer)
-                            contextual(EfaPinAttributeAdapter(config.iconCodeResolver))
+                            contextual(EfaPinAttributeSerializer(config.iconCodeResolver))
                             polymorphic(EfaPoint::class) {
                                 default { EfaPoint.Any.serializer() }
                                 subclass(EfaPoint.Any::class)
@@ -111,22 +121,25 @@ public class EfaClient private constructor(
                                 subclass(EfaPoint.PostCode::class)
                             }
                         }
-                    })
+                    }
+
+                    json(json = json, contentType = ContentType.Application.Json)
+                    json(json = json, contentType = ContentType.Text.Html)
                 }
 
-                val rawSystemName = config.coordinateSystem.serialize()
-                defaultRequest {
-                    parameter("outputFormat", "json")
-                    parameter("stateless", "1")
-                    parameter("coordOutputFormat", rawSystemName)
-                    parameter("coordOutputFormatTail", "5")
-                    parameter("mapName", rawSystemName)
-                    config.language?.let { parameter("language", it) }
-
-                    println(url.buildString())
+                install(DefaultRequest) {
+                    url(config.baseUrl)
+                }
+                install(Logging) {
+                    logger = object : Logger {
+                        override fun log(message: String) {
+                            println(message)
+                        }
+                    }
+                    level = LogLevel.INFO
                 }
             }
-            return EfaClient(config.baseUrl, httpClient)
+            return EfaClient(httpClient, config)
         }
 
         public operator fun invoke(strict: Boolean = false, init: EfaConfig.() -> Unit): EfaClient =

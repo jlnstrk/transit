@@ -5,7 +5,7 @@ import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.model.HciProduct
 import de.jlnstrk.transit.client.hci.model.HciRemark
 import de.jlnstrk.transit.client.hci.model.HciCommon
-import de.jlnstrk.transit.common.Normalization
+import de.jlnstrk.transit.common.normalize.Normalization
 import de.jlnstrk.transit.common.model.Attribute
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.common.model.Location

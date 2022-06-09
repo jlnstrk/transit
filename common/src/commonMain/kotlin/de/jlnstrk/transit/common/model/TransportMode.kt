@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.common.model
 
-public enum class Means : ProductClass {
+public enum class TransportMode : ProductClass {
     TRAIN,
     SUBWAY,
     LIGHT_RAIL,
@@ -10,5 +10,5 @@ public enum class Means : ProductClass {
     WATERCRAFT,
     OTHER;
 
-    override val base: Means get() = this
+    override val mode: TransportMode get() = this
 }

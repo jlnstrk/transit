@@ -2,7 +2,7 @@ package de.jlnstrk.transit.common.model
 
 public data class Line(
     public val label: String,
-    public val product: ProductClass = Means.OTHER,
+    public val product: ProductClass = TransportMode.OTHER,
     public val id: String? = null,
     public val name: String? = null,
     public val shortName: String? = null,
@@ -12,7 +12,7 @@ public data class Line(
 ) : Comparable<Line> {
 
     override fun compareTo(other: Line): Int {
-        val productCompare = product.base.compareTo(other.product.base)
+        val productCompare = product.mode.compareTo(other.product.mode)
         if (productCompare != 0)
             return productCompare
         return label.compareTo(other.label)

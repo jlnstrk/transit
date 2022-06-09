@@ -9,8 +9,8 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api(project(":utils:utils-core"))
-                implementation(libs.serialization.core)
-                implementation(libs.serialization.json)
+                implementation(libs.kotlinx.serialization.core)
+                implementation(libs.kotlinx.serialization.json)
                 // implementation(libs.serialization.xml)
             }
         }

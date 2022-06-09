@@ -49,10 +49,12 @@ internal class EfaLocationSearchService(
             if (points.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            val result = LocationListData(
-                header = DataHeader(),
-                locations = points.map { it.normalize(provider) }
-            )
+            val result = with(provider) {
+                LocationListData(
+                    header = DataHeader(),
+                    locations = points.map { it.normalize(provider) }
+                )
+            }
             return ServiceResult.success(result)
         } catch (e: Exception) {
             e.printStackTrace()

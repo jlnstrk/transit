@@ -3,6 +3,7 @@ package de.jlnstrk.transit.client.efa.serializer.primitive.datetime
 import com.soywiz.klock.format
 import com.soywiz.klock.parseTime
 import de.jlnstrk.transit.client.efa.util.EFA_TIME_FORMAT_NO_SEP
+import de.jlnstrk.transit.client.efa.util.EFA_TIME_SECONDS_FORMAT_NO_SEP
 import de.jlnstrk.transit.util.LocalTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
@@ -21,7 +22,23 @@ internal object EfaSimpleTimeSerializer : KSerializer<LocalTime> {
     }
 
     override fun deserialize(decoder: Decoder): LocalTime {
-        val string = decoder.decodeString().padStart(4, '0')
+        val string = decoder.decodeString()
+            .padStart(4, '0')
         return EFA_TIME_FORMAT_NO_SEP.parseTime(string)
+    }
+
+    internal object WithSeconds : KSerializer<LocalTime> {
+        override val descriptor: SerialDescriptor get() = EfaSimpleTimeSerializer.descriptor
+
+        override fun serialize(encoder: Encoder, value: LocalTime) {
+            val string = EFA_TIME_SECONDS_FORMAT_NO_SEP.format(value)
+            encoder.encodeString(string)
+        }
+
+        override fun deserialize(decoder: Decoder): LocalTime {
+            val string = decoder.decodeString()
+                .padStart(6, '0')
+            return EFA_TIME_SECONDS_FORMAT_NO_SEP.parseTime(string)
+        }
     }
 }

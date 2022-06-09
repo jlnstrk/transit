@@ -29,8 +29,8 @@ kotlin {
             dependencies {
                 api(project(":utils:utils-core"))
                 api(project(":client:client-hafas"))
-                implementation(libs.serialization.json)
-                implementation(libs.ktor.client.serialization)
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.ktor.serialization.json)
                 implementation(libs.ktor.client.encoding)
                 implementation(libs.korlibs.krypto)
             }

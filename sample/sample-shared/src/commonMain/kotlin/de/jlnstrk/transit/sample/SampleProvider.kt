@@ -10,7 +10,7 @@ import de.jlnstrk.transit.client.hci.model.HciVersion
 import de.jlnstrk.transit.client.hci.model.client.HciClient
 import de.jlnstrk.transit.client.hci.model.client.HciClientId
 import de.jlnstrk.transit.client.hci.model.client.HciClientType
-import de.jlnstrk.transit.common.model.Means
+import de.jlnstrk.transit.common.model.TransportMode
 import de.jlnstrk.transit.common.model.ProductClass
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.HciProvider
@@ -39,7 +39,7 @@ object SampleProvider : HciProvider(), HafasClassMapping.OneToOne {
         BerlinProduct.Tram,
         BerlinProduct.Bus,
         BerlinProduct.Faehre,
-        Means.TRAIN,
+        TransportMode.TRAIN,
         BerlinProduct.Bahn
     )
 }

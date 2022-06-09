@@ -31,8 +31,8 @@ kotlin {
                 api(project(":utils:utils-core"))
                 api(project(":client:client-hafas"))
                 api(project(":client:client-hci:client-hci-model"))
-                implementation(libs.serialization.json)
-                implementation(libs.ktor.client.serialization)
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.ktor.serialization.json)
                 implementation(libs.ktor.client.encoding)
                 implementation(libs.korlibs.krypto)
             }

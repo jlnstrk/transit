@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompileCommon
 
 plugins {
     id("org.jetbrains.dokka")
@@ -8,12 +9,6 @@ allprojects {
     repositories {
         mavenCentral()
         maven("https://oss.sonatype.org/content/repositories/snapshots")
-    }
-
-    tasks.withType<KotlinCompile>().configureEach {
-        kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime"
-        kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
-        kotlinOptions.freeCompilerArgs += "-Xskip-prerelease-check"
     }
 }
 

@@ -1,7 +1,6 @@
 package de.jlnstrk.transit.common.model
 
 import de.jlnstrk.transit.util.LazySortedSet
-import kotlinx.serialization.Serializer
 
 public class ProductSet(vararg elements: ProductClass) :
     LazySortedSet<ProductClass>(ProductSet, *elements) {
@@ -9,9 +8,9 @@ public class ProductSet(vararg elements: ProductClass) :
     public companion object : Comparator<ProductClass> {
         override fun compare(a: ProductClass, b: ProductClass): Int {
             return when {
-                a is Means && b is Means -> a.compareTo(b)
-                a is Means && b !is Means -> -1
-                a !is Means && b is Means -> 1
+                a is TransportMode && b is TransportMode -> a.compareTo(b)
+                a is TransportMode && b !is TransportMode -> -1
+                a !is TransportMode && b is TransportMode -> 1
                 a is Enum<*> && b is Enum<*> -> {
                     if (a::class == b::class)
                         return a.ordinal.compareTo(b.ordinal)

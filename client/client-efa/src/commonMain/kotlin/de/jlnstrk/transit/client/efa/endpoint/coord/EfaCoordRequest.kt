@@ -36,7 +36,7 @@ public class EfaCoordRequest(
         filterIndex: Int
     ) : EfaRequestMapDelegate {
         public var type: EfaPin.Type? by EfaEnumParam("type_$filterIndex")
-        public var radius: Int? by EfaIntParam
+        public var radius: Int? by EfaIntParam.withKey("radius_$filterIndex")
         public var inclDrawClasses: Boolean? by EfaBooleanParam.withKey("inclDrawClasses_$filterIndex")
         public var inclPOIH: Boolean? by EfaBooleanParam.withKey("inclPOIH_$filterIndex")
         public var exclLayers: String? by EfaStringParam.withKey("exclLayers_$filterIndex")

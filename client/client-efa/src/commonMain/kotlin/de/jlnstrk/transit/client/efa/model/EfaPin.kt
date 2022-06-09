@@ -40,9 +40,10 @@ public data class EfaPin(
     @Contextual
     public val coords: EfaCoordinates,
 
-    public val attrs: List<Attribute>
+    public val attrs: List<@Contextual Attribute>
 ) {
 
+    @Serializable
     public sealed interface Attribute {
 
         public data class StopGlobalId(
@@ -72,7 +73,7 @@ public data class EfaPin(
 
         @Serializable
         public data class Other(
-            public val key: String,
+            public val name: String,
             public val value: String
         ) : Attribute
     }

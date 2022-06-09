@@ -1,7 +1,7 @@
 package de.jlnstrk.transit.interop.efa.normalization
 
 import de.jlnstrk.transit.client.efa.model.EfaMeansOfTransport
-import de.jlnstrk.transit.common.model.Means
+import de.jlnstrk.transit.common.model.TransportMode
 import de.jlnstrk.transit.common.model.ProductClass
 
 public interface EfaMeansNormalization {
@@ -32,34 +32,34 @@ public interface EfaMeansNormalization {
                 EfaMeansOfTransport.TRAIN_INTERCITY_SURCHARGE,
                 EfaMeansOfTransport.TRAIN_INTERCITY_SPECIAL_FARE,
                 EfaMeansOfTransport.TRAIN_LOCAL,
-                EfaMeansOfTransport.COMMUTER_RAILWAY -> Means.TRAIN
-                EfaMeansOfTransport.SUBWAY -> Means.SUBWAY
+                EfaMeansOfTransport.COMMUTER_RAILWAY -> TransportMode.TRAIN
+                EfaMeansOfTransport.SUBWAY -> TransportMode.SUBWAY
                 EfaMeansOfTransport.CITY_RAIL,
-                EfaMeansOfTransport.TRAM -> Means.LIGHT_RAIL
+                EfaMeansOfTransport.TRAM -> TransportMode.LIGHT_RAIL
                 EfaMeansOfTransport.CITY_BUS,
                 EfaMeansOfTransport.REGIONAL_BUS,
                 EfaMeansOfTransport.EXPRESS_BUS,
-                EfaMeansOfTransport.CIVIL_BUS -> Means.BUS
-                EfaMeansOfTransport.FERRY -> Means.WATERCRAFT
-                EfaMeansOfTransport.TAXI_ON_DEMAND -> Means.CAR
-                EfaMeansOfTransport.CABLE_CAR -> Means.CABLE
+                EfaMeansOfTransport.CIVIL_BUS -> TransportMode.BUS
+                EfaMeansOfTransport.FERRY -> TransportMode.WATERCRAFT
+                EfaMeansOfTransport.TAXI_ON_DEMAND -> TransportMode.CAR
+                EfaMeansOfTransport.CABLE_CAR -> TransportMode.CABLE
                 EfaMeansOfTransport.AIRPLANE,
                 EfaMeansOfTransport.REPLACEMENT_SERVICE,
                 EfaMeansOfTransport.RAIL_SHUTTLE,
-                EfaMeansOfTransport.OTHER -> Means.OTHER
+                EfaMeansOfTransport.OTHER -> TransportMode.OTHER
             }
         }
 
         override fun denormalizeEfaMeans(productClass: ProductClass): EfaMeansOfTransport {
             return when (productClass) {
-                Means.TRAIN -> EfaMeansOfTransport.TRAIN
-                Means.SUBWAY -> EfaMeansOfTransport.SUBWAY
-                Means.LIGHT_RAIL -> EfaMeansOfTransport.CITY_RAIL
-                Means.CABLE -> EfaMeansOfTransport.CABLE_CAR
-                Means.BUS -> EfaMeansOfTransport.CITY_BUS
-                Means.WATERCRAFT -> EfaMeansOfTransport.FERRY
-                Means.CAR -> EfaMeansOfTransport.RAIL_SHUTTLE
-                Means.OTHER -> EfaMeansOfTransport.OTHER
+                TransportMode.TRAIN -> EfaMeansOfTransport.TRAIN
+                TransportMode.SUBWAY -> EfaMeansOfTransport.SUBWAY
+                TransportMode.LIGHT_RAIL -> EfaMeansOfTransport.CITY_RAIL
+                TransportMode.CABLE -> EfaMeansOfTransport.CABLE_CAR
+                TransportMode.BUS -> EfaMeansOfTransport.CITY_BUS
+                TransportMode.WATERCRAFT -> EfaMeansOfTransport.FERRY
+                TransportMode.CAR -> EfaMeansOfTransport.RAIL_SHUTTLE
+                TransportMode.OTHER -> EfaMeansOfTransport.OTHER
                 else -> {
                     if (baseMap != null) {
                         val resolved = baseMap!![productClass]
@@ -82,7 +82,7 @@ public interface EfaMeansNormalization {
             val set = mutableSetOf<EfaMeansOfTransport>()
             for (productClass in productClasses) {
                 when (productClass) {
-                    Means.TRAIN -> {
+                    TransportMode.TRAIN -> {
                         set.add(EfaMeansOfTransport.TRAIN)
                         set.add(EfaMeansOfTransport.TRAIN_INTERCITY)
                         set.add(EfaMeansOfTransport.TRAIN_INTERCITY_SURCHARGE)
@@ -90,29 +90,29 @@ public interface EfaMeansNormalization {
                         set.add(EfaMeansOfTransport.TRAIN_LOCAL)
                         set.add(EfaMeansOfTransport.COMMUTER_RAILWAY)
                     }
-                    Means.SUBWAY -> {
+                    TransportMode.SUBWAY -> {
                         set.add(EfaMeansOfTransport.SUBWAY)
                     }
-                    Means.LIGHT_RAIL -> {
+                    TransportMode.LIGHT_RAIL -> {
                         set.add(EfaMeansOfTransport.CITY_RAIL)
                         set.add(EfaMeansOfTransport.TRAM)
                     }
-                    Means.CABLE -> {
+                    TransportMode.CABLE -> {
                         set.add(EfaMeansOfTransport.CABLE_CAR)
                     }
-                    Means.BUS -> {
+                    TransportMode.BUS -> {
                         set.add(EfaMeansOfTransport.CITY_BUS)
                         set.add(EfaMeansOfTransport.REGIONAL_BUS)
                         set.add(EfaMeansOfTransport.CIVIL_BUS)
                         set.add(EfaMeansOfTransport.EXPRESS_BUS)
                     }
-                    Means.WATERCRAFT -> {
+                    TransportMode.WATERCRAFT -> {
                         set.add(EfaMeansOfTransport.FERRY)
                     }
-                    Means.CAR -> {
+                    TransportMode.CAR -> {
                         set.add(EfaMeansOfTransport.RAIL_SHUTTLE)
                     }
-                    Means.OTHER -> {
+                    TransportMode.OTHER -> {
                         set.add(EfaMeansOfTransport.CABLE_CAR)
                         set.add(EfaMeansOfTransport.AIRPLANE)
                         set.add(EfaMeansOfTransport.REPLACEMENT_SERVICE)

@@ -8,7 +8,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-internal class EfaPinAttributeAdapter(
+internal class EfaPinAttributeSerializer(
     private val iconCodeResolver: EfaIconCodeResolver?
 ) : KSerializer<EfaPin.Attribute> {
     private val delegate = EfaPin.Attribute.Other.serializer()

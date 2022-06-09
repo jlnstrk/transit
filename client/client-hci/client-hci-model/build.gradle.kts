@@ -10,7 +10,7 @@ kotlin {
                 api(project(":client:client-hci:client-hci-util"))
                 api(project(":utils:utils-core"))
                 api(project(":client:client-hafas"))
-                implementation(libs.serialization.json)
+                implementation(libs.kotlinx.serialization.json)
             }
         }
     }

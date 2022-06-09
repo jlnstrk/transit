@@ -10,7 +10,7 @@ import de.jlnstrk.transit.interop.efa.EfaProvider
 internal fun EfaLine.normalize(provider: EfaProvider): Line {
     return Line(
         product = provider.normalizeEfaMeans(motType ?: EfaMeansOfTransport.OTHER),
-        label = name ?: number ?: "<?>",
+        label = number ?: name ?: "<?>",
         name = name,
         number = number,
         id = productId.toString(),

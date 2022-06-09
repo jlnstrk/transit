@@ -56,8 +56,8 @@ internal class EfaTripSearchService(
         includeStops: Boolean?,
         maxResults: Int?
     ): TripSearchResult {
-        val efaOrigin = origin.denormalize(provider)
-        val efaDestination = destination.denormalize(provider)
+        val efaOrigin = with(provider) { origin.denormalize(provider) }
+        val efaDestination = with(provider) { destination.denormalize(provider) }
 
         val efaRequest = efaTripRequest {
             origin(efaOrigin) {
@@ -66,8 +66,8 @@ internal class EfaTripSearchService(
             destination(efaDestination) {
                 // TODO: Options?
             }
-            via?.forEach {
-                val efaVia = it.location.denormalize(provider)
+            via.forEach {
+                val efaVia = with (provider) { it.location.denormalize(provider) }
                 via(efaVia) {
                     // TODO: Options?
                 }
@@ -110,11 +110,15 @@ internal class EfaTripSearchService(
             if (efaResponse.trips.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            val result = TripSearchData(
-                header = DataHeader(),
-                trips = efaResponse.trips.map { it.normalize(provider) },
-                scrollContext = null,
-            )
+            val result = with(provider) {
+                TripSearchData(
+                    header = DataHeader(),
+                    trips = efaResponse.trips.map {
+                        it.normalize(provider)
+                    },
+                    scrollContext = null,
+                )
+            }
             return ServiceResult.success(result)
         } catch (e: Exception) {
             return ServiceResult.failure(e, message = e.message)

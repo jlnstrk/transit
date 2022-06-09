@@ -13,13 +13,12 @@ import de.jlnstrk.transit.interop.efa.util.normalized
 internal fun EfaPoint.normalize(provider: EfaProvider): Location {
     val place = ref?.place
     val coordinates = ref?.coords?.let(EfaCoordinates::normalized)
-    val id = ref?.id?.toString() ?: stateless
     return when (this) {
         is EfaPoint.Stop -> Location.Station(
             name = obj.orEmpty(),
             place = place,
             coordinates = coordinates ?: Coordinates(Double.NaN, Double.NaN),
-            id = id.orEmpty(),
+            id = stateless.orEmpty(),
             products = modes?.let(provider::normalizeEfaMeans)?.toProductSet(),
             weight = quality
         )
@@ -27,14 +26,14 @@ internal fun EfaPoint.normalize(provider: EfaProvider): Location {
             name = obj.orEmpty(),
             place = place,
             coordinates = coordinates ?: Coordinates(Double.NaN, Double.NaN),
-            id = id.orEmpty(),
+            id = stateless.orEmpty(),
         )
         is EfaPoint.Place,
         is EfaPoint.PostCode -> Location.Place(
             name = name.orEmpty(),
             place = place,
             coordinates = coordinates ?: Coordinates(Double.NaN, Double.NaN),
-            id = id.orEmpty(),
+            id = stateless.orEmpty(),
         )
         is EfaPoint.Street,
         is EfaPoint.SingleHouse,
@@ -42,20 +41,19 @@ internal fun EfaPoint.normalize(provider: EfaProvider): Location {
             name = name.orEmpty(),
             place = place,
             coordinates = coordinates ?: Coordinates(Double.NaN, Double.NaN),
-            id = id.orEmpty(),
+            id = stateless.orEmpty(),
         )
         else -> Location.Address(
             name = name.orEmpty(),
             place = place,
             coordinates = coordinates ?: Coordinates(Double.NaN, Double.NaN),
-            id = id.orEmpty(),
+            id = stateless.orEmpty(),
         )
     }.also { provider.normalizeLocation(this, it) }
 }
 
 internal fun Location.denormalize(provider: EfaProvider): EfaPoint {
     val reference = EfaReference(
-        id = id?.toLong(),
         place = place,
         coords = coordinates?.let(Coordinates::denormalized),
     )
@@ -63,7 +61,7 @@ internal fun Location.denormalize(provider: EfaProvider): EfaPoint {
         is Location.Station -> EfaPoint.Stop(
             name, reference, id,
             quality = weight,
-            modes = products?.let(provider::denormalizeEfaMeans)
+            modes = products?.let(provider::denormalizeEfaMeans),
         )
         is Location.Address -> EfaPoint.SingleHouse(
             name, reference, id,

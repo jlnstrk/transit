@@ -2,7 +2,6 @@ package de.jlnstrk.transit.interop.hci.conversion
 
 import de.jlnstrk.transit.client.hci.model.HciProduct
 import de.jlnstrk.transit.common.model.Line
-import de.jlnstrk.transit.common.model.Means
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 
 internal fun HciProduct.asCommon(context: HciCommonContext): Line {

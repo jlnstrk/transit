@@ -49,13 +49,13 @@ public data class EfaStop(
         @Serializable(with = EfaSimpleTimeSerializer::class)
         val time: LocalTime,
 
-        @Serializable(with = EfaSimpleTimeSerializer::class)
+        @Serializable(with = EfaSimpleTimeSerializer.WithSeconds::class)
         val timeSec: LocalTime,
 
         @Serializable(with = EfaStringDateTimeSerializer.Date::class)
         val rtDate: LocalDate,
 
-        @Serializable(with = EfaSimpleTimeSerializer::class)
+        @Serializable(with = EfaSimpleTimeSerializer.WithSeconds::class)
         val rtTimeSec: LocalTime,
     )
 }

@@ -39,6 +39,8 @@ internal class EfaNearbyLocationsService(
                 mapName = EfaCoordinateSystem.WGS84_DECIMAL
             )
 
+            inclFilter = true
+
             if (filterTypes != null) {
                 filterTypes.mapNotNull {
                     when (it) {
@@ -50,12 +52,12 @@ internal class EfaNearbyLocationsService(
                 }.forEach {
                     addFilter {
                         type = it
-                        radius = maxDistance
+                        radius = maxDistance ?: 2500
                     }
                 }
             } else {
                 addFilter {
-                    radius = maxDistance
+                    radius = maxDistance ?: 2500
                 }
             }
             if (filterProducts != null) {
@@ -68,10 +70,12 @@ internal class EfaNearbyLocationsService(
             if (efaResponse.pins.isEmpty()) {
                 return ServiceResult.noResult()
             }
-            val result = LocationListData(
-                header = DataHeader(),
-                locations = efaResponse.pins.map { it.normalize(provider) }
-            )
+            val result = with(provider) {
+                LocationListData(
+                    header = DataHeader(),
+                    locations = efaResponse.pins.map { it.normalize(provider) }
+                )
+            }
             return ServiceResult.success(result)
         } catch (e: Exception) {
             e.printStackTrace()

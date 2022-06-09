@@ -1,4 +1,3 @@
-import gradle.kotlin.dsl.accessors._9351ce44d2e663d657fa275c88d9c509.publishing
 import org.gradle.kotlin.dsl.`maven-publish`
 import org.gradle.kotlin.dsl.named
 import org.gradle.kotlin.dsl.registering
@@ -7,7 +6,7 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.dokka.gradle.DokkaTaskPartial
 
 plugins {
-    id("org.jetbrains.dokka")
+    // id("org.jetbrains.dokka")
     `maven-publish`
 }
 
@@ -16,7 +15,7 @@ version = rootProject.properties["version"] as String
 
 val isRelease get() = !version.toString().endsWith("SNAPSHOT")
 
-tasks.named<DokkaTaskPartial>("dokkaHtmlPartial").configure {
+/*tasks.named<DokkaTaskPartial>("dokkaHtmlPartial").configure {
     dokkaSourceSets {
         configureEach {
             reportUndocumented.set(true)
@@ -29,7 +28,7 @@ val javadocJar by tasks.registering(Jar::class) {
     dependsOn(dokkaHtml)
     archiveClassifier.set("javadoc")
     from(dokkaHtml.get().outputDirectory)
-}
+}*/
 
 publishing {
     repositories {
@@ -49,7 +48,7 @@ publishing {
     }
 
     publications.withType<MavenPublication>().configureEach {
-        artifact(javadocJar.get())
+        // artifact(javadocJar.get())
 
         val pomScmUrl: String? by project
         val pomUrl: String? by project

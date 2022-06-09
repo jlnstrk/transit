@@ -2,10 +2,10 @@ package de.jlnstrk.transit.interop.efa.normalization
 
 import de.jlnstrk.transit.client.efa.model.EfaPin
 import de.jlnstrk.transit.client.efa.model.EfaPoint
-import de.jlnstrk.transit.common.Normalization
+import de.jlnstrk.transit.common.normalize.Normalization
 import de.jlnstrk.transit.common.model.Location
 
-public interface EfaLocationNormalization : de.jlnstrk.transit.common.Normalization {
+public interface EfaLocationNormalization : Normalization {
 
     public fun normalizeLocation(source: EfaPoint, location: Location) {
         normalizeLocation(location)

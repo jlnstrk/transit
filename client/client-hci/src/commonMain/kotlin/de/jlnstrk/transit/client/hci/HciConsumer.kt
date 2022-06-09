@@ -3,12 +3,14 @@ package de.jlnstrk.transit.client.hci
 import de.jlnstrk.transit.client.hci.model.*
 import de.jlnstrk.transit.client.hci.util.method
 import io.ktor.client.*
-import io.ktor.client.features.*
-import io.ktor.client.features.compression.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
+import io.ktor.client.call.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.compression.*
+import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*
 import io.ktor.http.*
+import io.ktor.serialization.kotlinx.json.*
+import kotlinx.serialization.json.Json
 
 public class HciConsumer private constructor(
     @PublishedApi
@@ -20,24 +22,24 @@ public class HciConsumer private constructor(
 
     public suspend fun openRequest(request: HciRequest): HciResult {
         return httpClient.post(url) {
-            body = request
-        }
+            setBody(request)
+        }.body()
     }
 
     public suspend inline fun <reified Req : HciServiceRequest> openServiceRequest(
         request: Req
     ): HciResult {
         return httpClient.post(url) {
-            body = buildRequestBody(request)
-        }
+            setBody(buildRequestBody(request))
+        }.body()
     }
 
     public suspend inline fun <reified Res : HciServiceResult> serviceRequest(
         request: HciServiceRequest
     ): Res? {
-        return httpClient.post<HciResult>(url) {
-            body = buildRequestBody(request)
-        }.let(::unwrapResult)
+        return httpClient.post(url) {
+            setBody(buildRequestBody(request))
+        }.body<HciResult>().let(::unwrapResult)
     }
 
     @PublishedApi
@@ -83,15 +85,15 @@ public class HciConsumer private constructor(
     public companion object {
         public operator fun invoke(config: HciConfig, strict: Boolean = false): HciConsumer {
             val httpClient = HttpClient {
-                install(JsonFeature) {
-                    serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
+                install(ContentNegotiation) {
+                    json(json = Json {
                         classDiscriminator = ""
                         explicitNulls = false
                         ignoreUnknownKeys = !strict
                         coerceInputValues = true
                     })
                 }
-                install(HciFeature) {
+                install(HciPlugin) {
                     micMacSalt = config.salt
                 }
                 install(ContentEncoding) {
