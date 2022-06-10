@@ -5,7 +5,7 @@ plugins {
     id("org.jetbrains.dokka")
 }
 
-group = "de.jlnstrk"
+group = "de.jlnstrk.transit"
 version = "0.1.0-SNAPSHOT"
 
 allprojects {
