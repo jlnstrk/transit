@@ -21,7 +21,7 @@ internal object EfaStringDateTimeSerializer {
             PrimitiveSerialDescriptor("DateTime", PrimitiveKind.STRING)
 
         override fun serialize(encoder: Encoder, value: LocalDateTime) {
-            val string = EFA_DATETIME_FORMAT_SPACE_SEP.format(value)
+            val string = EFA_DATETIME_FORMAT_SPACE_SEP.formatDateTime(value)
             encoder.encodeString(string)
         }
 
@@ -36,7 +36,7 @@ internal object EfaStringDateTimeSerializer {
             PrimitiveSerialDescriptor("Date", PrimitiveKind.STRING)
 
         override fun serialize(encoder: Encoder, value: LocalDate) {
-            val string = EFA_DATE_FORMAT_NO_SEP.format(value)
+            val string = EFA_DATE_FORMAT_NO_SEP.formatInstant(value)
             encoder.encodeString(string)
         }
 
@@ -52,13 +52,13 @@ internal object EfaStringDateTimeSerializer {
             PrimitiveSerialDescriptor("Time", PrimitiveKind.STRING)
 
         override fun serialize(encoder: Encoder, value: LocalTime) {
-            val string = EFA_TIME_FORMAT_COLON_SEP.format(value)
+            val string = EFA_TIME_FORMAT_COLON_SEP.formatTime(value)
             encoder.encodeString(string)
         }
 
         override fun deserialize(decoder: Decoder): LocalTime {
             val string = decoder.decodeString()
-            return EFA_TIME_FORMAT_COLON_SEP.parse(string)
+            return EFA_TIME_FORMAT_COLON_SEP.parseTime(string)
         }
     }
 }

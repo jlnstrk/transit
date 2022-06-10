@@ -16,13 +16,13 @@ public object HciLocalTimeSerializer : KSerializer<LocalTime> {
     private val TIME_FORMATTER = TimeFormat("HHmmss")
 
     override fun serialize(encoder: Encoder, value: LocalTime) {
-        val string = TIME_FORMATTER.format(value)
+        val string = TIME_FORMATTER.formatTime(value)
         encoder.encodeString(string)
     }
 
     override fun deserialize(decoder: Decoder): LocalTime {
         val string = decoder.decodeString()
-        return TIME_FORMATTER.parse(string)
+        return TIME_FORMATTER.parseTime(string)
     }
 
     public object WithDayOffset : KSerializer<HciLocalTime> {
@@ -30,7 +30,7 @@ public object HciLocalTimeSerializer : KSerializer<LocalTime> {
             PrimitiveSerialDescriptor("HciLocalTime", PrimitiveKind.STRING)
 
         override fun serialize(encoder: Encoder, value: HciLocalTime) {
-            val timeString = TIME_FORMATTER.format(value.time)
+            val timeString = TIME_FORMATTER.formatTime(value.time)
             val string = value.offsetDays.toString().padStart(2, '0') + timeString
             encoder.encodeString(string)
         }
@@ -38,7 +38,7 @@ public object HciLocalTimeSerializer : KSerializer<LocalTime> {
         override fun deserialize(decoder: Decoder): HciLocalTime {
             val string = decoder.decodeString()
             val timePart = string.substring(string.length - 6, string.length)
-            val time = TIME_FORMATTER.parse(timePart)
+            val time = TIME_FORMATTER.parseTime(timePart)
             val offsetDays = if (string.length == 8) string.substring(0, 2).toInt() else 0
             return HciLocalTime(time = time, offsetDays = offsetDays)
         }

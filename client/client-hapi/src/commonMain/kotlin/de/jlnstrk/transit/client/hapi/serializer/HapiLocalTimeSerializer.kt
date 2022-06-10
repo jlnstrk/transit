@@ -13,10 +13,10 @@ internal object HapiLocalTimeSerializer : KSerializer<LocalTime> {
     override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("LocalTime", PrimitiveKind.STRING)
 
     override fun serialize(encoder: Encoder, value: LocalTime) {
-        encoder.encodeString(HAPI_LOCAL_TIME_FORMAT.format(value))
+        encoder.encodeString(HAPI_LOCAL_TIME_FORMAT.formatTime(value))
     }
 
     override fun deserialize(decoder: Decoder): LocalTime {
-        return HAPI_LOCAL_TIME_FORMAT.parse(decoder.decodeString())
+        return HAPI_LOCAL_TIME_FORMAT.parseTime(decoder.decodeString())
     }
 }

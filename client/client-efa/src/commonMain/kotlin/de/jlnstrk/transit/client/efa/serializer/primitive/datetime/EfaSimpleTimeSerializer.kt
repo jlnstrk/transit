@@ -15,28 +15,28 @@ internal object EfaSimpleTimeSerializer : KSerializer<LocalTime> {
         PrimitiveSerialDescriptor("EfaSimpleTime", PrimitiveKind.STRING)
 
     override fun serialize(encoder: Encoder, value: LocalTime) {
-        val string = EFA_TIME_FORMAT_NO_SEP.format(value)
+        val string = EFA_TIME_FORMAT_NO_SEP.formatTime(value)
         encoder.encodeString(string)
     }
 
     override fun deserialize(decoder: Decoder): LocalTime {
         val string = decoder.decodeString()
             .padStart(4, '0')
-        return EFA_TIME_FORMAT_NO_SEP.parse(string)
+        return EFA_TIME_FORMAT_NO_SEP.parseTime(string)
     }
 
     internal object WithSeconds : KSerializer<LocalTime> {
         override val descriptor: SerialDescriptor get() = EfaSimpleTimeSerializer.descriptor
 
         override fun serialize(encoder: Encoder, value: LocalTime) {
-            val string = EFA_TIME_SECONDS_FORMAT_NO_SEP.format(value)
+            val string = EFA_TIME_SECONDS_FORMAT_NO_SEP.formatTime(value)
             encoder.encodeString(string)
         }
 
         override fun deserialize(decoder: Decoder): LocalTime {
             val string = decoder.decodeString()
                 .padStart(6, '0')
-            return EFA_TIME_SECONDS_FORMAT_NO_SEP.parse(string)
+            return EFA_TIME_SECONDS_FORMAT_NO_SEP.parseTime(string)
         }
     }
 }

@@ -25,7 +25,7 @@ public class EfaAddInfoRequest(
      * Parameter kann mehrfach verwendet werden.
      */
     public var filterDateValid: Set<LocalDate> by EfaQueryMultiParam(
-        serialize = { EFA_DATE_FORMAT_DASH_SEP.format(it) },
+        serialize = { EFA_DATE_FORMAT_DASH_SEP.formatInstant(it) },
         deserialize = { EFA_DATE_FORMAT_DASH_SEP.parseDate(it) },
     )
 

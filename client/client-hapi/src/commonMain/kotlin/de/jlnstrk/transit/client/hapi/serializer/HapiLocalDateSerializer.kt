@@ -13,7 +13,7 @@ internal object HapiLocalDateSerializer : KSerializer<LocalDate> {
     override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("LocalDate", PrimitiveKind.STRING)
 
     override fun serialize(encoder: Encoder, value: LocalDate) {
-        encoder.encodeString(HAPI_LOCAL_DATE_FORMAT.format(value))
+        encoder.encodeString(HAPI_LOCAL_DATE_FORMAT.formatInstant(value))
     }
 
     override fun deserialize(decoder: Decoder): LocalDate {

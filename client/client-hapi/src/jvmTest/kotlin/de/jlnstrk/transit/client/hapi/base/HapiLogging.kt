@@ -14,7 +14,6 @@ import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonElement
 import java.io.File
-import java.time.LocalDateTime
 
 typealias FileFactory = (String) -> File
 
@@ -45,7 +44,7 @@ internal class HapiLogging internal constructor(
         val DATE_FORMAT = DateFormat("yyyy-MM-dd-HH:mm:ss:SSS")
         val ID_KEY = AttributeKey<RequestLog>("request_id")
         val DEFAULT_FACTORY: FileFactory = { method ->
-            File("$method-${DATE_FORMAT.format(Clock.System.now())}.json")
+            File("$method-${DATE_FORMAT.formatInstant(Clock.System.now())}.json")
         }
         val WriteResponse = PipelinePhase("WriteResponse")
         override val key: AttributeKey<HapiLogging> = AttributeKey("Hci")

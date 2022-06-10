@@ -9,7 +9,6 @@ import kotlin.reflect.KClass
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours as compHours
 import kotlin.time.Duration.Companion.minutes
-import kotlin.time.hours
 
 internal object EfaStringParam : EfaQueryParam<String>({ it }, { it })
 
@@ -27,10 +26,10 @@ internal class EfaEnumParam<E : Enum<E>>(type: KClass<E>, key: String? = null) :
 }
 
 internal class EfaDateParam(format: DateFormat, key: String? = null) :
-    EfaQueryParam<LocalDate>(format::format, format::parseDate, key)
+    EfaQueryParam<LocalDate>(format::formatInstant, format::parseDate, key)
 
 internal class EfaTimeParam(format: TimeFormat, key: String? = null) :
-    EfaQueryParam<LocalTime>(format::format, format::parse, key)
+    EfaQueryParam<LocalTime>(format::formatTime, format::parseTime, key)
 
 internal object EfaMinutesParam : EfaQueryParam<Duration>(
     serialize = { it.inWholeMinutes.toString() },

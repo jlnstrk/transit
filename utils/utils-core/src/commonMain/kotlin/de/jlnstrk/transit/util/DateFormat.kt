@@ -10,9 +10,9 @@ import kotlin.jvm.JvmInline
 @JvmInline
 public value class DateFormat internal constructor(private val formatter: com.soywiz.klock.DateFormat) {
 
-    public fun format(instant: Instant): String = DateTimeTz.fromUnix(instant.toEpochMilliseconds()).format(formatter)
+    public fun formatInstant(instant: Instant): String = DateTimeTz.fromUnix(instant.toEpochMilliseconds()).format(formatter)
 
-    public fun format(dateTime: LocalDateTime): String = DateTime.createAdjusted(
+    public fun formatDateTime(dateTime: LocalDateTime): String = DateTime.createAdjusted(
         dateTime.year,
         dateTime.monthNumber,
         dateTime.dayOfMonth,
@@ -22,7 +22,7 @@ public value class DateFormat internal constructor(private val formatter: com.so
         dateTime.nanosecond / 1000
     ).format(formatter)
 
-    public fun format(date: LocalDate): String = Date(
+    public fun formatInstant(date: LocalDate): String = Date(
         date.year,
         date.monthNumber,
         date.dayOfMonth
@@ -49,9 +49,9 @@ public value class DateFormat internal constructor(private val formatter: com.so
 @JvmInline
 public value class TimeFormat internal constructor(private val formatter: com.soywiz.klock.TimeFormat) {
 
-    public fun format(time: LocalTime): String = Time(time.hour, time.minute, time.second).format(formatter)
+    public fun formatTime(time: LocalTime): String = Time(time.hour, time.minute, time.second).format(formatter)
 
-    public fun parse(string: String): LocalTime = formatter.parseTime(string).let {
+    public fun parseTime(string: String): LocalTime = formatter.parseTime(string).let {
         LocalTime(it.hour, it.minute, it.second)
     }
 
