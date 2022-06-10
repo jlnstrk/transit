@@ -22,12 +22,8 @@ project.buildkonfig {
 kotlin {
     jvm()
 
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach {
-        it.binaries.framework {
+    ios {
+        binaries.framework {
             baseName = "Shared"
         }
     }
@@ -45,17 +41,7 @@ kotlin {
         val jvmMain by getting {
             // No Ktor client here, done in sample-android to use the android one
         }
-        val iosX64Main by getting {
-            dependencies {
-                implementation(libs.ktor.client.ios)
-            }
-        }
-        val iosArm64Main by getting {
-            dependencies {
-                implementation(libs.ktor.client.ios)
-            }
-        }
-        val iosSimulatorArm64Main by getting {
+        val iosMain by getting {
             dependencies {
                 implementation(libs.ktor.client.ios)
             }
