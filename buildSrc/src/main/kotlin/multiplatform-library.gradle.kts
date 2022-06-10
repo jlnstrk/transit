@@ -12,9 +12,7 @@ kotlin {
         browser()
         nodejs()
     }
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
+    ios()
 
     // Explicit API
     explicitApi()
