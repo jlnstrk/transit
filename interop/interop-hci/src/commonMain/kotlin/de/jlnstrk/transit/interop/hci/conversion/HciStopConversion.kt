@@ -20,7 +20,7 @@ internal fun HciJourneyStop.arrivalAsCommon(context: HciCommonContext, date: Loc
     return Stop.Arrival(
         location = context.locations[locX!!],
         index = idx,
-        arrivalScheduled = aTimeS?.relativeTo(date)?.toInstant(arrivalTimezone),
+        arrivalScheduled = aTimeS!!.relativeTo(date).toInstant(arrivalTimezone),
         arrivalRealtime = aTimeR?.relativeTo(date)?.toInstant(arrivalTimezone),
         arrivalScheduledPlatform = aPltfS?.txt ?: aPlatfS,
         arrivalRealtimePlatform = aPltfR?.txt ?: aPlatfR,
@@ -33,7 +33,7 @@ internal fun HciJourneyStop.departureAsCommon(context: HciCommonContext, date: L
     return Stop.Departure(
         location = context.locations[locX!!],
         index = idx,
-        departureScheduled = dTimeS?.relativeTo(date)?.toInstant(departureTimezone),
+        departureScheduled = dTimeS!!.relativeTo(date).toInstant(departureTimezone),
         departureRealtime = dTimeR?.relativeTo(date)?.toInstant(departureTimezone),
         departureScheduledPlatform = dPltfS?.txt ?: dPlatfS,
         departureRealtimePlatform = dPltfR?.txt ?: dPlatfR,
@@ -47,12 +47,12 @@ internal fun HciJourneyStop.intermediateAsCommon(context: HciCommonContext, date
     return Stop.Intermediate(
         location = context.locations[locX!!],
         index = idx,
-        arrivalScheduled = aTimeS?.relativeTo(date)?.toInstant(arrivalTimezone),
+        arrivalScheduled = aTimeS!!.relativeTo(date).toInstant(arrivalTimezone),
         arrivalRealtime = aTimeR?.relativeTo(date)?.toInstant(arrivalTimezone),
         arrivalScheduledPlatform = aPltfS?.txt ?: aPlatfS,
         arrivalRealtimePlatform = aPltfR?.txt ?: aPlatfR,
         arrivalCancelled = aCncl,
-        departureScheduled = dTimeS?.relativeTo(date)?.toInstant(departureTimezone),
+        departureScheduled = dTimeS!!.relativeTo(date).toInstant(departureTimezone),
         departureRealtime = dTimeR?.relativeTo(date)?.toInstant(departureTimezone),
         departureScheduledPlatform = dPltfS?.txt ?: dPlatfS,
         departureRealtimePlatform = dPltfR?.txt ?: dPlatfR,
