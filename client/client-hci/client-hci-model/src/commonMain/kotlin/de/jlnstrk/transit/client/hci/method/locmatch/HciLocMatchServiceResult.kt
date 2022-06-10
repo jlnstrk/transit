@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciLocMatchServiceResult(
   public val common: HciCommon? = null,
-  public val match: HciLocationMatch
+  public val match: HciLocationMatch,
 ) : HciServiceResult()

@@ -21,5 +21,5 @@ public data class HciConnectionStatus(
   public val subOptimalDirect: Boolean = false,
   public val timeDiffCritical: Boolean = false,
   public val ukNationalRouteingGuideFailure: Boolean = false,
-  public val unsharp: Boolean = false
+  public val unsharp: Boolean = false,
 )

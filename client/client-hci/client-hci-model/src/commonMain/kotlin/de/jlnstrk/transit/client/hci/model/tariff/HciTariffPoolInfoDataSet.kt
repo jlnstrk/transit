@@ -12,5 +12,5 @@ public data class HciTariffPoolInfoDataSet(
   public val supplier: String,
   public val validFrom: String,
   public val validTo: String,
-  public val version: String? = null
+  public val version: String? = null,
 )

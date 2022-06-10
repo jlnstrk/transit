@@ -20,5 +20,5 @@ public data class HciTariffFareSet(
   public val tStopRefX: Int? = null,
   public val urlX: Int? = null,
   public val fareL: List<HciTariffFare> = emptyList(),
-  public val msgL: List<HciMessage> = emptyList()
+  public val msgL: List<HciMessage> = emptyList(),
 )

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrRTStatisticsInfo(
   public val himEvents: List<HciSubscrEventHIM> = emptyList(),
-  public val serviceDensity: HciJourneyFreq? = null
+  public val serviceDensity: HciJourneyFreq? = null,
 )

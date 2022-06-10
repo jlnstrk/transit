@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciJourneyTreeServiceResult(
   public val common: HciCommon? = null,
-  public val jnyTreeNodeL: List<HciJourneyTreeNode> = emptyList()
+  public val jnyTreeNodeL: List<HciJourneyTreeNode> = emptyList(),
 ) : HciServiceResult()

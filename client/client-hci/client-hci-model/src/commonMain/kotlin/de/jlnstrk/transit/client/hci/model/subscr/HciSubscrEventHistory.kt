@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrEventHistory(
   public val himEvents: List<HciSubscrEventHIM> = emptyList(),
-  public val rtEvents: List<HciSubscrEventRT> = emptyList()
+  public val rtEvents: List<HciSubscrEventRT> = emptyList(),
 )

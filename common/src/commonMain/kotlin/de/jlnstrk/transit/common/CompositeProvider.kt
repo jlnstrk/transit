@@ -1,13 +1,13 @@
 package de.jlnstrk.transit.common
 
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.TimeZone
 import kotlin.reflect.KClass
 
 public class CompositeProvider private constructor(
     private val delegates: MutableMap<KClass<out Service>, Provider> = HashMap()
 ) : Provider() {
 
-    override val timezone: ZoneOffset
+    override val timezone: TimeZone
         get() = throw UnsupportedOperationException()
 
     override val services: Set<KClass<out Service>>

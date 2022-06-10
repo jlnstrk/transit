@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciGraph(
   public val id: String,
   public val index: Int,
-  public val name: String? = null
+  public val name: String? = null,
 )

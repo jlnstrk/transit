@@ -20,5 +20,5 @@ public data class HciConnectionScoreGroup(
   public val msgL: List<HciMessage> = emptyList(),
   public val requests: List<HciConnectionGroupRequest> = emptyList(),
   public val subL: List<HciConnectionScoreGroup> = emptyList(),
-  public val scrollable: Boolean = false
+  public val scrollable: Boolean = false,
 )

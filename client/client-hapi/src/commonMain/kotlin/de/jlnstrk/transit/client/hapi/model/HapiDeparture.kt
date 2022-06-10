@@ -15,9 +15,9 @@ import de.jlnstrk.transit.client.hapi.serializer.HapiLocalDateSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalTimeSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiReferenceUnwrapSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiZoneOffsetSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
+import kotlinx.datetime.UtcOffset
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
 
@@ -47,7 +47,7 @@ public data class HapiDeparture(
     /** Date in format YYYY-MM-DD. */
     public val date: LocalDate,
     /** Time zone information in the format +/- minutes */
-    public val tz: ZoneOffset = ZoneOffset(0.0),
+    public val tz: UtcOffset = UtcOffset(0),
     /** Track information, if available. */
     public val track: String?,
     /** Realtime time in format hh:mm[:ss] if available. */
@@ -55,7 +55,7 @@ public data class HapiDeparture(
     /** Realtime date in format YYYY-MM-DD, if available. */
     public val rtDate: LocalDate?,
     /** Realtime time zone information in the format +/- minutes, if available. */
-    public val rtTz: ZoneOffset = ZoneOffset(0.0),
+    public val rtTz: UtcOffset = UtcOffset(0),
     /** Realtime track information, if available. */
     public val rtTrack: String?,
     /** Will be true if this journey is cancelled */

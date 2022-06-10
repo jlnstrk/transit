@@ -5,9 +5,9 @@ package de.jlnstrk.transit.client.hci.codegen
 import com.squareup.kotlinpoet.TypeName
 import com.squareup.kotlinpoet.typeNameOf
 import de.jlnstrk.transit.client.hci.serializer.HciUnixTimeSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.LocalTime
 
 val StaticPropertyTypes: Map<String, TypeName> = buildMap {
     // date strings

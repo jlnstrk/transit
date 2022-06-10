@@ -17,5 +17,5 @@ public class HciJourneyDetailsServiceResult(
   public val fpE: String? = null,
   public val globMsgL: List<HciMessage> = emptyList(),
   public val journey: HciJourney? = null,
-  public val planrtTS: String? = null
+  public val planrtTS: String? = null,
 ) : HciServiceResult()

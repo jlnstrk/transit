@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciViaLocation(
   public val loc: HciLocation,
   public val min: Int = 0,
-  public val stat: HciViaStatus = HciViaStatus.EXR
+  public val stat: HciViaStatus = HciViaStatus.EXR,
 )

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMessageCategory(
   public val id: Int,
-  public val name: String? = null
+  public val name: String? = null,
 )

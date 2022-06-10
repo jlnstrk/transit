@@ -23,5 +23,5 @@ public data class HciResult(
   public val view: HciView? = null,
   public val svcResL: List<@Serializable(with = HciServiceResultFrameSerializer::class)
       HciServiceResultFrame> = emptyList(),
-  public val err: HciCoreError = HciCoreError.OK
+  public val err: HciCoreError = HciCoreError.OK,
 )

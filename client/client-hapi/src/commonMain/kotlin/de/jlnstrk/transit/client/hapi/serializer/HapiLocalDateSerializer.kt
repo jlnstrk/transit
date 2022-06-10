@@ -1,9 +1,7 @@
 package de.jlnstrk.transit.client.hapi.serializer
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
 import de.jlnstrk.transit.client.hapi.util.HAPI_LOCAL_DATE_FORMAT
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor

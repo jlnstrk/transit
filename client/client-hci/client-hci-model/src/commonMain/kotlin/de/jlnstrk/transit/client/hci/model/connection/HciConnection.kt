@@ -20,11 +20,11 @@ import de.jlnstrk.transit.client.hci.model.tariff.HciTariffRef
 import de.jlnstrk.transit.client.hci.model.tariff.HciTariffResult
 import de.jlnstrk.transit.client.hci.model.user.HciUser
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -82,5 +82,5 @@ public data class HciConnection(
   public val resState: HciReservationState = HciReservationState.U,
   public val sotRating: Int = 0,
   public val useableTime: Int = -1,
-  public val ctxRecon: String? = null
+  public val ctxRecon: String? = null,
 )

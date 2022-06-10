@@ -21,5 +21,5 @@ public data class HciSubscrCon(
   public val withIStops: Boolean = false,
   public val connectionInfo: List<HciSubscrConSecInfo> = emptyList(),
   public val monitorFlags: List<HciSubscrMonitorFlags> = emptyList(),
-  public val notifyArrivalPreviewTime: Int = 10
+  public val notifyArrivalPreviewTime: Int = 10,
 )

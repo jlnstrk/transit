@@ -21,8 +21,9 @@ import de.jlnstrk.transit.interop.hci.HciInteropService
 import de.jlnstrk.transit.interop.hci.HciProvider
 import de.jlnstrk.transit.interop.hci.conversion.asCommon
 import de.jlnstrk.transit.interop.hci.conversion.asHci
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration
 
 internal class HciTripSearchService(
     provider: HciProvider,
@@ -58,7 +59,7 @@ internal class HciTripSearchService(
         via: List<Via>,
         viaPeriod: Duration?,
         viaModes: Set<Via.Mode>?,
-        dateTime: OffsetDateTime?,
+        dateTime: Instant?,
         dateTimeIsArrival: Boolean?,
         filterProducts: ProductSet?,
         filterLines: LineSet?,
@@ -66,7 +67,7 @@ internal class HciTripSearchService(
         includeStops: Boolean?,
         maxResults: Int?
     ): TripSearchResult {
-        val providerDateTime = dateTime?.toOffset(provider.timezone)?.local
+        val providerDateTime = dateTime?.toLocalDateTime(provider.timezone)
         val journeyFilters = mutableListOf<HciJourneyFilter>()
         filterProducts?.let {
             journeyFilters.add(

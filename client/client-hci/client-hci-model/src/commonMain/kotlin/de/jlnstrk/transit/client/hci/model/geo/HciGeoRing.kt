@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciGeoRing(
   public val cCrd: HciCoord,
   public val maxDist: Int,
-  public val minDist: Int = 0
+  public val minDist: Int = 0,
 )

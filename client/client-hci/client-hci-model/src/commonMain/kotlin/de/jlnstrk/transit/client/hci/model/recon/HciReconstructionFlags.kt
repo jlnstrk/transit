@@ -20,5 +20,5 @@ public data class HciReconstructionFlags(
   public val matchIdStrict: Boolean = false,
   public val matchNumStrict: Boolean = true,
   public val matchRtType: Boolean = false,
-  public val replaceWithDetours: Boolean = false
+  public val replaceWithDetours: Boolean = false,
 )

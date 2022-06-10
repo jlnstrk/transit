@@ -12,5 +12,5 @@ public data class HciGuiElementOption(
   public val actL: List<HciGuiElementAction> = emptyList(),
   public val icoX: Int? = null,
   public val text: String? = null,
-  public val `value`: String? = null
+  public val `value`: String? = null,
 )

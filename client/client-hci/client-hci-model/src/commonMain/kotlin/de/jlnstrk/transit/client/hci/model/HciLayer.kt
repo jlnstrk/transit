@@ -11,5 +11,5 @@ public data class HciLayer(
   public val id: String? = null,
   public val name: String? = null,
   public val index: Int = 0,
-  public val annoCnt: Int = 0
+  public val annoCnt: Int = 0,
 )

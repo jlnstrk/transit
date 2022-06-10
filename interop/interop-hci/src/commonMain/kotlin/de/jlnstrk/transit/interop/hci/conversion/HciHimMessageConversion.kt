@@ -1,11 +1,12 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import com.soywiz.klock.DateTime
 import de.jlnstrk.transit.client.hci.model.him.HciHimMessage
 import de.jlnstrk.transit.common.extensions.toLineSet
 import de.jlnstrk.transit.common.extensions.toProductSet
 import de.jlnstrk.transit.common.model.Message
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.toInstant
 
 internal fun HciHimMessage.asCommon(context: HciCommonContext): Message {
     return Message(
@@ -15,12 +16,12 @@ internal fun HciHimMessage.asCommon(context: HciCommonContext): Message {
         isHtmlLead = false,
         body = text,
         isHtmlBody = false,
-        validFrom = DateTime(sDate!!, sTime!!.time)
-            .toOffsetUnadjusted(context.timezone),
-        validUntil = DateTime(eDate!!, eTime!!.time)
-            .toOffsetUnadjusted(context.timezone),
-        modified = DateTime(lModDate!!, lModTime!!.time)
-            .toOffsetUnadjusted(context.timezone),
+        validFrom = LocalDateTime(sDate!!, sTime!!.time)
+            .toInstant(context.timezone),
+        validUntil = LocalDateTime(eDate!!, eTime!!.time)
+            .toInstant(context.timezone),
+        modified = LocalDateTime(lModDate!!, lModTime!!.time)
+            .toInstant(context.timezone),
         priority = when {
             prio > 66 -> Message.Priority.HIGH
             prio > 33 -> Message.Priority.MEDIUM

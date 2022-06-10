@@ -16,5 +16,5 @@ public data class HciLocationNGrammFilter(
   public val maxDist: Int = 0,
   public val prefix: String? = null,
   public val startIds: String? = null,
-  public val type: HciLocationNGrammFilterMode
+  public val type: HciLocationNGrammFilterMode,
 )

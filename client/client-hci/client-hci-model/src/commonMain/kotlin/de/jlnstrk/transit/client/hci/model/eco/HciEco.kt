@@ -25,5 +25,5 @@ public data class HciEco(
   public val ubp: Double = 0.000000,
   public val ubp13: Double = 0.000000,
   public val dist: Int = -1,
-  public val type: HciEcoCarrierType = HciEcoCarrierType.PUT
+  public val type: HciEcoCarrierType = HciEcoCarrierType.PUT,
 )

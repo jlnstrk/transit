@@ -4,7 +4,7 @@ import de.jlnstrk.transit.client.hci.model.HciConSection
 import de.jlnstrk.transit.client.hci.model.HciConSectionType
 import de.jlnstrk.transit.common.model.Leg
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 internal fun HciConSection.asCommon(context: HciCommonContext, date: LocalDate): Leg? {
     return when (type) {

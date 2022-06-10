@@ -22,5 +22,5 @@ public data class HciMapLayer(
   public val alpha: Int = -1,
   public val proj: HciMapLayerProjection = HciMapLayerProjection.U,
   public val zoomMax: Int = -1,
-  public val zoomMin: Int = -1
+  public val zoomMin: Int = -1,
 )

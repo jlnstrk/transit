@@ -21,5 +21,5 @@ public data class HciSubscrDetails(
   public val statSubscr: HciSubscrStatistics? = null,
   public val status: HciSubscrStatus,
   public val subscrId: Int,
-  public val userId: String
+  public val userId: String,
 )

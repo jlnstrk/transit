@@ -12,5 +12,5 @@ public data class HciView(
   public val index: Int,
   public val name: String? = null,
   public val tile: String? = null,
-  public val type: HciCoordType = HciCoordType.WGS_84
+  public val type: HciCoordType = HciCoordType.WGS_84,
 )

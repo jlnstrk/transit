@@ -29,5 +29,5 @@ public data class HciMessage(
   public val minor: Int = 0,
   public val persist: Boolean = true,
   public val prio: Int = 0,
-  public val sort: Int = 2147483647
+  public val sort: Int = 2147483647,
 )

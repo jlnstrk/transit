@@ -32,5 +32,5 @@ public data class HciSubscrRTInfo(
   public val arrWeatherInfos: List<HciSubscrWeatherInformation> = emptyList(),
   public val changedAttributes: List<HciSubscrRTAttribute> = emptyList(),
   public val depWeatherInfos: List<HciSubscrWeatherInformation> = emptyList(),
-  public val himEvents: List<HciSubscrEventHIM> = emptyList()
+  public val himEvents: List<HciSubscrEventHIM> = emptyList(),
 )

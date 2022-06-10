@@ -9,11 +9,11 @@ import de.jlnstrk.transit.client.efa.request.feature.EfaPointVerificationRequest
 import de.jlnstrk.transit.client.efa.response.EfaPointVerification
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_NO_SEP
 import de.jlnstrk.transit.client.efa.util.EFA_TIME_FORMAT_COLON_SEP
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlin.time.Duration
 
 @EfaRequestDsl
 public class EfaPsRequest(

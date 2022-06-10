@@ -11,5 +11,5 @@ public data class HciJourneyDirection(
   public val fIdx: Int? = null,
   public val fLocX: Int? = null,
   public val tIdx: Int? = null,
-  public val tLocX: Int? = null
+  public val tLocX: Int? = null,
 )

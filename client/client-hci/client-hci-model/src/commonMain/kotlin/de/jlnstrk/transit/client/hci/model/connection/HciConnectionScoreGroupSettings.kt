@@ -10,5 +10,5 @@ public data class HciConnectionScoreGroupSettings(
   public val conGrpL: List<HciConnectionScoreGroup> = emptyList(),
   public val selectL: List<HciConnectionScoreGroupSelection> = emptyList(),
   public val variant: HciConnectionScoreGroupSelectionVariant =
-      HciConnectionScoreGroupSelectionVariant.RADIO
+      HciConnectionScoreGroupSelectionVariant.RADIO,
 )

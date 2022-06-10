@@ -14,5 +14,5 @@ public data class HciServiceResultFrame(
   public val id: String? = null,
   public val meth: HciServiceMethod? = null,
   public val res: HciServiceResult? = null,
-  public val statist: String? = null
+  public val statist: String? = null,
 )

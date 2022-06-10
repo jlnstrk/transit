@@ -15,7 +15,7 @@ public data class HciSubscrDetailsServiceRequest(
   public var channelType: HciSubscrChannelType? = null,
   public var eventsFrom: String? = null,
   public var subscrId: Int? = null,
-  public var userId: String? = null
+  public var userId: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrDetailsServiceRequest.() -> Unit):

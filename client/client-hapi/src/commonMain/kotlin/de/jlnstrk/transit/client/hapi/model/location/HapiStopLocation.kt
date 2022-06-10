@@ -11,7 +11,7 @@ import de.jlnstrk.transit.client.hapi.model.HapiResourceLink
 import de.jlnstrk.transit.client.hapi.model.tariff.HapiTariffResult
 import de.jlnstrk.transit.client.hapi.serializer.HapiListUnwrapSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiZoneOffsetSerializer
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.UtcOffset
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
 
@@ -66,5 +66,5 @@ public data class HapiStopLocation(
     public val links: List<HapiResourceLink> = emptyList(),
     public val altId: List<String> = emptyList(),
     public val mainMastAltId: List<String> = emptyList(),
-    public val timezoneOffset: ZoneOffset?,
+    public val timezoneOffset: UtcOffset?,
 ) : HapiStopOrCoordLocation

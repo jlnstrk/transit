@@ -10,9 +10,9 @@ import de.jlnstrk.transit.client.efa.request.feature.EfaDateTimeRequest
 import de.jlnstrk.transit.client.efa.request.feature.EfaMeansCheckboxRequest
 import de.jlnstrk.transit.client.efa.request.feature.EfaPointVerificationRequest
 import de.jlnstrk.transit.client.efa.response.EfaPointVerification
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlin.time.Duration
 
 public class EfaTripRequest(
     queryMap: EfaRequestMap = EfaRequestMap()

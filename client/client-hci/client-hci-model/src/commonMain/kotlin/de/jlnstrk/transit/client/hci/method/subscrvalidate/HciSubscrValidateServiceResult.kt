@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciSubscrValidateServiceResult(
   public val badServiceDays: List<HciSubscrBadServiceDay> = emptyList(),
-  public val result: HciSubscrResultStatus
+  public val result: HciSubscrResultStatus,
 ) : HciServiceResult()

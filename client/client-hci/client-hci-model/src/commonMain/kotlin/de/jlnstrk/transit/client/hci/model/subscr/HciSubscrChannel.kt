@@ -17,5 +17,5 @@ public data class HciSubscrChannel(
   public val name: String? = null,
   public val options: List<HciSubscrChannelOption> = emptyList(),
   public val subscrTypes: List<HciSubscrType> = emptyList(),
-  public val type: HciSubscrChannelType = HciSubscrChannelType.UNDEF
+  public val type: HciSubscrChannelType = HciSubscrChannelType.UNDEF,
 )

@@ -12,7 +12,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciReconstructionContextConverterServiceRequest(
   public var ctxL: List<String> = emptyList(),
-  public var mode: HciReconstructionContextConvertMode? = null
+  public var mode: HciReconstructionContextConvertMode? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator

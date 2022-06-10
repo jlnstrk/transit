@@ -12,5 +12,5 @@ import kotlinx.serialization.Serializable
 public class HciSubscrUserUpdateServiceResult(
   public val details: HciSubscrUserDetails? = null,
   public val result: HciSubscrResultStatus,
-  public val userId: String
+  public val userId: String,
 ) : HciServiceResult()

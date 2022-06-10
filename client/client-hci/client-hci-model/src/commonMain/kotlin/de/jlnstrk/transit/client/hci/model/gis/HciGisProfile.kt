@@ -27,5 +27,5 @@ public data class HciGisProfile(
   public val router: String? = null,
   public val speed: Int? = null,
   public val type: HciGisType,
-  public val waittime: Int? = null
+  public val waittime: Int? = null,
 )

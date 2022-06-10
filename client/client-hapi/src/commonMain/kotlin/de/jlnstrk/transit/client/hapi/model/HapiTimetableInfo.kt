@@ -8,8 +8,8 @@ package de.jlnstrk.transit.client.hapi.model
 import de.jlnstrk.transit.client.hafas.HapiXsd
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalDateSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalTimeSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
 

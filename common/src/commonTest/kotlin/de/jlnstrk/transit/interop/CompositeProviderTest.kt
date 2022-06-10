@@ -5,15 +5,17 @@ import de.jlnstrk.transit.common.Provider
 import de.jlnstrk.transit.common.extensions.use
 import de.jlnstrk.transit.common.service.StationBoardService
 import de.jlnstrk.transit.common.service.TripSearchService
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.FixedOffsetTimeZone
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.UtcOffset
 
 
 class CompositeProviderTest {
 
     fun usesCorrectServices() {
         val efaProvider = object : Provider.Implementation() {
-            override val timezone: ZoneOffset
-                get() = ZoneOffset(0.0)
+            override val timezone: TimeZone
+                get() = FixedOffsetTimeZone(UtcOffset.ZERO)
         }
 
         val composite = CompositeProvider {

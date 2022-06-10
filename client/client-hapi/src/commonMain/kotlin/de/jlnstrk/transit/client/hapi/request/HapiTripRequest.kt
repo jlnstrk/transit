@@ -6,9 +6,9 @@ import de.jlnstrk.transit.client.hapi.HapiEndpoint
 import de.jlnstrk.transit.client.hapi.request.base.HapiFilterList
 import de.jlnstrk.transit.client.hapi.request.delegate.*
 import de.jlnstrk.transit.client.hapi.response.HapiTripList
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
+import kotlin.time.Duration
 
 public class HapiTripRequest : HapiRequest<HapiTripList>() {
     override val service: HapiEndpoint get() = HapiEndpoint.TRIP

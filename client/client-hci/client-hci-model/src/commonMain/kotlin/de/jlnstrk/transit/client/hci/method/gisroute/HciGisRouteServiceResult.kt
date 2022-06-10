@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciGisRouteServiceResult(
   public val common: HciCommon? = null,
-  public val conL: List<HciConnection> = emptyList()
+  public val conL: List<HciConnection> = emptyList(),
 ) : HciServiceResult()

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciLocationMatch(
   public val `field`: HciLocationField? = null,
   public val locL: List<HciLocation> = emptyList(),
-  public val state: HciLocationMatchState = HciLocationMatchState.U
+  public val state: HciLocationMatchState = HciLocationMatchState.U,
 )

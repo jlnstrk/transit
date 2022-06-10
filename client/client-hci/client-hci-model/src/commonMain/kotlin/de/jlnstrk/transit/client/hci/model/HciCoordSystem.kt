@@ -13,5 +13,5 @@ public data class HciCoordSystem(
   public val picture: String? = null,
   public val index: Int = 0,
   public val type: HciCoordType = HciCoordType.WGS_84,
-  public val dim: Int = 0
+  public val dim: Int = 0,
 )

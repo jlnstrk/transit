@@ -14,5 +14,5 @@ public class HciJourneyGraphServiceResult(
   public val common: HciCommon? = null,
   public val locStartEndRefL: List<Int> = emptyList(),
   public val locStopRefL: List<Int> = emptyList(),
-  public val prodGraphL: List<HciProductGraph> = emptyList()
+  public val prodGraphL: List<HciProductGraph> = emptyList(),
 ) : HciServiceResult()

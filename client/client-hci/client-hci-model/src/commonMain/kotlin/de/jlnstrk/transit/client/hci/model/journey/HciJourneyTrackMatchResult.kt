@@ -13,5 +13,5 @@ public data class HciJourneyTrackMatchResult(
   public val diagnostics: List<HciNamedValue> = emptyList(),
   public val jnyL: List<HciJourneyTrackMatchJourney> = emptyList(),
   public val matchDeviation: Int? = null,
-  public val matchQuality: HciJourneyTrackMatchQuality? = null
+  public val matchQuality: HciJourneyTrackMatchQuality? = null,
 )

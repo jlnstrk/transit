@@ -1,6 +1,7 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+
 
 public data class Message(
     public val head: String,
@@ -10,11 +11,11 @@ public data class Message(
     public val body: String?,
     public val isHtmlBody: Boolean = false,
     public val priority: Priority,
-    public val validFrom: OffsetDateTime? = null,
-    public val validUntil: OffsetDateTime? = null,
-    public val published: OffsetDateTime? = null,
-    public val modified: OffsetDateTime? = null,
-    public val expires: OffsetDateTime? = null,
+    public val validFrom: Instant? = null,
+    public val validUntil: Instant? = null,
+    public val published: Instant? = null,
+    public val modified: Instant? = null,
+    public val expires: Instant? = null,
     public val affectedProducts: ProductSet = ProductSet(),
     public val affectedLines: LineSet = LineSet(),
     public val affectedLocations: List<Location> = emptyList()

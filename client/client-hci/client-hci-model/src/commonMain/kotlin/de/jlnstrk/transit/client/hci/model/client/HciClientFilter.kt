@@ -12,5 +12,5 @@ public data class HciClientFilter(
   public val fid: String,
   public val gui: HciClientFilterGui? = null,
   public val optL: List<HciClientFilterOption> = emptyList(),
-  public val persist: Boolean = false
+  public val persist: Boolean = false,
 )

@@ -1,9 +1,7 @@
 package de.jlnstrk.transit.client.hapi.request.delegate
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
 import de.jlnstrk.transit.client.hapi.util.HAPI_LOCAL_DATE_FORMAT
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 internal object HapiLocalDateParam : HapiQueryParam<LocalDate>(
     serialize = HAPI_LOCAL_DATE_FORMAT::format,

@@ -38,5 +38,5 @@ public data class HciTariffFare(
   public val targetCtx: String? = null,
   public val verbundName: String? = null,
   public val msgL: List<HciMessage> = emptyList(),
-  public val ticketL: List<HciTariffTicket> = emptyList()
+  public val ticketL: List<HciTariffTicket> = emptyList(),
 )

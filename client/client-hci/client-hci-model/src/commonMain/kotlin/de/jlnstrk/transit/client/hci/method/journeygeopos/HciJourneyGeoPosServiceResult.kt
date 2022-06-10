@@ -8,9 +8,9 @@ import de.jlnstrk.transit.client.hci.model.journey.HciJourneyDelaySummary
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -25,5 +25,5 @@ public class HciJourneyGeoPosServiceResult(
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val time: HciLocalTime? = null,
   public val jnyL: List<HciJourney> = emptyList(),
-  public val summary: List<HciJourneyDelaySummary> = emptyList()
+  public val summary: List<HciJourneyDelaySummary> = emptyList(),
 ) : HciServiceResult()

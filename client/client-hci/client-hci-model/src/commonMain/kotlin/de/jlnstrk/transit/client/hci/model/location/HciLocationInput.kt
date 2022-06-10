@@ -13,5 +13,5 @@ public data class HciLocationInput(
   public val loc: HciLocation,
   public val locFltrL: List<HciLocationFilter> = emptyList(),
   public val maxLoc: Int = 25,
-  public val prvCtx: String? = null
+  public val prvCtx: String? = null,
 )

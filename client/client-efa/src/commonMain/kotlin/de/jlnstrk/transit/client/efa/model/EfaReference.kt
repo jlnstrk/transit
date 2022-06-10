@@ -12,11 +12,11 @@ import de.jlnstrk.transit.client.efa.serializer.primitive.EfaPrimitiveSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaStringBooleanSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaMinutesSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaStringDateTimeSerializer
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 @Serializable
 public data class EfaReference(

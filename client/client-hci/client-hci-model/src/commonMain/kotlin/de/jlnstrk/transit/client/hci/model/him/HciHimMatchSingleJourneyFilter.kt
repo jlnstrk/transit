@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMatchSingleJourneyFilter(
   public val matchLocL: List<HciMatchLocation> = emptyList(),
-  public val numInfo: String
+  public val numInfo: String,
 )

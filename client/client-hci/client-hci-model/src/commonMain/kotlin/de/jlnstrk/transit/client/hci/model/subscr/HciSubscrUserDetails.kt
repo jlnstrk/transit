@@ -14,5 +14,5 @@ public data class HciSubscrUserDetails(
   public val language: String? = null,
   public val pauseBegin: String? = null,
   public val pauseEnd: String? = null,
-  public val userId: String
+  public val userId: String,
 )

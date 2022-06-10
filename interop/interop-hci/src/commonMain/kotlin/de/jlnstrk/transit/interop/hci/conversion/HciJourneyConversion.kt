@@ -6,7 +6,7 @@ import de.jlnstrk.transit.common.model.Coordinates
 import de.jlnstrk.transit.common.model.Journey
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 internal fun HciJourney.asCommon(context: HciCommonContext, tripDate: LocalDate?): Journey {
     val attributes = msgL

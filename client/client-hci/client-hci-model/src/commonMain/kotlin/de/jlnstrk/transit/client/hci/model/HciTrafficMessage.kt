@@ -17,5 +17,5 @@ public data class HciTrafficMessage(
   public val polyG: HciPolylineGroup? = null,
   public val tmid: Int? = null,
   public val avoided: Boolean = false,
-  public val type: HciTrafficMessageType = HciTrafficMessageType.U
+  public val type: HciTrafficMessageType = HciTrafficMessageType.U,
 )

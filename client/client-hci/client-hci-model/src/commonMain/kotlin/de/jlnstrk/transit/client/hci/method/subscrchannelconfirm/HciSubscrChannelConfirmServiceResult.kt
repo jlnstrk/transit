@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public class HciSubscrChannelConfirmServiceResult(
   public val channelId: String,
   public val result: HciSubscrResultStatus,
-  public val userId: String
+  public val userId: String,
 ) : HciServiceResult()

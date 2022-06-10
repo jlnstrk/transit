@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciTariffVariant(
   public val text: String? = null,
-  public val trfCtx: String? = null
+  public val trfCtx: String? = null,
 )

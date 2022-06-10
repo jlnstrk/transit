@@ -3,8 +3,8 @@ package de.jlnstrk.transit.client.efa.serializer
 import de.jlnstrk.transit.client.efa.request.EfaDateTimeMode
 import de.jlnstrk.transit.client.efa.response.EfaTimeHeader
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaStringDateTimeSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.descriptors.SerialDescriptor
@@ -33,11 +33,11 @@ internal object EfaTimeHeaderSerializer : KSerializer<EfaTimeHeader> {
             value.mode,
             value.timetableFrom,
             value.timetableTo,
-            value.dateTime.yearInt,
-            value.dateTime.month0,
+            value.dateTime.year,
+            value.dateTime.monthNumber,
             value.dateTime.dayOfMonth,
-            value.dateTime.hours,
-            value.dateTime.minutes
+            value.dateTime.hour,
+            value.dateTime.minute
         )
         Intermediate.serializer().serialize(encoder, intermediate)
     }

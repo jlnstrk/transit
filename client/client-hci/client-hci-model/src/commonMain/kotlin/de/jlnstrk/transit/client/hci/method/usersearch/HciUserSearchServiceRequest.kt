@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciUserSearchServiceRequest(
-  public var userL: List<HciUser> = emptyList()
+  public var userL: List<HciUser> = emptyList(),
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciUserSearchServiceRequest.() -> Unit):

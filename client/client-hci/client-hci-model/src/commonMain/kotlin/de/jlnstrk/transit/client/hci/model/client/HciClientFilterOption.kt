@@ -12,5 +12,5 @@ public data class HciClientFilterOption(
   public val mode: HciClientFilterMode = HciClientFilterMode.INC,
   public val req: Boolean = false,
   public val `set`: Boolean = false,
-  public val `val`: String
+  public val `val`: String,
 )

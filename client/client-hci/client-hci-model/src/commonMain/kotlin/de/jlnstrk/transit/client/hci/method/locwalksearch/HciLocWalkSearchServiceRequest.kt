@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciLocWalkSearchServiceRequest(
-  public var jnyFltrL: List<HciJourneyFilter> = emptyList()
+  public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLocWalkSearchServiceRequest.() -> Unit):

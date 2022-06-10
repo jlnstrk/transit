@@ -14,5 +14,5 @@ public data class HciStructGraphNode(
   public val locX: Int? = null,
   public val mainNodeX: Int = -1,
   public val name: String? = null,
-  public val type: HciStructGraphNodeType? = null
+  public val type: HciStructGraphNodeType? = null,
 )

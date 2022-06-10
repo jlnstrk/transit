@@ -13,5 +13,5 @@ public data class HciAuth(
   public val mic: String? = null,
   public val pw: String? = null,
   public val type: HciAuthType,
-  public val user: String? = null
+  public val user: String? = null,
 )

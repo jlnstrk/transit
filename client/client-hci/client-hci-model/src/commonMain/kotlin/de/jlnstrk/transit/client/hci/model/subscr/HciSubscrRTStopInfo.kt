@@ -19,5 +19,5 @@ public data class HciSubscrRTStopInfo(
   public val platformCh: String? = null,
   public val arrDelay: Int = 0,
   public val depDelay: Int = 0,
-  public val routeIdx: Int = 0
+  public val routeIdx: Int = 0,
 )

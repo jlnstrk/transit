@@ -4,7 +4,7 @@ import de.jlnstrk.transit.client.hci.model.HciAuth
 import de.jlnstrk.transit.client.hci.model.HciExtension
 import de.jlnstrk.transit.client.hci.model.HciVersion
 import de.jlnstrk.transit.client.hci.model.client.HciClient
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.TimeZone
 
 public class HciConfig {
     public lateinit var baseUrl: String
@@ -14,7 +14,7 @@ public class HciConfig {
     public var ext: HciExtension? = null
     public var lang: String? = null
 
-    public var timezone: ZoneOffset? = null
+    public var timezone: TimeZone? = null
     public var salt: String? = null
 
     public companion object {

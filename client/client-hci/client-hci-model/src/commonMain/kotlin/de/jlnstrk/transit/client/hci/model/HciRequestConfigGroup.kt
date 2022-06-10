@@ -27,5 +27,5 @@ public data class HciRequestConfigGroup(
   public val trainNameMode: String? = null,
   public val trainname: Boolean = false,
   public val jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public val id: Int = -1
+  public val id: Int = -1,
 )

@@ -20,13 +20,13 @@ ksp {
     arg("hciSrcDir", project.rootProject.projectDir.path + "/hci-versions/1.45")
     arg("outPackageName", hciPackage)
 
-    arg("dateType", "$sharedUtilPackage.LocalDate")
+    arg("dateType", "kotlinx.datetime.LocalDate")
     arg("dateSerializerType", "$hciSerializerPackage.HciLocalDateSerializer")
     arg("timeType", "$hciUtilPackage.HciLocalTime")
     arg("timeSerializerType", "$hciSerializerPackage.HciLocalTimeSerializer.WithDayOffset")
-    arg("dateTimeType", "$sharedUtilPackage.LocalDateTime")
+    arg("dateTimeType", "kotlinx.datetime.LocalDateTime")
     arg("dateTimeSerializerType", "$hciSerializerPackage.HciUnixTimeSerializer")
-    arg("zoneOffsetType", "$sharedUtilPackage.ZoneOffset")
+    arg("zoneOffsetType", "kotlinx.datetime.UtcOffset")
     arg("zoneOffsetSerializerType", "$hciSerializerPackage.HciZoneOffsetSerializer")
 }
 

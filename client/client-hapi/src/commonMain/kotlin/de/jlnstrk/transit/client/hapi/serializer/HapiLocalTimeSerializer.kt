@@ -1,9 +1,7 @@
 package de.jlnstrk.transit.client.hapi.serializer
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseTime
 import de.jlnstrk.transit.client.hapi.util.HAPI_LOCAL_TIME_FORMAT
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
@@ -19,6 +17,6 @@ internal object HapiLocalTimeSerializer : KSerializer<LocalTime> {
     }
 
     override fun deserialize(decoder: Decoder): LocalTime {
-        return HAPI_LOCAL_TIME_FORMAT.parseTime(decoder.decodeString())
+        return HAPI_LOCAL_TIME_FORMAT.parse(decoder.decodeString())
     }
 }

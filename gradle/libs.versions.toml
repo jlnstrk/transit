@@ -8,7 +8,7 @@ serializationXml = "0.84.2"
 krypto = "2.4.12"
 klock = "2.4.13"
 buildkonfig = "0.12.0"
-datetime = "0.3.3"
+datetime = "0.4.0-SNAPSHOT"
 
 [libraries]
 kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

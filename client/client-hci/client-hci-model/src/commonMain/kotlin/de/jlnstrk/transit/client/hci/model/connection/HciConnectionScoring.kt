@@ -12,5 +12,5 @@ public data class HciConnectionScoring(
   public val conScoreL: List<HciConnectionScore> = emptyList(),
   public val icoX: Int? = null,
   public val name: String? = null,
-  public val type: HciConnectionScoringType
+  public val type: HciConnectionScoringType,
 )

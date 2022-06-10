@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciOneFieldSearchFilters(
   public val jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public val locFltrL: List<HciLocationFilter> = emptyList()
+  public val locFltrL: List<HciLocationFilter> = emptyList(),
 )

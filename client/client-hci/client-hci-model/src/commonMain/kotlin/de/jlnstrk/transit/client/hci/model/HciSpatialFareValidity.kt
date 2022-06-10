@@ -13,5 +13,5 @@ public data class HciSpatialFareValidity(
   public val OL: Int? = null,
   public val OS: Int? = null,
   public val RI: Int? = null,
-  public val VL: List<Int> = emptyList()
+  public val VL: List<Int> = emptyList(),
 )

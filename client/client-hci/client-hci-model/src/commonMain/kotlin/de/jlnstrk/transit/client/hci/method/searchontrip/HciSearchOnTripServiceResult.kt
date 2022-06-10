@@ -35,5 +35,5 @@ public class HciSearchOnTripServiceResult(
   public val retConL: List<HciConnection> = emptyList(),
   public val retGlobMsgL: List<HciMessage> = emptyList(),
   public val bfATS: Int = 0,
-  public val bfIOSTS: Int = 0
+  public val bfIOSTS: Int = 0,
 ) : HciServiceResult()

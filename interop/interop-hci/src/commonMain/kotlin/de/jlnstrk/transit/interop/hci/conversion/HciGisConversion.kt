@@ -1,6 +1,5 @@
 package de.jlnstrk.transit.interop.hci.conversion
 
-import com.soywiz.klock.milliseconds
 import de.jlnstrk.transit.client.hci.model.gis.HciGisManoeuvre
 import de.jlnstrk.transit.client.hci.model.gis.HciGisOrientation
 import de.jlnstrk.transit.client.hci.model.gis.HciGisRoute
@@ -10,7 +9,7 @@ import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
 internal fun HciGisRoute.asCommon(context: HciCommonContext): GisRoute {
     return GisRoute(
         distance = dist!!,
-        duration = kotlin.time.Duration.parse(durS!!).inWholeMilliseconds.milliseconds,
+        duration = kotlin.time.Duration.parse(durS!!),
         segments = segL.map {
             GisRoute.Segment(
                 summary = it.name,

@@ -61,7 +61,7 @@ public data class HciPartialSearchServiceRequest(
   public var maxChg: Int? = null,
   public var maxChgTime: Int? = null,
   public var minChgTime: Int? = null,
-  public var supplChgTime: Int? = null
+  public var supplChgTime: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciPartialSearchServiceRequest.() -> Unit):

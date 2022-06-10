@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciSimpleTrainCompositionGroup(
   public val dest: String? = null,
   public val carL: List<Int> = emptyList(),
-  public val liXL: List<Int> = emptyList()
+  public val liXL: List<Int> = emptyList(),
 )

@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrChannelOption(
   public val type: HciSubscrChannelOptionType,
-  public val `value`: String
+  public val `value`: String,
 )

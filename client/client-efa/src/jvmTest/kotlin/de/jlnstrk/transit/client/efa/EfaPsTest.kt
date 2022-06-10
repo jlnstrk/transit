@@ -1,10 +1,12 @@
 package de.jlnstrk.transit.client.efa
 
-import com.soywiz.klock.hours
 import de.jlnstrk.transit.client.efa.endpoint.ps.EfaPsRequest
 import de.jlnstrk.transit.client.efa.model.EfaPoint
 import de.jlnstrk.transit.client.efa.request.EfaDateTimeMode
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.Clock
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration.Companion.hours
 
 suspend fun main() {
 
@@ -24,7 +26,7 @@ suspend fun main() {
         )
 
         itdDateTimeDepArr = EfaDateTimeMode.DEPARTURE
-        psParamSampleDate = LocalDateTime.now().date
+        psParamSampleDate = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
         psParamOneWay = false
         psParamMaxTimeHours = 6.hours
     }

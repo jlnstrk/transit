@@ -13,5 +13,5 @@ public data class HciGrid(
   public val nCols: Int,
   public val nRows: Int,
   public val title: String? = null,
-  public val type: HciGridContentType
+  public val type: HciGridContentType,
 )

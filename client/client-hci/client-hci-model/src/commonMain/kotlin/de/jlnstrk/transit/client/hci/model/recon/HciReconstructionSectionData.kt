@@ -23,5 +23,5 @@ public data class HciReconstructionSectionData(
   public val trainCategory: String? = null,
   public val trainName: String? = null,
   public val trainNumber: String? = null,
-  public val type: HciReconstructionSectionType
+  public val type: HciReconstructionSectionType,
 )

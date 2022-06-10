@@ -21,5 +21,5 @@ public data class HciEvent(
   public val urlX: Int? = null,
   public val webview: String? = null,
   public val msgL: List<HciMessage> = emptyList(),
-  public val free: Boolean = false
+  public val free: Boolean = false,
 )

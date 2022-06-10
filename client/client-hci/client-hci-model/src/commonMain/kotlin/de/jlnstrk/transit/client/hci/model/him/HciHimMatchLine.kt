@@ -22,5 +22,5 @@ public data class HciHimMatchLine(
   public val noLineL: List<HciHimMatchNoLine> = emptyList(),
   public val cls: Int = 0,
   public val isLine: Boolean = true,
-  public val numAffJrn: Int = 0
+  public val numAffJrn: Int = 0,
 )

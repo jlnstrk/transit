@@ -11,5 +11,5 @@ public data class HciFareEntity(
   public val ID: List<String> = emptyList(),
   public val ON: List<String> = emptyList(),
   public val PN: List<String> = emptyList(),
-  public val XV: List<String> = emptyList()
+  public val XV: List<String> = emptyList(),
 )

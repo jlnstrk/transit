@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciMapLayerExt(
   public val mapLayX: Int? = null,
   public val selectable: Boolean = true,
-  public val show: Boolean = false
+  public val show: Boolean = false,
 )

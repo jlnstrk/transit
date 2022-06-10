@@ -10,5 +10,5 @@ public data class HciLocationFilter(
   public val mode: HciLocationFilterMode? = null,
   public val ngramm: HciLocationNGrammFilter? = null,
   public val type: HciLocationFilterType,
-  public val `value`: String? = null
+  public val `value`: String? = null,
 )

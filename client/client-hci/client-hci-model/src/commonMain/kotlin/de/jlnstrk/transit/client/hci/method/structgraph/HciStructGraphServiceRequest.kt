@@ -9,7 +9,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciStructGraphServiceRequest(
-  public var input: HciStructGraphInputReference? = null
+  public var input: HciStructGraphInputReference? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciStructGraphServiceRequest.() -> Unit):

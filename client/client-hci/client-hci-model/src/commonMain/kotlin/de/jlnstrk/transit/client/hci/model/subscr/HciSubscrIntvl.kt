@@ -31,5 +31,5 @@ public data class HciSubscrIntvl(
   public val time: HciLocalTime,
   public val jnyFltrL: List<HciJourneyFilter> = emptyList(),
   public val monitorFlags: List<HciSubscrMonitorFlags> = emptyList(),
-  public val viaLocL: List<HciLocation> = emptyList()
+  public val viaLocL: List<HciLocation> = emptyList(),
 )

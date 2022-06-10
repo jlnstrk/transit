@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGraphGeoPosServiceRequest(
   public var getAffPoly: Boolean? = null,
-  public var ring: HciGeoRing? = null
+  public var ring: HciGeoRing? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciGraphGeoPosServiceRequest.() -> Unit):

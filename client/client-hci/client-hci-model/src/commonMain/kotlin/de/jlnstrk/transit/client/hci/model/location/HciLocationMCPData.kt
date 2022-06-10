@@ -27,5 +27,5 @@ public data class HciLocationMCPData(
   public val placeType: HciMCPPlaceType = HciMCPPlaceType.UNDEF,
   public val transportMode: HciTransportMode = HciTransportMode.UNDEF,
   public val type: HciLocationMCPType = HciLocationMCPType.U,
-  public val usageType: HciUsageType = HciUsageType.U
+  public val usageType: HciUsageType = HciUsageType.U,
 )

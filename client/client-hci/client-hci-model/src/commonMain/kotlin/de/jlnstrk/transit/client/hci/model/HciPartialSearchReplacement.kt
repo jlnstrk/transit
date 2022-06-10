@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPartialSearchReplacement(
   public val ctx: String,
-  public val supplChgTime: Int? = null
+  public val supplChgTime: Int? = null,
 )

@@ -25,5 +25,5 @@ public data class HciSubscrJourney(
   public val serviceDays: HciSubscrDays,
   public val triggerPt: HciSubscrTriggerPoint? = null,
   public val monitorFlags: List<HciSubscrMonitorFlags> = emptyList(),
-  public val eventCount: Int = 0
+  public val eventCount: Int = 0,
 )

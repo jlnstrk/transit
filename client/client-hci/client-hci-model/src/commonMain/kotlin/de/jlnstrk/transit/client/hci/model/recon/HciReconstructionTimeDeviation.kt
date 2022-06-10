@@ -10,5 +10,5 @@ public data class HciReconstructionTimeDeviation(
   public val arrL: Int = 0,
   public val arrU: Int = 0,
   public val depL: Int = 0,
-  public val depU: Int = 0
+  public val depU: Int = 0,
 )

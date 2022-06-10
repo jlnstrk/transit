@@ -1,20 +1,20 @@
 package de.jlnstrk.transit.client.hapi.base
 
-import com.soywiz.klock.DateFormat
-import com.soywiz.klock.format
-import de.jlnstrk.transit.util.LocalDateTime
+import de.jlnstrk.transit.util.DateFormat
 import io.ktor.client.*
-import io.ktor.client.features.*
+import io.ktor.client.plugins.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.util.*
 import io.ktor.util.pipeline.*
 import io.ktor.utils.io.*
+import kotlinx.datetime.Clock
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonElement
 import java.io.File
+import java.time.LocalDateTime
 
 typealias FileFactory = (String) -> File
 
@@ -41,11 +41,11 @@ internal class HapiLogging internal constructor(
         internal var fileFactory: FileFactory? = null
     }
 
-    companion object Feature : HttpClientFeature<Config, HapiLogging> {
+    companion object Plugin : HttpClientPlugin<Config, HapiLogging> {
         val DATE_FORMAT = DateFormat("yyyy-MM-dd-HH:mm:ss:SSS")
         val ID_KEY = AttributeKey<RequestLog>("request_id")
         val DEFAULT_FACTORY: FileFactory = { method ->
-            File("$method-${DATE_FORMAT.format(LocalDateTime.now())}.json")
+            File("$method-${DATE_FORMAT.format(Clock.System.now())}.json")
         }
         val WriteResponse = PipelinePhase("WriteResponse")
         override val key: AttributeKey<HapiLogging> = AttributeKey("Hci")

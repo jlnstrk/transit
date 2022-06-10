@@ -13,5 +13,5 @@ public data class HciSubscrResultRSS(
   public val language: String? = null,
   public val rssAddress: String? = null,
   public val status: HciSubscrStatus,
-  public val subscrId: Int
+  public val subscrId: Int,
 )

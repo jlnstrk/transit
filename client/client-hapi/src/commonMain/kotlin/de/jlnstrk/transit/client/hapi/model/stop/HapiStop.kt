@@ -14,9 +14,9 @@ import de.jlnstrk.transit.client.hapi.serializer.HapiListUnwrapSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalDateSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalTimeSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiZoneOffsetSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
+import kotlinx.datetime.UtcOffset
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
 
@@ -48,7 +48,7 @@ public data class HapiStop(
     /** Departure date in format YYYY-MM-DD, if available. */
     public val depDate: LocalDate?,
     /** Departure time zone information in the format +/- minutes */
-    public val depTz: ZoneOffset = ZoneOffset(0.0),
+    public val depTz: UtcOffset = UtcOffset(0),
     /** Scheduled departure time changed. */
     public val scheduledDepTimeChanged: Boolean = false,
     /** Arrival time in format hh:mm[:ss], if available. */
@@ -56,7 +56,7 @@ public data class HapiStop(
     /** Arrival date in format YYYY-MM-DD, if available. */
     public val arrDate: LocalDate?,
     /** Arrival time zone information in the format +/- minutes */
-    public val arrTz: ZoneOffset = ZoneOffset(0.0),
+    public val arrTz: UtcOffset = UtcOffset(0),
     /** Scheduled arrival time changed. */
     public val scheduledArrTimeChanged: Boolean = false,
     /** Passing time in format hh:mm[:ss], if available. */
@@ -64,7 +64,7 @@ public data class HapiStop(
     /** Passing date in format YYYY-MM-DD, if available. */
     public val passingDate: LocalDate?,
     /** Passing time zone information in the format +/- minutes */
-    public val passingTz: ZoneOffset = ZoneOffset(0.0),
+    public val passingTz: UtcOffset = UtcOffset(0),
     /** Arrival track information, if available. */
     public val arrTrack: String?,
     /** Departure track information, if available. */
@@ -74,13 +74,13 @@ public data class HapiStop(
     /** Realtime departure date in format YYYY-MM-DD, if available. */
     public val rtDepDate: LocalDate?,
     /** Realtime departure time zone information in the format +/- minutes, if available. */
-    public val rtDepTz: ZoneOffset = ZoneOffset(0.0),
+    public val rtDepTz: UtcOffset = UtcOffset(0),
     /** Realtime arrival time in format hh:mm[:ss] if available. */
     public val rtArrTime: LocalTime?,
     /** Realtime arrival date in format YYYY-MM-DD, if available. */
     public val rtArrDate: LocalDate?,
     /** Realtime arrival time zone information in the format +/- minutes, if available. */
-    public val rtArrTz: ZoneOffset = ZoneOffset(0.0),
+    public val rtArrTz: UtcOffset = UtcOffset(0),
     /** Realtime arrival track information, if available. */
     public val rtArrTrack: String?,
     /** Realtime departure track information, if available. */
@@ -90,7 +90,7 @@ public data class HapiStop(
     /** Realtime passing date in format YYYY-MM-DD, if available. */
     public val rtPassingDate: LocalDate?,
     /** Realtime passing time zone information in the format +/- minutes, if available. */
-    public val rtPassingTz: ZoneOffset = ZoneOffset(0.0),
+    public val rtPassingTz: UtcOffset = UtcOffset(0),
     /** Will be true if arrival or departure or both at this stop is cancelled */
     public val cancelled: Boolean = false,
     /** Will be true if departure at this stop is cancelled */

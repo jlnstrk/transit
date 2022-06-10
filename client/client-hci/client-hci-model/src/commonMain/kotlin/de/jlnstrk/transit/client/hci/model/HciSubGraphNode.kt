@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubGraphNode(
   public val subGraphX: Int,
-  public val viewNodes: List<HciViewNode> = emptyList()
+  public val viewNodes: List<HciViewNode> = emptyList(),
 )

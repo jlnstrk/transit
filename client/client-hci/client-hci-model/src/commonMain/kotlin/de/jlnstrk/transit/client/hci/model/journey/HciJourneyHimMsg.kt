@@ -11,5 +11,5 @@ public data class HciJourneyHimMsg(
   public val fLocX: Int? = null,
   public val himX: Int,
   public val tIdx: Int? = null,
-  public val tLocX: Int? = null
+  public val tLocX: Int? = null,
 )

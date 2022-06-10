@@ -14,8 +14,9 @@ import de.jlnstrk.transit.common.service.StationBoardResult
 import de.jlnstrk.transit.common.service.StationBoardService
 import de.jlnstrk.transit.interop.hapi.HapiProvider
 import de.jlnstrk.transit.interop.hapi.HapiService
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration
 
 internal class HapiStationBoardService(
     provider: HapiProvider,
@@ -26,7 +27,7 @@ internal class HapiStationBoardService(
         mode: StationBoardService.Mode,
         location: Location,
         direction: Location?,
-        dateTime: OffsetDateTime?,
+        dateTime: Instant?,
         filterProducts: Set<ProductClass>?,
         filterLines: Set<Line>?,
         maxDuration: Duration?,
@@ -36,9 +37,9 @@ internal class HapiStationBoardService(
             StationBoardService.Mode.DEPARTURES -> HapiDepartureBoardRequest()
             StationBoardService.Mode.ARRIVALS -> HapiArrivalBoardRequest()
         }.apply {
-            dateTime?.let {
-                date = it.local.date
-                time = it.local.time
+            dateTime?.toLocalDateTime(provider.timezone)?.let {
+                date = it.date
+                time = it.time
             }
             filterProducts?.let {
                 products = provider.setToBitmask(it)

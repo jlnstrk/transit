@@ -22,7 +22,7 @@ public data class HciSubscrChannelCreateServiceRequest(
   public var userId: String? = null,
   public var options: List<HciSubscrChannelOption> = emptyList(),
   public var subscrTypes: List<HciSubscrType> = emptyList(),
-  public var active: Boolean? = null
+  public var active: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrChannelCreateServiceRequest.() -> Unit):

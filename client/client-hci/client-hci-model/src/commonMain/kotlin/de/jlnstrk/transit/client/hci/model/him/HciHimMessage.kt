@@ -7,11 +7,11 @@ import de.jlnstrk.transit.client.hci.model.journey.HciJourney
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -71,5 +71,5 @@ public data class HciHimMessage(
   public val act: Boolean = true,
   public val displayHead: Boolean = false,
   public val prio: Int = 100,
-  public val prod: Int = 0
+  public val prod: Int = 0,
 )

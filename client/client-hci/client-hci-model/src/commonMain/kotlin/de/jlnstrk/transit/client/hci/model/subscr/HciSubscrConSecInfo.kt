@@ -24,5 +24,5 @@ public data class HciSubscrConSecInfo(
   public val productCategory: String? = null,
   public val productName: String? = null,
   public val productNumber: String? = null,
-  public val routeHash: String? = null
+  public val routeHash: String? = null,
 )

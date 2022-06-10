@@ -10,7 +10,7 @@ import de.jlnstrk.transit.client.hapi.model.HapiProduct
 import de.jlnstrk.transit.client.hapi.model.HapiProductCategory
 import de.jlnstrk.transit.client.hapi.response.base.HapiResponse
 import de.jlnstrk.transit.client.hapi.serializer.HapiLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
 

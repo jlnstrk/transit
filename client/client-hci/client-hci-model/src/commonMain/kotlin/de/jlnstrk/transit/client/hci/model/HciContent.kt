@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciContent(
   public val content: String,
-  public val type: HciContentType
+  public val type: HciContentType,
 )

@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciLineSearchServiceResult(
   public val common: HciCommon? = null,
-  public val lineL: List<HciLine> = emptyList()
+  public val lineL: List<HciLine> = emptyList(),
 ) : HciServiceResult()

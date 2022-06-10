@@ -9,11 +9,11 @@ import de.jlnstrk.transit.client.hci.model.user.HciUserRole
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -30,7 +30,7 @@ public data class HciNotificationSearchServiceRequest(
   public var rect: HciGeoRect? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public var time: HciLocalTime? = null,
-  public var uId: String? = null
+  public var uId: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciNotificationSearchServiceRequest.() -> Unit):

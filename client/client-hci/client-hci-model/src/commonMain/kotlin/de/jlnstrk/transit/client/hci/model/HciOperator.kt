@@ -25,5 +25,5 @@ public data class HciOperator(
   public val url: String? = null,
   public val adminL: List<String> = emptyList(),
   public val pRefL: List<Int> = emptyList(),
-  public val _default: Boolean = false
+  public val _default: Boolean = false,
 )

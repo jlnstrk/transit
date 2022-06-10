@@ -12,5 +12,5 @@ public data class HciGeoData(
   public val id: String? = null,
   public val maxZoom: Int? = null,
   public val minZoom: Int? = null,
-  public val type: HciGeoDataType
+  public val type: HciGeoDataType,
 )

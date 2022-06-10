@@ -12,7 +12,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciLocWalkDetailsServiceRequest(
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public var loc: HciLocation? = null
+  public var loc: HciLocation? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLocWalkDetailsServiceRequest.() -> Unit):

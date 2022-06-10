@@ -1,10 +1,8 @@
 package de.jlnstrk.transit.client.hci.serializer
 
-import com.soywiz.klock.TimeFormat
-import com.soywiz.klock.format
-import com.soywiz.klock.parseTime
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalTime
+import de.jlnstrk.transit.util.TimeFormat
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
@@ -24,7 +22,7 @@ public object HciLocalTimeSerializer : KSerializer<LocalTime> {
 
     override fun deserialize(decoder: Decoder): LocalTime {
         val string = decoder.decodeString()
-        return TIME_FORMATTER.parseTime(string)
+        return TIME_FORMATTER.parse(string)
     }
 
     public object WithDayOffset : KSerializer<HciLocalTime> {
@@ -40,7 +38,7 @@ public object HciLocalTimeSerializer : KSerializer<LocalTime> {
         override fun deserialize(decoder: Decoder): HciLocalTime {
             val string = decoder.decodeString()
             val timePart = string.substring(string.length - 6, string.length)
-            val time = TIME_FORMATTER.parseTime(timePart)
+            val time = TIME_FORMATTER.parse(timePart)
             val offsetDays = if (string.length == 8) string.substring(0, 2).toInt() else 0
             return HciLocalTime(time = time, offsetDays = offsetDays)
         }

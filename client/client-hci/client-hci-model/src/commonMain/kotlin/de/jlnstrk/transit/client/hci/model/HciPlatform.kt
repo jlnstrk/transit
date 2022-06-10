@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPlatform(
   public val txt: String? = null,
-  public val type: HciPlatformType? = null
+  public val type: HciPlatformType? = null,
 )

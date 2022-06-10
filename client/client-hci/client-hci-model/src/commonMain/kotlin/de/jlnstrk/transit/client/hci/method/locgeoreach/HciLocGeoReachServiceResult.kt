@@ -13,5 +13,5 @@ import kotlinx.serialization.Serializable
 public class HciLocGeoReachServiceResult(
   public val common: HciCommon? = null,
   public val mapLayX: Int? = null,
-  public val posL: List<HciReachPos> = emptyList()
+  public val posL: List<HciReachPos> = emptyList(),
 ) : HciServiceResult()

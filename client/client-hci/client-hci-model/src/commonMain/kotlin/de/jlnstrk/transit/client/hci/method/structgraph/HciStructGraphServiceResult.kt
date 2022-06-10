@@ -13,5 +13,5 @@ import kotlinx.serialization.Serializable
 public class HciStructGraphServiceResult(
   public val common: HciCommon? = null,
   public val edgeRefL: List<Int> = emptyList(),
-  public val rect: HciGeoRect? = null
+  public val rect: HciGeoRect? = null,
 ) : HciServiceResult()

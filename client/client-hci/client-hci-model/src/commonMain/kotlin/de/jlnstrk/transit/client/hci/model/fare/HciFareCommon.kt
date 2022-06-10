@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciFareCommon(
-  public val FEL: List<HciFareEntity> = emptyList()
+  public val FEL: List<HciFareEntity> = emptyList(),
 )

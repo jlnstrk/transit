@@ -15,5 +15,5 @@ public data class HciTrainCompositionPD(
   public val PS: List<HciTrainCompositionPS> = emptyList(),
   public val b: Boolean = false,
   public val d: HciTrainCompositionDirection = HciTrainCompositionDirection.A,
-  public val s: Int = 0
+  public val s: Int = 0,
 )

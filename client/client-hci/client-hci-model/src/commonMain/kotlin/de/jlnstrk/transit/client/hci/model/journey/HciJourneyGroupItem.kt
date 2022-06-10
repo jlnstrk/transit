@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciJourneyGroupItem(
   public val icoX: Int? = null,
   public val jnyRef: Int? = null,
-  public val msgL: List<HciMessage> = emptyList()
+  public val msgL: List<HciMessage> = emptyList(),
 )

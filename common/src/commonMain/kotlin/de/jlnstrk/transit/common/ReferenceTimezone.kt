@@ -1,7 +1,8 @@
 package de.jlnstrk.transit.common
 
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.TimeZone
+
 
 public interface ReferenceTimezone {
-    public val timezone: ZoneOffset
+    public val timezone: TimeZone
 }

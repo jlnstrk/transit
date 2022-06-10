@@ -26,5 +26,5 @@ public data class HciSubscrResultIntvl(
   public val time: HciLocalTime,
   public val channels: List<HciSubscrChannel> = emptyList(),
   public val jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public val viaLocL: List<HciLocation> = emptyList()
+  public val viaLocL: List<HciLocation> = emptyList(),
 )

@@ -7,11 +7,10 @@ import de.jlnstrk.transit.common.Provider
 import de.jlnstrk.transit.common.service.*
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.service.*
-import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.util.ZoneOffset
+import kotlinx.datetime.TimeZone
 
 public abstract class HciProvider : Provider.Implementation(), HafasClassMapping {
-    override val timezone: ZoneOffset get() = ZoneOffset.local(LocalDateTime.now())
+    override val timezone: TimeZone get() = TimeZone.currentSystemDefault()
     public abstract val config: HciConfig
 
     init {

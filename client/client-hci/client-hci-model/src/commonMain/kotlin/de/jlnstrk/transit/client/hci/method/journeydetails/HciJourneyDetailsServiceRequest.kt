@@ -7,11 +7,11 @@ import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -40,7 +40,7 @@ public data class HciJourneyDetailsServiceRequest(
   public var polySplitting: Boolean? = null,
   public var aIdx: Int? = null,
   public var dIdx: Int? = null,
-  public var trainPosMode: HciJourneyTrainPosMode? = null
+  public var trainPosMode: HciJourneyTrainPosMode? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciJourneyDetailsServiceRequest.() -> Unit):

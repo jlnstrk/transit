@@ -13,5 +13,5 @@ public data class HciDBReiseplanStorageData(
   public val shortId: String? = null,
   public val type: String? = null,
   public val vh_amount_travellers: Int = -1,
-  public val vr_amount_travellers: Int = -1
+  public val vr_amount_travellers: Int = -1,
 )

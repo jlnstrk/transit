@@ -16,7 +16,7 @@ public data class HciShareTripServiceRequest(
   public var ctxRecon: String? = null,
   public var mail: HciShareMail? = null,
   public var mode: HciShareMode? = null,
-  public var sms: HciShareSMS? = null
+  public var sms: HciShareSMS? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciShareTripServiceRequest.() -> Unit):

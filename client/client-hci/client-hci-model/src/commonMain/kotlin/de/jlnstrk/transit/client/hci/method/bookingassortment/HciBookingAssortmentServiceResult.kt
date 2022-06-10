@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciBookingAssortmentServiceResult(
-  public val `data`: HciBookingResult? = null
+  public val `data`: HciBookingResult? = null,
 ) : HciServiceResult()

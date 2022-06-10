@@ -1,7 +1,5 @@
 package de.jlnstrk.transit.client.efa.endpoint.addinfo
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
 import de.jlnstrk.transit.client.efa.model.EfaMeansOfTransport
 import de.jlnstrk.transit.client.efa.model.EfaTravelInfo
 import de.jlnstrk.transit.client.efa.request.EfaRequest
@@ -15,7 +13,7 @@ import de.jlnstrk.transit.client.efa.request.delegate.EfaQueryMultiParam
 import de.jlnstrk.transit.client.efa.request.delegate.EfaQueryParam
 import de.jlnstrk.transit.client.efa.request.delegate.EfaStringMultiParam
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_DASH_SEP
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 public class EfaAddInfoRequest(
     queryMap: EfaRequestMap = EfaRequestMap()

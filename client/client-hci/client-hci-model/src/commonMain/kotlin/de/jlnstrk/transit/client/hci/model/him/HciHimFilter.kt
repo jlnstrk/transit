@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciHimFilter(
   public val mode: HciHimFilterMode? = null,
   public val type: HciHimFilterType,
-  public val `value`: String? = null
+  public val `value`: String? = null,
 )

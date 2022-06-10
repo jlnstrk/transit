@@ -4,8 +4,8 @@ import de.jlnstrk.transit.common.Service
 import de.jlnstrk.transit.common.model.*
 import de.jlnstrk.transit.common.response.TripSearchData
 import de.jlnstrk.transit.common.response.base.ScrollContext
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlin.time.Duration
 
 public interface TripSearchService : Service {
     public val supportedOriginTypes: Set<Location.Type>
@@ -27,7 +27,7 @@ public interface TripSearchService : Service {
         via: List<Via> = emptyList(),
         viaPeriod: Duration? = null,
         viaModes: Set<Via.Mode>? = null,
-        dateTime: OffsetDateTime? = null,
+        dateTime: Instant? = null,
         dateTimeIsArrival: Boolean? = null,
         filterProducts: ProductSet? = null,
         filterLines: LineSet? = null,

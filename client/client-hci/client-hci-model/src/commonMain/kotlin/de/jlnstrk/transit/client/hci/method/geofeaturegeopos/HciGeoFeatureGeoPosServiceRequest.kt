@@ -18,7 +18,7 @@ public data class HciGeoFeatureGeoPosServiceRequest(
   public var provider: String? = null,
   public var query: String? = null,
   public var typeSelect: HciGeoFeatureTypeSelection? = null,
-  public var validity: HciGeoFeatureValiditySelection? = null
+  public var validity: HciGeoFeatureValiditySelection? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciGeoFeatureGeoPosServiceRequest.() -> Unit):

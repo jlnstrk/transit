@@ -19,5 +19,5 @@ public data class HciJourneyTreeNode(
   public val type: HciJourneyTreeNodeType,
   public val childRefL: List<Int> = emptyList(),
   public val himIdL: List<String> = emptyList(),
-  public val level: Int = -1
+  public val level: Int = -1,
 )

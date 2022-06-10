@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciViewNode(
-  public val viewX: Int
+  public val viewX: Int,
 )

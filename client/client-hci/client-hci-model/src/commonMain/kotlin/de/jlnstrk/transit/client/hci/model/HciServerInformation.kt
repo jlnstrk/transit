@@ -19,5 +19,5 @@ public data class HciServerInformation(
   public val vers: String? = null,
   public val wd: String? = null,
   public val rmtL: List<String> = emptyList(),
-  public val port: Int = 0
+  public val port: Int = 0,
 )

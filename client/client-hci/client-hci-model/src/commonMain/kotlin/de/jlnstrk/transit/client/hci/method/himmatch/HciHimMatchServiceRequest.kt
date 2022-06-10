@@ -50,7 +50,7 @@ public data class HciHimMatchServiceRequest(
   public var maxRes: Int? = null,
   public var trainMatchMode: HciHimMatchTrainMatchMode? = null,
   public var trainNameMatchFormat: Int? = null,
-  public var trainNumberMatchType: Int? = null
+  public var trainNumberMatchType: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciHimMatchServiceRequest.() -> Unit):

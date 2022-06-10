@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciUserStoreServiceResult(
-  public val user: HciUser
+  public val user: HciUser,
 ) : HciServiceResult()

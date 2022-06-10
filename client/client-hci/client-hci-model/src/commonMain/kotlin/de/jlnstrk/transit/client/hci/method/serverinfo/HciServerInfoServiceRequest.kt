@@ -32,7 +32,7 @@ public data class HciServerInfoServiceRequest(
   public var getJnyAttributes: List<String> = emptyList(),
   public var getProperties: List<String> = emptyList(),
   public var getRealtimeSource: List<String> = emptyList(),
-  public var getOperatorInfo: HciGetOperatorInfo? = null
+  public var getOperatorInfo: HciGetOperatorInfo? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciServerInfoServiceRequest.() -> Unit):

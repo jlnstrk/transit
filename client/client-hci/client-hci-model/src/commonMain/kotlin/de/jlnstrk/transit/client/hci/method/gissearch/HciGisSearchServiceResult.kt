@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciGisSearchServiceResult(
   public val preselectionL: List<HciRoutingPreselection> = emptyList(),
-  public val refLoc: HciLocation? = null
+  public val refLoc: HciLocation? = null,
 ) : HciServiceResult()

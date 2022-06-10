@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMessageText(
   public val gTagXL: List<Int> = emptyList(),
-  public val texts: List<HciText> = emptyList()
+  public val texts: List<HciText> = emptyList(),
 )

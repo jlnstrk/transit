@@ -23,5 +23,5 @@ public data class HciEcoParams(
   public val relVhclWeight: Int = 100,
   public val vhclCls: HciEcoVehicleClass = HciEcoVehicleClass.MEDIUM,
   public val vhclEng: HciEcoVehicleEngine = HciEcoVehicleEngine.GAS_CONV,
-  public val vhclLoad: HciEcoVehicleLoad = HciEcoVehicleLoad.AVG
+  public val vhclLoad: HciEcoVehicleLoad = HciEcoVehicleLoad.AVG,
 )

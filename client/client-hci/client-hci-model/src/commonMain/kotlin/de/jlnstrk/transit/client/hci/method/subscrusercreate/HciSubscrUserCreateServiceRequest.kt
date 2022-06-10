@@ -20,7 +20,7 @@ public data class HciSubscrUserCreateServiceRequest(
   public var language: String? = null,
   public var pauseBegin: String? = null,
   public var pauseEnd: String? = null,
-  public var userId: String? = null
+  public var userId: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrUserCreateServiceRequest.() -> Unit):

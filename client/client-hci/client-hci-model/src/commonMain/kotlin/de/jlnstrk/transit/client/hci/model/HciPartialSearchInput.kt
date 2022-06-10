@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPartialSearchInput(
   public val replacementSearch: HciPartialSearchReplacement? = null,
-  public val stableSegmentSearch: HciPartialSearchSegment? = null
+  public val stableSegmentSearch: HciPartialSearchSegment? = null,
 )

@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciTimeFormat(
   public val styleX: Int? = null,
   public val txt: String? = null,
-  public val txtA: String? = null
+  public val txtA: String? = null,
 )

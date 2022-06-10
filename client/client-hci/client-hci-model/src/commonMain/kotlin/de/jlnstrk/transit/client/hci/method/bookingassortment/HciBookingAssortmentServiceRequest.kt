@@ -3,9 +3,9 @@ package de.jlnstrk.transit.client.hci.method.bookingassortment
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.model.HciServiceRequest
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.String
 import kotlin.Unit
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -14,7 +14,7 @@ public data class HciBookingAssortmentServiceRequest(
   @Serializable(with = HciLocalDateSerializer::class)
   public var date: LocalDate? = null,
   public var flags: String? = null,
-  public var supplier: String? = null
+  public var supplier: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciBookingAssortmentServiceRequest.() -> Unit):

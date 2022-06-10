@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciJourneyMatchGroup(
   public val journeys: List<HciJourney> = emptyList(),
   public val name: String? = null,
-  public val nameS: String? = null
+  public val nameS: String? = null,
 )

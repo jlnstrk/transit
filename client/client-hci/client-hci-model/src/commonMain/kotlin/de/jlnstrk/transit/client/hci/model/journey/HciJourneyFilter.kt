@@ -12,5 +12,5 @@ public data class HciJourneyFilter(
   public val type: HciJourneyFilterType,
   public val `value`: String? = null,
   public val locIdx: Int = -1,
-  public val mode: HciJourneyFilterMode = HciJourneyFilterMode.UNDEF
+  public val mode: HciJourneyFilterMode = HciJourneyFilterMode.UNDEF,
 )

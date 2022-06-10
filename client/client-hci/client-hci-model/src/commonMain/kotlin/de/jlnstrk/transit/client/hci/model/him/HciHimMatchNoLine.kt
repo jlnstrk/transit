@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciHimMatchNoLine(
   public val dirRefL: List<Int> = emptyList(),
   public val himIdL: List<String> = emptyList(),
-  public val name: String? = null
+  public val name: String? = null,
 )

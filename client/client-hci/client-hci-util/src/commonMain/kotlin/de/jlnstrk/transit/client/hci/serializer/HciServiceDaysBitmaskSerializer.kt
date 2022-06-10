@@ -1,7 +1,6 @@
 package de.jlnstrk.transit.client.hci.serializer
 
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.*
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
@@ -24,7 +23,7 @@ internal object HciServiceDaysBitmaskSerializer : KSerializer<List<LocalDate>> {
             .toByteArray()
         val dates = mutableListOf<LocalDate>()
         var day = 1
-        val today = LocalDateTime.now().date
+        val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
         for (element in bytes) {
             for (i in 0..7) {
                 if ((element.toInt() and (1 shl (7 - i))) > 0) {

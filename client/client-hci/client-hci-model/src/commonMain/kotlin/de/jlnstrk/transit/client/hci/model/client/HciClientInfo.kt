@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciClientInfo(
   public val code: HciClientInfoCode,
   public val msg: String? = null,
-  public val url: String? = null
+  public val url: String? = null,
 )

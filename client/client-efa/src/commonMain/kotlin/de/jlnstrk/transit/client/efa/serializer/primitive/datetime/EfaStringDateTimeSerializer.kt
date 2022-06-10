@@ -1,16 +1,12 @@
 package de.jlnstrk.transit.client.efa.serializer.primitive.datetime
 
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
-import com.soywiz.klock.parseTime
-import com.soywiz.klock.parseUtc
 import de.jlnstrk.transit.client.efa.util.EFA_DATETIME_FORMAT_SPACE_SEP
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_DOT_SEP
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_NO_SEP
 import de.jlnstrk.transit.client.efa.util.EFA_TIME_FORMAT_COLON_SEP
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
@@ -31,7 +27,7 @@ internal object EfaStringDateTimeSerializer {
 
         override fun deserialize(decoder: Decoder): LocalDateTime {
             val string = decoder.decodeString()
-            return EFA_DATETIME_FORMAT_SPACE_SEP.parseUtc(string)
+            return EFA_DATETIME_FORMAT_SPACE_SEP.parseDateTime(string)
         }
     }
 
@@ -62,7 +58,7 @@ internal object EfaStringDateTimeSerializer {
 
         override fun deserialize(decoder: Decoder): LocalTime {
             val string = decoder.decodeString()
-            return EFA_TIME_FORMAT_COLON_SEP.parseTime(string)
+            return EFA_TIME_FORMAT_COLON_SEP.parse(string)
         }
     }
 }

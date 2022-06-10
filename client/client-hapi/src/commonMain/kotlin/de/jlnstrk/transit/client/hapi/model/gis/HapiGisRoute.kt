@@ -9,9 +9,9 @@ import de.jlnstrk.transit.client.hapi.model.HapiNote
 import de.jlnstrk.transit.client.hapi.model.HapiPolyline
 import de.jlnstrk.transit.client.hapi.model.HapiPolylineGroup
 import de.jlnstrk.transit.client.hapi.serializer.HapiSecondsSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 @HapiXsd("1.29")
 @Serializable

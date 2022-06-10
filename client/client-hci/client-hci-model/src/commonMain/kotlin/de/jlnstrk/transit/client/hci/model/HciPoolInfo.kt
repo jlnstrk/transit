@@ -3,8 +3,8 @@ package de.jlnstrk.transit.client.hci.model
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.model.location.HciLocationType
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -17,5 +17,5 @@ public data class HciPoolInfo(
   public val index: Int,
   public val subType: HciLocationType = HciLocationType.U,
   public val timeStamp: Int = -1,
-  public val uic: Int
+  public val uic: Int,
 )

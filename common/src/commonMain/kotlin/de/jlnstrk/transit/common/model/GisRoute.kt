@@ -1,6 +1,7 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.Duration
+import kotlin.time.Duration
+
 
 public data class GisRoute(
     /** The total distance of this route in meters */

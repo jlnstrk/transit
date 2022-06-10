@@ -13,5 +13,5 @@ public data class HciReferencedJourney(
   public val origToIdx: Int? = null,
   public val refFromIdx: Int? = null,
   public val refToIdx: Int? = null,
-  public val type: HciReferencedJourneyType
+  public val type: HciReferencedJourneyType,
 )

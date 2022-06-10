@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciConnectionReliability(
   public val alternative: HciConnectionReliabilityType,
-  public val original: HciConnectionReliabilityType
+  public val original: HciConnectionReliabilityType,
 )

@@ -12,5 +12,5 @@ public data class HciDrawableLineStyle(
   public val eIcoX: Int? = null,
   public val sIcoX: Int? = null,
   public val type: HciDrawableLineStyleType = HciDrawableLineStyleType.SOLID,
-  public val zIdx: Int? = null
+  public val zIdx: Int? = null,
 )

@@ -5,9 +5,9 @@ import de.jlnstrk.transit.client.hci.model.HciServiceRequest
 import de.jlnstrk.transit.client.hci.model.geo.HciGeoRect
 import de.jlnstrk.transit.client.hci.model.geo.HciGeoRing
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
 import kotlin.Unit
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -17,7 +17,7 @@ public data class HciEventLocGeoPosServiceRequest(
   public var date: LocalDate? = null,
   public var period: Int? = null,
   public var rect: HciGeoRect? = null,
-  public var ring: HciGeoRing? = null
+  public var ring: HciGeoRing? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciEventLocGeoPosServiceRequest.() -> Unit):

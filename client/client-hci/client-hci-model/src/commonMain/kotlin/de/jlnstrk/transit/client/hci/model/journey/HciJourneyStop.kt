@@ -10,12 +10,12 @@ import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciZoneOffsetSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.ZoneOffset
 import kotlin.Boolean
 import kotlin.Deprecated
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.UtcOffset
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -37,7 +37,7 @@ public data class HciJourneyStop(
   public val aProgType: HciJourneyProgType? = null,
   public val aStat: HciJourneyStatistics? = null,
   @Serializable(with = HciZoneOffsetSerializer::class)
-  public val aTZOffset: ZoneOffset? = null,
+  public val aTZOffset: UtcOffset? = null,
   public val aTimeFC: HciTimeFormat? = null,
   public val aTimeFR: HciTimeFormat? = null,
   public val aTimeFS: HciTimeFormat? = null,
@@ -64,7 +64,7 @@ public data class HciJourneyStop(
   public val dProgType: HciJourneyProgType? = null,
   public val dStat: HciJourneyStatistics? = null,
   @Serializable(with = HciZoneOffsetSerializer::class)
-  public val dTZOffset: ZoneOffset? = null,
+  public val dTZOffset: UtcOffset? = null,
   public val dTimeFC: HciTimeFormat? = null,
   public val dTimeFR: HciTimeFormat? = null,
   public val dTimeFS: HciTimeFormat? = null,
@@ -91,25 +91,25 @@ public data class HciJourneyStop(
   @Deprecated("Removed after HCI version 1.21, but before version 1.24")
   @HciCompat(
     removedAfter = "1.21",
-    removedBefore = "1.24"
+    removedBefore = "1.24",
   )
   public val aPlatfS: String? = null,
   @Deprecated("Removed after HCI version 1.21, but before version 1.24")
   @HciCompat(
     removedAfter = "1.21",
-    removedBefore = "1.24"
+    removedBefore = "1.24",
   )
   public val aPlatfR: String? = null,
   @Deprecated("Removed after HCI version 1.21, but before version 1.24")
   @HciCompat(
     removedAfter = "1.21",
-    removedBefore = "1.24"
+    removedBefore = "1.24",
   )
   public val dPlatfS: String? = null,
   @Deprecated("Removed after HCI version 1.21, but before version 1.24")
   @HciCompat(
     removedAfter = "1.21",
-    removedBefore = "1.24"
+    removedBefore = "1.24",
   )
-  public val dPlatfR: String? = null
+  public val dPlatfR: String? = null,
 )

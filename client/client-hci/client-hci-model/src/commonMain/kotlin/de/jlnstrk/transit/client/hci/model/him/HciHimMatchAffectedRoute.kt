@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMatchAffectedRoute(
   public val dirL: List<HciHimMatchAffectedRouteDirection> = emptyList(),
-  public val passL: List<HciJourneyStop> = emptyList()
+  public val passL: List<HciJourneyStop> = emptyList(),
 )

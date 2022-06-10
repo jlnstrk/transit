@@ -4,11 +4,11 @@ import de.jlnstrk.transit.client.efa.model.EfaStop
 import de.jlnstrk.transit.common.model.Coordinates
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.stop.Stop
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.toInstant
+import kotlin.time.Duration
 
 internal fun EfaStop.normalizeAsDeparture(
     provider: EfaProvider,
@@ -19,10 +19,10 @@ internal fun EfaStop.normalizeAsDeparture(
         departureScheduled = LocalDateTime(
             stamp!!.date,
             stamp!!.time
-        ).toOffsetUnadjusted(provider.timezone),
+        ).toInstant(provider.timezone),
         departureRealtime = stamp?.rtDate
             ?.takeIf { isRealtime }
-            ?.let { LocalDateTime(it, stamp!!.rtTimeSec).toOffsetUnadjusted(provider.timezone) },
+            ?.let { LocalDateTime(it, stamp!!.rtTimeSec).toInstant(provider.timezone) },
         departureCancelled = false,
         departureScheduledPlatform = plannedPlatformName ?: platformName,
         departureRealtimePlatform = platformName,
@@ -34,12 +34,12 @@ internal fun EfaStop.normalizeAsArrival(provider: EfaProvider, isRealtime: Boole
     return Stop.Arrival(
         location = normalizeAsLocation(provider),
         arrivalScheduled = LocalDateTime(stamp!!.date, stamp!!.time)
-            .toOffsetUnadjusted(provider.timezone),
+            .toInstant(provider.timezone),
         arrivalRealtime = stamp?.rtDate
             ?.takeIf { isRealtime }
             ?.let {
                 LocalDateTime(it, stamp!!.rtTimeSec)
-                    .toOffsetUnadjusted(provider.timezone)
+                    .toInstant(provider.timezone)
             },
         arrivalCancelled = false,
         arrivalScheduledPlatform = plannedPlatformName ?: platformName,
@@ -49,17 +49,15 @@ internal fun EfaStop.normalizeAsArrival(provider: EfaProvider, isRealtime: Boole
 }
 
 internal fun EfaStop.normalizeAsIntermediate(provider: EfaProvider): Stop {
-    val departureScheduled = ref.depDateTimeSec
-        ?.let { OffsetDateTime.local(it, provider.timezone) }
+    val departureScheduled = ref.depDateTimeSec?.toInstant(provider.timezone)
     val departureCancelled =
-        ref.depValid && ref.depDelay?.minutes?.toLong() == -9999L
+        ref.depValid && ref.depDelay?.inWholeMinutes == -9999L
     val departureRealtime = departureScheduled
         ?.plus(ref.depDelay ?: Duration.ZERO)
         ?.takeUnless { !ref.depValid || departureCancelled }
-    val arrivalScheduled = ref.arrDateTimeSec
-        ?.let { OffsetDateTime.local(it, provider.timezone) }
+    val arrivalScheduled = ref.arrDateTimeSec?.toInstant(provider.timezone)
     val arrivalCancelled =
-        ref.arrValid && ref.arrDelay?.minutes?.toLong() == -9999L
+        ref.arrValid && ref.arrDelay?.inWholeMinutes == -9999L
     val arrivalRealtime = arrivalScheduled
         ?.plus(ref.arrDelay ?: Duration.ZERO)
         ?.takeUnless { !ref.arrValid || arrivalCancelled }

@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPropertyPair(
   public val k: String,
-  public val v: String
+  public val v: String,
 )

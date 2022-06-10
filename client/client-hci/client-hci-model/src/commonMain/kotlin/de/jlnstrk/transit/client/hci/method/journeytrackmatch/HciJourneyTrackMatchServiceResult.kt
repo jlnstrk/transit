@@ -13,5 +13,5 @@ import kotlinx.serialization.Serializable
 public class HciJourneyTrackMatchServiceResult(
   public val common: HciCommon? = null,
   public val diagnostics: List<HciNamedValue> = emptyList(),
-  public val matchResults: List<HciJourneyTrackMatchResult> = emptyList()
+  public val matchResults: List<HciJourneyTrackMatchResult> = emptyList(),
 ) : HciServiceResult()

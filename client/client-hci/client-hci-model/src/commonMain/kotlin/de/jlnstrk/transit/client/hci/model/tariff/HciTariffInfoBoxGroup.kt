@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciTariffInfoBoxGroup(
   public val caption: String? = null,
   public val msgL: List<HciMessage> = emptyList(),
-  public val tariffInfoBoxL: List<HciTariffInfoBox> = emptyList()
+  public val tariffInfoBoxL: List<HciTariffInfoBox> = emptyList(),
 )

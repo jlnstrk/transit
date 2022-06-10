@@ -11,5 +11,5 @@ public data class HciHimMatchError(
   public val ctx: String? = null,
   public val code: Int = 0,
   public val idx: Int = 0,
-  public val puic: Int = 0
+  public val puic: Int = 0,
 )

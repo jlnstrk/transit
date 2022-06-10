@@ -5,7 +5,7 @@ import de.jlnstrk.transit.common.extensions.toLineSet
 import de.jlnstrk.transit.common.model.LineSet
 import de.jlnstrk.transit.common.model.Message
 import de.jlnstrk.transit.interop.efa.EfaProvider
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.toInstant
 
 internal fun EfaTravelInfo.normalize(provider: EfaProvider): Message {
     return Message(
@@ -20,9 +20,9 @@ internal fun EfaTravelInfo.normalize(provider: EfaProvider): Message {
             EfaTravelInfo.Priority.VERY_HIGH,
             EfaTravelInfo.Priority.THREE -> Message.Priority.HIGH
         },
-        published = OffsetDateTime.local(creationTime, provider.timezone),
-        validFrom = OffsetDateTime.local(publicationDuration.itdDateTime_From, provider.timezone),
-        validUntil = OffsetDateTime.local(publicationDuration.itdDateTime_To, provider.timezone),
+        published = creationTime.toInstant(provider.timezone),
+        validFrom = publicationDuration.itdDateTime_From.toInstant(provider.timezone),
+        validUntil = publicationDuration.itdDateTime_To.toInstant(provider.timezone),
         affectedLines = concernedLines?.map { it.normalize(provider) }?.toLineSet() ?: LineSet()
     )
 }

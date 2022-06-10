@@ -4,8 +4,8 @@ import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -22,5 +22,5 @@ public data class HciTracePoint(
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val timeDB: HciLocalTime,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
-  public val timeDE: HciLocalTime
+  public val timeDE: HciLocalTime,
 )

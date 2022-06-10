@@ -7,9 +7,9 @@ import de.jlnstrk.transit.client.efa.request.delegate.EfaMinutesParam
 import de.jlnstrk.transit.client.efa.request.delegate.EfaTimeParam
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_NO_SEP
 import de.jlnstrk.transit.client.efa.util.EFA_TIME_FORMAT_COLON_SEP
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
+import kotlin.time.Duration
 
 public interface EfaDateTimeRequest {
     public var itdDate: LocalDate?

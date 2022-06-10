@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGroupName(
   public val lang: String,
-  public val name: String
+  public val name: String,
 )

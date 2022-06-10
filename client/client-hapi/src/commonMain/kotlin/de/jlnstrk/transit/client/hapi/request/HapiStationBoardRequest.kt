@@ -3,9 +3,9 @@ package de.jlnstrk.transit.client.hapi.request
 import de.jlnstrk.transit.client.hapi.request.base.HapiFilterList
 import de.jlnstrk.transit.client.hapi.request.delegate.*
 import de.jlnstrk.transit.client.hapi.response.base.HapiResponse
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
+import kotlin.time.Duration
 
 public sealed class HapiStationBoardRequest<Res : HapiResponse> : HapiRequest<Res>() {
     /** Specifies the station/stop ID for which the arrivals/departures shall be retrieved.

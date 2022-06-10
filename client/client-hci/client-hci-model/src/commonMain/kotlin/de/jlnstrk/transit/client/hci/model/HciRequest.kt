@@ -24,5 +24,5 @@ public data class HciRequest(
   public val formatted: Boolean = false,
   public val graphIdx: Int = 0,
   public val subGraphIdx: Int = 0,
-  public val viewIdx: Int = 0
+  public val viewIdx: Int = 0,
 )

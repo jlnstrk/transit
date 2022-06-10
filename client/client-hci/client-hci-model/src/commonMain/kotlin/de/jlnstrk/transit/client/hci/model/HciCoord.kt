@@ -14,5 +14,5 @@ public data class HciCoord(
   public val viewAlternatives: List<HciGraphNode> = emptyList(),
   public val z: Int = 99999999,
   public val layerX: Int = 0,
-  public val crdSysX: Int = 0
+  public val crdSysX: Int = 0,
 )

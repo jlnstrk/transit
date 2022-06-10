@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciUserLoginServiceResult(
-  public val uId: String? = null
+  public val uId: String? = null,
 ) : HciServiceResult()

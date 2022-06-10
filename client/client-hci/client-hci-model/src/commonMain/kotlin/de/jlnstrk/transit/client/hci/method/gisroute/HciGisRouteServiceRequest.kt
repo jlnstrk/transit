@@ -9,11 +9,11 @@ import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -33,7 +33,7 @@ public data class HciGisRouteServiceRequest(
   public var gisFltrL: List<HciGisFilter> = emptyList(),
   public var getTrafficMsg: Boolean? = null,
   public var mode: HciGisRouteMode? = null,
-  public var type: HciGisType? = null
+  public var type: HciGisType? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciGisRouteServiceRequest.() -> Unit):

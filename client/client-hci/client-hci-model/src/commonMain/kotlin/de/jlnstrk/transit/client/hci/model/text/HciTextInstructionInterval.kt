@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciTextInstructionInterval(
   public val endIndex: Int,
   public val startIndex: Int,
-  public val textInstructionX: Int
+  public val textInstructionX: Int,
 )

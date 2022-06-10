@@ -1,6 +1,6 @@
 package de.jlnstrk.transit.client.efa.serializer.primitive.datetime
 
-import de.jlnstrk.transit.util.LocalDateTime
+import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.descriptors.SerialDescriptor
@@ -19,14 +19,14 @@ internal object EfaNestedObjectDateTimeSerializer : KSerializer<LocalDateTime> {
     override fun serialize(encoder: Encoder, value: LocalDateTime) {
         val intermediate = Intermediate(
             itdDate = EfaFlatObjectDateTimeSerializer.Intermediate(
-                year = value.yearInt,
-                month = value.month0,
+                year = value.year,
+                month = value.monthNumber,
                 day = value.dayOfMonth
             ),
             itdTime = EfaFlatObjectDateTimeSerializer.Intermediate(
-                hour = value.hours,
-                minute = value.minutes,
-                second = value.seconds
+                hour = value.hour,
+                minute = value.minute,
+                second = value.second
             )
         )
         Intermediate.serializer().serialize(encoder, intermediate)

@@ -15,5 +15,5 @@ public data class HciSubscrEventHIM(
   public val id: String,
   public val received: String? = null,
   public val title: String? = null,
-  public val updated: Boolean = false
+  public val updated: Boolean = false,
 )

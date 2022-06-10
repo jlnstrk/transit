@@ -13,5 +13,5 @@ public data class HciSubscrTriggerPoint(
   public val loc: HciLocation,
   public val proc: Int,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
-  public val time: HciLocalTime
+  public val time: HciLocalTime,
 )

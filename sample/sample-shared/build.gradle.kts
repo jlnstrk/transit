@@ -22,11 +22,13 @@ project.buildkonfig {
 kotlin {
     jvm()
 
-    ios {
-        binaries {
-            framework {
-                baseName = "Transit"
-            }
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach {
+        it.binaries.framework {
+            baseName = "Shared"
         }
     }
     js(IR).browser()
@@ -43,7 +45,17 @@ kotlin {
         val jvmMain by getting {
             // No Ktor client here, done in sample-android to use the android one
         }
-        val iosMain by getting {
+        val iosX64Main by getting {
+            dependencies {
+                implementation(libs.ktor.client.ios)
+            }
+        }
+        val iosArm64Main by getting {
+            dependencies {
+                implementation(libs.ktor.client.ios)
+            }
+        }
+        val iosSimulatorArm64Main by getting {
             dependencies {
                 implementation(libs.ktor.client.ios)
             }

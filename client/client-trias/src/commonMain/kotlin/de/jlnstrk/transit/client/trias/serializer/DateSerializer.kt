@@ -1,9 +1,6 @@
 package de.jlnstrk.transit.client.trias.serializer
 
-import com.soywiz.klock.ISO8601
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializer
 import kotlinx.serialization.descriptors.PrimitiveKind
@@ -18,10 +15,10 @@ public object DateSerializer : KSerializer<LocalDate> {
         PrimitiveSerialDescriptor("Date", PrimitiveKind.STRING)
 
     override fun serialize(encoder: Encoder, value: LocalDate) {
-        return encoder.encodeString(ISO8601.DATE.format(value))
+        return encoder.encodeString(value.toString())
     }
 
     override fun deserialize(decoder: Decoder): LocalDate {
-        return ISO8601.DATE.parseDate(decoder.decodeString())
+        return LocalDate.parse(decoder.decodeString())
     }
 }

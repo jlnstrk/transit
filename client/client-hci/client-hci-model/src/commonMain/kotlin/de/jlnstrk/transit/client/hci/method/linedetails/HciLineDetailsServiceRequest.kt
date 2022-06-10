@@ -6,11 +6,11 @@ import de.jlnstrk.transit.client.hci.model.HciServiceRequest
 import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilter
 import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -23,7 +23,7 @@ public data class HciLineDetailsServiceRequest(
   public var pid: String? = null,
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
   public var jnyMode: HciLineJourneyMode? = null,
-  public var reslvHimMsgs: Boolean? = null
+  public var reslvHimMsgs: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLineDetailsServiceRequest.() -> Unit):

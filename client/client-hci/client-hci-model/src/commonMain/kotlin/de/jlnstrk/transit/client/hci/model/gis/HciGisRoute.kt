@@ -47,5 +47,5 @@ public data class HciGisRoute(
   public val segL: List<HciGisRouteSegment> = emptyList(),
   public val dirGeo: Int = 0,
   public val gisPrvr: HciGisProvider = HciGisProvider.U,
-  public val hasImpRem: Boolean = false
+  public val hasImpRem: Boolean = false,
 )

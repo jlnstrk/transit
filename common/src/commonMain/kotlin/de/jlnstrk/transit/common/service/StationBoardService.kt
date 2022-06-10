@@ -4,8 +4,8 @@ import de.jlnstrk.transit.common.Service
 import de.jlnstrk.transit.common.model.Line
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.ProductClass
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlin.time.Duration
 
 public interface StationBoardService : Service {
     public val supportedModes: Set<Mode> get() = emptySet()
@@ -23,7 +23,7 @@ public interface StationBoardService : Service {
         mode: Mode,
         location: Location,
         direction: Location? = null,
-        dateTime: OffsetDateTime? = null,
+        dateTime: Instant? = null,
         filterProducts: Set<ProductClass>? = null,
         filterLines: Set<Line>? = null,
         maxDuration: Duration? = null,

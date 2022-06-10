@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciTrainCompositionPS(
   public val n: String? = null,
   public val e: Int = 0,
-  public val s: Int = 0
+  public val s: Int = 0,
 )

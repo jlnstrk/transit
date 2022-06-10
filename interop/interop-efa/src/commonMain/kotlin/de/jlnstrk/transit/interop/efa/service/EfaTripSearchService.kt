@@ -14,8 +14,9 @@ import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration
 
 internal class EfaTripSearchService(
     provider: EfaProvider,
@@ -48,7 +49,7 @@ internal class EfaTripSearchService(
         via: List<Via>,
         viaPeriod: Duration?,
         viaModes: Set<Via.Mode>?,
-        dateTime: OffsetDateTime?,
+        dateTime: Instant?,
         dateTimeIsArrival: Boolean?,
         filterProducts: ProductSet?,
         filterLines: LineSet?,
@@ -79,7 +80,7 @@ internal class EfaTripSearchService(
             }
 
             if (dateTime != null) {
-                val atProviderZone = dateTime.toOffset(provider.timezone).local
+                val atProviderZone = dateTime.toLocalDateTime(provider.timezone)
                 itdDate = atProviderZone.date
                 itdTime = atProviderZone.time
             }

@@ -12,7 +12,7 @@ public data class HciFeedbackMailServiceRequest(
   public var captchaToken: String? = null,
   public var mailText: String? = null,
   public var sendAddr: String? = null,
-  public var sendName: String? = null
+  public var sendName: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciFeedbackMailServiceRequest.() -> Unit):

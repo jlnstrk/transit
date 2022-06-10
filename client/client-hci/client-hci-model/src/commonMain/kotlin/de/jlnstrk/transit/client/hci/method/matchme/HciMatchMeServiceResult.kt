@@ -15,5 +15,5 @@ public class HciMatchMeServiceResult(
   public val fpB: String? = null,
   public val fpE: String? = null,
   public val jnyL: List<HciJourney> = emptyList(),
-  public val planrtTS: String? = null
+  public val planrtTS: String? = null,
 ) : HciServiceResult()

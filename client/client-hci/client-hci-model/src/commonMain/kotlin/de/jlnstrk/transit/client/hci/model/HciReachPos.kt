@@ -11,5 +11,5 @@ public data class HciReachPos(
   public val dur: Int = -1,
   public val lastLocX: Int? = null,
   public val locX: Int? = null,
-  public val prodX: Int? = null
+  public val prodX: Int? = null,
 )

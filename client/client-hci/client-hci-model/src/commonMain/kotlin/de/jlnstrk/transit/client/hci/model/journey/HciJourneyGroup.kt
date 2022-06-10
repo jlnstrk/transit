@@ -15,5 +15,5 @@ public data class HciJourneyGroup(
   public val grpItemL: List<HciJourneyGroupItem> = emptyList(),
   public val grpL: List<HciJourneyGroup> = emptyList(),
   public val msgL: List<HciMessage> = emptyList(),
-  public val type: HciJourneyGroupType = HciJourneyGroupType.ROOT
+  public val type: HciJourneyGroupType = HciJourneyGroupType.ROOT,
 )

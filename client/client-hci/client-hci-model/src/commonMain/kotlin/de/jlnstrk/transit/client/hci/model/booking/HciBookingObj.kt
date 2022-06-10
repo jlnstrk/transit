@@ -34,5 +34,5 @@ public data class HciBookingObj(
   public val CLD: List<HciOperatorShare> = emptyList(),
   public val FD: Int = -1,
   public val FF: Boolean = true,
-  public val NUM: Int = 1
+  public val NUM: Int = 1,
 )

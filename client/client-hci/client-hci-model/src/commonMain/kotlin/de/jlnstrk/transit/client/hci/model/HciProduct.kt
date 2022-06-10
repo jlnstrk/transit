@@ -21,5 +21,5 @@ public data class HciProduct(
   public val stat: HciProductStatus? = null,
   public val himIdL: List<String> = emptyList(),
   public val msgL: List<HciMessage> = emptyList(),
-  public val cls: Int = 0
+  public val cls: Int = 0,
 )

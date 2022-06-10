@@ -19,5 +19,5 @@ public data class HciGroup(
   public val names: List<HciGroupName> = emptyList(),
   public val subgroupL: List<HciGroup> = emptyList(),
   public val enabled: Boolean = true,
-  public val subGrSelMode: HciSubGroupSelectionMode = HciSubGroupSelectionMode.U
+  public val subGrSelMode: HciSubGroupSelectionMode = HciSubGroupSelectionMode.U,
 )

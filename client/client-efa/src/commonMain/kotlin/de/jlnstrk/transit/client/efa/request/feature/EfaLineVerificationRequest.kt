@@ -7,7 +7,7 @@ import de.jlnstrk.transit.client.efa.request.delegate.EfaDateParam
 import de.jlnstrk.transit.client.efa.request.delegate.EfaStringMultiParam
 import de.jlnstrk.transit.client.efa.request.delegate.EfaStringParam
 import de.jlnstrk.transit.client.efa.util.EFA_DATE_FORMAT_NO_SEP
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 public interface EfaLineVerificationRequest {
     public var line: Set<String>

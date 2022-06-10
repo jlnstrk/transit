@@ -12,5 +12,5 @@ public data class HciAnnotationSegment(
   public val polyE: Int,
   public val polyS: Int,
   public val msgL: List<HciMessage> = emptyList(),
-  public val rRefL: List<Int> = emptyList()
+  public val rRefL: List<Int> = emptyList(),
 )

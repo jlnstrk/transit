@@ -20,7 +20,7 @@ public data class HciMatchMeServiceRequest(
   public var locExit: HciLocation? = null,
   public var search: String? = null,
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public var tracePtL: List<HciTracePoint> = emptyList()
+  public var tracePtL: List<HciTracePoint> = emptyList(),
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciMatchMeServiceRequest.() -> Unit):

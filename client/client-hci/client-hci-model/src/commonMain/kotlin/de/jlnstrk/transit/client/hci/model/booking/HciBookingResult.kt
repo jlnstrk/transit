@@ -13,5 +13,5 @@ public data class HciBookingResult(
   public val FV: String? = null,
   public val common: HciFareCommon? = null,
   public val errCode: Int = 0,
-  public val errMsg: String? = null
+  public val errMsg: String? = null,
 )

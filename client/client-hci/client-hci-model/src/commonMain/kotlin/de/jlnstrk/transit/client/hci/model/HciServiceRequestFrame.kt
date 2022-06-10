@@ -11,5 +11,5 @@ public data class HciServiceRequestFrame(
   public val ctx: String? = null,
   public val id: String? = null,
   public val meth: HciServiceMethod,
-  public val req: HciServiceRequest
+  public val req: HciServiceRequest,
 )

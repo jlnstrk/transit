@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciConnectionGroupRequest(
   public val autosend: Boolean,
-  public val id: String
+  public val id: String,
 )

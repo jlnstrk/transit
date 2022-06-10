@@ -31,5 +31,5 @@ public data class HciConSection(
   public val msgL: List<HciMessage> = emptyList(),
   public val parJnyL: List<HciJourney> = emptyList(),
   public val resRecommendation: HciReservationRecommendation = HciReservationRecommendation.U,
-  public val resState: HciReservationState = HciReservationState.U
+  public val resState: HciReservationState = HciReservationState.U,
 )

@@ -22,5 +22,5 @@ public data class HciFareProperties(
   public val LN: Int = 0,
   public val PS: Int = 0,
   public val UA: Int = 0,
-  public val UN: Int = 0
+  public val UN: Int = 0,
 )

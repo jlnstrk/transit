@@ -1,8 +1,8 @@
 package de.jlnstrk.transit.common.model
 
-import de.jlnstrk.transit.util.LocalDate
 import de.jlnstrk.transit.common.model.base.Identifiable
 import de.jlnstrk.transit.common.model.stop.Stop
+import kotlinx.datetime.LocalDate
 
 public data class Trip(
     public override val id: String,

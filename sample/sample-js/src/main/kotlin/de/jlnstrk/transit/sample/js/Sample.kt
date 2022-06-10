@@ -1,7 +1,6 @@
 package de.jlnstrk.transit.sample.js
 
 import com.soywiz.klock.TimeFormat
-import com.soywiz.klock.format
 import de.jlnstrk.transit.common.extensions.require
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.stop.BaseDeparture

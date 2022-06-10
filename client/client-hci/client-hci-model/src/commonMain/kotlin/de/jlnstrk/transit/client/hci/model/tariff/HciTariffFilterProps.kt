@@ -12,5 +12,5 @@ public data class HciTariffFilterProps(
   public val cardL: List<HciTariffReductionCard> = emptyList(),
   public val classL: List<HciTariffComfortClass> = emptyList(),
   public val typePersL: List<HciTariffTravellerType> = emptyList(),
-  public val usageL: List<HciTariffUsage> = emptyList()
+  public val usageL: List<HciTariffUsage> = emptyList(),
 )

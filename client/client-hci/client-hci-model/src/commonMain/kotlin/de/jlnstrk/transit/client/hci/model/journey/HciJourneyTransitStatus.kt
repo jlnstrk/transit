@@ -26,5 +26,5 @@ public data class HciJourneyTransitStatus(
   public val trackChange: Boolean = false,
   public val useWalk: Boolean = false,
   public val waitExists: Boolean = false,
-  public val wruleExists: Boolean = false
+  public val wruleExists: Boolean = false,
 )

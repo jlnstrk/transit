@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciTariffVia(
   public val loc: HciLocation? = null,
-  public val zoneId: String? = null
+  public val zoneId: String? = null,
 )

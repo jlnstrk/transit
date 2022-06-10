@@ -23,5 +23,5 @@ public class HciSubscrSearchServiceResult(
   public val intvlSubscrL: List<HciSubscrResultIntvl> = emptyList(),
   public val jnySubscrL: List<HciSubscrResultJourney> = emptyList(),
   public val rssSubscrL: List<HciSubscrResultRSS> = emptyList(),
-  public val statSubscrL: List<HciSubscrResultStatistics> = emptyList()
+  public val statSubscrL: List<HciSubscrResultStatistics> = emptyList(),
 ) : HciServiceResult()

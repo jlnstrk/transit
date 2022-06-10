@@ -5,12 +5,12 @@ import de.jlnstrk.transit.client.hci.model.HciServiceRequest
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Double
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -31,7 +31,7 @@ public data class HciTestServiceRequest(
   public var inTime: HciLocalTime? = null,
   public var inputFloat: Double? = null,
   public var inputInt: Int? = null,
-  public var inputLong: Int? = null
+  public var inputLong: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciTestServiceRequest.() -> Unit):

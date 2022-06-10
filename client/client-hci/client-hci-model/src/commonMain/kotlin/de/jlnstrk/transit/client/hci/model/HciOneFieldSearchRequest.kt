@@ -11,5 +11,5 @@ public data class HciOneFieldSearchRequest(
   public val type: HciOneFieldSearchRequestType,
   public val arrLocRefL: List<Int> = emptyList(),
   public val depLocRefL: List<Int> = emptyList(),
-  public val viaLocRefL: List<Int> = emptyList()
+  public val viaLocRefL: List<Int> = emptyList(),
 )

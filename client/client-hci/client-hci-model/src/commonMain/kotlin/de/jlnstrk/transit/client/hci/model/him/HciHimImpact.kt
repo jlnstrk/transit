@@ -13,5 +13,5 @@ public data class HciHimImpact(
   public val impact: String? = null,
   public val prio: Int,
   public val prodCode: String? = null,
-  public val products: Int
+  public val products: Int,
 )

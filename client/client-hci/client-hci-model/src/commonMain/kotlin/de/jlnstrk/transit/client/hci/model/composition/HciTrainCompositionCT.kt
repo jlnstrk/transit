@@ -13,5 +13,5 @@ public data class HciTrainCompositionCT(
   public val i: String,
   public val l: Int,
   public val s: String? = null,
-  public val t: String? = null
+  public val t: String? = null,
 )

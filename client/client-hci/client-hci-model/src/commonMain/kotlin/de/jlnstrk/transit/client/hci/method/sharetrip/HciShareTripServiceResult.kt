@@ -14,5 +14,5 @@ public class HciShareTripServiceResult(
   public val common: HciCommon? = null,
   public val subject: String? = null,
   public val text: String? = null,
-  public val urlL: List<Int> = emptyList()
+  public val urlL: List<Int> = emptyList(),
 ) : HciServiceResult()

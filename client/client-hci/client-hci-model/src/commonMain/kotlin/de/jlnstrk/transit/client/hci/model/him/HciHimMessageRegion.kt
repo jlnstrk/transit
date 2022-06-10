@@ -20,5 +20,5 @@ public data class HciHimMessageRegion(
   public val polyG: HciPolylineGroup? = null,
   public val ring: HciGeoRing? = null,
   public val msgRefL: List<Int> = emptyList(),
-  public val polyTypeL: List<Boolean> = emptyList()
+  public val polyTypeL: List<Boolean> = emptyList(),
 )

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciGraphMatch(
   public val affPolyGrp: HciPolylineGroup? = null,
   public val dist: Int,
-  public val matchPt: HciCoord
+  public val matchPt: HciCoord,
 )

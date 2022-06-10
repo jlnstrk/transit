@@ -16,5 +16,5 @@ public data class HciHimMessageEdge(
   public val polyG: HciPolylineGroup? = null,
   public val tLocX: Int? = null,
   public val msgRefL: List<Int> = emptyList(),
-  public val dir: Int = 0
+  public val dir: Int = 0,
 )

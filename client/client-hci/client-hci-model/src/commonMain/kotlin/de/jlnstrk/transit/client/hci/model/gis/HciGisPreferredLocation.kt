@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciGisPreferredLocation(
   public val dLoc: HciLocation? = null,
   public val sLoc: HciLocation? = null,
-  public val type: HciGisType
+  public val type: HciGisType,
 )

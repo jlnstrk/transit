@@ -7,11 +7,11 @@ import de.jlnstrk.transit.client.hci.model.him.HciHimFilter
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -32,7 +32,7 @@ public data class HciHimGeoPosServiceRequest(
   public var dur: Int? = null,
   public var maxNum: Int? = null,
   public var polyLineRes: Int? = null,
-  public var prio: Int? = null
+  public var prio: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciHimGeoPosServiceRequest.() -> Unit):

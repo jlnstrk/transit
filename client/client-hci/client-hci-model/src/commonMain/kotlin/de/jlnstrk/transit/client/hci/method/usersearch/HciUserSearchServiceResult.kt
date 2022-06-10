@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciUserSearchServiceResult(
-  public val userL: List<HciUser> = emptyList()
+  public val userL: List<HciUser> = emptyList(),
 ) : HciServiceResult()

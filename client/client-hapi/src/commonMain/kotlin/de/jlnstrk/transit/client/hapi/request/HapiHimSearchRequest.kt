@@ -10,8 +10,8 @@ import de.jlnstrk.transit.client.hapi.request.delegate.HapiLocalTimeParam
 import de.jlnstrk.transit.client.hapi.request.delegate.HapiQueryParam
 import de.jlnstrk.transit.client.hapi.request.delegate.HapiStringListParam
 import de.jlnstrk.transit.client.hapi.response.HapiHimMessages
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
 import kotlin.jvm.JvmInline
 
 public class HapiHimSearchRequest : HapiRequest<HapiHimMessages>() {

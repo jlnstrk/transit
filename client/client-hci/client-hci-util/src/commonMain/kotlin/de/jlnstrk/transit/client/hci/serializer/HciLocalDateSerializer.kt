@@ -1,9 +1,7 @@
 package de.jlnstrk.transit.client.hci.serializer
 
-import com.soywiz.klock.DateFormat
-import com.soywiz.klock.format
-import com.soywiz.klock.parseDate
-import de.jlnstrk.transit.util.LocalDate
+import de.jlnstrk.transit.util.DateFormat
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor

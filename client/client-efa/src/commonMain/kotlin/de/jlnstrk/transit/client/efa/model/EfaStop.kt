@@ -11,8 +11,8 @@ import de.jlnstrk.transit.client.efa.serializer.primitive.EfaStringBooleanSerial
 import kotlinx.serialization.Serializable
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaStringDateTimeSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaSimpleTimeSerializer
-import de.jlnstrk.transit.util.LocalDate
-import de.jlnstrk.transit.util.LocalTime
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.UseSerializers
 

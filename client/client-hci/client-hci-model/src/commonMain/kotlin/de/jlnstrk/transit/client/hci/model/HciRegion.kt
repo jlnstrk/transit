@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciRegion(
   public val extId: Int,
-  public val name: String
+  public val name: String,
 )

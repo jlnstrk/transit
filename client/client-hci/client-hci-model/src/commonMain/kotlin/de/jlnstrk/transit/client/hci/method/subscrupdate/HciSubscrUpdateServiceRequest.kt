@@ -31,7 +31,7 @@ public data class HciSubscrUpdateServiceRequest(
   public var userId: String? = null,
   public var channels: List<HciSubscrChannel> = emptyList(),
   public var getDetails: Boolean? = null,
-  public var status: HciSubscrStatus? = null
+  public var status: HciSubscrStatus? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrUpdateServiceRequest.() -> Unit):

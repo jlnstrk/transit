@@ -12,18 +12,18 @@ import de.jlnstrk.transit.client.hci.model.user.HciUser
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciZoneOffsetSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.ZoneOffset
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.UtcOffset
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
 @Serializable
 public data class HciLocation(
   @Serializable(with = HciZoneOffsetSerializer::class)
-  public val TZOffset: ZoneOffset? = null,
+  public val TZOffset: UtcOffset? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val chgTime: HciLocalTime? = null,
   public val crd: HciCoord? = null,
@@ -71,5 +71,5 @@ public data class HciLocation(
   public val pCls: Int = -1,
   public val state: HciLocationState = HciLocationState.F,
   public val type: HciLocationType = HciLocationType.U,
-  public val wt: Int = 0
+  public val wt: Int = 0,
 )

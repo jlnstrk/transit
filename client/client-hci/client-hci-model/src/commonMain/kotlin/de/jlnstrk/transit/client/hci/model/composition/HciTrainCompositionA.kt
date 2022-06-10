@@ -12,5 +12,5 @@ public data class HciTrainCompositionA(
   public val c: String,
   public val T: List<HciTrainCompositionT> = emptyList(),
   public val n: Boolean = false,
-  public val p: HciTrainCompositionPriority = HciTrainCompositionPriority.N
+  public val p: HciTrainCompositionPriority = HciTrainCompositionPriority.N,
 )

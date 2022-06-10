@@ -12,5 +12,5 @@ import kotlinx.serialization.Serializable
 public data class HciConnectionScore(
   public val conRefL: List<Int> = emptyList(),
   public val score: Long,
-  public val scoreS: String
+  public val scoreS: String,
 )

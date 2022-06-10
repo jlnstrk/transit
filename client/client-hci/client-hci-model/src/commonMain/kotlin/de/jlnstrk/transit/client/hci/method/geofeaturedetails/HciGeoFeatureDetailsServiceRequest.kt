@@ -9,7 +9,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciGeoFeatureDetailsServiceRequest(
-  public var id: String? = null
+  public var id: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciGeoFeatureDetailsServiceRequest.() -> Unit):

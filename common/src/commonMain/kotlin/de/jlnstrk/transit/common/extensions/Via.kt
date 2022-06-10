@@ -2,7 +2,7 @@ package de.jlnstrk.transit.common.extensions
 
 import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.Via
-import de.jlnstrk.transit.util.Duration
+import kotlin.time.Duration
 
 public fun Via(
     location: Location,

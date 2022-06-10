@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrResultId(
   public val lastPush: String,
-  public val subscrId: Int
+  public val subscrId: Int,
 )

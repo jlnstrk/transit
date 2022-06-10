@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciFareToken(
   public val mode: HciFareTokenMode? = null,
   public val num: Int? = null,
-  public val type: String? = null
+  public val type: String? = null,
 )

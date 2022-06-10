@@ -7,10 +7,10 @@ import de.jlnstrk.transit.client.hci.model.journey.HciJourneyFilter
 import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.model.location.HciLocationFilter
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -25,7 +25,7 @@ public data class HciLocGraphServiceRequest(
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
   public var locFltrL: List<HciLocationFilter> = emptyList(),
   public var locL: List<HciLocation> = emptyList(),
-  public var type: HciLocGraphType? = null
+  public var type: HciLocGraphType? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLocGraphServiceRequest.() -> Unit):

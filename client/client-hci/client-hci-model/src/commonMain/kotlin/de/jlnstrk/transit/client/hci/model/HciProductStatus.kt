@@ -24,5 +24,5 @@ public data class HciProductStatus(
   public val code: Int = 0,
   public val him: Int = 0,
   public val ont: Int = 0,
-  public val rt: Int = 0
+  public val rt: Int = 0,
 )

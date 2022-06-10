@@ -18,5 +18,5 @@ public data class HciLine(
   public val jnyL: List<HciJourney> = emptyList(),
   public val locStartEndRefL: List<Int> = emptyList(),
   public val locStopRefL: List<Int> = emptyList(),
-  public val prodGraphL: List<HciProductGraph> = emptyList()
+  public val prodGraphL: List<HciProductGraph> = emptyList(),
 )

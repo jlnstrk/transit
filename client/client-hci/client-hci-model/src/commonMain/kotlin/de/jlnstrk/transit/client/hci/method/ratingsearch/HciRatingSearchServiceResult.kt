@@ -13,5 +13,5 @@ import kotlinx.serialization.Serializable
 public class HciRatingSearchServiceResult(
   public val common: HciCommon? = null,
   public val ratingL: List<HciRating> = emptyList(),
-  public val userL: List<HciUser> = emptyList()
+  public val userL: List<HciUser> = emptyList(),
 ) : HciServiceResult()

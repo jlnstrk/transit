@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciRoutingPreselection(
   public val gisProfile: HciGisProfile,
-  public val nodes: List<HciPreselectionNode> = emptyList()
+  public val nodes: List<HciPreselectionNode> = emptyList(),
 )

@@ -14,5 +14,5 @@ public data class HciLocationWalk(
   public val polyG: HciPolylineGroup? = null,
   public val tLocX: Int? = null,
   public val himXL: List<Int> = emptyList(),
-  public val remXL: List<Int> = emptyList()
+  public val remXL: List<Int> = emptyList(),
 )

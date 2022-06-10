@@ -11,5 +11,5 @@ public data class HciJourneyDelaySummary(
   public val name: String? = null,
   public val cumulatedDelay: Int = 0,
   public val numTrains: Int = 0,
-  public val numTrainsOnTime: Int = 0
+  public val numTrainsOnTime: Int = 0,
 )

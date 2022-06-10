@@ -16,7 +16,7 @@ public data class HciJourneyTrackMatchServiceRequest(
   public var jnyTrkPtL: List<HciJourneyTrackPoint> = emptyList(),
   public var secDataL: List<HciJourneyTrackSectionData> = emptyList(),
   public var algorithm: HciJourneyTrackMatchAlgorithm? = null,
-  public var calcMatchQuality: Boolean? = null
+  public var calcMatchQuality: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciJourneyTrackMatchServiceRequest.() -> Unit):

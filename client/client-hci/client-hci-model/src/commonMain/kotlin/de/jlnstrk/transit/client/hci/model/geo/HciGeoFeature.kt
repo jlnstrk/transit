@@ -25,5 +25,5 @@ public data class HciGeoFeature(
   public val lines: List<HciPolyline> = emptyList(),
   public val msgL: List<HciMessage> = emptyList(),
   public val points: List<HciCoord> = emptyList(),
-  public val validityList: List<HciDateTimeInterval> = emptyList()
+  public val validityList: List<HciDateTimeInterval> = emptyList(),
 )

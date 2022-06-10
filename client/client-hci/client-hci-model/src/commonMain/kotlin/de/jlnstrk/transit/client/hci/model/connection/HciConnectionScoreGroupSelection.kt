@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciConnectionScoreGroupSelection(
   public val bitIdx: Int? = null,
   public val icoX: Int? = null,
-  public val name: String? = null
+  public val name: String? = null,
 )

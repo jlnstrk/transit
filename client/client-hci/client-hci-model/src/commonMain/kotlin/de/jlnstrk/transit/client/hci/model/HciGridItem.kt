@@ -15,5 +15,5 @@ public data class HciGridItem(
   public val txtC: HciColor? = null,
   public val cntL: List<HciMessageContentType> = emptyList(),
   public val frmL: List<HciMessageFormatType> = emptyList(),
-  public val remL: List<Int> = emptyList()
+  public val remL: List<Int> = emptyList(),
 )

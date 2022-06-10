@@ -11,5 +11,5 @@ public data class HciTariffTravellerProfile(
   public val ticketType: HciTariffTravellerTicketType? = null,
   public val type: HciTariffTravellerProfileType? = null,
   public val age: Int = 0,
-  public val redtnCard: Int = 0
+  public val redtnCard: Int = 0,
 )

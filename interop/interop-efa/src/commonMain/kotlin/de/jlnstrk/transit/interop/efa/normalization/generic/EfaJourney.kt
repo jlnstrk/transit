@@ -9,6 +9,7 @@ import de.jlnstrk.transit.common.model.Location
 import de.jlnstrk.transit.common.model.stop.Stop
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.util.normalized
+import kotlinx.datetime.toInstant
 
 internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaDateTimeMode): Journey {
     val stopLocation = Location.Station(
@@ -16,8 +17,8 @@ internal fun EfaJourney.normalize(provider: EfaProvider, mode: EfaDateTimeMode):
         coordinates = EfaCoordinates(x, y, mapName).normalized(),
         id = stopID.toString()
     )
-    val zonedDateTime = dateTime.toOffsetUnadjusted(provider.timezone)
-    val zonedRealtimeDateTime = realDateTime?.toOffsetUnadjusted(provider.timezone)
+    val zonedDateTime = dateTime.toInstant(provider.timezone)
+    val zonedRealtimeDateTime = realDateTime?.toInstant(provider.timezone)
     val cancelled = false
     return Journey(
         // Not unique!

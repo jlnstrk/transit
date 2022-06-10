@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGisEdge(
   public val edgeID: String? = null,
-  public val graphID: String? = null
+  public val graphID: String? = null,
 )

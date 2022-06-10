@@ -10,5 +10,5 @@ public data class HciColor(
   public val a: Int = 255,
   public val b: Int,
   public val g: Int,
-  public val r: Int
+  public val r: Int,
 )

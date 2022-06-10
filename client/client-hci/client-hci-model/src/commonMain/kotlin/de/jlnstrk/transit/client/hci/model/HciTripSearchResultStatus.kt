@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciTripSearchResultStatus(
-  public val timeDiffCritical: Boolean = false
+  public val timeDiffCritical: Boolean = false,
 )

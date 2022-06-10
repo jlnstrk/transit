@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciGraphGeoPosServiceResult(
   public val common: HciCommon? = null,
-  public val graphMatchL: List<HciGraphMatch> = emptyList()
+  public val graphMatchL: List<HciGraphMatch> = emptyList(),
 ) : HciServiceResult()

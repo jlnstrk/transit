@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciUserLoginServiceRequest(
   public var uName: String? = null,
-  public var uPass: String? = null
+  public var uPass: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciUserLoginServiceRequest.() -> Unit):

@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciTrainCompositionGR(
   public val g: String,
   public val r: Boolean = false,
-  public val tcgX: Int
+  public val tcgX: Int,
 )

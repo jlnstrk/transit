@@ -73,5 +73,5 @@ public data class HciCommon(
   public val urlL: List<HciUrl> = emptyList(),
   public val viewL: List<HciView> = emptyList(),
   public val layerL: List<HciLayer> = emptyList(),
-  public val crdSysL: List<HciCoordSystem> = emptyList()
+  public val crdSysL: List<HciCoordSystem> = emptyList(),
 )

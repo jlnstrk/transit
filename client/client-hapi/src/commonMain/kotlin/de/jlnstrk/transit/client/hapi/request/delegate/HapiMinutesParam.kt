@@ -1,10 +1,9 @@
 package de.jlnstrk.transit.client.hapi.request.delegate
 
-import com.soywiz.klock.minutes
-import de.jlnstrk.transit.util.Duration
-import kotlin.math.roundToInt
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.minutes
 
 internal object HapiMinutesParam : HapiQueryParam<Duration>(
-    serialize = { it.minutes.roundToInt().toString() },
+    serialize = { it.inWholeMinutes.toString() },
     deserialize = { it.toInt().minutes }
 )

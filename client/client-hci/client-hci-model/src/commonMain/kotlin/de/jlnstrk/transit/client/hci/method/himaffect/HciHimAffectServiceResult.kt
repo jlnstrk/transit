@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciHimAffectServiceResult(
   public val affLocRefL: List<Int> = emptyList(),
-  public val common: HciCommon? = null
+  public val common: HciCommon? = null,
 ) : HciServiceResult()

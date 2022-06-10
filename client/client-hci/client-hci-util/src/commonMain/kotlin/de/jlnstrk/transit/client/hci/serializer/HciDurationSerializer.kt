@@ -1,16 +1,16 @@
 package de.jlnstrk.transit.client.hci.serializer
 
-import com.soywiz.klock.days
-import com.soywiz.klock.hours
-import com.soywiz.klock.minutes
-import com.soywiz.klock.seconds
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
 import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.days
+import kotlin.time.Duration.Companion.hours
+import kotlin.time.Duration.Companion.minutes
+import kotlin.time.Duration.Companion.seconds
 
 public object HciDurationSerializer : KSerializer<Duration> {
     override val descriptor: SerialDescriptor =
@@ -19,10 +19,10 @@ public object HciDurationSerializer : KSerializer<Duration> {
 
     override fun serialize(encoder: Encoder, value: Duration) {
         val string = StringBuilder().apply {
-            append(value.days.toLong().toString().padStart(2, '0'))
-            append((value.hours.toLong() % 24).toString().padStart(2, '0'))
-            append((value.minutes.toLong() % 60).toString().padStart(2, '0'))
-            append((value.seconds.toLong() % 60).toString().padStart(2, '0'))
+            append(value.inWholeDays.toString().padStart(2, '0'))
+            append((value.inWholeHours % 24).toString().padStart(2, '0'))
+            append((value.inWholeMinutes % 60).toString().padStart(2, '0'))
+            append((value.inWholeSeconds % 3600).toString().padStart(2, '0'))
         }.toString()
         encoder.encodeString(string)
     }

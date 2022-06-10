@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciEventGroup(
   public val icoX: Int? = null,
   public val id: String? = null,
-  public val name: String? = null
+  public val name: String? = null,
 )

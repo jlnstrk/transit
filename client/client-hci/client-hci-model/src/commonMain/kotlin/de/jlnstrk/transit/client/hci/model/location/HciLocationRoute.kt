@@ -11,5 +11,5 @@ public data class HciLocationRoute(
   public val endStation: String? = null,
   public val locX: Int,
   public val routeNum: String,
-  public val startStation: String? = null
+  public val startStation: String? = null,
 )

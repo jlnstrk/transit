@@ -7,9 +7,9 @@ package de.jlnstrk.transit.client.hapi.model
 import de.jlnstrk.transit.client.hafas.HapiXsd
 import de.jlnstrk.transit.client.hapi.model.journey.HapiJourney
 import de.jlnstrk.transit.client.hapi.serializer.HapiMinutesSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 /** Alternatives for this leg by plan. */
 @HapiXsd("1.29")

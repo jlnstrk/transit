@@ -3,10 +3,10 @@ package de.jlnstrk.transit.client.hci.model.subscr
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.model.HciNamedValue
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -28,5 +28,5 @@ public data class HciSubscrEventRT(
   public val title: String? = null,
   public val trainInfo: HciSubscrRTTrainInfo? = null,
   public val rtConSecInfos: List<HciSubscrRTInfo> = emptyList(),
-  public val templateVariables: List<HciNamedValue> = emptyList()
+  public val templateVariables: List<HciNamedValue> = emptyList(),
 )

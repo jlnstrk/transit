@@ -16,8 +16,10 @@ import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.denormalize
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlinx.datetime.toInstant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration
 
 internal class EfaStationBoardService(
     provider: EfaProvider,
@@ -39,13 +41,13 @@ internal class EfaStationBoardService(
         mode: StationBoardService.Mode,
         location: Location,
         direction: Location?,
-        dateTime: OffsetDateTime?,
+        dateTime: Instant?,
         filterProducts: Set<ProductClass>?,
         filterLines: Set<Line>?,
         maxDuration: Duration?,
         maxResults: Int?
     ): StationBoardResult {
-        val dateTimeAtServer = dateTime?.toOffset(provider.timezone)?.local
+        val dateTimeAtServer = dateTime?.toLocalDateTime(provider.timezone)
         val point = with(provider) { location.denormalize(provider) }
         val efaRequest = efaDmRequest {
             dm(point) {
@@ -79,7 +81,7 @@ internal class EfaStationBoardService(
             val data = with(provider) {
                 StationBoardData(
                     header = DataHeader(),
-                    dateTime = OffsetDateTime.local(efaResponse.dateTime.dateTime, provider.timezone),
+                    dateTime = efaResponse.dateTime.dateTime.toInstant(provider.timezone),
                     isArrivalBoard = efaResponse.dateTime.mode == EfaDateTimeMode.ARRIVAL,
                     journeys = when (efaResponse.dateTime.mode) {
                         EfaDateTimeMode.ARRIVAL -> efaResponse.arrivalList

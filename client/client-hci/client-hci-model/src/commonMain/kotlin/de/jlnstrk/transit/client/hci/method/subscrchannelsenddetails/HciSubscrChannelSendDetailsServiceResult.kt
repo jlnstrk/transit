@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciSubscrChannelSendDetailsServiceResult(
-  public val result: HciSubscrResultStatus
+  public val result: HciSubscrResultStatus,
 ) : HciServiceResult()

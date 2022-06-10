@@ -18,5 +18,5 @@ public data class HciIcon(
   public val txtS: String? = null,
   public val zIdx: Int? = null,
   public val shp: HciShapeType = HciShapeType.U,
-  public val sty: HciStyleType = HciStyleType.U
+  public val sty: HciStyleType = HciStyleType.U,
 )

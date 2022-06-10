@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciUrl(
   public val label: String? = null,
-  public val url: String
+  public val url: String,
 )

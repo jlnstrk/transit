@@ -14,5 +14,5 @@ public data class HciJourneyTrackMatchJourney(
   public val matchTimeSpanBegin: HciLocalTime? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val matchTimeSpanEnd: HciLocalTime? = null,
-  public val onlyGuessed: Boolean? = null
+  public val onlyGuessed: Boolean? = null,
 )

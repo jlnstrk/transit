@@ -30,5 +30,5 @@ public class HciHimMatchServiceResult(
   public val matchWarnL: List<HciHimMatchWarning> = emptyList(),
   public val trainNameL: List<String> = emptyList(),
   public val numOfHimJrnRes: Int = 0,
-  public val numOfRes: Int = 0
+  public val numOfRes: Int = 0,
 ) : HciServiceResult()

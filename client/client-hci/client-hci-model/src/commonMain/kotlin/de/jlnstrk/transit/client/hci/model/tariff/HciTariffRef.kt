@@ -10,5 +10,5 @@ public data class HciTariffRef(
   public val fareSetX: Int,
   public val fareX: Int? = null,
   public val ticketX: Int? = null,
-  public val type: HciTariffRefType
+  public val type: HciTariffRefType,
 )

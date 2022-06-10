@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciHimMatchAffectedRouteDirection(
   public val flag: String? = null,
   public val key: String? = null,
-  public val txt: String? = null
+  public val txt: String? = null,
 )

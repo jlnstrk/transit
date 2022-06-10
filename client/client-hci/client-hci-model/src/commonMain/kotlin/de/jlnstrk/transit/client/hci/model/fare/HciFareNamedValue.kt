@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciFareNamedValue(
   public val N: String,
-  public val V: String? = null
+  public val V: String? = null,
 )

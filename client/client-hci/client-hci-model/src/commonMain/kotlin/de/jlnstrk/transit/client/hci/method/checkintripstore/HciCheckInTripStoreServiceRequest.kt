@@ -14,7 +14,7 @@ public data class HciCheckInTripStoreServiceRequest(
   public var checkIn: Boolean? = null,
   public var reconCtx: String? = null,
   public var uId: String? = null,
-  public var uPos: HciCoord? = null
+  public var uPos: HciCoord? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciCheckInTripStoreServiceRequest.() -> Unit):

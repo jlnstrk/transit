@@ -11,7 +11,7 @@ val composeVersion = "1.2.0-beta03"
 
 android {
     sourceSets.getByName("main").java.srcDir("src/main/kotlin")
-    compileSdk = 31
+    compileSdk = 32
     buildToolsVersion = "31.0.0"
 
     defaultConfig {

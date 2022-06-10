@@ -15,5 +15,5 @@ public data class HciPreselectionEdge(
   public val err: HciGisRoutingErrorType? = null,
   public val id: String? = null,
   public val speed: Int? = null,
-  public val `value`: Int? = null
+  public val `value`: Int? = null,
 )

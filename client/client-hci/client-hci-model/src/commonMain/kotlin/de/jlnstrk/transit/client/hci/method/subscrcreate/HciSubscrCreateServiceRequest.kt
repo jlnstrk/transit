@@ -28,7 +28,7 @@ public data class HciSubscrCreateServiceRequest(
   public var statSubscr: HciSubscrStatistics? = null,
   public var userId: String? = null,
   public var channels: List<HciSubscrChannel> = emptyList(),
-  public var getDetails: Boolean? = null
+  public var getDetails: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrCreateServiceRequest.() -> Unit):

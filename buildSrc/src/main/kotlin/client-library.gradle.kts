@@ -35,7 +35,17 @@ kotlin {
                 implementation(libs.ktor.client.js)
             }
         }
-        val iosTest by getting {
+        val iosX64Test by getting {
+            dependencies {
+                implementation(libs.ktor.client.ios)
+            }
+        }
+        val iosArm64Test by getting {
+            dependencies {
+                implementation(libs.ktor.client.ios)
+            }
+        }
+        val iosSimulatorArm64Test by getting {
             dependencies {
                 implementation(libs.ktor.client.ios)
             }

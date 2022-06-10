@@ -21,5 +21,5 @@ public data class HciRemark(
   public val url: String? = null,
   public val isImp: Boolean = false,
   public val prio: Int = 100,
-  public val type: HciRemarkType = HciRemarkType.U
+  public val type: HciRemarkType = HciRemarkType.U,
 )

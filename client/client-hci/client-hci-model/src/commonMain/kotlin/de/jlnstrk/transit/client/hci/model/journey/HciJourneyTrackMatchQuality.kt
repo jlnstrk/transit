@@ -20,5 +20,5 @@ public data class HciJourneyTrackMatchQuality(
   public val spatialMatch: Int? = null,
   public val spatialStationBeaconMatch: Int? = null,
   public val timeSpatialMatch: Int? = null,
-  public val vehicleBeaconMatch: Int? = null
+  public val vehicleBeaconMatch: Int? = null,
 )

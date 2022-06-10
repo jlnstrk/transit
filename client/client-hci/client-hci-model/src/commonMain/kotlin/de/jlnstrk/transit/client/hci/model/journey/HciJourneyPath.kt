@@ -19,5 +19,5 @@ public data class HciJourneyPath(
   public val stcOutputX: List<Int> = emptyList(),
   public val structGraphEdgeProc: List<Int> = emptyList(),
   public val structGraphEdgeX: List<Int> = emptyList(),
-  public val tLocX: List<Int> = emptyList()
+  public val tLocX: List<Int> = emptyList(),
 )

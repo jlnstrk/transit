@@ -12,5 +12,5 @@ public data class HciBookingVehicle(
   public val VCO: String? = null,
   public val VEN: String? = null,
   public val VEX: String? = null,
-  public val VNV: List<HciFareNamedValue> = emptyList()
+  public val VNV: List<HciFareNamedValue> = emptyList(),
 )

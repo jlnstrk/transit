@@ -11,5 +11,5 @@ public data class HciHimMatchHimMessage(
   public val cDays: HciServiceDays? = null,
   public val hid: String,
   public val msgSrc: String? = null,
-  public val vDays: HciServiceDays? = null
+  public val vDays: HciServiceDays? = null,
 )

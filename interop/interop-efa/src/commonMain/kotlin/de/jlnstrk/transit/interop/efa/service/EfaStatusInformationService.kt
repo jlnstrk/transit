@@ -15,7 +15,9 @@ import de.jlnstrk.transit.common.service.StatusInformationService
 import de.jlnstrk.transit.interop.efa.EfaProvider
 import de.jlnstrk.transit.interop.efa.EfaService
 import de.jlnstrk.transit.interop.efa.normalization.generic.normalize
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Clock
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.todayIn
 
 internal class EfaStatusInformationService(
     provider: EfaProvider,
@@ -36,9 +38,7 @@ internal class EfaStatusInformationService(
                 filterPublicationStatus =
                     EfaAddInfoResponse.AdditionalInfo.PublicationStatus.CURRENT
 
-                val today = OffsetDateTime.nowLocal()
-                    .toOffset(provider.timezone)
-                    .local.date
+                val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
                 filterValidIntervalStart = today
 
                 filterInfoType = setOf(

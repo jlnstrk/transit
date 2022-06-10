@@ -15,5 +15,5 @@ public data class HciExternalContent(
   public val provider: String? = null,
   public val providerName: String? = null,
   public val text: String? = null,
-  public val textS: String? = null
+  public val textS: String? = null,
 )

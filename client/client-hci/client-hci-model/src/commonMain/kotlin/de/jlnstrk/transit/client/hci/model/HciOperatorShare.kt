@@ -15,5 +15,5 @@ public data class HciOperatorShare(
   public val OP: Int,
   public val PCS: String? = null,
   public val PRC: HciFarePrice? = null,
-  public val SHR: Int = 0
+  public val SHR: Int = 0,
 )

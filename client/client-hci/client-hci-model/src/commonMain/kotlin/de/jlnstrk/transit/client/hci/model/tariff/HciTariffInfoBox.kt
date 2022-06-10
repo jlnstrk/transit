@@ -20,5 +20,5 @@ public data class HciTariffInfoBox(
   public val tSecRefX: Int? = null,
   public val title: String? = null,
   public val fareSetRefL: List<Int> = emptyList(),
-  public val msgL: List<HciMessage> = emptyList()
+  public val msgL: List<HciMessage> = emptyList(),
 )

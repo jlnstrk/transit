@@ -12,5 +12,5 @@ public data class HciTariffPrice(
   public val currency: String? = null,
   public val prefix: String? = null,
   public val suffix: String? = null,
-  public val upperBound: Int? = null
+  public val upperBound: Int? = null,
 )

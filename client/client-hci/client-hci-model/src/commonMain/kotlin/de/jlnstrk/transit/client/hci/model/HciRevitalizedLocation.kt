@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciRevitalizedLocation(
   public val eteId: String? = null,
   public val loc: HciLocation? = null,
-  public val state: HciRevitalizedLocationState = HciRevitalizedLocationState.BR
+  public val state: HciRevitalizedLocationState = HciRevitalizedLocationState.BR,
 )

@@ -11,5 +11,5 @@ public data class HciTrainCompositionT(
   public val l: String? = null,
   public val n: String? = null,
   public val p: HciTrainCompositionPriority = HciTrainCompositionPriority.N,
-  public val s: String? = null
+  public val s: String? = null,
 )

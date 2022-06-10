@@ -48,5 +48,5 @@ public class HciServerInfoServiceResult(
   public val regL: List<HciRegion> = emptyList(),
   public val reqParamGrpL: List<HciRequestParameterGroup> = emptyList(),
   public val rtSources: List<HciRealtimeDataSource> = emptyList(),
-  public val enc: HciPlandataEncoding = HciPlandataEncoding.UNKNOWN
+  public val enc: HciPlandataEncoding = HciPlandataEncoding.UNKNOWN,
 ) : HciServiceResult()

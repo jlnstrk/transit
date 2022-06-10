@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGeoSelection(
   public val rect: HciGeoRect? = null,
-  public val ring: HciGeoRing? = null
+  public val ring: HciGeoRing? = null,
 )

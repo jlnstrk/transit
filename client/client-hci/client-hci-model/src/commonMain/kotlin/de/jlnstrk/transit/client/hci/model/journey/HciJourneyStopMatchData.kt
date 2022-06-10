@@ -21,5 +21,5 @@ public data class HciJourneyStopMatchData(
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val minArrTime: HciLocalTime? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
-  public val minDepTime: HciLocalTime? = null
+  public val minDepTime: HciLocalTime? = null,
 )

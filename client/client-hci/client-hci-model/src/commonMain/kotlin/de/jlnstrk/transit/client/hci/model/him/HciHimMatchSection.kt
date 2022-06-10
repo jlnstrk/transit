@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMatchSection(
   public val fMatchSt: HciJourneyStop? = null,
-  public val lMatchSt: HciJourneyStop? = null
+  public val lMatchSt: HciJourneyStop? = null,
 )

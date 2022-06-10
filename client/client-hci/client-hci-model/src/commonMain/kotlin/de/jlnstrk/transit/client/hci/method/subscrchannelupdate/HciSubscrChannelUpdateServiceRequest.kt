@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrChannelUpdateServiceRequest(
   public var channel: HciSubscrChannel? = null,
-  public var userId: String? = null
+  public var userId: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrChannelUpdateServiceRequest.() -> Unit):

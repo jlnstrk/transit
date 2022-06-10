@@ -12,10 +12,10 @@ import de.jlnstrk.transit.client.efa.serializer.generic.EfaOptionalListSerialize
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaPrimitiveSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaStringBooleanSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaMinutesSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 @Serializable
 public class EfaPointVerification(

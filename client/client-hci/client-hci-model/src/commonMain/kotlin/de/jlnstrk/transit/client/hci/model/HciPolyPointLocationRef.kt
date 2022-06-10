@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPolyPointLocationRef(
   public val locX: Int,
-  public val ppIdx: Int
+  public val ppIdx: Int,
 )

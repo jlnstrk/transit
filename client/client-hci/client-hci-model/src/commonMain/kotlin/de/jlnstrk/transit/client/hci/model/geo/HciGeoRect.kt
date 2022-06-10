@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGeoRect(
   public val llCrd: HciCoord,
-  public val urCrd: HciCoord
+  public val urCrd: HciCoord,
 )

@@ -17,5 +17,5 @@ public data class HciGisLocation(
   public val mode: HciGisFilterMode,
   public val placeType: HciMCPPlaceType? = null,
   public val transportMode: HciTransportMode,
-  public val usageType: HciUsageType
+  public val usageType: HciUsageType,
 )

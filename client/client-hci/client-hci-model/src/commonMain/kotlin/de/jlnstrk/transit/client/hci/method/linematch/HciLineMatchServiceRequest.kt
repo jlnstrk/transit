@@ -12,7 +12,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciLineMatchServiceRequest(
   public var input: String? = null,
-  public var jnyFltrL: List<HciJourneyFilter> = emptyList()
+  public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLineMatchServiceRequest.() -> Unit):

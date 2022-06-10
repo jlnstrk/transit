@@ -7,7 +7,8 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(libs.korlibs.klock)
+                implementation(libs.korlibs.klock)
+                api(libs.kotlinx.datetime)
             }
         }
     }

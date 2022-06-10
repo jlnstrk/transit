@@ -2,11 +2,11 @@ package de.jlnstrk.transit.client.hci.model
 
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -25,5 +25,5 @@ public data class HciRequestConfig(
   public val obfusMode: HciObfuscationMode = HciObfuscationMode.SERVER_DEFAULT,
   public val polyEnc: HciPolylineEncoding = HciPolylineEncoding.GPA,
   public val rtMode: HciRTMode = HciRTMode.SERVER_DEFAULT,
-  public val system: HciSystemType = HciSystemType.H
+  public val system: HciSystemType = HciSystemType.H,
 )

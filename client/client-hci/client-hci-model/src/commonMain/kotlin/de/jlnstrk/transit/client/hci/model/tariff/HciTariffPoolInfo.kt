@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciTariffPoolInfo(
   public val dataSets: List<HciTariffPoolInfoDataSet> = emptyList(),
-  public val version: String
+  public val version: String,
 )

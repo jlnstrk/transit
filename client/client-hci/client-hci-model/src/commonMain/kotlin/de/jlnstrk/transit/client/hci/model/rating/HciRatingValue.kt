@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciRatingValue(
   public val cnt: Int = -1,
   public val key: HciRatingKey,
-  public val `val`: Int
+  public val `val`: Int,
 )

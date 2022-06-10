@@ -14,5 +14,5 @@ public data class HciClientFilterGui(
   public val zoomMax: Int? = null,
   public val zoomMin: Int? = null,
   public val state: HciClientFilterGuiState = HciClientFilterGuiState.A,
-  public val type: HciClientFilterGuiType = HciClientFilterGuiType.U
+  public val type: HciClientFilterGuiType = HciClientFilterGuiType.U,
 )

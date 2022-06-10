@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciTariffSearchServiceResult(
-  public val trfRes: HciTariffResult? = null
+  public val trfRes: HciTariffResult? = null,
 ) : HciServiceResult()

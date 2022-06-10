@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciPolylineGroup(
   public val polyXL: List<Int> = emptyList(),
-  public val viewAlternatives: List<HciGraphNode> = emptyList()
+  public val viewAlternatives: List<HciGraphNode> = emptyList(),
 )

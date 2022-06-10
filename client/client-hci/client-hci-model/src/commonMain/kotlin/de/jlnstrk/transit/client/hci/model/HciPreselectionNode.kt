@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 public data class HciPreselectionNode(
   public val edges: List<HciPreselectionEdge> = emptyList(),
   public val id: String? = null,
-  public val loc: HciLocation
+  public val loc: HciLocation,
 )

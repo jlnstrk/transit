@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciGuiElementAction(
   public val tarElmState: HciGuiElementState? = null,
   public val tarElmX: Int,
-  public val tarOptX: Int? = null
+  public val tarOptX: Int? = null,
 )

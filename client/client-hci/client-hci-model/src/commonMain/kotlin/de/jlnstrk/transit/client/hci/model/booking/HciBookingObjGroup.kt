@@ -21,5 +21,5 @@ public data class HciBookingObjGroup(
   public val BOGL: List<HciBookingObjGroup> = emptyList(),
   public val BOL: List<HciBookingObj> = emptyList(),
   public val BVL: List<HciBookingVehicle> = emptyList(),
-  public val DESCR: List<String> = emptyList()
+  public val DESCR: List<String> = emptyList(),
 )

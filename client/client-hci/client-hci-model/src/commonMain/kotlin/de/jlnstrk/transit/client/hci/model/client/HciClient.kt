@@ -19,5 +19,5 @@ public data class HciClient(
   public val type: HciClientType,
   public val ua: String? = null,
   public val userId: String? = null,
-  public val v: Int = 0
+  public val v: Int = 0,
 )

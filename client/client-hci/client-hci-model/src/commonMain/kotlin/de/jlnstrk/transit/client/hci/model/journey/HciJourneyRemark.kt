@@ -11,5 +11,5 @@ public data class HciJourneyRemark(
   public val fLocX: Int? = null,
   public val remX: Int? = null,
   public val tIdx: Int? = null,
-  public val tLocX: Int? = null
+  public val tLocX: Int? = null,
 )

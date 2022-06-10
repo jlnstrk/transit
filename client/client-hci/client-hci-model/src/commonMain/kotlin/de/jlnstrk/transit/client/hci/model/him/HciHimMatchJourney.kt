@@ -20,11 +20,11 @@ import de.jlnstrk.transit.client.hci.model.journey.HciJourneyTransitStatus
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.client.hci.model.user.HciUser
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -107,5 +107,5 @@ public data class HciHimMatchJourney(
   public val mmr: Int = 0,
   public val proc: Int = 0,
   public val procRT: Int = 0,
-  public val subscr: HciJourneySubscriptionState = HciJourneySubscriptionState.U
+  public val subscr: HciJourneySubscriptionState = HciJourneySubscriptionState.U,
 )

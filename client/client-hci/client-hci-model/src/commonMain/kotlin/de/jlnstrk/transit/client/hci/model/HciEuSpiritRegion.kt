@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciEuSpiritRegion(
   public val name: String,
-  public val prvCtx: String
+  public val prvCtx: String,
 )

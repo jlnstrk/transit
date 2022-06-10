@@ -21,5 +21,5 @@ public data class HciJourneyTrackPoint(
   public val timestamp: String? = null,
   public val trainName: String? = null,
   public val probabilities: List<HciNamedValue> = emptyList(),
-  public val source: HciJourneyTrackPointSourceType = HciJourneyTrackPointSourceType.GPS
+  public val source: HciJourneyTrackPointSourceType = HciJourneyTrackPointSourceType.GPS,
 )

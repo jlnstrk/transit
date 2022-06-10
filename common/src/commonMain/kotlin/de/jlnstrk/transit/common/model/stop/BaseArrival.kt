@@ -1,11 +1,11 @@
 package de.jlnstrk.transit.common.model.stop
 
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
 
 public interface BaseArrival {
-    public val arrivalScheduled: OffsetDateTime
+    public val arrivalScheduled: Instant
     public val arrivalScheduledPlatform: String?
-    public val arrivalRealtime: OffsetDateTime?
+    public val arrivalRealtime: Instant?
     public val arrivalRealtimePlatform: String?
     public val arrivalCancelled: Boolean
 }

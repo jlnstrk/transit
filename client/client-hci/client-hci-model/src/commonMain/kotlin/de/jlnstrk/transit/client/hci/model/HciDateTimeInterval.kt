@@ -4,7 +4,7 @@ import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -17,5 +17,5 @@ public data class HciDateTimeInterval(
   @Serializable(with = HciLocalDateSerializer::class)
   public val startDate: LocalDate? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
-  public val startTime: HciLocalTime? = null
+  public val startTime: HciLocalTime? = null,
 )

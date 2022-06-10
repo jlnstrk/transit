@@ -22,9 +22,9 @@ import de.jlnstrk.transit.interop.hci.HciInteropService
 import de.jlnstrk.transit.interop.hci.HciProvider
 import de.jlnstrk.transit.interop.hci.conversion.asCommon
 import de.jlnstrk.transit.interop.hci.conversion.asHci
-import de.jlnstrk.transit.util.Duration
-import de.jlnstrk.transit.util.LocalDateTime
-import de.jlnstrk.transit.util.OffsetDateTime
+import kotlinx.datetime.Instant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration
 
 internal class HciStationBoardService(
     provider: HciProvider,
@@ -50,13 +50,13 @@ internal class HciStationBoardService(
         mode: StationBoardService.Mode,
         location: Location,
         direction: Location?,
-        dateTime: OffsetDateTime?,
+        dateTime: Instant?,
         filterProducts: Set<ProductClass>?,
         filterLines: Set<Line>?,
         maxDuration: Duration?,
         maxResults: Int?
     ): StationBoardResult {
-        val inProviderZone = dateTime?.toOffset(provider.timezone)?.local
+        val inProviderZone = dateTime?.toLocalDateTime(provider.timezone)
         val request = HciStationBoardServiceRequest {
             stbLoc = location.asHci()
             type = when (mode) {

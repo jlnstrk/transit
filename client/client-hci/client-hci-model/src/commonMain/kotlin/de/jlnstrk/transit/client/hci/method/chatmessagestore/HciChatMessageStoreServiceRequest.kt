@@ -9,7 +9,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciChatMessageStoreServiceRequest(
-  public var msg: HciChatMessage? = null
+  public var msg: HciChatMessage? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciChatMessageStoreServiceRequest.() -> Unit):

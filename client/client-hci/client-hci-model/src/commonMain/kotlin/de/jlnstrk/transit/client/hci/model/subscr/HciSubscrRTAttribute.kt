@@ -11,5 +11,5 @@ public data class HciSubscrRTAttribute(
   public val code: String,
   public val isActivated: Boolean,
   public val isDeactivated: Boolean,
-  public val name: String? = null
+  public val name: String? = null,
 )

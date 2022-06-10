@@ -13,5 +13,5 @@ public data class HciSubscrResultCon(
   public val ctxRecon: String? = null,
   public val language: String? = null,
   public val status: HciSubscrStatus,
-  public val subscrId: Int
+  public val subscrId: Int,
 )

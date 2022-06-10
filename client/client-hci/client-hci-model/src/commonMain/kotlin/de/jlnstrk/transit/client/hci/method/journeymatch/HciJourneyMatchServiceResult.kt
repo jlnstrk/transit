@@ -20,5 +20,5 @@ public class HciJourneyMatchServiceResult(
   public val planrtTS: String? = null,
   public val groups: List<HciJourneyMatchGroup> = emptyList(),
   public val jnyL: List<HciJourney> = emptyList(),
-  public val resultStatus: HciJourneyMatchResultStatus = HciJourneyMatchResultStatus.OK
+  public val resultStatus: HciJourneyMatchResultStatus = HciJourneyMatchResultStatus.OK,
 ) : HciServiceResult()

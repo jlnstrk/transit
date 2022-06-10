@@ -18,5 +18,5 @@ public data class HciTariffRequest(
   public val tvlrProf: List<HciTariffTravellerProfile> = emptyList(),
   public val jnyCl: Int = 0,
   public val rType: HciTariffRequestType = HciTariffRequestType.FULL,
-  public val tixCheck: Boolean = false
+  public val tixCheck: Boolean = false,
 )

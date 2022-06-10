@@ -10,5 +10,5 @@ public data class HciProvider(
   public val extCont: HciExternalContent? = null,
   public val id: String? = null,
   public val name: String? = null,
-  public val region: String? = null
+  public val region: String? = null,
 )

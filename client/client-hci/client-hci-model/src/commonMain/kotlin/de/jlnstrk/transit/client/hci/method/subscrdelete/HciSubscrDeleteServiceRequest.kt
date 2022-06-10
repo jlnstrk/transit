@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrDeleteServiceRequest(
   public var subscrId: Int? = null,
-  public var userId: String? = null
+  public var userId: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciSubscrDeleteServiceRequest.() -> Unit):

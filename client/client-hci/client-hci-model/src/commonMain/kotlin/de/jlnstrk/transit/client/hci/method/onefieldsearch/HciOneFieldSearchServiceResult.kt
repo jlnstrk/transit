@@ -9,9 +9,9 @@ import de.jlnstrk.transit.client.hci.model.location.HciLocationDataType
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -30,5 +30,5 @@ public class HciOneFieldSearchServiceResult(
   public val retTime: HciLocalTime? = null,
   public val reqL: List<HciOneFieldSearchRequest> = emptyList(),
   public val outMode: HciLocationDataType = HciLocationDataType.DEP,
-  public val posReq: Boolean = false
+  public val posReq: Boolean = false,
 ) : HciServiceResult()

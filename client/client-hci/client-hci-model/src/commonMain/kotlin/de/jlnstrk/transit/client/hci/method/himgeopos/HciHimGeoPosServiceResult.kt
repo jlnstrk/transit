@@ -15,5 +15,5 @@ public class HciHimGeoPosServiceResult(
   public val lastUpd: String? = null,
   public val edgeRefL: List<Int> = emptyList(),
   public val msgRefL: List<Int> = emptyList(),
-  public val regionRefL: List<Int> = emptyList()
+  public val regionRefL: List<Int> = emptyList(),
 ) : HciServiceResult()

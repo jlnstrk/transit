@@ -42,7 +42,7 @@ public data class HciReconstructionServiceRequest(
   public var outReconL: List<HciReconstruction> = emptyList(),
   public var retReconL: List<HciReconstruction> = emptyList(),
   public var cMZE: Int? = null,
-  public var cTFS: Int? = null
+  public var cTFS: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciReconstructionServiceRequest.() -> Unit):

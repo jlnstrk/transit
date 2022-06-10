@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciCheckInJourneySearchServiceResult(
   public val common: HciCommon? = null,
-  public val jnyL: List<HciJourney> = emptyList()
+  public val jnyL: List<HciJourney> = emptyList(),
 ) : HciServiceResult()

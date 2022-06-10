@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciProductGraph(
   public val polyG: HciPolylineGroup? = null,
-  public val prodX: Int
+  public val prodX: Int,
 )

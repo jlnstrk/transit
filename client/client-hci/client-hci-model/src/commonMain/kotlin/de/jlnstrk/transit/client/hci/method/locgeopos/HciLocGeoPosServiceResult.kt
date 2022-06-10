@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciLocGeoPosServiceResult(
   public val common: HciCommon? = null,
-  public val locL: List<HciLocation> = emptyList()
+  public val locL: List<HciLocation> = emptyList(),
 ) : HciServiceResult()

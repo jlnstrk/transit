@@ -5,9 +5,9 @@ import de.jlnstrk.transit.client.hci.model.HciExternalContent
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
 import kotlin.String
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -36,5 +36,5 @@ public data class HciTariffTicket(
   public val destLocId: Int = -1,
   public val startLocId: Int = -1,
   public val typeKey: Int = -1,
-  public val viaLocId: Int = -1
+  public val viaLocId: Int = -1,
 )

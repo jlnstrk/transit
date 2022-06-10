@@ -12,5 +12,5 @@ public data class HciSimpleTrainCompositionCar(
   public val attrL: List<HciTrainCompositionA> = emptyList(),
   public val number: String? = null,
   public val sect: String? = null,
-  public val type: Int? = null
+  public val type: Int? = null,
 )

@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciSubscrStationPair(
   public val bothDir: Boolean = false,
   public val dirStop: HciLocation? = null,
-  public val stop: HciLocation
+  public val stop: HciLocation,
 )

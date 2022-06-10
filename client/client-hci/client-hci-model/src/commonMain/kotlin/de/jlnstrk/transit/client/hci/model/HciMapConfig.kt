@@ -11,5 +11,5 @@ public data class HciMapConfig(
   public val baseMapL: List<HciMapLayerExt> = emptyList(),
   public val keyValueL: List<HciPropertyPair> = emptyList(),
   public val overlayL: List<HciMapLayerExt> = emptyList(),
-  public val tagL: List<String> = emptyList()
+  public val tagL: List<String> = emptyList(),
 )

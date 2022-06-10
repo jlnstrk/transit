@@ -10,9 +10,9 @@ import de.jlnstrk.transit.client.efa.serializer.generic.EfaOptionalListSerialize
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaPrimitiveSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.EfaStringBooleanSerializer
 import de.jlnstrk.transit.client.efa.serializer.primitive.datetime.EfaMinutesSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 /**
  * Describes the json structure encoding trips from the XML_TRIP_REQUEST2 endpoint.

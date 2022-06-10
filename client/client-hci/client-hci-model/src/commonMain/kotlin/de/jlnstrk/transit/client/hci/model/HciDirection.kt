@@ -17,5 +17,5 @@ public data class HciDirection(
   public val jnyRefL: List<Int> = emptyList(),
   public val locRefL: List<Int> = emptyList(),
   public val pRefL: List<Int> = emptyList(),
-  public val geo: Int = -1
+  public val geo: Int = -1,
 )

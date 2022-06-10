@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrWeatherInformation(
   public val text: String? = null,
-  public val type: HciWeatherType
+  public val type: HciWeatherType,
 )

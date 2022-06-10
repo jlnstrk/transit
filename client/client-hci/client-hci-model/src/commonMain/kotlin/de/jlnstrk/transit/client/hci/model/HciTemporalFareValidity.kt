@@ -16,5 +16,5 @@ public data class HciTemporalFareValidity(
   public val RD: String? = null,
   public val VC: String? = null,
   public val TD: List<String> = emptyList(),
-  public val VD: Int = -1
+  public val VD: Int = -1,
 )

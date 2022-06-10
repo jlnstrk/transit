@@ -27,5 +27,5 @@ public data class HciTariffResult(
   public val fareSetL: List<HciTariffFareSet> = emptyList(),
   public val msgL: List<HciMessage> = emptyList(),
   public val tariffInfoBoxGroupL: List<HciTariffInfoBoxGroup> = emptyList(),
-  public val variantL: List<HciTariffVariant> = emptyList()
+  public val variantL: List<HciTariffVariant> = emptyList(),
 )

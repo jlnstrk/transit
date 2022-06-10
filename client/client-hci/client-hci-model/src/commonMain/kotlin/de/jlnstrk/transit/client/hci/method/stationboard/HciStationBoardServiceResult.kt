@@ -25,5 +25,5 @@ public class HciStationBoardServiceResult(
   public val jnyGrpL: List<HciJourneyGroup> = emptyList(),
   public val jnyL: List<HciJourney> = emptyList(),
   public val locRefL: List<Int> = emptyList(),
-  public val type: HciStationBoardType = HciStationBoardType.DEP
+  public val type: HciStationBoardType = HciStationBoardType.DEP,
 ) : HciServiceResult()

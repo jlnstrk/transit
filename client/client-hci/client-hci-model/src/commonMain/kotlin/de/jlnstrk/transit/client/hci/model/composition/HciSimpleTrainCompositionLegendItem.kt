@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciSimpleTrainCompositionLegendItem(
   public val id: String? = null,
   public val refersTo: String? = null,
-  public val text: String? = null
+  public val text: String? = null,
 )

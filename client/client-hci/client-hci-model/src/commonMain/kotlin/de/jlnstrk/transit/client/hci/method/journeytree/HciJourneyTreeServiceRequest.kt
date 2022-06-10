@@ -24,7 +24,7 @@ public data class HciJourneyTreeServiceRequest(
   public var himFltrL: List<HciHimFilter> = emptyList(),
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
   public var getChilds: Int? = null,
-  public var getParent: Boolean? = null
+  public var getParent: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciJourneyTreeServiceRequest.() -> Unit):

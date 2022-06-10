@@ -7,11 +7,11 @@ import de.jlnstrk.transit.client.hci.model.tariff.HciTariffVia
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -28,7 +28,7 @@ public data class HciTariffSearchServiceRequest(
   public var travelTime: HciLocalTime? = null,
   public var trfCtx: String? = null,
   public var viaL: List<HciTariffVia> = emptyList(),
-  public var singleTicket: Boolean? = null
+  public var singleTicket: Boolean? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciTariffSearchServiceRequest.() -> Unit):

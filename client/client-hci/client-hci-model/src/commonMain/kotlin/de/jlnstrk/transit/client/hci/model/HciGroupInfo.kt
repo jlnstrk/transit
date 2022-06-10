@@ -10,5 +10,5 @@ public data class HciGroupInfo(
   public val fds: List<HciGroup> = emptyList(),
   public val fqs: List<HciGroup> = emptyList(),
   public val pds: List<HciGroup> = emptyList(),
-  public val pqs: List<HciGroup> = emptyList()
+  public val pqs: List<HciGroup> = emptyList(),
 )

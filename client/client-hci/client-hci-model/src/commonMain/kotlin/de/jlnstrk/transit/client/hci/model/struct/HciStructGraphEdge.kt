@@ -10,5 +10,5 @@ import kotlinx.serialization.Serializable
 public data class HciStructGraphEdge(
   public val fromNodeX: Int? = null,
   public val id: String? = null,
-  public val toNodeX: Int? = null
+  public val toNodeX: Int? = null,
 )

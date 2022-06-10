@@ -5,7 +5,7 @@ import de.jlnstrk.transit.client.hafas.HafasRealtimeMode
 import de.jlnstrk.transit.client.hapi.HapiEndpoint
 import de.jlnstrk.transit.client.hapi.request.delegate.*
 import de.jlnstrk.transit.client.hapi.response.HapiJourneyDetail
-import de.jlnstrk.transit.util.LocalDate
+import kotlinx.datetime.LocalDate
 
 public class HapiJourneyDetailRequest : HapiRequest<HapiJourneyDetail>() {
     override val service: HapiEndpoint get() = HapiEndpoint.JOURNEY_DETAIL

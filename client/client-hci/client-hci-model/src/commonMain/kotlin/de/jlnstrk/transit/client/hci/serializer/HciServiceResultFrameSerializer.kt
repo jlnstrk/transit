@@ -1,6 +1,6 @@
 @file:OptIn(
   ExperimentalStdlibApi::class,
-  InternalSerializationApi::class
+  InternalSerializationApi::class,
 )
 
 package de.jlnstrk.transit.client.hci.serializer

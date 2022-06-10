@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSubscrRSS(
   public val rssAddress: String,
-  public val serviceDays: HciSubscrDays? = null
+  public val serviceDays: HciSubscrDays? = null,
 )

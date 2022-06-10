@@ -22,5 +22,5 @@ public data class HciSubscrHysteresisCon(
   public val minNegativeDeviationInterval: Int? = null,
   public val notificationStart: Int? = null,
   public val notifyArrivalPreviewTime: Int? = null,
-  public val notifyDepartureWithoutRT: Int? = null
+  public val notifyDepartureWithoutRT: Int? = null,
 )

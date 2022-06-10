@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciRequestParameterGroup(
   public val elmX: Int? = null,
   public val meth: HciServiceMethod,
-  public val type: HciRequestParameterGroupType
+  public val type: HciRequestParameterGroupType,
 )

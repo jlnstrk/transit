@@ -16,9 +16,9 @@ import de.jlnstrk.transit.client.hapi.serializer.HapiDurationSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiListUnwrapSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiOptionalListSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiReferenceUnwrapSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 @HapiXsd("1.29")
 @Serializable

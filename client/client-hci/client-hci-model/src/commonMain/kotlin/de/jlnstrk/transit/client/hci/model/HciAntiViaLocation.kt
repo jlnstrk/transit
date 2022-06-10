@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciAntiViaLocation(
   public val loc: HciLocation,
-  public val stat: HciAntiViaStatus = HciAntiViaStatus.NCAVM
+  public val stat: HciAntiViaStatus = HciAntiViaStatus.NCAVM,
 )

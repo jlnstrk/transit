@@ -14,5 +14,5 @@ public data class HciServiceDays(
   public val sDaysI: String? = null,
   public val sDaysR: String? = null,
   public val tLocIdx: Int? = null,
-  public val tLocX: Int? = null
+  public val tLocX: Int? = null,
 )

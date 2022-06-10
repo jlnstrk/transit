@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciRequestUser(
   public val id: String? = null,
-  public val token: String? = null
+  public val token: String? = null,
 )

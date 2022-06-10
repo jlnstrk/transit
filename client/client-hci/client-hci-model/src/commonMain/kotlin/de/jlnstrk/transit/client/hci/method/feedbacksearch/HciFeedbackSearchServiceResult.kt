@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciFeedbackSearchServiceResult(
   public val feedbackL: List<HciFeedback> = emptyList(),
-  public val userL: List<HciUser> = emptyList()
+  public val userL: List<HciUser> = emptyList(),
 ) : HciServiceResult()

@@ -13,5 +13,5 @@ public data class HciTimeDisplayStyle(
   public val fg: HciColor? = null,
   public val icoX: Int? = null,
   public val mode: HciTimeDisplayMode,
-  public val strikeOut: Boolean = false
+  public val strikeOut: Boolean = false,
 )

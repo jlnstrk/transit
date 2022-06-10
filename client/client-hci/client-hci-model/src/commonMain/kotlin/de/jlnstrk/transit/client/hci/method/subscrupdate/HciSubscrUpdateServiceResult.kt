@@ -14,5 +14,5 @@ public class HciSubscrUpdateServiceResult(
   public val details: HciSubscrDetails? = null,
   public val result: HciSubscrResultStatus,
   public val subscrId: Int = 0,
-  public val userId: String
+  public val userId: String,
 ) : HciServiceResult()

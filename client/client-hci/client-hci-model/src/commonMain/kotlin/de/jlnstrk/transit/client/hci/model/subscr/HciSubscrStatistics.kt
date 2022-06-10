@@ -16,5 +16,5 @@ public data class HciSubscrStatistics(
   public val jnyFltrL: List<HciJourneyFilter> = emptyList(),
   public val monitorFlags: List<HciSubscrMonitorFlags> = emptyList(),
   public val stPairL: List<HciSubscrStationPair> = emptyList(),
-  public val regExtId: Int = 0
+  public val regExtId: Int = 0,
 )

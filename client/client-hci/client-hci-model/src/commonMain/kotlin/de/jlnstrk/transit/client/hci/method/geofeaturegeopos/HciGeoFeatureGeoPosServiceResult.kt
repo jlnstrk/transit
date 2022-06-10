@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciGeoFeatureGeoPosServiceResult(
   public val common: HciCommon? = null,
-  public val geoFeatures: List<HciGeoFeature> = emptyList()
+  public val geoFeatures: List<HciGeoFeature> = emptyList(),
 ) : HciServiceResult()

@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciSimpleTrainCompositionOutput(
   public val dir: HciSimpleTrainCompositionLeavingDirection? = null,
-  public val groupL: List<Int> = emptyList()
+  public val groupL: List<Int> = emptyList(),
 )

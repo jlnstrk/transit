@@ -11,10 +11,10 @@ import de.jlnstrk.transit.client.hapi.model.stop.HapiOrigin
 import de.jlnstrk.transit.client.hapi.model.tariff.HapiTariffResult
 import de.jlnstrk.transit.client.hapi.serializer.HapiDurationSerializer
 import de.jlnstrk.transit.client.hapi.serializer.HapiListUnwrapSerializer
-import de.jlnstrk.transit.util.Duration
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.UseSerializers
+import kotlin.time.Duration
 
 @HapiXsd("1.29")
 @Serializable

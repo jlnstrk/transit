@@ -14,5 +14,5 @@ public data class HciSubscrRTTrainInfo(
   public val lastStop: HciSubscrRTStopInfo? = null,
   public val pos: HciCoord? = null,
   public val himEvents: List<HciSubscrEventHIM> = emptyList(),
-  public val hasRT: Boolean = false
+  public val hasRT: Boolean = false,
 )

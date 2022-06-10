@@ -11,5 +11,5 @@ public data class HciJourneyProduct(
   public val fLocX: Int? = null,
   public val prodX: Int? = null,
   public val tIdx: Int? = null,
-  public val tLocX: Int? = null
+  public val tLocX: Int? = null,
 )

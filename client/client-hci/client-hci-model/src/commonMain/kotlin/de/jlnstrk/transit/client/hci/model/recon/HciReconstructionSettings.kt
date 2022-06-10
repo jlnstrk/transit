@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciReconstructionSettings(
   public val flags: HciReconstructionFlags? = null,
   public val times: HciReconstructionTimeDeviation? = null,
-  public val useCombinedComparison: Boolean = true
+  public val useCombinedComparison: Boolean = true,
 )

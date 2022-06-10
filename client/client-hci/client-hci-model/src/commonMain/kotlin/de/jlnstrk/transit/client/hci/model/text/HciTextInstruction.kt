@@ -13,5 +13,5 @@ public data class HciTextInstruction(
   public val mode: HciTextInstructionMode,
   public val prodX: Int? = null,
   public val type: HciTextInstructionType,
-  public val urlX: Int? = null
+  public val urlX: Int? = null,
 )

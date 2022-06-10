@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciText(
   public val text: String,
-  public val textInstructionIntervalL: List<HciTextInstructionInterval> = emptyList()
+  public val textInstructionIntervalL: List<HciTextInstructionInterval> = emptyList(),
 )

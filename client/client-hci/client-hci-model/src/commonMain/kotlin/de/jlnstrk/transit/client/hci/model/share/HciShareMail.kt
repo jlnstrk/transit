@@ -10,5 +10,5 @@ public data class HciShareMail(
   public val comment: String? = null,
   public val recvAddr: String,
   public val sendAddr: String? = null,
-  public val sendName: String? = null
+  public val sendName: String? = null,
 )

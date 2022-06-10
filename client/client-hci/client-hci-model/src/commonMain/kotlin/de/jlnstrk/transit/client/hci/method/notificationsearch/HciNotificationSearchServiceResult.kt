@@ -11,5 +11,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public class HciNotificationSearchServiceResult(
   public val notificationL: List<HciNotification> = emptyList(),
-  public val userL: List<HciUser> = emptyList()
+  public val userL: List<HciUser> = emptyList(),
 ) : HciServiceResult()

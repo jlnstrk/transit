@@ -12,5 +12,5 @@ public data class HciFarePrice(
   public val CUR: String? = null,
   public val VID: String? = null,
   public val VAT: Int = 0,
-  public val VR: Int = 0
+  public val VR: Int = 0,
 )

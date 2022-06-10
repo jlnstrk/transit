@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciShareSMS(
   public val msg: String? = null,
-  public val recvNum: String
+  public val recvNum: String,
 )

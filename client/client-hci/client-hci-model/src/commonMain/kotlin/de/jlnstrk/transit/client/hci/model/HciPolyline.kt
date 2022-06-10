@@ -22,5 +22,5 @@ public data class HciPolyline(
   public val crdNumL: List<Int> = emptyList(),
   public val ppLocRefL: List<HciPolyPointLocationRef> = emptyList(),
   public val dim: Int = 2,
-  public val crd: List<Double> = emptyList()
+  public val crd: List<Double> = emptyList(),
 )

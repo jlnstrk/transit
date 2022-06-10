@@ -5,11 +5,11 @@ import de.jlnstrk.transit.client.hci.model.HciServiceResult
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Boolean
 import kotlin.Double
 import kotlin.Int
 import kotlin.String
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -30,5 +30,5 @@ public class HciTestServiceResult(
   public val outInt: Int = 0,
   public val outLong: Int = 0,
   public val outputInt: Int = 0,
-  public val outputLong: Int = 0
+  public val outputLong: Int = 0,
 ) : HciServiceResult()

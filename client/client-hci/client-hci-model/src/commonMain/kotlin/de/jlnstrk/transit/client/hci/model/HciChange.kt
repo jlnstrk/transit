@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciChange(
   public val durFS: HciTimeFormat? = null,
   public val durS: String? = null,
-  public val txt: String
+  public val txt: String,
 )

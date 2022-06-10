@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public class HciReconstructionContextConverterServiceResult(
-  public val ctxL: List<String> = emptyList()
+  public val ctxL: List<String> = emptyList(),
 ) : HciServiceResult()

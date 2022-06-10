@@ -4,8 +4,8 @@ import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.String
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -25,5 +25,5 @@ public data class HciSubscrDays(
   public val pauseBegin: String? = null,
   public val pauseEnd: String? = null,
   public val selectedDays: String? = null,
-  public val selectedWeekdays: String? = null
+  public val selectedWeekdays: String? = null,
 )

@@ -15,7 +15,7 @@ public data class HciLocMatchServiceRequest(
   public var cntry: String? = null,
   public var dts: HciLocMatchDataSource? = null,
   public var getProducts: Boolean? = null,
-  public var input: HciLocationInput? = null
+  public var input: HciLocationInput? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLocMatchServiceRequest.() -> Unit):

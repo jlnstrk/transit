@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciGeoFeatureTypeSelection(
   public val subType: String? = null,
-  public val type: HciGeoFeatureType? = null
+  public val type: HciGeoFeatureType? = null,
 )

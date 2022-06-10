@@ -17,7 +17,7 @@ public data class HciJourneyStructGraphPosServiceRequest(
   public var intervalSize: Int? = null,
   public var intervalStep: Int? = null,
   public var jnyFltrL: List<HciJourneyFilter> = emptyList(),
-  public var trainPosMode: HciJourneyTrainPosMode? = null
+  public var trainPosMode: HciJourneyTrainPosMode? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciJourneyStructGraphPosServiceRequest.() -> Unit):

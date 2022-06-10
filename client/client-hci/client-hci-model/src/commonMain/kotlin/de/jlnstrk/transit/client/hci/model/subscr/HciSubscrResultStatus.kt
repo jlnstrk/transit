@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 public data class HciSubscrResultStatus(
   public val externalError: HciSubscrError = HciSubscrError.UNDEF,
   public val internalError: String? = null,
-  public val resultCode: HciSubscrResultCode
+  public val resultCode: HciSubscrResultCode,
 )

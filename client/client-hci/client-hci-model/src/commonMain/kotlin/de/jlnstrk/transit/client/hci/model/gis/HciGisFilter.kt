@@ -10,5 +10,5 @@ public data class HciGisFilter(
   public val meta: String? = null,
   public val mode: HciGisFilterMode,
   public val profile: HciGisProfile? = null,
-  public val type: HciGisFilterType
+  public val type: HciGisFilterType,
 )

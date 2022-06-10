@@ -2,9 +2,9 @@ package de.jlnstrk.transit.client.hci.model.recon
 
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -15,5 +15,5 @@ public data class HciReconstruction(
   @Serializable(with = HciLocalDateSerializer::class)
   public val date: LocalDate? = null,
   public val secDataL: List<HciReconstructionSectionData> = emptyList(),
-  public val rBhv: HciReconstructionBehaviour = HciReconstructionBehaviour.OC
+  public val rBhv: HciReconstructionBehaviour = HciReconstructionBehaviour.OC,
 )

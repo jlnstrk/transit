@@ -20,7 +20,7 @@ public data class HciLocSearchServiceRequest(
   public var getStops: Boolean? = null,
   public var locFltrL: List<HciLocationFilter> = emptyList(),
   public var maxLoc: Int? = null,
-  public var query: String? = null
+  public var query: String? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciLocSearchServiceRequest.() -> Unit):

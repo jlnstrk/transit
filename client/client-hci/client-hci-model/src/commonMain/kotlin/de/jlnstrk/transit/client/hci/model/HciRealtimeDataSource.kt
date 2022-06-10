@@ -11,5 +11,5 @@ public data class HciRealtimeDataSource(
   public val freeTextIdCount: Int? = null,
   public val heartbeatTS: String? = null,
   public val name: String? = null,
-  public val type: HciRealtimeDataSourceType = HciRealtimeDataSourceType.DEFAULT
+  public val type: HciRealtimeDataSourceType = HciRealtimeDataSourceType.DEFAULT,
 )

@@ -23,5 +23,5 @@ public data class HciContextProduct(
   public val outCtrl: String? = null,
   public val ship: String? = null,
   public val surcharge: String? = null,
-  public val tarGr: String? = null
+  public val tarGr: String? = null,
 )

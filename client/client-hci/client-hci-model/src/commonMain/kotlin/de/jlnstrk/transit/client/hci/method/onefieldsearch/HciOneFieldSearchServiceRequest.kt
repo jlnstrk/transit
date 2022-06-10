@@ -18,7 +18,7 @@ public data class HciOneFieldSearchServiceRequest(
   public var pos: HciCoord? = null,
   public var type: List<HciOneFieldSearchRequestType> = emptyList(),
   public var ignoreLang: Boolean? = null,
-  public var maxLoc: Int? = null
+  public var maxLoc: Int? = null,
 ) : HciServiceRequest() {
   public companion object {
     public inline operator fun invoke(`init`: HciOneFieldSearchServiceRequest.() -> Unit):

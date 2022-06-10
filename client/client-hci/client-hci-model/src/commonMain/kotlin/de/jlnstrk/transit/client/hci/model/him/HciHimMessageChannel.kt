@@ -4,10 +4,10 @@ import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
-import de.jlnstrk.transit.util.LocalDate
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -22,5 +22,5 @@ public data class HciHimMessageChannel(
   public val tDate: LocalDate? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val tTime: HciLocalTime? = null,
-  public val uRefL: List<Int> = emptyList()
+  public val uRefL: List<Int> = emptyList(),
 )

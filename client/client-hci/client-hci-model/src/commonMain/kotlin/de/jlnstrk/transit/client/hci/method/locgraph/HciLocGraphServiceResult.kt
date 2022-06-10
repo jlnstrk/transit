@@ -16,5 +16,5 @@ public class HciLocGraphServiceResult(
   public val lineL: List<HciLine> = emptyList(),
   public val locStartEndRefL: List<Int> = emptyList(),
   public val locStopRefL: List<Int> = emptyList(),
-  public val prodGraphL: List<HciProductGraph> = emptyList()
+  public val prodGraphL: List<HciProductGraph> = emptyList(),
 ) : HciServiceResult()

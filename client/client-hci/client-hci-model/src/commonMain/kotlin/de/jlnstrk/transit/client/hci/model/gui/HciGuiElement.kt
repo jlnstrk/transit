@@ -17,5 +17,5 @@ public data class HciGuiElement(
   public val type: HciGuiElementType,
   public val optL: List<HciGuiElementOption> = emptyList(),
   public val subElmL: List<Int> = emptyList(),
-  public val state: HciGuiElementState = HciGuiElementState.A
+  public val state: HciGuiElementState = HciGuiElementState.A,
 )

@@ -17,5 +17,5 @@ public data class HciTrainCompositionC(
   public val tcctX: Int? = null,
   public val A: List<HciTrainCompositionA> = emptyList(),
   public val l: Int = 0,
-  public val r: Boolean = false
+  public val r: Boolean = false,
 )

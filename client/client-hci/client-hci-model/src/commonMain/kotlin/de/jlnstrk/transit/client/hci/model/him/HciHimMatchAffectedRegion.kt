@@ -8,5 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class HciHimMatchAffectedRegion(
   public val id: String? = null,
-  public val name: String? = null
+  public val name: String? = null,
 )

@@ -24,5 +24,5 @@ public data class HciGisRouteSegment(
   public val dist: Int = -1,
   public val man: HciGisManoeuvre = HciGisManoeuvre.NO,
   public val ori: HciGisOrientation = HciGisOrientation.U,
-  public val rType: HciGisRoadType = HciGisRoadType.U
+  public val rType: HciGisRoadType = HciGisRoadType.U,
 )
