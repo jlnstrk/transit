@@ -22,7 +22,7 @@ public value class DateFormat internal constructor(private val formatter: com.so
         dateTime.nanosecond / 1000
     ).format(formatter)
 
-    public fun formatInstant(date: LocalDate): String = Date(
+    public fun formatDate(date: LocalDate): String = Date(
         date.year,
         date.monthNumber,
         date.dayOfMonth

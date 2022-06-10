@@ -26,7 +26,7 @@ internal class EfaEnumParam<E : Enum<E>>(type: KClass<E>, key: String? = null) :
 }
 
 internal class EfaDateParam(format: DateFormat, key: String? = null) :
-    EfaQueryParam<LocalDate>(format::formatInstant, format::parseDate, key)
+    EfaQueryParam<LocalDate>(format::formatDate, format::parseDate, key)
 
 internal class EfaTimeParam(format: TimeFormat, key: String? = null) :
     EfaQueryParam<LocalTime>(format::formatTime, format::parseTime, key)

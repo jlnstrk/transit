@@ -36,7 +36,7 @@ internal object EfaStringDateTimeSerializer {
             PrimitiveSerialDescriptor("Date", PrimitiveKind.STRING)
 
         override fun serialize(encoder: Encoder, value: LocalDate) {
-            val string = EFA_DATE_FORMAT_NO_SEP.formatInstant(value)
+            val string = EFA_DATE_FORMAT_NO_SEP.formatDate(value)
             encoder.encodeString(string)
         }
 

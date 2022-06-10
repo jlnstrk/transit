@@ -15,7 +15,7 @@ public object HciLocalDateSerializer : KSerializer<LocalDate> {
     private val DATE_FORMATTER = DateFormat("yyyyMMdd")
 
     override fun serialize(encoder: Encoder, value: LocalDate) {
-        val string = DATE_FORMATTER.formatInstant(value)
+        val string = DATE_FORMATTER.formatDate(value)
         encoder.encodeString(string)
     }
 
