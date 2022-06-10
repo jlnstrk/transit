@@ -9,6 +9,7 @@ krypto = "2.4.12"
 klock = "2.4.13"
 buildkonfig = "0.12.0"
 datetime = "0.4.0-SNAPSHOT"
+ksp = "1.7.0-1.0.6"
 
 [libraries]
 kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -16,6 +17,7 @@ serializationGradle = { module = "org.jetbrains.kotlin:kotlin-serialization", ve
 kotestGradle = { module = "io.kotest:kotest-framework-multiplatform-plugin-gradle", version.ref = "kotest" }
 buildkonfigGradle = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "buildkonfig" }
 dokkaGradle = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+ksp-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 ktor-client-jvm = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
@@ -44,3 +46,4 @@ serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref 
 kotest = { id = "io.kotest.multiplatform", version.ref = "kotest" }
 buildkonfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildkonfig" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
