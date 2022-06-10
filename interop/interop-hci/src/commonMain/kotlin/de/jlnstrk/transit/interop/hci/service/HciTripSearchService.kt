@@ -83,7 +83,7 @@ internal class HciTripSearchService(
         val viaLocations = via.map {
             HciViaLocation(
                 loc = it.location.asHci(),
-                min = it.period?.minutes?.toInt() ?: 0
+                min = it.period?.inWholeMinutes?.toInt() ?: 0
             )
         }
         println(dateTime)

@@ -1,7 +1,5 @@
 package de.jlnstrk.transit.sample
 
-import com.soywiz.klock.TimezoneOffset
-import com.soywiz.klock.hours
 import de.jlnstrk.transit.client.hci.HciConfig
 import de.jlnstrk.transit.client.hci.model.HciAuth
 import de.jlnstrk.transit.client.hci.model.HciAuthType
@@ -14,6 +12,8 @@ import de.jlnstrk.transit.common.model.TransportMode
 import de.jlnstrk.transit.common.model.ProductClass
 import de.jlnstrk.transit.interop.hafas.HafasClassMapping
 import de.jlnstrk.transit.interop.hci.HciProvider
+import kotlinx.datetime.FixedOffsetTimeZone
+import kotlinx.datetime.UtcOffset
 
 object SampleProvider : HciProvider(), HafasClassMapping.OneToOne {
     override val config: HciConfig = HciConfig {
@@ -30,7 +30,7 @@ object SampleProvider : HciProvider(), HafasClassMapping.OneToOne {
         )
         ver = HciVersion._1_44
         ext = HciExtension.BVG_1
-        timezone = TimezoneOffset(2.hours)
+        timezone = FixedOffsetTimeZone(UtcOffset(hours = 2))
     }
 
     override val mapping: Array<ProductClass> = arrayOf(
