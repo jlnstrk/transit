@@ -28,6 +28,8 @@ ksp {
     arg("dateTimeSerializerType", "$hciSerializerPackage.HciUnixTimeSerializer")
     arg("zoneOffsetType", "kotlinx.datetime.UtcOffset")
     arg("zoneOffsetSerializerType", "$hciSerializerPackage.HciUtcOffsetSerializer")
+    arg("durationType", "kotlin.time.Duration")
+    arg("durationSerializerType", "$hciSerializerPackage.HciDurationSerializer")
 }
 
 dependencies {

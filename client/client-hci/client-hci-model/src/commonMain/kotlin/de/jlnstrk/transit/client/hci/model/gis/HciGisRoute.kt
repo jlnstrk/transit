@@ -3,10 +3,12 @@ package de.jlnstrk.transit.client.hci.model.gis
 import de.jlnstrk.transit.client.hafas.HciModel
 import de.jlnstrk.transit.client.hci.model.HciPolylineGroup
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
+import de.jlnstrk.transit.client.hci.serializer.HciDurationSerializer
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlin.time.Duration
 import kotlinx.serialization.Serializable
 
 @HciModel("1.45")
@@ -21,11 +23,16 @@ public data class HciGisRoute(
   public val dZUrl: String? = null,
   public val dirTxt: String? = null,
   public val dist: Int? = null,
-  public val durR: String? = null,
-  public val durS: String? = null,
-  public val durST: String? = null,
-  public val durW2C: String? = null,
-  public val durW2D: String? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durR: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durS: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durST: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durW2C: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durW2D: Duration? = null,
   public val edgeHashR: String? = null,
   public val edgeHashS: String? = null,
   public val getDescr: Boolean = true,

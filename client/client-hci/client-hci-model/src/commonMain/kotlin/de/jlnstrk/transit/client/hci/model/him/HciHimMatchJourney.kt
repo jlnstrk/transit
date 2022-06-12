@@ -19,11 +19,13 @@ import de.jlnstrk.transit.client.hci.model.journey.HciJourneySubscriptionState
 import de.jlnstrk.transit.client.hci.model.journey.HciJourneyTransitStatus
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.client.hci.model.user.HciUser
+import de.jlnstrk.transit.client.hci.serializer.HciDurationSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlin.time.Duration
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
@@ -42,7 +44,8 @@ public data class HciHimMatchJourney(
   public val dirLocX: Int? = null,
   public val dirTxt: String? = null,
   public val dist: Int? = null,
-  public val durS: String? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durS: Duration? = null,
   public val fSt: HciJourneyStop? = null,
   public val freq: HciJourneyFreq? = null,
   public val freqRT: HciJourneyFreq? = null,

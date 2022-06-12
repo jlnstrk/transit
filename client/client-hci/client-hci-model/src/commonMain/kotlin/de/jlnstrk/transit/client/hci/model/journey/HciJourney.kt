@@ -8,11 +8,13 @@ import de.jlnstrk.transit.client.hci.model.HciServiceDays
 import de.jlnstrk.transit.client.hci.model.composition.HciTrainComposition
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.client.hci.model.user.HciUser
+import de.jlnstrk.transit.client.hci.serializer.HciDurationSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlin.time.Duration
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
@@ -30,7 +32,8 @@ public data class HciJourney(
   public val dirLocX: Int? = null,
   public val dirTxt: String? = null,
   public val dist: Int? = null,
-  public val durS: String? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durS: Duration? = null,
   public val freq: HciJourneyFreq? = null,
   public val freqRT: HciJourneyFreq? = null,
   public val hasImpRem: Boolean = false,

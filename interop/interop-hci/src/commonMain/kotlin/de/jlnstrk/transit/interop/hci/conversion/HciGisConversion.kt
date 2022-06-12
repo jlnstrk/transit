@@ -5,11 +5,15 @@ import de.jlnstrk.transit.client.hci.model.gis.HciGisOrientation
 import de.jlnstrk.transit.client.hci.model.gis.HciGisRoute
 import de.jlnstrk.transit.common.model.GisRoute
 import de.jlnstrk.transit.interop.hci.conversion.base.HciCommonContext
+import kotlin.time.Duration.Companion.ZERO
+import kotlin.time.Duration.Companion.hours
+import kotlin.time.Duration.Companion.minutes
+import kotlin.time.Duration.Companion.seconds
 
 internal fun HciGisRoute.asCommon(context: HciCommonContext): GisRoute {
     return GisRoute(
         distance = dist!!,
-        duration = kotlin.time.Duration.parse(durS!!),
+        duration = durR ?: durS ?: ZERO,
         segments = segL.map {
             GisRoute.Segment(
                 summary = it.name,

@@ -19,11 +19,13 @@ import de.jlnstrk.transit.client.hci.model.recon.HciReconstructionState
 import de.jlnstrk.transit.client.hci.model.tariff.HciTariffRef
 import de.jlnstrk.transit.client.hci.model.tariff.HciTariffResult
 import de.jlnstrk.transit.client.hci.model.user.HciUser
+import de.jlnstrk.transit.client.hci.serializer.HciDurationSerializer
 import de.jlnstrk.transit.client.hci.serializer.HciLocalDateSerializer
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
 import kotlin.collections.List
+import kotlin.time.Duration
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
 
@@ -44,9 +46,12 @@ public data class HciConnection(
   public val date: LocalDate? = null,
   public val dbReiseplanStorageData: HciDBReiseplanStorageData? = null,
   public val dep: HciJourneyStop? = null,
-  public val dur: String? = null,
-  public val durR: String? = null,
-  public val durS: String? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val dur: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durR: Duration? = null,
+  @Serializable(with = HciDurationSerializer::class)
+  public val durS: Duration? = null,
   public val eco: HciEco? = null,
   public val ecoEntryUrl: String? = null,
   public val freq: HciJourneyFreq? = null,

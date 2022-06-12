@@ -14,6 +14,7 @@ import de.jlnstrk.transit.client.hci.codegen.*
 val PATTERN_LOCAL_DATE = Regex("[a-zA-Z_]+Date(?:[A-Z]+[a-zA-Z_]*)?|date(?:[A-Z]+[a-zA-Z_]*)?")
 val PATTERN_LOCAL_TIME = Regex("[a-zA-Z_]+Time(?:[A-Z]+[a-zA-Z_]*)?|time(?:[A-Z]+[a-zA-Z_]*)?")
 val PATTERN_ZONE_OFFSET = Regex("[a-zA-Z_]+TZOffset(?:[A-Z]+[a-zA-Z_]*)?|TZOffset(?:[A-Z]+[a-zA-Z_]*)?")
+val PATTERN_DURATION = Regex("dur(?:S|R|ST|(W2C)|(W2D))?")
 val PATTERN_PROP_NAME_OBFUSCATION = Regex("f[0-9]{4}([a-z]+)")
 
 fun ClassOrInterfaceDeclaration.transformDataClass(): TypeSpec? {
@@ -53,6 +54,8 @@ fun ClassOrInterfaceDeclaration.transformDataClass(): TypeSpec? {
                     variableName.matches(PATTERN_LOCAL_DATE) -> variableType = TypeNames.dateType
                         .copy(nullable = variableType.isNullable)
                     variableName.matches(PATTERN_LOCAL_TIME) -> variableType = TypeNames.timeType
+                        .copy(nullable = variableType.isNullable)
+                    variableName.matches(PATTERN_DURATION) -> variableType = TypeNames.durationType
                         .copy(nullable = variableType.isNullable)
                 }
                 variableType.toString().startsWith("kotlin.Int") -> when {

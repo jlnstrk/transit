@@ -17,6 +17,7 @@ object CustomSerializers {
         TypeNames.dateType -> TypeNames.dateSerializerType
         TypeNames.timeType -> TypeNames.timeSerializerType
         TypeNames.zoneOffsetType -> TypeNames.zoneOffsetSerializerType
+        TypeNames.durationType -> TypeNames.durationSerializerType
         else -> null
     }
 }
@@ -30,6 +31,8 @@ object TypeNames {
     val dateTimeSerializerType: ClassName by SuppliedClassName
     val zoneOffsetType: ClassName by SuppliedClassName
     val zoneOffsetSerializerType: ClassName by SuppliedClassName
+    val durationType: ClassName by SuppliedClassName
+    val durationSerializerType: ClassName by SuppliedClassName
 
     val Deprecated = ClassName("kotlin", "Deprecated")
     val OptIn = ClassName("kotlin", "OptIn")
