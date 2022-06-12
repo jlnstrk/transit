@@ -10,7 +10,7 @@ import de.jlnstrk.transit.client.hci.model.tariff.HciTariffResult
 import de.jlnstrk.transit.client.hci.model.text.HciText
 import de.jlnstrk.transit.client.hci.model.user.HciUser
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
-import de.jlnstrk.transit.client.hci.serializer.HciZoneOffsetSerializer
+import de.jlnstrk.transit.client.hci.serializer.HciUtcOffsetSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
 import kotlin.Boolean
 import kotlin.Int
@@ -22,7 +22,7 @@ import kotlinx.serialization.Serializable
 @HciModel("1.45")
 @Serializable
 public data class HciLocation(
-  @Serializable(with = HciZoneOffsetSerializer::class)
+  @Serializable(with = HciUtcOffsetSerializer::class)
   public val TZOffset: UtcOffset? = null,
   @Serializable(with = HciLocalTimeSerializer.WithDayOffset::class)
   public val chgTime: HciLocalTime? = null,

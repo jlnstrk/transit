@@ -27,7 +27,7 @@ ksp {
     arg("dateTimeType", "kotlinx.datetime.LocalDateTime")
     arg("dateTimeSerializerType", "$hciSerializerPackage.HciUnixTimeSerializer")
     arg("zoneOffsetType", "kotlinx.datetime.UtcOffset")
-    arg("zoneOffsetSerializerType", "$hciSerializerPackage.HciZoneOffsetSerializer")
+    arg("zoneOffsetSerializerType", "$hciSerializerPackage.HciUtcOffsetSerializer")
 }
 
 dependencies {

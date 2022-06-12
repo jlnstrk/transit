@@ -8,7 +8,7 @@ import de.jlnstrk.transit.client.hci.model.composition.HciTrainComposition
 import de.jlnstrk.transit.client.hci.model.location.HciLocation
 import de.jlnstrk.transit.client.hci.model.message.HciMessage
 import de.jlnstrk.transit.client.hci.serializer.HciLocalTimeSerializer
-import de.jlnstrk.transit.client.hci.serializer.HciZoneOffsetSerializer
+import de.jlnstrk.transit.client.hci.serializer.HciUtcOffsetSerializer
 import de.jlnstrk.transit.client.hci.util.HciLocalTime
 import kotlin.Boolean
 import kotlin.Deprecated
@@ -36,7 +36,7 @@ public data class HciJourneyStop(
   public val aProdX: Int? = null,
   public val aProgType: HciJourneyProgType? = null,
   public val aStat: HciJourneyStatistics? = null,
-  @Serializable(with = HciZoneOffsetSerializer::class)
+  @Serializable(with = HciUtcOffsetSerializer::class)
   public val aTZOffset: UtcOffset? = null,
   public val aTimeFC: HciTimeFormat? = null,
   public val aTimeFR: HciTimeFormat? = null,
@@ -63,7 +63,7 @@ public data class HciJourneyStop(
   public val dProdX: Int? = null,
   public val dProgType: HciJourneyProgType? = null,
   public val dStat: HciJourneyStatistics? = null,
-  @Serializable(with = HciZoneOffsetSerializer::class)
+  @Serializable(with = HciUtcOffsetSerializer::class)
   public val dTZOffset: UtcOffset? = null,
   public val dTimeFC: HciTimeFormat? = null,
   public val dTimeFR: HciTimeFormat? = null,
