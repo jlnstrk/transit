@@ -16,7 +16,7 @@ internal fun HciLocalTime.relativeTo(date: LocalDate): LocalDateTime {
 }
 
 internal fun HciJourneyStop.arrivalAsCommon(context: HciCommonContext, date: LocalDate): Stop.Arrival {
-    val arrivalTimezone = aTZOffset?.plusZone(context.timezone) ?: context.timezone
+    val arrivalTimezone = aTZOffset?.asTimeZone() ?: context.timezone
     return Stop.Arrival(
         location = context.locations[locX!!],
         index = idx,
@@ -29,7 +29,7 @@ internal fun HciJourneyStop.arrivalAsCommon(context: HciCommonContext, date: Loc
 }
 
 internal fun HciJourneyStop.departureAsCommon(context: HciCommonContext, date: LocalDate): Stop.Departure {
-    val departureTimezone = dTZOffset?.plusZone(context.timezone) ?: context.timezone
+    val departureTimezone = dTZOffset?.asTimeZone() ?: context.timezone
     return Stop.Departure(
         location = context.locations[locX!!],
         index = idx,
@@ -42,8 +42,8 @@ internal fun HciJourneyStop.departureAsCommon(context: HciCommonContext, date: L
 }
 
 internal fun HciJourneyStop.intermediateAsCommon(context: HciCommonContext, date: LocalDate): Stop.Intermediate {
-    val arrivalTimezone = aTZOffset?.plusZone(context.timezone) ?: context.timezone
-    val departureTimezone = dTZOffset?.plusZone(context.timezone) ?: context.timezone
+    val arrivalTimezone = aTZOffset?.asTimeZone() ?: context.timezone
+    val departureTimezone = dTZOffset?.asTimeZone() ?: context.timezone
     return Stop.Intermediate(
         location = context.locations[locX!!],
         index = idx,

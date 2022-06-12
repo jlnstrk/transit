@@ -10,7 +10,7 @@ import de.jlnstrk.transit.interop.hci.service.*
 import kotlinx.datetime.TimeZone
 
 public abstract class HciProvider : Provider.Implementation(), HafasClassMapping {
-    override val timezone: TimeZone get() = TimeZone.currentSystemDefault()
+    override val timezone: TimeZone get() = TimeZone.UTC
     public abstract val config: HciConfig
 
     init {
