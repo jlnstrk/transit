@@ -16,7 +16,7 @@ internal fun HciJourney.asCommon(context: HciCommonContext, tripDate: LocalDate?
         .mapNotNull(HciMessage::himX)
         .map(context.messages::get)
     return Journey(
-        id = jid!!,
+        id = jid ?: hashCode().toString(),
         line = context.lines[prodX!!],
         directionTo = Location.Station("", dirTxt.orEmpty(), coordinates = Coordinates(0.0, 0.0)),
         stop = (stbStop ?: stopL.first()).asCommon(context, date ?: tripDate!!),
